@@ -366,3 +366,83 @@ Received Import Request.
 Start importing Assets/Scripts/Rebote.cs using Guid(9b4fcdcaf6688ab48bfc50a85f943ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6107b89f5bd2f98e69bae1df9838e802') in 0.005824 seconds 
   Import took 0.009642 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 1111.490407 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(b9da4b27907db934a983ab4124aec8fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(b9da4b27907db934a983ab4124aec8fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05e96f28315216905a39b0bf77e9bf37') in 0.005693 seconds 
+  Import took 0.010511 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.788901 seconds.
+  path: Assets/Sprites
+  artifactKey: Guid(1e099deca5e497c47b88e4f8313b9e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites using Guid(1e099deca5e497c47b88e4f8313b9e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '816f80bbd8247044bc34d613d12db371') in 0.007304 seconds 
+  Import took 0.011304 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.639780 seconds.
+  path: Assets/Sprites/basura.jpg
+  artifactKey: Guid(7c2492731b6b31341bc33da6185e396b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/basura.jpg using Guid(7c2492731b6b31341bc33da6185e396b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd857d4dc6667b3118f76d63fe5bbef0d') in 0.081443 seconds 
+  Import took 0.084593 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.513425 seconds.
+  path: Assets/Sprites/Barricada_de_madera.png
+  artifactKey: Guid(484a2ae170026014caa82ce6b6cccb4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Barricada_de_madera.png using Guid(484a2ae170026014caa82ce6b6cccb4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58dc57b71d148187ccc126c20e322931') in 0.022664 seconds 
+  Import took 0.025686 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1060.985486 seconds.
+  path: Assets/Sprites/camilllaaa.png
+  artifactKey: Guid(c949a070d4926ce49b04cc967268d5f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/camilllaaa.png using Guid(c949a070d4926ce49b04cc967268d5f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a4df75bf73776cb6c2e09bc68cb0537') in 0.041927 seconds 
+  Import took 0.045972 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.181891 seconds.
+  path: Assets/Sprites/basura.png
+  artifactKey: Guid(02024e955f9378049a9ba96337e142f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/basura.png using Guid(02024e955f9378049a9ba96337e142f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '463294a2a323ea1779db5990d767ae80') in 0.020361 seconds 
+  Import took 0.024384 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 82.686205 seconds.
+  path: Assets/Prefabs/Papelera.prefab
+  artifactKey: Guid(0647191ce853d114bb71919295da7fe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Papelera.prefab using Guid(0647191ce853d114bb71919295da7fe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4226f95072aa3a5908c40057a028cd3b') in 0.121909 seconds 
+  Import took 0.126305 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003770 seconds.
+  path: Assets/Prefabs/Papelera.prefab
+  artifactKey: Guid(0647191ce853d114bb71919295da7fe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Papelera.prefab using Guid(0647191ce853d114bb71919295da7fe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4226f95072aa3a5908c40057a028cd3b') in 0.011039 seconds 
+  Import took 0.014656 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.671946 seconds.
+  path: Assets/Prefabs/Camilla.prefab
+  artifactKey: Guid(2cc1f72dabc77b749992de6fc5093f1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Camilla.prefab using Guid(2cc1f72dabc77b749992de6fc5093f1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd562425fd5bfb594087a4b527629eb2a') in 0.021116 seconds 
+  Import took 0.026010 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.360374 seconds.
+  path: Assets/Prefabs/Barricada_de_madera.prefab
+  artifactKey: Guid(f44c346b9ac6f6b4c9ac402eff908a78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Barricada_de_madera.prefab using Guid(f44c346b9ac6f6b4c9ac402eff908a78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60c42d398dab99583a3a662ffbd0d903') in 0.019465 seconds 
+  Import took 0.022580 seconds .
+
