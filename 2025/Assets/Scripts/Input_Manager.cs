@@ -62,12 +62,5 @@ public class Input_Manager : MonoBehaviour
         {
             // Escopeta
         }
-
-        // Disparo
-
-        if (Input.GetKey(KeyCode.Mouse0))
-        {
-
-        }
     }
 }

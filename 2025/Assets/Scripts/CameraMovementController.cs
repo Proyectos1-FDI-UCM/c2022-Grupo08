@@ -21,36 +21,26 @@ public class CameraMovementController : MonoBehaviour
     [SerializeField]
     private GameObject _targetObject; // Objeto al que siga la camara (será el jugador)
     private Transform _targetObjectTransform;
+    /*[SerializeField]
+    private GameObject _limits;
+    private Transform _limitsTransform;*/
     private Transform _myTransform;
-    #endregion
-
-    #region methods
-    public void StopCamera()
-    {
-        _inTheLimit = true;
-    }
-
-    public void ReanudeCamera()
-    {
-        _inTheLimit = false;
-    }
     #endregion
 
     // Start is called before the first frame update
     void Start()
     {
         _myTransform = transform;
+        //_limitsTransform = _limits.transform;
         _targetObjectTransform = _targetObject.transform;
-        _distance = _myTransform.position - _targetObjectTransform.position + _distance;
-        _myTransform.LookAt(_targetObjectTransform.position + new Vector3(0, _distanceToCenter, 0)); // La cámara mira hacia el player al empezar y le sigue en todo momento
+        _myTransform.position = new Vector3(_targetObjectTransform.position.x, _targetObjectTransform.position.y, _myTransform.position.z);
+        //_distance = _myTransform.position - _targetObjectTransform.position; //+ _distance;
+        //_myTransform.LookAt(_targetObjectTransform.position + new Vector3(0, _distanceToCenter, 0)); // La cámara mira hacia el player al empezar y le sigue en todo momento
     }                                                                                                // hasta que se acerca a una pared de los límites del mapa
 
     // Update is called once per frame
     void Update()
     {
-        if (!_inTheLimit)
-        {
-            _myTransform.position = Vector3.Lerp(_myTransform.position, _targetObjectTransform.position + _distance, Time.deltaTime * _factorDeDelay); // Interpolación linel
-        }
+        _myTransform.position = Vector3.Lerp(_myTransform.position, new Vector3(Mathf.Clamp(_targetObjectTransform.position.x, -5, 5), Mathf.Clamp(_targetObjectTransform.position.y, -5, 5), _myTransform.position.z), Time.deltaTime * _factorDeDelay); // Interpolación linel
     }
 }
