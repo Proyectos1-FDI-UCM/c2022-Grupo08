@@ -55,12 +55,11 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Damage.cs" />
     <Compile Include="Assets\Scripts\Player_MovementController.cs" />
-    <Compile Include="Assets\Scripts\LimitCameraZone.cs" />
     <Compile Include="Assets\Scripts\Player_Life_Component.cs" />
     <Compile Include="Assets\Scripts\Input_Manager.cs" />
-    <Compile Include="Assets\Scripts\CameraMovementController.cs" />
     <Compile Include="Assets\Scripts\Enemy_Behaviour.cs" />
     <Compile Include="Assets\Scripts\Life_Component.cs" />
+    <Compile Include="Assets\Scripts\CameraMovementController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

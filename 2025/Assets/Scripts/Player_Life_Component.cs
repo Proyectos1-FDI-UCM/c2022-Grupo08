@@ -22,6 +22,13 @@ public class Player_Life_Component : Life_Component
     {
         base.Start();
     }
+    override public void Update()
+    {
+        if (_currentLife <= 0)
+        {
+            Die(); //GameManager.Instance.OnPlayerDies();
+        }
+    }
 
     /*private void guardarPosPlayer()
     {

@@ -8,7 +8,7 @@ public class Life_Component : MonoBehaviour
     [SerializeField]
     private int _maxLife = 100;
     [SerializeField]
-    private int _currentLife;
+    protected int _currentLife;
     [SerializeField]
     private int _damage = 10;
     #endregion
@@ -27,9 +27,9 @@ public class Life_Component : MonoBehaviour
         _currentLife -= damagePoint;
     }
 
-    public void Die()
+    protected void Die()
     {
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
     #endregion
 
@@ -40,11 +40,11 @@ public class Life_Component : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public virtual void Update()
     {
         if (_currentLife <= 0)
         {
-            Die();
+            Die(); //GameManager.Instance.OnEnemyDies();
         }
     }
 }
