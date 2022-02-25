@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Damage : MonoBehaviour
 {
+    /*
     /*[SerializeField]
     private GameObject _myPlayer;
-    private Player_Life_Component _player_life_component;*/
+    private Player_Life_Component _player_life_component;
 
     float posXenemy, posYenemy;
 
@@ -19,7 +20,7 @@ public class Damage : MonoBehaviour
         //Debug.Log(posXenemy);
     }
 
-    /*private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log("Colision");
         Player_Life_Component hitPlayer = collision.gameObject.GetComponent<Player_Life_Component>();
@@ -28,7 +29,7 @@ public class Damage : MonoBehaviour
             _player_life_component.Damage(10);
             _player_life_component.Rebote(posXenemy, posYenemy);
         }
-    }*/
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -52,6 +53,6 @@ public class Damage : MonoBehaviour
     void Update()
     {
         guardarPosEnemy();
-    }
+    }*/
 }
 

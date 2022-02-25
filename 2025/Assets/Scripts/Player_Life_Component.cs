@@ -2,36 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player_Life_Component : MonoBehaviour
+public class Player_Life_Component : Life_Component
 {
-
-    int curretLife = 100;
+    /*private Transform _myTransform;
 
     float posXplayer, posYplayer;
+    */
+    #region methods
+    public override void Damage(int DamagePoints)
+    {
+        base.Damage(DamagePoints);
+    }
+    #endregion
 
-
-
-    private Transform _myTransform;
-
-    // Start is called before the first frame update
-     void Start()
-     {
-        _myTransform = transform;
-
-     }
+    // Start is called before the first frame upda
 
     // Update is called once per frame
-    void Update()
+    override public void Start()
     {
-        
+        base.Start();
     }
 
-    public void Damage(int damage)
-    {
-        curretLife -= damage;
-    }
-
-    private void guardarPosPlayer()
+    /*private void guardarPosPlayer()
     {
         posXplayer = _myTransform.position.x;
         posYplayer = _myTransform.position.y;
