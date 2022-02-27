@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 162251055}
   - component: {fileID: 162251051}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -522,6 +522,8 @@ MonoBehaviour:
   - {fileID: 862364294}
   - {fileID: 1269393128}
   - {fileID: 1950170564}
+  velocity: 2
+  _player: {fileID: 162251053}
 --- !u!212 &2099547558
 SpriteRenderer:
   m_ObjectHideFlags: 0

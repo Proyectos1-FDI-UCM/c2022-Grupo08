@@ -4,39 +4,55 @@ using UnityEngine;
 
 public class Enemy_Behaviour : MonoBehaviour
 {
-
+    #region parameters
     [SerializeField]
     List<Transform> wayPoints;
 
-    float velocity = 2.0f;
+    [SerializeField]
+    private float velocity = 2.0f;
 
-    //Distancia minima a la que el jugador cambiará su objetivo al siguiente punto
-    float changeDistance = 0.1f;
+    [SerializeField]
+    private Transform _player;
+    
+    private float changeDistance = 0.1f; // distancia minima a la que el jugador cambiará su objetivo al siguiente punto
+ 
+    private int nextPosition = 0; // posicion
+    #endregion
 
-    //posicion
-    int nextPosition = 0;
-
+    #region references
     private Transform _myTransform;
+    #endregion
 
+    #region methods
+    private void DeteccionPlayer()
+    {
+        _myTransform.position = Vector2.MoveTowards(_myTransform.position, _player.transform.position, velocity * Time.deltaTime);
+    }
+    #endregion
     // Start is called before the first frame update
     void Start()
     {
-        _myTransform = transform;
+        _myTransform = transform;       
     }
 
     // Update is called once per frame
     void Update()
-    {
-        _myTransform.position = Vector3.MoveTowards(_myTransform.position, wayPoints[nextPosition].transform.position, velocity * Time.deltaTime);
-
-        //SI la distancia es menor a la distancia de cambio, se pasa al siguiente waypoint
-        if(Vector3.Distance(_myTransform.position,wayPoints[nextPosition].transform.position)<= changeDistance)
+    {      
+        if (Vector2.Distance(_myTransform.position, _player.transform.position) <= 5) // si la distancia entre player y enemy es menor que 5, sigue al player
+        { 
+            DeteccionPlayer(); 
+        } 
+        else
         {
-            nextPosition++;
-
-            if(nextPosition>= wayPoints.Count)
+            _myTransform.position = Vector3.MoveTowards(_myTransform.position, wayPoints[nextPosition].transform.position, velocity * Time.deltaTime);
+            if (Vector3.Distance(_myTransform.position, wayPoints[nextPosition].transform.position) <= changeDistance) // si la distancia es menor a la distancia de cambio, se pasa al siguiente waypoint
             {
-                nextPosition = 0;
+                nextPosition++;
+
+                if (nextPosition >= wayPoints.Count)
+                {
+                    nextPosition = 0;
+                }
             }
         }
     }

@@ -10,8 +10,7 @@ public class Input_Manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _myplayermovementcontroller = GetComponent<Player_MovementController>();
-        
+        _myplayermovementcontroller = GetComponent<Player_MovementController>();        
     }
 
     // Update is called once per frame
