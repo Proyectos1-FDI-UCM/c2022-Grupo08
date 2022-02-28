@@ -17,10 +17,14 @@ public class Enemy_Behaviour : MonoBehaviour
     private float changeDistance = 0.1f; // distancia minima a la que el jugador cambiará su objetivo al siguiente punto
  
     private int nextPosition = 0; // posicion
+
+    private int currentPosition = 0;
     #endregion
 
     #region references
     private Transform _myTransform;
+    [SerializeField]
+    private Animator _myAnimator;
     #endregion
 
     #region methods
@@ -47,6 +51,7 @@ public class Enemy_Behaviour : MonoBehaviour
             _myTransform.position = Vector3.MoveTowards(_myTransform.position, wayPoints[nextPosition].transform.position, velocity * Time.deltaTime);
             if (Vector3.Distance(_myTransform.position, wayPoints[nextPosition].transform.position) <= changeDistance) // si la distancia es menor a la distancia de cambio, se pasa al siguiente waypoint
             {
+                currentPosition = nextPosition;
                 nextPosition++;
 
                 if (nextPosition >= wayPoints.Count)
@@ -55,5 +60,8 @@ public class Enemy_Behaviour : MonoBehaviour
                 }
             }
         }
+        //Animación
+        _myAnimator.SetInteger("Posicion", currentPosition);
+        _myAnimator.SetInteger("Siguiente", nextPosition);
     }
 }
