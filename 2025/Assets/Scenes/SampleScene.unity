@@ -299,6 +299,7 @@ MonoBehaviour:
   _maxLife: 100
   _currentLife: 0
   _damage: 10
+  _myAnimator: {fileID: 0}
 --- !u!95 &162251057
 Animator:
   serializedVersion: 3
@@ -509,6 +510,7 @@ MonoBehaviour:
   _maxLife: 20
   _currentLife: 0
   _damage: 10
+  _myAnimator: {fileID: 884636985}
 --- !u!114 &884636982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -734,6 +736,7 @@ MonoBehaviour:
   _maxLife: 20
   _currentLife: 0
   _damage: 10
+  _myAnimator: {fileID: 2076484551}
 --- !u!114 &2076484548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -957,6 +960,7 @@ MonoBehaviour:
   _maxLife: 20
   _currentLife: 0
   _damage: 10
+  _myAnimator: {fileID: 2099547562}
 --- !u!61 &2099547561
 BoxCollider2D:
   m_ObjectHideFlags: 0

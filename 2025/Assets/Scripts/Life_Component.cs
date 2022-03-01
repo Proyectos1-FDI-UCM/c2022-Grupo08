@@ -32,6 +32,10 @@ public class Life_Component : MonoBehaviour
         gameObject.SetActive(false);
     }
     #endregion
+    #region references
+    [SerializeField]
+    private Animator _myAnimator;
+    #endregion 
 
     // Start is called before the first frame update
     public virtual void Start()
@@ -46,5 +50,7 @@ public class Life_Component : MonoBehaviour
         {
             Die(); //GameManager.Instance.OnEnemyDies();
         }
+
+        _myAnimator.SetInteger("Vida", _currentLife);
     }
 }
