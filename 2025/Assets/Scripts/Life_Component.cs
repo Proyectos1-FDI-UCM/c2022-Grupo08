@@ -13,9 +13,20 @@ public class Life_Component : MonoBehaviour
     private int _damage = 10;
     #endregion
     #region methods
+
+    /*
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Player_Life_Component hitPlayer = collision.GetComponent<Player_Life_Component>();
+        if (hitPlayer)
+        {
+            hitPlayer.Damage(_damage);
+        }
+    }
+    */
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Player_Life_Component hitPlayer = collision.gameObject.GetComponent<Player_Life_Component>();
         if (hitPlayer)
         {
             hitPlayer.Damage(_damage);
