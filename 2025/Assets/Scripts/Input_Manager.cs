@@ -6,11 +6,13 @@ public class Input_Manager : MonoBehaviour
 {
     #region references
     private Player_MovementController _myplayermovementcontroller ;
+    private Player_Attack _myplayerattack;
     #endregion
     // Start is called before the first frame update
     void Start()
     {
-        _myplayermovementcontroller = GetComponent<Player_MovementController>();        
+        _myplayermovementcontroller = GetComponent<Player_MovementController>();
+        _myplayerattack = GetComponent<Player_Attack>();
     }
 
     // Update is called once per frame
@@ -48,18 +50,18 @@ public class Input_Manager : MonoBehaviour
         }
 
         // Selección de armas
-        if (Input.GetKey(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            // Palanca
+            _myplayerattack.ShootBala(1);
         }
-        else if (Input.GetKey(KeyCode.Alpha2))
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            // Pistola
+            _myplayerattack.ShootBala(2);
         }
 
-        else if (Input.GetKey(KeyCode.Alpha3))
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            // Escopeta
+            _myplayerattack.ShootBala(3);
         }
     }
 }

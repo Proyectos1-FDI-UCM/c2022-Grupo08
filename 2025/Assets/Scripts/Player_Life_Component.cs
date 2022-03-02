@@ -27,6 +27,7 @@ public class Player_Life_Component : Life_Component
         if (_currentLife <= 0)
         {
             Die(); //GameManager.Instance.OnPlayerDies();
+            Debug.Log("GGG");
         }
     }
 
