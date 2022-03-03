@@ -20,9 +20,15 @@ MonoBehaviour:
     height: 989
   m_ShowMode: 4
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_Title: Scene
   m_RootView: {fileID: 9}
   m_MinSize: {x: 875, y: 300}
+=======
+  m_Title: Console
+  m_RootView: {fileID: 6}
+  m_MinSize: {x: 875, y: 392}
+>>>>>>> Stashed changes
 =======
   m_Title: Console
   m_RootView: {fileID: 6}
@@ -194,9 +200,12 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     width: 201
     height: 528
 =======
+=======
+>>>>>>> Stashed changes
     width: 224
     height: 357
 >>>>>>> Stashed changes
@@ -276,6 +285,9 @@ MonoBehaviour:
 =======
     width: 1366
     height: 685
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -390,9 +402,12 @@ MonoBehaviour:
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   controlID: 196
 --- !u!114 &14
 =======
+=======
+>>>>>>> Stashed changes
   controlID: 19
 --- !u!114 &11
 >>>>>>> Stashed changes
@@ -413,9 +428,12 @@ MonoBehaviour:
     x: 224
     y: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     width: 667
     height: 528
 =======
+=======
+>>>>>>> Stashed changes
     width: 819
     height: 357
 >>>>>>> Stashed changes
@@ -455,9 +473,12 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_LastSelectedObjectID: 17140
 --- !u!114 &16
 =======
+=======
+>>>>>>> Stashed changes
   m_LastSelectedObjectID: -24784
 --- !u!114 &13
 >>>>>>> Stashed changes
@@ -481,11 +502,14 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     x: 868
     y: 73
     width: 497
     height: 507
 =======
+=======
+>>>>>>> Stashed changes
     x: 224
     y: 73
     width: 817
@@ -548,6 +572,7 @@ MonoBehaviour:
       e32: 0
       e33: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     - e00: 0.26666668
       e01: 0
       e02: 0
@@ -557,6 +582,8 @@ MonoBehaviour:
       e12: 0
       e13: 208.66667
 =======
+=======
+>>>>>>> Stashed changes
     - e00: 0.36394393
       e01: 0
       e02: 0
@@ -565,6 +592,9 @@ MonoBehaviour:
       e11: 0.36394393
       e12: 0
       e13: 218.02626
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       e20: 0
       e21: 0
@@ -576,9 +606,15 @@ MonoBehaviour:
       e33: 1
   m_PreviewAnimator: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_AnimatorController: {fileID: 9100000, guid: 8d4e6d2aa3aacfd46ba2480306497607, type: 2}
   m_BreadCrumbs:
   - m_Target: {fileID: 6839108798661423251, guid: 8d4e6d2aa3aacfd46ba2480306497607, type: 2}
+=======
+  m_AnimatorController: {fileID: 9100000, guid: dee096230fd21094ca238a19592d68e5, type: 2}
+  m_BreadCrumbs:
+  - m_Target: {fileID: -1178027117520703949, guid: dee096230fd21094ca238a19592d68e5, type: 2}
+>>>>>>> Stashed changes
 =======
   m_AnimatorController: {fileID: 9100000, guid: dee096230fd21094ca238a19592d68e5, type: 2}
   m_BreadCrumbs:
@@ -643,6 +679,7 @@ MonoBehaviour:
   - Assets/Scripts
   m_LastFoldersGridSize: -1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_LastProjectPath: C:\Users\Beatriz\Git\2025
   m_LockTracker:
     m_IsLocked: 0
@@ -656,10 +693,19 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+=======
+  m_LastProjectPath: C:\Users\lauri\Documents\GitHub\c2022-Grupo08\2025
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+>>>>>>> Stashed changes
     scrollPos: {x: 0, y: 3}
     m_SelectedIDs: 8a440000
     m_LastClickedID: 17546
     m_ExpandedIDs: 00000000784400007a4400008c44000000ca9a3b
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -689,7 +735,11 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     m_ExpandedIDs: 00000000b4440000b6440000
+=======
+    m_ExpandedIDs: 00000000784400007a440000
+>>>>>>> Stashed changes
 =======
     m_ExpandedIDs: 00000000784400007a440000
 >>>>>>> Stashed changes
@@ -718,8 +768,13 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     m_SelectedInstanceIDs: 02430000
     m_LastClickedInstanceID: 17154
+=======
+    m_SelectedInstanceIDs: ac100000
+    m_LastClickedInstanceID: 4268
+>>>>>>> Stashed changes
 =======
     m_SelectedInstanceIDs: ac100000
     m_LastClickedInstanceID: 4268
@@ -813,9 +868,12 @@ MonoBehaviour:
     x: 0
     y: 73
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     width: 200
     height: 507
 =======
+=======
+>>>>>>> Stashed changes
     width: 223
     height: 336
 >>>>>>> Stashed changes
@@ -824,9 +882,15 @@ MonoBehaviour:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: 46fbffffcc420000
+=======
+      m_SelectedIDs: 309fffff
+      m_LastClickedID: -24784
+      m_ExpandedIDs: 96e8ffff46fbffff
+>>>>>>> Stashed changes
 =======
       m_SelectedIDs: 309fffff
       m_LastClickedID: -24784
@@ -848,7 +912,11 @@ MonoBehaviour:
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         m_ClientGUIView: {fileID: 7}
+=======
+        m_ClientGUIView: {fileID: 4}
+>>>>>>> Stashed changes
 =======
         m_ClientGUIView: {fileID: 4}
 >>>>>>> Stashed changes
@@ -882,9 +950,12 @@ MonoBehaviour:
     x: 224
     y: 73
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     width: 665
     height: 507
 =======
+=======
+>>>>>>> Stashed changes
     width: 817
     height: 336
 >>>>>>> Stashed changes
@@ -901,9 +972,15 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_Position:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     m_Target: {x: -4.6236334, y: 4.207483, z: -24.009922}
     speed: 2
     m_Value: {x: -4.6236334, y: 4.207483, z: -24.009922}
+=======
+    m_Target: {x: 9.896006, y: -2.5655682, z: -21.584797}
+    speed: 2
+    m_Value: {x: 9.896006, y: -2.5655682, z: -21.584797}
+>>>>>>> Stashed changes
 =======
     m_Target: {x: 9.896006, y: -2.5655682, z: -21.584797}
     speed: 2
@@ -960,9 +1037,15 @@ MonoBehaviour:
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     m_Target: 9.48232
     speed: 2
     m_Value: 9.48232
+=======
+    m_Target: 6.916758
+    speed: 2
+    m_Value: 6.916758
+>>>>>>> Stashed changes
 =======
     m_Target: 6.916758
     speed: 2
@@ -1015,9 +1098,12 @@ MonoBehaviour:
     x: 224
     y: 73
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     width: 665
     height: 507
 =======
+=======
+>>>>>>> Stashed changes
     width: 817
     height: 336
 >>>>>>> Stashed changes
@@ -1065,15 +1151,21 @@ MonoBehaviour:
       x: 0
       y: 21
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       width: 665
       height: 486
     m_Scale: {x: 0.34635416, y: 0.34635416}
     m_Translation: {x: 332.5, y: 243}
 =======
+=======
+>>>>>>> Stashed changes
       width: 817
       height: 315
     m_Scale: {x: 0.29166666, y: 0.29166666}
     m_Translation: {x: 408.50003, y: 157.5}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -1081,6 +1173,7 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
       x: -960
       y: -701.594
@@ -1090,6 +1183,8 @@ MonoBehaviour:
   m_defaultScale: 0.34635416
   m_LastWindowPixelSize: {x: 665, y: 507}
 =======
+=======
+>>>>>>> Stashed changes
       x: -1400.5715
       y: -540
       width: 2801.143
@@ -1097,6 +1192,9 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 0.29166666
   m_LastWindowPixelSize: {x: 817, y: 336}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1

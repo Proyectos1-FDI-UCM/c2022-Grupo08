@@ -72,12 +72,16 @@ public class Life_Component : MonoBehaviour
         }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         //Animación
         _myAnimator.SetInteger("Vida", _currentLife);
 
         
 
         
+=======
+        //_myAnimator.SetInteger("Vida", _currentLife);
+>>>>>>> Stashed changes
 =======
         //_myAnimator.SetInteger("Vida", _currentLife);
 >>>>>>> Stashed changes

@@ -52,6 +52,7 @@
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2020.3.13f1</UnityVersion>
   </PropertyGroup>
+<<<<<<< Updated upstream
   <ItemGroup>
     <Compile Include="Assets\Scripts\Damage.cs" />
     <Compile Include="Assets\Scripts\Player_MovementController.cs" />
@@ -737,6 +738,22 @@
  <HintPath>C:/Users/Beatriz/Git/2025/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
  </Reference>
 =======
+=======
+  <ItemGroup>
+    <Compile Include="Assets\Scripts\Damage.cs" />
+    <Compile Include="Assets\Scripts\Player_MovementController.cs" />
+    <Compile Include="Assets\Scripts\Player_Life_Component.cs" />
+    <Compile Include="Assets\Scripts\Input_Manager.cs" />
+    <Compile Include="Assets\Scripts\Bullet_Attack.cs" />
+    <Compile Include="Assets\Scripts\Player_Attack.cs" />
+    <Compile Include="Assets\Scripts\Enemy_Behaviour.cs" />
+    <Compile Include="Assets\Scripts\Life_Component.cs" />
+    <Compile Include="Assets\Scripts\CameraMovementController.cs" />
+    <Compile Include="Assets\Scripts\InteractDetection.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+>>>>>>> Stashed changes
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -1397,6 +1414,9 @@
     <Reference Include="Unity.2D.SpriteShape.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
     </Reference>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   </ItemGroup>
   <ItemGroup>
