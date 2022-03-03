@@ -4,23 +4,58 @@ using UnityEngine;
 
 public class Player_Life_Component : Life_Component
 {
-    /*private Transform _myTransform;
+   
+    
+    #region references
 
-    float posXplayer, posYplayer;
-    */
+    private Rigidbody2D _myRigidBody;
 
+    private Transform _myTransform;
+
+    [SerializeField]
+    private Transform _enemy;
+    #endregion
+
+    #region properties
+
+    private float empuje = 5f;
+    #endregion
+    
     #region methods
     public override void Damage(int DamagePoints)
     {
         base.Damage(DamagePoints);
     }
+    
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Enemy_Behaviour enemigo = collision.gameObject.GetComponent<Enemy_Behaviour>();
+
+        if (enemigo)
+        {
+            var heading = _enemy.position - _myTransform.position;/*
+        var distance = heading.magnitude;
+        var direction = heading / distance;
+        */
+            //Necesitamos la direccion del jugador o del zombie
+            _myRigidBody.AddForce(heading * -empuje, ForceMode2D.Impulse);
+        }
+        
+
+    }
+    
     #endregion
     // Start is called before the first frame upda
+
 
     // Update is called once per frame
     override public void Start()
     {
         base.Start();
+        
+        _myRigidBody = GetComponent<Rigidbody2D>();
+        _myTransform = GetComponent<Transform>();
+        
     }
     override public void Update()
     {
@@ -38,8 +73,11 @@ public class Player_Life_Component : Life_Component
         }
 
         _myAnimator.SetInteger("VidaPlayer", _currentLife);
+
     }
 
+
+   
     /*private void guardarPosPlayer()
     {
         posXplayer = _myTransform.position.x;

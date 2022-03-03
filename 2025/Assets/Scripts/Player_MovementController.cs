@@ -15,10 +15,16 @@ public class Player_MovementController : MonoBehaviour
     private Transform _myTransform;
     [SerializeField]
     private Animator _myAnimator;
+
+
+
+    
     #endregion
 
     #region properties
     private Vector3 _movementDirection;
+
+
     #endregion
 
     #region methods
@@ -32,6 +38,7 @@ public class Player_MovementController : MonoBehaviour
     void Start()
     {
         _myTransform = transform;
+        
     }
 
     // Update is called once per frame

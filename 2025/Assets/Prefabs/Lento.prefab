@@ -105,6 +105,7 @@ MonoBehaviour:
   - {fileID: 0}
   velocity: 2
   _player: {fileID: 0}
+  _enemy: {fileID: 0}
   _myAnimator: {fileID: 1611685993041086364}
 --- !u!114 &1611685993041086366
 MonoBehaviour:
@@ -119,8 +120,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxLife: 20
-  _currentLife: 0
+  _currentLife: 20
   _damage: 10
+  _cont: 1.7
   _myAnimator: {fileID: 1611685993041086364}
 --- !u!61 &1611685993041086367
 BoxCollider2D:
