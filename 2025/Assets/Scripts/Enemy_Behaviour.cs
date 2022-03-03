@@ -13,12 +13,17 @@ public class Enemy_Behaviour : MonoBehaviour
 
     [SerializeField]
     private Transform _player;
-    
+
+    [SerializeField]
+    private Transform _enemy;
+
     private float changeDistance = 0.1f; // distancia minima a la que el jugador cambiará su objetivo al siguiente punto
  
     private int nextPosition = 0; // posicion
 
     private int currentPosition = 0;
+
+    private bool deteccion = false; //Bool para la animación
     #endregion
 
     #region references
@@ -31,6 +36,7 @@ public class Enemy_Behaviour : MonoBehaviour
     private void DeteccionPlayer()
     {
         _myTransform.position = Vector2.MoveTowards(_myTransform.position, _player.transform.position, velocity * Time.deltaTime);
+        
     }
     #endregion
     // Start is called before the first frame update
@@ -44,7 +50,8 @@ public class Enemy_Behaviour : MonoBehaviour
     {      
         if (Vector2.Distance(_myTransform.position, _player.transform.position) <= 5) // si la distancia entre player y enemy es menor que 5, sigue al player
         { 
-            DeteccionPlayer(); 
+            DeteccionPlayer();
+            deteccion = true;
         } 
         else
         {
@@ -59,9 +66,12 @@ public class Enemy_Behaviour : MonoBehaviour
                     nextPosition = 0;
                 }
             }
+            deteccion = false;
         }
         //Animación
+        _myAnimator.SetFloat("posJ", _player.position.x - _enemy.position.x);
         _myAnimator.SetInteger("Posicion", currentPosition);
         _myAnimator.SetInteger("Siguiente", nextPosition);
+        _myAnimator.SetBool("Jugador", deteccion);
     }
 }

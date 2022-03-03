@@ -8,13 +8,13 @@ public class Player_Life_Component : Life_Component
 
     float posXplayer, posYplayer;
     */
+
     #region methods
     public override void Damage(int DamagePoints)
     {
         base.Damage(DamagePoints);
     }
     #endregion
-
     // Start is called before the first frame upda
 
     // Update is called once per frame
@@ -26,9 +26,18 @@ public class Player_Life_Component : Life_Component
     {
         if (_currentLife <= 0)
         {
-            Die(); //GameManager.Instance.OnPlayerDies();
+            _cont -= Time.deltaTime;
+
+            if(_cont <= 0)
+            {
+                Die(); //GameManager.Instance.OnPlayerDies();
+                _cont = 1.7f;
+            }
+            
             Debug.Log("GGG");
         }
+
+        _myAnimator.SetInteger("VidaPlayer", _currentLife);
     }
 
     /*private void guardarPosPlayer()

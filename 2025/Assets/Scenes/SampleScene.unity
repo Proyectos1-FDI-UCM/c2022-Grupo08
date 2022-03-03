@@ -257,7 +257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49c3624ad22d8b44d9a50cfdb7a669a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _movementSpeed: 3
+  _movementSpeed: 10
   _myAnimator: {fileID: 162251057}
 --- !u!61 &162251055
 BoxCollider2D:
@@ -298,9 +298,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxLife: 100
-  _currentLife: 0
+  _currentLife: 100
   _damage: 10
-  _myAnimator: {fileID: 0}
+  _cont: 1.7
+  _myAnimator: {fileID: 162251057}
 --- !u!95 &162251057
 Animator:
   serializedVersion: 3
@@ -477,7 +478,7 @@ GameObject:
   m_Component:
   - component: {fileID: 862364294}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Punto 1
   m_TagString: Untagged
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -557,8 +558,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxLife: 20
-  _currentLife: 0
+  _currentLife: 20
   _damage: 10
+  _cont: 1.7
   _myAnimator: {fileID: 884636985}
 --- !u!114 &884636982
 MonoBehaviour:
@@ -578,6 +580,7 @@ MonoBehaviour:
   - {fileID: 1950170564}
   velocity: 2
   _player: {fileID: 162251053}
+  _enemy: {fileID: 884636984}
   _myAnimator: {fileID: 884636985}
 --- !u!212 &884636983
 SpriteRenderer:
@@ -638,7 +641,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 884636979}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.25, y: 1.17, z: 18.497744}
+  m_LocalPosition: {x: -4.52, y: 6.5, z: 18.497744}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 251813816}
@@ -673,7 +676,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1269393128}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: Punto 2
   m_TagString: Untagged
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -703,7 +706,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1950170564}
   m_Layer: 0
-  m_Name: GameObject (2)
+  m_Name: Punto 3
   m_TagString: Untagged
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -783,8 +786,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxLife: 20
-  _currentLife: 0
+  _currentLife: 20
   _damage: 10
+  _cont: 1.7
   _myAnimator: {fileID: 2076484551}
 --- !u!114 &2076484548
 MonoBehaviour:
@@ -804,6 +808,7 @@ MonoBehaviour:
   - {fileID: 1950170564}
   velocity: 2
   _player: {fileID: 162251053}
+  _enemy: {fileID: 2076484550}
   _myAnimator: {fileID: 2076484551}
 --- !u!212 &2076484549
 SpriteRenderer:
@@ -864,7 +869,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2076484545}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.66, y: 4.8, z: 18.497744}
+  m_LocalPosition: {x: -3.66, y: 9.26, z: 18.497744}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 251813816}
@@ -928,6 +933,7 @@ MonoBehaviour:
   - {fileID: 1950170564}
   velocity: 2
   _player: {fileID: 162251053}
+  _enemy: {fileID: 2099547559}
   _myAnimator: {fileID: 2099547562}
 --- !u!212 &2099547558
 SpriteRenderer:
@@ -988,7 +994,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2099547556}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.22, y: 2.46, z: 18.497744}
+  m_LocalPosition: {x: -4.71, y: 3.4, z: 18.497744}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 251813816}
@@ -1007,8 +1013,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxLife: 20
-  _currentLife: 0
+  _currentLife: 20
   _damage: 10
+  _cont: 1.7
   _myAnimator: {fileID: 2099547562}
 --- !u!61 &2099547561
 BoxCollider2D:
