@@ -71,11 +71,15 @@ public class Life_Component : MonoBehaviour
             } 
         }
 
+<<<<<<< Updated upstream
         //Animación
         _myAnimator.SetInteger("Vida", _currentLife);
 
         
 
         
+=======
+        //_myAnimator.SetInteger("Vida", _currentLife);
+>>>>>>> Stashed changes
     }
 }

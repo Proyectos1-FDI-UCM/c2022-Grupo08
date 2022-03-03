@@ -11,10 +11,12 @@ public class Player_Attack : MonoBehaviour
     private GameObject gbala;
     [SerializeField]
     private GameObject sgbala;
+    private bool holdingInteract = false; // Booleano que detecta si se ha presionado la E para interactuar mientras se está en la zona de interacción
     #endregion
 
     #region references
     private Transform _mytransform;
+    private Input_Manager _myInputManager;
     #endregion
 
     #region methods
@@ -33,11 +35,38 @@ public class Player_Attack : MonoBehaviour
             GameObject.Instantiate(sgbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.identity);
         }
     }
+    private void OnTriggerStay2D(Collider2D collision) // Si el player está en la zona de interacción se puede pulsar la E
+    {
+        InteractDetection hitInteractableObject = collision.GetComponent<InteractDetection>();
+        if (hitInteractableObject)
+        {
+            _myInputManager.InDetectionZone = true;
+        }
+        if (holdingInteract) // Interactua con el objeto que está en la zona de interacción
+        {
+            hitInteractableObject.Interact();
+            ToCallInteraction();
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision) // Si el player se ha salido de la zona de interacción no se puede pulsar la E
+    {
+        InteractDetection hitInteractableObject = collision.GetComponent<InteractDetection>();
+        if (hitInteractableObject)
+        {
+            _myInputManager.InDetectionZone = false;
+        }
+    }
+
+    public void ToCallInteraction() // Revierte el valor del booleano
+    {
+        holdingInteract = !holdingInteract;
+    }
     #endregion
     // Start is called before the first frame update
     void Start()
     {
         _mytransform = transform;
+        _myInputManager = GetComponent<Input_Manager>();
     }
 
     // Update is called once per frame

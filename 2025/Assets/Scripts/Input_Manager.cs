@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class Input_Manager : MonoBehaviour
 {
+    #region properties
+    [HideInInspector]
+    public bool InDetectionZone = false; // Booleano que detecta si se está dentro de la zona de interacción con algun objeto interactuable
+    #endregion
+
     #region references
-    private Player_MovementController _myplayermovementcontroller ;
-    private Player_Attack _myplayerattack;
+    private Player_MovementController _myPlayerMovementController;
+    private Player_Attack _myPlayerAttack;
     #endregion
     // Start is called before the first frame update
     void Start()
     {
-        _myplayermovementcontroller = GetComponent<Player_MovementController>();
-        _myplayerattack = GetComponent<Player_Attack>();
+        _myPlayerMovementController = GetComponent<Player_MovementController>();
+        _myPlayerAttack = GetComponent<Player_Attack>();
     }
 
     // Update is called once per frame
@@ -41,27 +46,30 @@ public class Input_Manager : MonoBehaviour
             movementDirection.x = 1.0f;
         }
 
-        _myplayermovementcontroller.SetDirection(movementDirection);
+        _myPlayerMovementController.SetDirection(movementDirection);
 
         // Interacción con objetos
-        if (Input.GetKey(KeyCode.E))
-        {
-
+        if (InDetectionZone)
+        { 
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                _myPlayerAttack.ToCallInteraction(); // Cambia booleano del script attack
+            }
         }
 
         // Selección de armas
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            _myplayerattack.ShootBala(1);
+            _myPlayerAttack.ShootBala(1);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            _myplayerattack.ShootBala(2);
+            _myPlayerAttack.ShootBala(2);
         }
 
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            _myplayerattack.ShootBala(3);
+            _myPlayerAttack.ShootBala(3);
         }
     }
 }
