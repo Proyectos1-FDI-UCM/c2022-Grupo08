@@ -6,7 +6,7 @@ public class Player_MovementController : MonoBehaviour
 {
     #region parameters
     [SerializeField]
-    private float _movementSpeed = 1.0f;
+    public float _movementSpeed = 1.0f;
     private float _horizontalMove = 0.0f;
     private float _verticalMove = 0.0f;
     #endregion

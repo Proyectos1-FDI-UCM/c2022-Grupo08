@@ -7,6 +7,7 @@ public class Input_Manager : MonoBehaviour
     #region properties
     [HideInInspector]
     public bool InDetectionZone = false; // Booleano que detecta si se está dentro de la zona de interacción con algun objeto interactuable
+    public bool _isDead = false;
     #endregion
 
     #region references
@@ -24,52 +25,58 @@ public class Input_Manager : MonoBehaviour
     void Update()
     {
         Vector3 movementDirection = Vector3.zero;
+
         // Detección de movimiento WASD
-        if (Input.GetKey(KeyCode.W))
+        if (!_isDead)
         {
-            // Arriba
-            movementDirection.y = 1.0f;
-        }
-        else if (Input.GetKey(KeyCode.S))
-        {
-            // Abajo
-            movementDirection.y = -1.0f;
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            // Izquierda
-            movementDirection.x = -1.0f;
-        }
-        else if (Input.GetKey(KeyCode.D))
-        {
-            // Derecha
-            movementDirection.x = 1.0f;
-        }
-
-        _myPlayerMovementController.SetDirection(movementDirection);
-
-        // Interacción con objetos
-        if (InDetectionZone)
-        { 
-            if (Input.GetKeyDown(KeyCode.E))
+            Debug.Log(_isDead);
+            if (Input.GetKey(KeyCode.W))
             {
-                _myPlayerAttack.ToCallInteraction(); // Cambia booleano del script attack
+                // Arriba
+                movementDirection.y = 1.0f;
+            }
+            else if (Input.GetKey(KeyCode.S))
+            {
+                // Abajo
+                movementDirection.y = -1.0f;
+            }
+            if (Input.GetKey(KeyCode.A))
+            {
+                // Izquierda
+                movementDirection.x = -1.0f;
+            }
+            else if (Input.GetKey(KeyCode.D))
+            {
+                // Derecha
+                movementDirection.x = 1.0f;
+            }
+
+            _myPlayerMovementController.SetDirection(movementDirection);
+
+            // Interacción con objetos
+            if (InDetectionZone)
+            {
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    _myPlayerAttack.ToCallInteraction(); // Cambia booleano del script attack
+                }
+            }
+
+            // Selección de armas
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                _myPlayerAttack.ShootBala(1);
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                _myPlayerAttack.ShootBala(2);
+            }
+
+            else if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                _myPlayerAttack.ShootBala(3);
             }
         }
-
-        // Selección de armas
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            _myPlayerAttack.ShootBala(1);
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            _myPlayerAttack.ShootBala(2);
-        }
-
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            _myPlayerAttack.ShootBala(3);
-        }
     }
+        
 }

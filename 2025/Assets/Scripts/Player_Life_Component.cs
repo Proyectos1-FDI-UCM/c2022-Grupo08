@@ -9,7 +9,8 @@ public class Player_Life_Component : Life_Component
     #region references
 
     private Rigidbody2D _myRigidBody;
-
+    private Input_Manager _myInputManager;
+    private Player_MovementController _myPlayerMovementController;
     private Transform _myTransform;
     
     #endregion
@@ -55,12 +56,15 @@ public class Player_Life_Component : Life_Component
 
         _myRigidBody = GetComponent<Rigidbody2D>();
         _myTransform = GetComponent<Transform>();
-
+        _myInputManager = GetComponent<Input_Manager>();
+        _myPlayerMovementController = GetComponent<Player_MovementController>();
     }
     override public void Update()
     {
         if (_currentLife <= 0)
         {
+            _myInputManager._isDead = true;
+            _myPlayerMovementController._movementSpeed = 0;
             _cont -= Time.deltaTime;
 
             if (_cont <= 0)
