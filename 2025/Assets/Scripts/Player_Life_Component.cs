@@ -4,19 +4,14 @@ using UnityEngine;
 
 public class Player_Life_Component : Life_Component
 {
-
-
     #region references
-
     private Rigidbody2D _myRigidBody;
     private Input_Manager _myInputManager;
     private Player_MovementController _myPlayerMovementController;
     private Transform _myTransform;
-    
     #endregion
     
     #region properties
-
     private float empuje = 5f;
     #endregion
 
@@ -25,13 +20,9 @@ public class Player_Life_Component : Life_Component
     {
         base.Damage(DamagePoints);
     }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Enemy_Behaviour enemigo = collision.gameObject.GetComponent<Enemy_Behaviour>();
-
-        
-
         if (enemigo)
         {
             var heading = enemigo.transform.position - _myTransform.position;     
@@ -42,14 +33,10 @@ public class Player_Life_Component : Life_Component
             //Necesitamos la direccion del jugador o del zombie
             _myRigidBody.AddForce(heading * -empuje, ForceMode2D.Impulse);
         }
-
-
     }
     #endregion
-    // Start is called before the first frame upda
 
-
-    // Update is called once per frame
+    // Start is called before the first frame update
     override public void Start()
     {
         base.Start();
@@ -59,27 +46,22 @@ public class Player_Life_Component : Life_Component
         _myInputManager = GetComponent<Input_Manager>();
         _myPlayerMovementController = GetComponent<Player_MovementController>();
     }
+
+    // Update is called once per frame
     override public void Update()
     {
         if (_currentLife <= 0)
         {
-            _myInputManager._isDead = true;
+            // Para no poder mooverse durante la animación de muerte
+            _myInputManager._isDead = true; 
             _myPlayerMovementController._movementSpeed = 0;
             _cont -= Time.deltaTime;
-
             if (_cont <= 0)
             {
                 Die(); //GameManager.Instance.OnPlayerDies();
                 _cont = 1.7f;
             }
-
-            Debug.Log("GGG");
         }
-
         _myAnimator.SetInteger("VidaPlayer", _currentLife);
-
     }
-
-
-
 }

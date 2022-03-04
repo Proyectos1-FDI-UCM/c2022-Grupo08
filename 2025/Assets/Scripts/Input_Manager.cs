@@ -29,7 +29,6 @@ public class Input_Manager : MonoBehaviour
         // Detección de movimiento WASD
         if (!_isDead)
         {
-            Debug.Log(_isDead);
             if (Input.GetKey(KeyCode.W))
             {
                 // Arriba

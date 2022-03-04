@@ -15,17 +15,6 @@ public class Life_Component : MonoBehaviour
     protected float _cont = 1.7f;
     #endregion
     #region methods
-
-    /*
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Player_Life_Component hitPlayer = collision.GetComponent<Player_Life_Component>();
-        if (hitPlayer)
-        {
-            hitPlayer.Damage(_damage);
-        }
-    }
-    */
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Player_Life_Component hitPlayer = collision.gameObject.GetComponent<Player_Life_Component>();
