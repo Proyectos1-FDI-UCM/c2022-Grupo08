@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dca2cdb75fa27f74783e3319ba389eda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InDetectionZone: 0
 --- !u!114 &707199513790786222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,7 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49c3624ad22d8b44d9a50cfdb7a669a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _movementSpeed: 3
+  _movementSpeed: 10
   _myAnimator: {fileID: 707199513790786225}
 --- !u!114 &707199513790786224
 MonoBehaviour:
@@ -129,7 +130,9 @@ MonoBehaviour:
   _maxLife: 100
   _currentLife: 0
   _damage: 10
+  _cont: 1.7
   _myAnimator: {fileID: 0}
+  _enemy: {fileID: 0}
 --- !u!61 &707199513790786223
 BoxCollider2D:
   m_ObjectHideFlags: 0
