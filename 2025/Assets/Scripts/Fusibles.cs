@@ -5,12 +5,7 @@ using UnityEngine;
 public class Fusibles : MonoBehaviour
 {
 
-    #region properties
-    [SerializeField]
-    private int _maxFusibles = 3;
-
-    private int _currentFusibles = 0;
-    #endregion
+    
     #region references
 
     private Input_Manager _myInputManager;
@@ -25,7 +20,7 @@ public class Fusibles : MonoBehaviour
 
         if(_myPlayerLifeComponent && _myInputManager.InDetectionZone == true)
         {
-            _currentFusibles++;
+            _myGameManager.CheckFusibles();
         }
 
     }
@@ -40,9 +35,6 @@ public class Fusibles : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(_currentFusibles >= _maxFusibles)
-        {
-            _myGameManager.
-        }
+        
     }
 }

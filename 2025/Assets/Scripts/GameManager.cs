@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
         Destroy(_myInteractDetection.gameObject); // Destruye al objeto interactuado de escena
     }
 
-    public void CheckFusibles()
+    public void CheckFusibles() //Actualiza el numero de fusibles activos y los compara con el numero maximo`posible para activar el panel electrico en su momento
     {
         _currentFusibles++;
 
