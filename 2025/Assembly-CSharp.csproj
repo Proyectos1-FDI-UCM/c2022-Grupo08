@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\Enemy_Behaviour.cs" />
     <Compile Include="Assets\Scripts\Life_Component.cs" />
     <Compile Include="Assets\Scripts\CameraMovementController.cs" />
+    <Compile Include="Assets\Scripts\Barricada.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -23,15 +23,21 @@ public class Player_Life_Component : Life_Component
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Enemy_Behaviour enemigo = collision.gameObject.GetComponent<Enemy_Behaviour>();
+
+        Barricada barricada = collision.gameObject.GetComponent<Barricada>();
+
         if (enemigo)
         {
             var heading = enemigo.transform.position - _myTransform.position;     
-            /*
-            var distance = heading.magnitude;
-            var direction = heading / distance;
-            */
             //Necesitamos la direccion del jugador o del zombie
             _myRigidBody.AddForce(heading * -empuje, ForceMode2D.Impulse);
+        }
+
+        else if (barricada)
+        {
+            var heading = barricada.transform.position - _myTransform.position;
+            //Necesitamos la direccion del jugador o del zombie
+            _myRigidBody.AddForce(heading * -empuje/4, ForceMode2D.Impulse);
         }
     }
     #endregion
