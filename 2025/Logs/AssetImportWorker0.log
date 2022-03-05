@@ -982,3 +982,51 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1485.950375 seconds.
+  path: Assets/Scripts/Fusibles.cs
+  artifactKey: Guid(07d7c2728c3f2274f829f1c21b80c2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Fusibles.cs using Guid(07d7c2728c3f2274f829f1c21b80c2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9591703b7937e222440eac90f3b24e1') in 0.008712 seconds 
+  Import took 0.012649 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.084864 seconds.
+  path: Assets/Scripts/Fusibles.cs
+  artifactKey: Guid(07d7c2728c3f2274f829f1c21b80c2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Fusibles.cs using Guid(07d7c2728c3f2274f829f1c21b80c2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9591703b7937e222440eac90f3b24e1') in 0.004762 seconds 
+  Import took 0.008824 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 127.983912 seconds.
+  path: Assets/Scripts/GameManager.cs
+  artifactKey: Guid(eef9ee88cd059da409268b08b7552484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager.cs using Guid(eef9ee88cd059da409268b08b7552484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8fb7f8c57c92461c4582cb63418cd15') in 0.008876 seconds 
+  Import took 0.014383 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 174.241104 seconds.
+  path: Assets/Scripts/GameManager.cs
+  artifactKey: Guid(eef9ee88cd059da409268b08b7552484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager.cs using Guid(eef9ee88cd059da409268b08b7552484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12d337c19185dd0a7d953f172f18c514') in 0.004870 seconds 
+  Import took 0.008357 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000645 seconds.
+  path: Assets/Scripts/GameManager.cs
+  artifactKey: Guid(eef9ee88cd059da409268b08b7552484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager.cs using Guid(eef9ee88cd059da409268b08b7552484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12d337c19185dd0a7d953f172f18c514') in 0.004203 seconds 
+  Import took 0.007700 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 51.034411 seconds.
+  path: Assets/Scripts/GameManager.cs
+  artifactKey: Guid(eef9ee88cd059da409268b08b7552484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager.cs using Guid(eef9ee88cd059da409268b08b7552484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55c404814241804dfd218de8e9006b01') in 0.005452 seconds 
+  Import took 0.008721 seconds .
+

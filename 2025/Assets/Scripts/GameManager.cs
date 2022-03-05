@@ -4,6 +4,15 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    #region properties
+
+    bool _electricidadActiva = false;
+
+    [SerializeField]
+    private int _maxFusibles = 3;
+    private int _currentFusibles = 0;
+
+    #endregion
     #region references
     static private GameManager _instance; // Unique GameManager instance (Singleton Pattern).
     static public GameManager Instance // Public accesor for GameManager instance.
@@ -26,6 +35,16 @@ public class GameManager : MonoBehaviour
     {
         _listInteractableObjects.Remove(_myInteractDetection); // Elimino al objecto con el que interactuado de la lista
         Destroy(_myInteractDetection.gameObject); // Destruye al objeto interactuado de escena
+    }
+
+    public void CheckFusibles()
+    {
+        _currentFusibles++;
+
+        if(_currentFusibles >= _maxFusibles)
+        {
+            _electricidadActiva = true;
+        }
     }
     #endregion
     // Start is called before the first frame update
