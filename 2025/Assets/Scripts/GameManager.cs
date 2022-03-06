@@ -12,6 +12,9 @@ public class GameManager : MonoBehaviour
     private int _maxFusibles = 3;
     private int _currentFusibles = 0;
 
+    [SerializeField]
+    private GameObject _nota;
+
     #endregion
     #region references
     static private GameManager _instance; // Unique GameManager instance (Singleton Pattern).
@@ -45,6 +48,16 @@ public class GameManager : MonoBehaviour
         {
             _electricidadActiva = true;
         }
+    }
+
+    public void ToShowNote() // muestra la nota
+    {
+        _nota.SetActive(true);
+    }
+
+    public void ToHideNote() // esconde la nota 
+    {
+        _nota.SetActive(false);
     }
     #endregion
     // Start is called before the first frame update

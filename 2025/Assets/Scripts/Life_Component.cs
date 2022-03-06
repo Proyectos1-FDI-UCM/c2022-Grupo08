@@ -62,9 +62,5 @@ public class Life_Component : MonoBehaviour
 
         //Animación
         _myAnimator.SetInteger("Vida", _currentLife);
-
-
-
-
     }
 }

@@ -22,7 +22,6 @@ public class Fusibles : MonoBehaviour
         {
             _myGameManager.CheckFusibles();
         }
-
     }
     #endregion
     // Start is called before the first frame update
