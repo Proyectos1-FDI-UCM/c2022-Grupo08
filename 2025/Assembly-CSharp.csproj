@@ -70,6 +70,12 @@
     <Compile Include="Assets\Scripts\Fusibles.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Diseño\Horror City - Hospital Tiles - RPG Maker VX Ace - Vexed.rar\Hospital Tiles - VX Ace\ReadMe.txt" />
+    <None Include="Assets\Diseño\Horror City - Hospital Tiles - RPG Maker MV - Vexed.rar\Hospital Tiles - MV\ReadMe.txt" />
+    <None Include="Assets\Diseño\Horror City - Hospital Tileset - Vexed.rar\Hospital Tiles\ReadMe.txt" />
+    <None Include="Assets\Diseño\Horror City - Hospital Tileset - Vexed.rar\Horror City - Frankenstein\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
