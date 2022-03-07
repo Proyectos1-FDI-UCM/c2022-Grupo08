@@ -64,8 +64,10 @@
     <Compile Include="Assets\Scripts\Enemy_Behaviour.cs" />
     <Compile Include="Assets\Scripts\Life_Component.cs" />
     <Compile Include="Assets\Scripts\CameraMovementController.cs" />
-    <Compile Include="Assets\Scripts\Fusibles.cs" />
     <Compile Include="Assets\Scripts\ActivaNota.cs" />
+    <Compile Include="Assets\Scripts\Fusibles.cs" />
+    <Compile Include="Assets\Scripts\Municion.cs" />
+    <Compile Include="Assets\Scripts\Botiquin.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

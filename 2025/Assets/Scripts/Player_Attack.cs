@@ -38,14 +38,36 @@ public class Player_Attack : MonoBehaviour
     private void OnTriggerStay2D(Collider2D collision) // Si el player está en la zona de interacción se puede pulsar la E
     {
         InteractDetection hitInteractableObject = collision.GetComponent<InteractDetection>();
+        Fusibles hitFusible = collision.GetComponent<Fusibles>();
+        ActivaNota hitNota = collision.GetComponent<ActivaNota>();
+        Botiquin hitBotiquin = collision.GetComponent<Botiquin>();
+        Municion hitMunicion = collision.GetComponent<Municion>();
         if (hitInteractableObject)
         {
             _myInputManager.InDetectionZone = true;
         }
         if (holdingInteract) // Interactua con el objeto que está en la zona de interacción
         {
-            hitInteractableObject.Interact();
-            ToCallInteraction();
+            if (hitMunicion)
+            {
+                hitInteractableObject.Interact(1);
+                ToCallInteraction();
+            }
+            else if (hitFusible)
+            {
+                hitInteractableObject.Interact(2);
+                ToCallInteraction();
+            }
+            else if (hitBotiquin)
+            {
+                hitInteractableObject.Interact(3);
+                ToCallInteraction();
+            }
+            else if (hitNota)
+            {
+                hitInteractableObject.Interact(4);
+                ToCallInteraction();
+            }
         }
     }
     private void OnTriggerExit2D(Collider2D collision) // Si el player se ha salido de la zona de interacción no se puede pulsar la E
