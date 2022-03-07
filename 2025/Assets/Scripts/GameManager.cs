@@ -50,12 +50,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void ToShowNote() // muestra la nota
+    public void ActivateNote() // Activa la nota
     {
         _nota.SetActive(true);
     }
 
-    public void ToHideNote() // esconde la nota 
+    public void DeactivateNote() // Desactiva la nota 
     {
         _nota.SetActive(false);
     }

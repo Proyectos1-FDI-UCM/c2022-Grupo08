@@ -60,7 +60,7 @@ public class Input_Manager : MonoBehaviour
                     _myPlayerAttack.ToCallInteraction(); // Cambia booleano del script attack
                 }
             }
-
+            
             // Selección de armas
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {

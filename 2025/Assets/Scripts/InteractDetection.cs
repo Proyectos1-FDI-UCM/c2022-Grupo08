@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class InteractDetection : MonoBehaviour
 {
+
+    private bool _isNotaActivada = false;
     #region references
     private ActivaNota _myActivaNota;
     private Municion _myMunicion;
@@ -28,7 +30,7 @@ public class InteractDetection : MonoBehaviour
         }
         else if (indice == 4) // ActivaNota
         {
-            // LLamar al metodo del script ActivaNota para que haga lo que tenga que hacer con un _myActivaNota.
+            _myActivaNota.ToShowNote(); // LLama al metodo del script ActivaNota para que muestre la nota en pantalla                
         }
         GameManager.Instance.InteractableObjectDone(this); // Llamo al GameManager para eliminar de escena el objeto con el que ya he interactuado
     }

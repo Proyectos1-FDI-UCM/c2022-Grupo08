@@ -54,6 +54,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Player_MovementController.cs" />
+    <Compile Include="Assets\Scripts\Botiquin.cs" />
     <Compile Include="Assets\Scripts\Player_Life_Component.cs" />
     <Compile Include="Assets\Scripts\Input_Manager.cs" />
     <Compile Include="Assets\Scripts\Bullet_Attack.cs" />
@@ -65,9 +66,8 @@
     <Compile Include="Assets\Scripts\Life_Component.cs" />
     <Compile Include="Assets\Scripts\CameraMovementController.cs" />
     <Compile Include="Assets\Scripts\ActivaNota.cs" />
-    <Compile Include="Assets\Scripts\Fusibles.cs" />
     <Compile Include="Assets\Scripts\Municion.cs" />
-    <Compile Include="Assets\Scripts\Botiquin.cs" />
+    <Compile Include="Assets\Scripts\Fusibles.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
