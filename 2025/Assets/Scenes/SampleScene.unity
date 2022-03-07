@@ -157,8 +157,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 14.723, y: -14.1569}
-  m_SizeDelta: {x: 462.282, y: 380.5557}
+  m_AnchoredPosition: {x: 57.965, y: -6.7014}
+  m_SizeDelta: {x: 757.52, y: 455.1109}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &82633474
 MonoBehaviour:
@@ -182,7 +182,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 25
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
@@ -193,7 +193,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Espero que leas este mensaje...
+  m_Text: "14 de abril de 2024\n\nEspero que leas este mensaje...\n\nEl mundo ha
+    cambiado mientras dorm\xEDas, ya que un virus ha empezado a propagarse entre
+    las personas. Me dijeron que huyera y dejara a mi paciente aqu\xED. Eso har\xE9
+    ya que no me queda otra...Pero, no sin antes haber asegurado que mi paciente
+    tenga una oportunidad de vivir. \n\nLa puerta est\xE1 sellada, te dejar\xE9 una
+    palanca para que puedas abrirla, pero ten cuidado, ni yo s\xE9 lo que te encontrar\xE1s
+    una vez despiertes. Estar\xE9 rezando por ti all\xE1 donde me encuentre.\n\nFdo.
+    Tu enfermera."
 --- !u!222 &82633475
 CanvasRenderer:
   m_ObjectHideFlags: 0
