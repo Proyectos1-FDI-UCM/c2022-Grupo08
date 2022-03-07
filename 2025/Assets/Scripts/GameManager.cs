@@ -14,7 +14,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     private GameObject _nota;
-
+    [SerializeField]
+    private GameObject _botiquin;
     #endregion
     #region references
     static private GameManager _instance; // Unique GameManager instance (Singleton Pattern).
@@ -49,15 +50,17 @@ public class GameManager : MonoBehaviour
             _electricidadActiva = true;
         }
     }
-
     public void ActivateNote() // Activa la nota
     {
         _nota.SetActive(true);
     }
-
     public void DeactivateNote() // Desactiva la nota 
     {
         _nota.SetActive(false);
+    }
+    public void EliminaBotiquin()
+    {
+        _botiquin.SetActive(false);
     }
     #endregion
     // Start is called before the first frame update

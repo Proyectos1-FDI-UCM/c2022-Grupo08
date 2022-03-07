@@ -7,8 +7,7 @@ public class Life_Component : MonoBehaviour
     #region parameters
     [SerializeField]
     private int _maxLife = 100;
-    [SerializeField]
-    protected int _currentLife;
+    public int _currentLife;
     [SerializeField]
     private int _damage = 10;
     [SerializeField]

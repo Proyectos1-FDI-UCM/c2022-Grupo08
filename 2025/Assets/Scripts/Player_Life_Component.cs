@@ -40,6 +40,10 @@ public class Player_Life_Component : Life_Component
             _myRigidBody.AddForce(heading * -empuje/4, ForceMode2D.Impulse);
         }
     }
+    public void Cura(int curacion)
+    {
+        _currentLife += curacion;
+    }
     #endregion
 
     // Start is called before the first frame update

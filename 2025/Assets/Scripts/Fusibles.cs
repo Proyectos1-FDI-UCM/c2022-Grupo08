@@ -4,12 +4,8 @@ using UnityEngine;
 
 public class Fusibles : MonoBehaviour
 {
-
-    
     #region references
-
     private Input_Manager _myInputManager;
-
     private GameManager _myGameManager;
     #endregion
     #region methods
