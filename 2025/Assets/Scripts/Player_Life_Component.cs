@@ -43,6 +43,7 @@ public class Player_Life_Component : Life_Component
     public void Cura(int curacion)
     {
         _currentLife += curacion;
+        _currentLife = Mathf.Clamp(_currentLife, 0, 100);
     }
     #endregion
 

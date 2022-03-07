@@ -452,7 +452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxLife: 100
-  _currentLife: 10
+  _currentLife: 100
   _damage: 10
   _cont: 1.7
   _myAnimator: {fileID: 162251057}
@@ -1736,7 +1736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c4bd3a46bcf6f54ca6b538289ac5516, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _myPlayerLifeComponent: {fileID: 0}
+  _player: {fileID: 162251049}
   _curacion: 20
 --- !u!1 &1950170563
 GameObject:

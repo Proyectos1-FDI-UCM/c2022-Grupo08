@@ -101,6 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InDetectionZone: 0
+  _isDead: 0
 --- !u!114 &707199513790786222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,11 +129,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxLife: 100
-  _currentLife: 0
+  _currentLife: 100
   _damage: 10
   _cont: 1.7
   _myAnimator: {fileID: 0}
-  _enemy: {fileID: 0}
 --- !u!61 &707199513790786223
 BoxCollider2D:
   m_ObjectHideFlags: 0

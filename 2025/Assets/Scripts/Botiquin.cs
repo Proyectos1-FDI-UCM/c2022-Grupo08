@@ -5,8 +5,9 @@ using UnityEngine;
 public class Botiquin : MonoBehaviour
 {
     #region references
-    [SerializeField]
     private Player_Life_Component _myPlayerLifeComponent;
+    [SerializeField]
+    private GameObject _player;
     #endregion
     #region parameters
     [SerializeField]
@@ -21,13 +22,13 @@ public class Botiquin : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _myPlayerLifeComponent = GetComponent<Player_Life_Component>();
+        _myPlayerLifeComponent = _player.GetComponent<Player_Life_Component>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (_myPlayerLifeComponent._currentLife > 0) 
+        if (_myPlayerLifeComponent._currentLife > 0 && _myPlayerLifeComponent._currentLife < 100) 
         {
             if (Input.GetKey(KeyCode.E)) // Si se presiona la E, el jugador se cura y se elimina el botiquin
             {
