@@ -42,6 +42,7 @@ public class Player_Attack : MonoBehaviour
         ActivaNota hitNota = collision.GetComponent<ActivaNota>();
         Botiquin hitBotiquin = collision.GetComponent<Botiquin>();
         Municion hitMunicion = collision.GetComponent<Municion>();
+        Cadaver hitCadaver = collision.GetComponent<Cadaver>();
         if (hitInteractableObject)
         {
             _myInputManager.InDetectionZone = true;
@@ -66,6 +67,11 @@ public class Player_Attack : MonoBehaviour
             else if (hitNota)
             {
                 hitInteractableObject.Interact(4);
+                ToCallInteraction();
+            }
+            else if (hitCadaver)
+            {
+                hitInteractableObject.Interact(5);
                 ToCallInteraction();
             }
         }

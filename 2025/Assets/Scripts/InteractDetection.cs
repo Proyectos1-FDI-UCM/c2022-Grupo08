@@ -11,6 +11,7 @@ public class InteractDetection : MonoBehaviour
     private Municion _myMunicion;
     private Botiquin _myBotiquin;
     private Fusibles _myFusibles;
+    private Cadaver _myCadaver;
     #endregion
 
     #region methods
@@ -26,11 +27,15 @@ public class InteractDetection : MonoBehaviour
         }
         else if (indice == 3) // Botiquin
         {
-            // LLamar al metodo del script Botiquin para que haga lo que tenga que hacer con un _myBotiquin.
+            _myBotiquin.AplicaCura(); // LLamar al metodo del script Botiquin para que haga lo que tenga que hacer con un _myBotiquin.
         }
         else if (indice == 4) // ActivaNota
         {
             _myActivaNota.ToShowNote(); // LLama al metodo del script ActivaNota para que muestre la nota en pantalla                
+        }
+        else if (indice == 5) // Cadaver
+        {
+            _myCadaver.PistolaActivada(); // LLama al metodo del script Cadaver               
         }
         GameManager.Instance.InteractableObjectDone(this); // Llamo al GameManager para eliminar de escena el objeto con el que ya he interactuado
     }
@@ -43,6 +48,7 @@ public class InteractDetection : MonoBehaviour
         _myBotiquin = GetComponent<Botiquin>();
         _myFusibles = GetComponent<Fusibles>();
         _myMunicion = GetComponent<Municion>();
+        _myCadaver = GetComponent<Cadaver>();
     }
 
     // Update is called once per frame

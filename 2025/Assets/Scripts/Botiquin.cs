@@ -14,9 +14,12 @@ public class Botiquin : MonoBehaviour
     private int _curacion = 20;
     #endregion 
     #region methods
-    private void Elimina() //Elimina el botiquin
+    public void AplicaCura() //Elimina el botiquin
     {
-        GameManager.Instance.EliminaBotiquin();
+        if (_myPlayerLifeComponent._currentLife > 0 && _myPlayerLifeComponent._currentLife < 100)
+        {
+            _myPlayerLifeComponent.Cura(_curacion);
+        }
     }
     #endregion
     // Start is called before the first frame update
@@ -28,13 +31,6 @@ public class Botiquin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_myPlayerLifeComponent._currentLife > 0 && _myPlayerLifeComponent._currentLife < 100) 
-        {
-            if (Input.GetKey(KeyCode.E)) // Si se presiona la E, el jugador se cura y se elimina el botiquin
-            {
-                _myPlayerLifeComponent.Cura(_curacion);
-                Elimina();
-            }
-        }
+
     }
 }

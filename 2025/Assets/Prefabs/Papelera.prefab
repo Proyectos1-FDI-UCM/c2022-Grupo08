@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 1127852882953052223}
   - component: {fileID: 1149013155268108770}
   - component: {fileID: 4187967955199867150}
+  - component: {fileID: -4354107410658976736}
+  - component: {fileID: 218964376734232240}
   m_Layer: 0
   m_Name: Papelera
   m_TagString: Untagged
@@ -109,3 +111,28 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 9, y: 9.8}
   m_EdgeRadius: 0
+--- !u!114 &-4354107410658976736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8816740880798395183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 034e3f3c906ea234e81ad2ef90ecd53e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &218964376734232240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8816740880798395183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9656248699ad0b243a969a696b2eb5c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _player: {fileID: 0}

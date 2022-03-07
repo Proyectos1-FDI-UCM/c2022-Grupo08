@@ -8,6 +8,7 @@ public class Input_Manager : MonoBehaviour
     [HideInInspector]
     public bool InDetectionZone = false; // Booleano que detecta si se está dentro de la zona de interacción con algun objeto interactuable
     public bool _isDead = false;
+    public bool _pistolActivated = false;
     #endregion
 
     #region references
@@ -60,18 +61,20 @@ public class Input_Manager : MonoBehaviour
                     _myPlayerAttack.ToCallInteraction(); // Cambia booleano del script attack
                 }
             }
-            
+
             // Selección de armas
-            if (Input.GetKeyDown(KeyCode.Alpha1))
+            if (_pistolActivated)
             {
-                _myPlayerAttack.ShootBala(1);
+                if (Input.GetKeyDown(KeyCode.Alpha1))
+                {
+                    _myPlayerAttack.ShootBala(1);
+                }
             }
-            else if (Input.GetKeyDown(KeyCode.Alpha2))
+            if (Input.GetKeyDown(KeyCode.Alpha2))
             {
                 _myPlayerAttack.ShootBala(2);
             }
-
-            else if (Input.GetKeyDown(KeyCode.Alpha3))
+            if (Input.GetKeyDown(KeyCode.Alpha3))
             {
                 _myPlayerAttack.ShootBala(3);
             }
