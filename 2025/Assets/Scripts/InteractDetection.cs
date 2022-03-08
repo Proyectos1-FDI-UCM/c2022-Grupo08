@@ -19,7 +19,7 @@ public class InteractDetection : MonoBehaviour
     {
         if (indice == 1) // Municion
         {
-            // LLamar al metodo del script Municion para que haga lo que tenga que hacer con un _myMunicion.
+            _myMunicion.DaAmmo();// LLamar al metodo del script Municion para que haga lo que tenga que hacer con un _myMunicion.
         }
         else if (indice == 2) // Fusibles
         {

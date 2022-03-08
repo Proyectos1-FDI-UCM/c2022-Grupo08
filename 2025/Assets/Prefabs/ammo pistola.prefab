@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5179608913787956820}
   - component: {fileID: -8091834173956307512}
+  - component: {fileID: -489253843833715381}
+  - component: {fileID: 7414224518562933189}
   m_Layer: 0
   m_Name: ammo pistola
   m_TagString: Untagged
@@ -44,6 +46,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 034e3f3c906ea234e81ad2ef90ecd53e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-489253843833715381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2965661291234234376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72355cb01e676b94196498b1fd817595, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _player: {fileID: 707199513790786217, guid: f1f7bd51ad420f048ad30821d946adc0, type: 3}
+  tipobala: 0
+  cargador: 0
+--- !u!61 &7414224518562933189
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2965661291234234376}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.030048251, y: 0.040064394}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.300483, y: 1.2403864}
+  m_EdgeRadius: 0
 --- !u!1 &3411681466599710019
 GameObject:
   m_ObjectHideFlags: 0

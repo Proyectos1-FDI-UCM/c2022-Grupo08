@@ -22,9 +22,10 @@ public class Player_Attack : MonoBehaviour
     private int totalbalasg;
     [SerializeField]
     private int totalbalassg;
-    private bool tengoammog=true;
-    private bool tengoammosg=true;
+    private bool tengoammog = true;
+    private bool tengoammosg = true;
     #endregion
+
     #region properties
     [SerializeField]
     private GameObject pbala;
@@ -43,7 +44,7 @@ public class Player_Attack : MonoBehaviour
     #region methods
     public void ShootBala(int tipobala, int dir)
     {
-        if(dir==1)
+        if (dir == 1)
         {
             rotationVector = new Vector3(0, 0, 90);
         }
@@ -60,14 +61,14 @@ public class Player_Attack : MonoBehaviour
             rotationVector = new Vector3(0, 0, 0);
         }
 
-        if (tipobala==1)
+        if (tipobala == 1)
         {
-            GameObject.Instantiate(pbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector));            
+            GameObject.Instantiate(pbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector));
         }
 
         else if (tipobala == 2)
         {
-            if (tengoammog||(faltabalag>0))
+            if (tengoammog || (faltabalag > 0))
             {
                 if (!recargando)
                 {
@@ -79,7 +80,7 @@ public class Player_Attack : MonoBehaviour
         }
         else if (tipobala == 3)
         {
-            if (tengoammosg||(faltabalasg>0))
+            if (tengoammosg || (faltabalasg > 0))
             {
                 if (!recargando)
                 {
@@ -147,14 +148,22 @@ public class Player_Attack : MonoBehaviour
         holdingInteract = !holdingInteract;
     }
 
-    public void sumabalag(int d)
+    public void SumaBala(int tipobala, int cargadores)
     {
-        totalbalasg += d * cargadorbalag;
+        if (tipobala == 0)
+        {
+            totalbalasg += cargadores * cargadorbalag;
+            tengoammog = true;
+            UI_Manager.Instance.balagUI(faltabalag, totalbalasg);
+        }
+        else if (tipobala == 1)
+        {
+            totalbalassg += cargadores * cargadorbalasg;
+            tengoammosg = true;
+            UI_Manager.Instance.balasgUI(faltabalasg, totalbalassg);
+        }
     }
-    public void sumabalasg(int d)
-    {
-        totalbalassg += d * cargadorbalasg;
-    }
+
     #endregion
 
     // Start is called before the first frame update
