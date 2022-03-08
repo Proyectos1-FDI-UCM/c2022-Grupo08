@@ -4,6 +4,21 @@ using UnityEngine;
 
 public class Player_Attack : MonoBehaviour
 {
+    #region parameters
+    private Vector3 rotationVector;
+    [SerializeField]
+    private int cargadorbalag;
+    [SerializeField]
+    private int cargadorbalasg;
+    private int faltabalag;
+    private int faltabalasg;
+    [SerializeField]
+    private float recargag;
+    [SerializeField]
+    private float recargasg;
+    private float tiempocarga;
+    private bool recargando;
+    #endregion
     #region properties
     [SerializeField]
     private GameObject pbala;
@@ -12,7 +27,6 @@ public class Player_Attack : MonoBehaviour
     [SerializeField]
     private GameObject sgbala;
     private bool holdingInteract = false; // Booleano que detecta si se ha presionado la E para interactuar mientras se está en la zona de interacción
-    private Vector3 rotationVector;
     #endregion
 
     #region references
@@ -42,15 +56,28 @@ public class Player_Attack : MonoBehaviour
 
         if (tipobala==1)
         {
-            GameObject.Instantiate(pbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector));
+            GameObject.Instantiate(pbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector));            
         }
+
         else if (tipobala == 2)
         {
-            GameObject.Instantiate(gbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector));
+            if (!recargando)
+            {
+                GameObject.Instantiate(gbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector));
+                faltabalag -= 1;
+                UI_Manager.Instance.balagUI(faltabalag, cargadorbalag);
+            }
         }
         else if (tipobala == 3)
         {
-            GameObject.Instantiate(sgbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector));
+            if (!recargando)
+            {
+                GameObject.Instantiate(sgbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector));
+                GameObject.Instantiate(sgbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector + new Vector3(0, 0, 15)));
+                GameObject.Instantiate(sgbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector + new Vector3(0, 0, -15)));
+                faltabalasg -= 1;
+                UI_Manager.Instance.balasgUI(faltabalasg, cargadorbalasg);
+            }
         }
     }
     private void OnTriggerStay2D(Collider2D collision) // Si el player está en la zona de interacción se puede pulsar la E
@@ -114,11 +141,37 @@ public class Player_Attack : MonoBehaviour
     {
         _mytransform = transform;
         _myInputManager = GetComponent<Input_Manager>();
+        faltabalag = cargadorbalag;
+        faltabalasg = cargadorbalasg;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (faltabalag == 0)
+        {
+            recargando = true;
+            tiempocarga += Time.deltaTime;
+            if (tiempocarga >= recargag)
+            {
+                faltabalag = cargadorbalag;
+                tiempocarga = 0;
+                recargando = false;
+                UI_Manager.Instance.balagUI(faltabalag, cargadorbalag);
+            }
+        }
+
+        if (faltabalasg == 0)
+        {
+            recargando = true;
+            tiempocarga += Time.deltaTime;
+            if (tiempocarga >= recargasg)
+            {
+                faltabalasg = cargadorbalasg;
+                tiempocarga = 0;
+                recargando = false;
+                UI_Manager.Instance.balasgUI(faltabalasg, cargadorbalasg);
+            }
+        }
     }
 }
