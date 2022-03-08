@@ -15,10 +15,7 @@ public class Municion : MonoBehaviour
     [SerializeField]
     private int cargador;
     #endregion 
-    //establece que la cantidad de ammo que da la dicta el unity
-    //en un solo script te vale todo
-    //el attack ya tiene el suma bala específicado pero no hace falta la separación
-    //que reciba 2 ints, el primero para el número de cargadores y el segundo la cantidad de balas en el cargador
+
     #region methods
     public void DaAmmo() 
     {

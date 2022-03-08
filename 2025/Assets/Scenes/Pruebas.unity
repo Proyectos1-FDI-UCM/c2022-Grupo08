@@ -649,6 +649,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 210160048}
     m_Modifications:
+    - target: {fileID: -489253843833715381, guid: 8cec3faca64d1eb4b8d21e92052614b5, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 162251049}
     - target: {fileID: 2965661291234234376, guid: 8cec3faca64d1eb4b8d21e92052614b5, type: 3}
       propertyPath: m_Name
       value: ammo pistola
@@ -934,7 +938,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 0}
-  _sumabala: 20
+  tipobala: 0
+  cargador: 0
 --- !u!1 &862364293
 GameObject:
   m_ObjectHideFlags: 0
@@ -1331,42 +1336,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1288213070 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2965661291234234376, guid: 8cec3faca64d1eb4b8d21e92052614b5, type: 3}
-  m_PrefabInstance: {fileID: 336035554}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1288213071 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5179608913787956820, guid: 8cec3faca64d1eb4b8d21e92052614b5, type: 3}
   m_PrefabInstance: {fileID: 336035554}
   m_PrefabAsset: {fileID: 0}
---- !u!61 &1288213073
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1288213070}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.010554433, y: 0.052771807}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.485502, y: 1.4855018}
-  m_EdgeRadius: 0
 --- !u!1 &1296044167
 GameObject:
   m_ObjectHideFlags: 0
@@ -1509,6 +1483,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 210160048}
     m_Modifications:
+    - target: {fileID: -5945928796544818527, guid: e66f5b32968687c4688625245da8f24c, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 162251049}
     - target: {fileID: 3695308472559972469, guid: e66f5b32968687c4688625245da8f24c, type: 3}
       propertyPath: m_Name
       value: ammo escopeta
@@ -1559,42 +1537,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e66f5b32968687c4688625245da8f24c, type: 3}
---- !u!1 &1522269912 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3695308472559972469, guid: e66f5b32968687c4688625245da8f24c, type: 3}
-  m_PrefabInstance: {fileID: 1382563372}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1522269913 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5059222512609983761, guid: e66f5b32968687c4688625245da8f24c, type: 3}
   m_PrefabInstance: {fileID: 1382563372}
   m_PrefabAsset: {fileID: 0}
---- !u!61 &1522269915
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1522269912}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.021108806, y: -0.021108747}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.5488278, y: 1.4221752}
-  m_EdgeRadius: 0
 --- !u!4 &1544431862 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1127852882953052223, guid: 0647191ce853d114bb71919295da7fe3, type: 3}
