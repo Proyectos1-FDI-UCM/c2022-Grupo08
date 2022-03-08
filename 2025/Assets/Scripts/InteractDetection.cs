@@ -23,7 +23,7 @@ public class InteractDetection : MonoBehaviour
         }
         else if (indice == 2) // Fusibles
         {
-            // LLamar al metodo del script Fusibles para que haga lo que tenga que hacer con un _myFusibles.
+            _myFusibles.SumaFusible(); // LLamar al metodo del script Fusibles para que haga lo que tenga que hacer con un _myFusibles.
         }
         else if (indice == 3) // Botiquin
         {

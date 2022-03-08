@@ -77,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 7b1b9b5e5eb065146938dcec40b19eb2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -220,6 +220,6 @@ MonoBehaviour:
   recargasg: 0
   totalbalasg: 0
   totalbalassg: 0
-  pbala: {fileID: 0}
-  gbala: {fileID: 0}
-  sgbala: {fileID: 0}
+  pbala: {fileID: 2169876480051521058, guid: 61fe43c2e31fc4c4eaa77792d46879e9, type: 3}
+  gbala: {fileID: 5504288310560798774, guid: f36c3dffc985dbb4296afe2978698f54, type: 3}
+  sgbala: {fileID: 725538675894934391, guid: 066667dfa65792c4cbac2a10915dd1a3, type: 3}

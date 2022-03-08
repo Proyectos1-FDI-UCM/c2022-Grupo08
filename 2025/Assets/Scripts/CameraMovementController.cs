@@ -29,6 +29,6 @@ public class CameraMovementController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _myTransform.position = Vector3.Lerp(_myTransform.position, new Vector3(Mathf.Clamp(_targetObjectTransform.position.x, -20, 37.93f), Mathf.Clamp(_targetObjectTransform.position.y, -10.48f, 8), _myTransform.position.z), Time.deltaTime * _factorDeDelay); // Interpolación linel
+        _myTransform.position = Vector3.Lerp(_myTransform.position, new Vector3(Mathf.Clamp(_targetObjectTransform.position.x, -20, 48f), Mathf.Clamp(_targetObjectTransform.position.y, -10.48f, 8), _myTransform.position.z), Time.deltaTime * _factorDeDelay); // Interpolación linel
     }
 }
