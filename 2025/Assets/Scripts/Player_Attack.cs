@@ -101,6 +101,7 @@ public class Player_Attack : MonoBehaviour
         Botiquin hitBotiquin = collision.GetComponent<Botiquin>();
         Municion hitMunicion = collision.GetComponent<Municion>();
         Cadaver hitCadaver = collision.GetComponent<Cadaver>();
+        Cadaver2 hitCadaver2 = collision.GetComponent<Cadaver2>();
         if (hitInteractableObject)
         {
             _myInputManager.InDetectionZone = true;
@@ -132,6 +133,12 @@ public class Player_Attack : MonoBehaviour
                 hitInteractableObject.Interact(5);
                 ToCallInteraction();
             }
+            else if (hitCadaver2)
+            {
+                hitInteractableObject.Interact(6);
+                ToCallInteraction();
+            }
+
         }
     }
     private void OnTriggerExit2D(Collider2D collision) // Si el player se ha salido de la zona de interacción no se puede pulsar la E

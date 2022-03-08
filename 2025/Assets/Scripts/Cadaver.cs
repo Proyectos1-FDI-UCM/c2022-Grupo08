@@ -8,10 +8,11 @@ public class Cadaver : MonoBehaviour
     [SerializeField]
     private GameObject _player;
     #region methods
-    public void PistolaActivada()
+    public void PalancaActivada()
     {
-        _myInputManager._pistolActivated = true;
+        _myInputManager._palancaActivated = true;
     }
+
     #endregion
     // Start is called before the first frame update
     void Start()
@@ -19,9 +20,4 @@ public class Cadaver : MonoBehaviour
         _myInputManager = _player.GetComponent<Input_Manager>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
