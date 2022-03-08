@@ -1,0 +1,3180 @@
+fileFormatVersion: 2
+guid: e98a89966d42d9743948fb11ca218c15
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8030871433865311849
+    second: TileA4_Laboratory 1_1
+  - first:
+      213: -17573886800468899
+    second: TileA4_Laboratory 1_2
+  - first:
+      213: 6757552665968946494
+    second: TileA4_Laboratory 1_3
+  - first:
+      213: 3987938745293057751
+    second: TileA4_Laboratory 1_9
+  - first:
+      213: -5119053042863571919
+    second: TileA4_Laboratory 1_10
+  - first:
+      213: -5609408851319158488
+    second: TileA4_Laboratory 1_16
+  - first:
+      213: -7602748261315059484
+    second: TileA4_Laboratory 1_18
+  - first:
+      213: -8692420226222485470
+    second: TileA4_Laboratory 1_19
+  - first:
+      213: -9135299028966775268
+    second: TileA4_Laboratory 1_20
+  - first:
+      213: 3489243071497642366
+    second: TileA4_Laboratory 1_4
+  - first:
+      213: -7671500680000301939
+    second: TileA4_Laboratory 1_5
+  - first:
+      213: -976535013255324211
+    second: TileA4_Laboratory 1_13
+  - first:
+      213: 2931615958076124421
+    second: TileA4_Laboratory 1_14
+  - first:
+      213: 1969650897375263203
+    second: TileA4_Laboratory 1_15
+  - first:
+      213: 1645076811329156836
+    second: TileA4_Laboratory 1_17
+  - first:
+      213: -5402623639449952705
+    second: TileA4_Laboratory 1_21
+  - first:
+      213: -2244844329285277124
+    second: TileA4_Laboratory 1_22
+  - first:
+      213: -4213249220140114889
+    second: TileA4_Laboratory 1_23
+  - first:
+      213: -2377165598477734922
+    second: TileA4_Laboratory 1_24
+  - first:
+      213: 7223124243172210648
+    second: TileA4_Laboratory 1_25
+  - first:
+      213: -240263069241419509
+    second: TileA4_Laboratory 1_26
+  - first:
+      213: 8603251942041422414
+    second: TileA4_Laboratory 1_27
+  - first:
+      213: 6204935261152176836
+    second: TileA4_Laboratory 1_28
+  - first:
+      213: 956596947242168023
+    second: TileA4_Laboratory 1_30
+  - first:
+      213: -2658542578835755018
+    second: TileA4_Laboratory 1_31
+  - first:
+      213: -2132563672049720696
+    second: TileA4_Laboratory 1_32
+  - first:
+      213: 9051331649001037460
+    second: TileA4_Laboratory 1_37
+  - first:
+      213: 5087765569406947220
+    second: TileA4_Laboratory 1_38
+  - first:
+      213: 251647461822341302
+    second: TileA4_Laboratory 1_39
+  - first:
+      213: -5559316485095451666
+    second: TileA4_Laboratory 1_41
+  - first:
+      213: -3662075732655557445
+    second: TileA4_Laboratory 1_42
+  - first:
+      213: 2606506241307041499
+    second: TileA4_Laboratory 1_43
+  - first:
+      213: -2436336049975061344
+    second: TileA4_Laboratory 1_54
+  - first:
+      213: 8153656166056192283
+    second: TileA4_Laboratory 1_55
+  - first:
+      213: -7683316741672577421
+    second: TileA4_Laboratory 1_56
+  - first:
+      213: 7071517914611058423
+    second: TileA4_Laboratory 1_57
+  - first:
+      213: -7744804860240474154
+    second: TileA4_Laboratory 1_58
+  - first:
+      213: -2551717282812640668
+    second: TileA4_Laboratory 1_59
+  - first:
+      213: 7744488646737704941
+    second: TileA4_Laboratory 1_60
+  - first:
+      213: 7043365191792809600
+    second: TileA4_Laboratory 1_61
+  - first:
+      213: 7231597144378417573
+    second: TileA4_Laboratory 1_62
+  - first:
+      213: 8866516001705388612
+    second: TileA4_Laboratory 1_63
+  - first:
+      213: 1597150439650292839
+    second: TileA4_Laboratory 1_64
+  - first:
+      213: -4547722322809462721
+    second: TileA4_Laboratory 1_65
+  - first:
+      213: -2640041101051692036
+    second: TileA4_Laboratory 1_66
+  - first:
+      213: 268573119173618626
+    second: TileA4_Laboratory 1_67
+  - first:
+      213: -8646198017305689460
+    second: TileA4_Laboratory 1_68
+  - first:
+      213: -2613594137919071935
+    second: TileA4_Laboratory 1_70
+  - first:
+      213: -226282260807256943
+    second: TileA4_Laboratory 1_71
+  - first:
+      213: -5221360750222690830
+    second: TileA4_Laboratory 1_72
+  - first:
+      213: 8437312031634529599
+    second: TileA4_Laboratory 1_73
+  - first:
+      213: -7600084539052300464
+    second: TileA4_Laboratory 1_74
+  - first:
+      213: 1442896182468268500
+    second: TileA4_Laboratory 1_75
+  - first:
+      213: 2410170401566313600
+    second: TileA4_Laboratory 1_76
+  - first:
+      213: -1615160073789653764
+    second: TileA4_Laboratory 1_77
+  - first:
+      213: -6352121970886330349
+    second: TileA4_Laboratory 1_78
+  - first:
+      213: 310817964428280870
+    second: TileA4_Laboratory 1_79
+  - first:
+      213: 4217796915354844437
+    second: TileA4_Laboratory 1_80
+  - first:
+      213: -1722345549939736964
+    second: TileA4_Laboratory 1_81
+  - first:
+      213: -3697965646951692981
+    second: TileA4_Laboratory 1_82
+  - first:
+      213: 7997917780309040501
+    second: TileA4_Laboratory 1_83
+  - first:
+      213: -22721996044343324
+    second: TileA4_Laboratory 1_84
+  - first:
+      213: -5392320987185679265
+    second: TileA4_Laboratory 1_86
+  - first:
+      213: -5929585264176062325
+    second: TileA4_Laboratory 1_87
+  - first:
+      213: 5834136799894274504
+    second: TileA4_Laboratory 1_88
+  - first:
+      213: 3461790309438396561
+    second: TileA4_Laboratory 1_89
+  - first:
+      213: 1577053213556400291
+    second: TileA4_Laboratory 1_90
+  - first:
+      213: 1902123050850767670
+    second: TileA4_Laboratory 1_91
+  - first:
+      213: -5512073612527893538
+    second: TileA4_Laboratory 1_92
+  - first:
+      213: 2920336554966799160
+    second: TileA4_Laboratory 1_93
+  - first:
+      213: 4420737162461442865
+    second: TileA4_Laboratory 1_94
+  - first:
+      213: 2835084275161487852
+    second: TileA4_Laboratory 1_95
+  - first:
+      213: 5689407602849755459
+    second: TileA4_Laboratory 1_96
+  - first:
+      213: 1568539464936692340
+    second: TileA4_Laboratory 1_97
+  - first:
+      213: 5982822396269695032
+    second: TileA4_Laboratory 1_98
+  - first:
+      213: -6755745175402716649
+    second: TileA4_Laboratory 1_99
+  - first:
+      213: -3396488982293320850
+    second: TileA4_Laboratory 1_100
+  - first:
+      213: -2974381401367213018
+    second: TileA4_Laboratory 1_102
+  - first:
+      213: -4679653723654332109
+    second: TileA4_Laboratory 1_103
+  - first:
+      213: 5433159146939024186
+    second: TileA4_Laboratory 1_104
+  - first:
+      213: 8703684120691591780
+    second: TileA4_Laboratory 1_105
+  - first:
+      213: -8906526701021888427
+    second: TileA4_Laboratory 1_106
+  - first:
+      213: -4348065275026866294
+    second: TileA4_Laboratory 1_107
+  - first:
+      213: 8260853774959431313
+    second: TileA4_Laboratory 1_109
+  - first:
+      213: 6421604198297967148
+    second: TileA4_Laboratory 1_110
+  - first:
+      213: 5227385887698210549
+    second: TileA4_Laboratory 1_111
+  - first:
+      213: -6908272439787596092
+    second: TileA4_Laboratory 1_112
+  - first:
+      213: -1848030320668676353
+    second: TileA4_Laboratory 1_113
+  - first:
+      213: 1445314225331591986
+    second: TileA4_Laboratory 1_114
+  - first:
+      213: 2510891122479573938
+    second: TileA4_Laboratory 1_115
+  - first:
+      213: -7971099023501073361
+    second: TileA4_Laboratory 1_116
+  - first:
+      213: 2723391274310277982
+    second: TileA4_Laboratory 1_117
+  - first:
+      213: -808342082549213838
+    second: TileA4_Laboratory 1_119
+  - first:
+      213: 2416371613162027123
+    second: TileA4_Laboratory 1_120
+  - first:
+      213: 5320621451889371146
+    second: TileA4_Laboratory 1_121
+  - first:
+      213: 6936463931291150141
+    second: TileA4_Laboratory 1_122
+  - first:
+      213: 7058306050313935155
+    second: TileA4_Laboratory 1_123
+  - first:
+      213: -7271506307299815393
+    second: TileA4_Laboratory 1_124
+  - first:
+      213: 5276095667257052775
+    second: TileA4_Laboratory 1_125
+  - first:
+      213: 9108756379257401285
+    second: TileA4_Laboratory 1_126
+  - first:
+      213: -8066424439225133205
+    second: TileA4_Laboratory 1_127
+  - first:
+      213: -8772150234317348905
+    second: TileA4_Laboratory 1_129
+  - first:
+      213: 8976128981673004016
+    second: TileA4_Laboratory 1_130
+  - first:
+      213: -5218350882718664260
+    second: TileA4_Laboratory 1_131
+  - first:
+      213: 9090351900188827904
+    second: TileA4_Laboratory 1_132
+  - first:
+      213: -4229576377520878194
+    second: TileA4_Laboratory 1_133
+  - first:
+      213: -6289036216138785369
+    second: TileA4_Laboratory 1_134
+  - first:
+      213: 7111800863526531241
+    second: TileA4_Laboratory 1_135
+  - first:
+      213: 3356973753300636381
+    second: TileA4_Laboratory 1_136
+  - first:
+      213: 4188817202362097051
+    second: TileA4_Laboratory 1_137
+  - first:
+      213: 131033763467479175
+    second: TileA4_Laboratory 1_139
+  - first:
+      213: 1853219684669921032
+    second: TileA4_Laboratory 1_140
+  - first:
+      213: -6130722218275386794
+    second: TileA4_Laboratory 1_141
+  - first:
+      213: -6829816596034836445
+    second: TileA4_Laboratory 1_142
+  - first:
+      213: 740310055229232392
+    second: TileA4_Laboratory 1_143
+  - first:
+      213: -4450649308272606046
+    second: TileA4_Laboratory 1_144
+  - first:
+      213: -5663439023702125653
+    second: TileA4_Laboratory 1_145
+  - first:
+      213: 6177800560230506175
+    second: TileA4_Laboratory 1_146
+  - first:
+      213: 8466466718878748827
+    second: TileA4_Laboratory 1_147
+  - first:
+      213: 8766382187614985242
+    second: TileA4_Laboratory 1_149
+  - first:
+      213: -436757047300908024
+    second: TileA4_Laboratory 1_150
+  - first:
+      213: -8308119323092941004
+    second: TileA4_Laboratory 1_151
+  - first:
+      213: 5562254247618793623
+    second: TileA4_Laboratory 1_152
+  - first:
+      213: -124246246150972112
+    second: TileA4_Laboratory 1_153
+  - first:
+      213: 813868426740358538
+    second: TileA4_Laboratory 1_154
+  - first:
+      213: 2356134002137771078
+    second: TileA4_Laboratory 1_155
+  - first:
+      213: -7251449557566273259
+    second: TileA4_Laboratory 1_156
+  - first:
+      213: -9201638618533503583
+    second: TileA4_Laboratory 1_157
+  - first:
+      213: -4855788512830751888
+    second: TileA4_Laboratory 1_159
+  - first:
+      213: -6251187389621039722
+    second: TileA4_Laboratory 1_160
+  - first:
+      213: 3843397967593064262
+    second: TileA4_Laboratory 1_161
+  - first:
+      213: -6721198441637471787
+    second: TileA4_Laboratory 1_0
+  - first:
+      213: -1681017958884496972
+    second: TileA4_Laboratory 1_6
+  - first:
+      213: 3503018189625455752
+    second: TileA4_Laboratory 1_7
+  - first:
+      213: 1246041062907961899
+    second: TileA4_Laboratory 1_8
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_3
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 666
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3da21eb856a7cd50800000000000000
+      internalID: 6757552665968946494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_16
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 660
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8298031ae506722b0800000000000000
+      internalID: -5609408851319158488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_18
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 660
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e0e897ccbc9d7690800000000000000
+      internalID: -7602748261315059484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c16e67d1fe5e83180800000000000000
+      internalID: -9135299028966775268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_4
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 666
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e712c9336184c6030800000000000000
+      internalID: 3489243071497642366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_5
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 666
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d841a62e6ca598590800000000000000
+      internalID: -7671500680000301939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_13
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 634
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcd5f205496a272f0800000000000000
+      internalID: -976535013255324211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_14
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 634
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d6ef67e213fa820800000000000000
+      internalID: 2931615958076124421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_15
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 634
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e9f4953e0b955b10800000000000000
+      internalID: 1969650897375263203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_17
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 660
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e6b187d4ac74d610800000000000000
+      internalID: 1645076811329156836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_21
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 640
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3e157b9c660605b0800000000000000
+      internalID: -5402623639449952705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 640
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3aa6e8e9f5b8d0e0800000000000000
+      internalID: -2244844329285277124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_23
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 602
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73c5b5338288785c0800000000000000
+      internalID: -4213249220140114889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_24
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 602
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fba472ab7c920fd0800000000000000
+      internalID: -2377165598477734922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_25
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 602
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d7bacaba31bd3460800000000000000
+      internalID: 7223124243172210648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_26
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 628
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b095831f20a6aacf0800000000000000
+      internalID: -240263069241419509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_27
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 628
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4a819e2f04e46770800000000000000
+      internalID: 8603251942041422414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_28
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 628
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ca654faebb5c1650800000000000000
+      internalID: 6204935261152176836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 608
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dea791fad3864d00800000000000000
+      internalID: 956596947242168023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_31
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 608
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ff6e303c95fa1bd0800000000000000
+      internalID: -2658542578835755018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_32
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 608
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 882e29a93ac9762e0800000000000000
+      internalID: -2132563672049720696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_37
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 596
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49e15f2cd2acc9d70800000000000000
+      internalID: 9051331649001037460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_38
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 596
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49fc6f844df5b9640800000000000000
+      internalID: 5087765569406947220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_39
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 596
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b0ac8288080e7300800000000000000
+      internalID: 251647461822341302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee399ef7c1759d2b0800000000000000
+      internalID: -5559316485095451666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_42
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 576
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb4bc7e0681bd2dc0800000000000000
+      internalID: -3662075732655557445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_43
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 576
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bded1f9dd9b2c2420800000000000000
+      internalID: 2606506241307041499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_54
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 564
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a412c35545603ed0800000000000000
+      internalID: -2436336049975061344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_55
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 564
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b19e376451b972170800000000000000
+      internalID: 8153656166056192283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_56
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 564
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3765bc3a1206f5590800000000000000
+      internalID: -7683316741672577421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_57
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 544
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f6043ba314132260800000000000000
+      internalID: 7071517914611058423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_58
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 544
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dfc5aa630de48490800000000000000
+      internalID: -7744804860240474154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_59
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 544
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4624abe96aa769cd0800000000000000
+      internalID: -2551717282812640668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_60
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 544
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de7b8d36463f97b60800000000000000
+      internalID: 7744488646737704941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_61
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 544
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0865928135f0fb160800000000000000
+      internalID: 7043365191792809600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_62
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 544
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a1a765c94bcb5460800000000000000
+      internalID: 7231597144378417573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_63
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 544
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44a67f4a3513c0b70800000000000000
+      internalID: 8866516001705388612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_64
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 544
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 764f630ecd73a2610800000000000000
+      internalID: 1597150439650292839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_65
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 544
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f30e3db64ae33e0c0800000000000000
+      internalID: -4547722322809462721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_66
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 544
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfbf16b2b90bc5bd0800000000000000
+      internalID: -2640041101051692036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_67
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 544
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cbef8434d92ab300800000000000000
+      internalID: 268573119173618626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_68
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 544
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c82cec876b8820880800000000000000
+      internalID: -8646198017305689460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_70
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 532
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1495a4e9af5aabbd0800000000000000
+      internalID: -2613594137919071935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_71
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 532
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1947c919b751cdcf0800000000000000
+      internalID: -226282260807256943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_72
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 532
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f53fc6cf000a87b0800000000000000
+      internalID: -5221360750222690830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_73
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d94b8079a571570800000000000000
+      internalID: 8437312031634529599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_74
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05769d2f063178690800000000000000
+      internalID: -7600084539052300464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_75
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d1d9c3ee62360410800000000000000
+      internalID: 1442896182468268500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_76
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08c4589e535a27120800000000000000
+      internalID: 2410170401566313600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_77
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfcbf5a687cc599e0800000000000000
+      internalID: -1615160073789653764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_78
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 318bd53f8bab8d7a0800000000000000
+      internalID: -6352121970886330349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_79
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 624ce87ba4f305400800000000000000
+      internalID: 310817964428280870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_80
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51db67a92ff988a30800000000000000
+      internalID: 4217796915354844437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_81
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7efd5309dff818e0800000000000000
+      internalID: -1722345549939736964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_82
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b45c8d536df2eacc0800000000000000
+      internalID: -3697965646951692981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_83
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57dd91ea8df4efe60800000000000000
+      internalID: 7997917780309040501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_84
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e7603907764faff0800000000000000
+      internalID: -22721996044343324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_86
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 500
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f54f9e3c1a0aa25b0800000000000000
+      internalID: -5392320987185679265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_87
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 500
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8025675e91e5bda0800000000000000
+      internalID: -5929585264176062325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_88
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 500
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c18bb8428407f050800000000000000
+      internalID: 5834136799894274504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_89
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19817f0f1ffba0030800000000000000
+      internalID: 3461790309438396561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_90
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a0eae9ca81d2e510800000000000000
+      internalID: 1577053213556400291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_91
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 633da0d36d2b56a10800000000000000
+      internalID: 1902123050850767670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_92
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed3887de04e2183b0800000000000000
+      internalID: -5512073612527893538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_93
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8335267cf9e178820800000000000000
+      internalID: 2920336554966799160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_94
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 133f1e5f60d995d30800000000000000
+      internalID: 4420737162461442865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_95
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce9db49902e385720800000000000000
+      internalID: 2835084275161487852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_96
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 341344e2216d4fe40800000000000000
+      internalID: 5689407602849755459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_97
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47a9bb7355294c510800000000000000
+      internalID: 1568539464936692340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_98
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83018e36541470350800000000000000
+      internalID: 5982822396269695032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_99
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 712ef037e85ce32a0800000000000000
+      internalID: -6755745175402716649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_100
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6be0e6144f3dd0d0800000000000000
+      internalID: -3396488982293320850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_102
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 442
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c8af8dfdfd8b6d0800000000000000
+      internalID: -2974381401367213018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_103
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 442
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 331efb17bb78e0fb0800000000000000
+      internalID: -4679653723654332109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_104
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 442
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3307714575766b40800000000000000
+      internalID: 5433159146939024186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_105
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 443
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46ac70bf792b9c870800000000000000
+      internalID: 8703684120691591780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_106
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 443
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5500f0b7729a56480800000000000000
+      internalID: -8906526701021888427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_107
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 443
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8fffcd5ba198a3c0800000000000000
+      internalID: -4348065275026866294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_109
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 445
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ec6ed8db274a270800000000000000
+      internalID: 8260853774959431313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_110
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 445
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2a15b7cefe1e1950800000000000000
+      internalID: 6421604198297967148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_111
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 445
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fe442cd4c76b8840800000000000000
+      internalID: 5227385887698210549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_112
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 445
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c6d6de41d2e020a0800000000000000
+      internalID: -6908272439787596092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_113
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 445
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffe6462f63a7a56e0800000000000000
+      internalID: -1848030320668676353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_114
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 445
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23b55bd51a9ce0410800000000000000
+      internalID: 1445314225331591986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_115
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 445
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bba3113c2a78d220800000000000000
+      internalID: 2510891122479573938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_116
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 445
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2461cabba7f06190800000000000000
+      internalID: -7971099023501073361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_117
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 445
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5b99a15fed6bc520800000000000000
+      internalID: 2723391274310277982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_119
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 443
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27597a0a82138c4f0800000000000000
+      internalID: -808342082549213838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_120
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 443
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3783cdffd2da88120800000000000000
+      internalID: 2416371613162027123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_121
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 443
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0860384505a6d940800000000000000
+      internalID: 5320621451889371146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_122
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 410
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d372bedc135434060800000000000000
+      internalID: 6936463931291150141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_123
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 410
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 339d3fcc4f324f160800000000000000
+      internalID: 7058306050313935155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_124
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 410
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f10d1632a8b661b90800000000000000
+      internalID: -7271506307299815393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_125
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 411
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e85df2e05783940800000000000000
+      internalID: 5276095667257052775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_126
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 411
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cfe53baaadc86e70800000000000000
+      internalID: 9108756379257401285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_127
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 411
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b67d474d5bd4e0090800000000000000
+      internalID: -8066424439225133205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_129
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 413
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df9727b6df034680800000000000000
+      internalID: -8772150234317348905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_130
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 413
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fb45b250cd919c70800000000000000
+      internalID: 8976128981673004016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_131
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 413
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb9353a2581b497b0800000000000000
+      internalID: -5218350882718664260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_132
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 413
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0016d06f3ea672e70800000000000000
+      internalID: 9090351900188827904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_133
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 413
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d0c73a1b68d45c0800000000000000
+      internalID: -4229576377520878194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_134
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 413
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ad1b75d1ead8b8a0800000000000000
+      internalID: -6289036216138785369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_135
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 413
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a0b0d7943132b260800000000000000
+      internalID: 7111800863526531241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_136
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 413
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd25bc5b7dd569e20800000000000000
+      internalID: 3356973753300636381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_137
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 413
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9d96df5d0ba12a30800000000000000
+      internalID: 4188817202362097051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_139
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 411
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 788cf0d738681d100800000000000000
+      internalID: 131033763467479175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_140
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 411
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80713830c75f7b910800000000000000
+      internalID: 1853219684669921032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_141
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 411
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ac91bdf9c4beaa0800000000000000
+      internalID: -6130722218275386794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_142
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 378
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 328a648edfd9731a0800000000000000
+      internalID: -6829816596034836445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_143
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 378
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8059699a21c164a00800000000000000
+      internalID: 740310055229232392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_144
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 378
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a4c290e80e1c32c0800000000000000
+      internalID: -4450649308272606046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_145
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 379
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba35621d63c6761b0800000000000000
+      internalID: -5663439023702125653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_146
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 379
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbe9fbdc0e4fbb550800000000000000
+      internalID: 6177800560230506175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_147
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 379
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b905f61af9eee7570800000000000000
+      internalID: 8466466718878748827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_149
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 381
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1c5a12472278a970800000000000000
+      internalID: 8766382187614985242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_150
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 381
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80c1b7e87c350f9f0800000000000000
+      internalID: -436757047300908024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_151
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 381
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4378c737e71a3bc80800000000000000
+      internalID: -8308119323092941004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_152
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 381
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 790d9b3a4c8113d40800000000000000
+      internalID: 5562254247618793623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_153
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 381
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03dde7982b6964ef0800000000000000
+      internalID: -124246246150972112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_154
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 381
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8dd3c5a5017b4b00800000000000000
+      internalID: 813868426740358538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_155
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 381
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c24a0446ba2b020800000000000000
+      internalID: 2356134002137771078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_156
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 381
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51949961c0dad5b90800000000000000
+      internalID: -7251449557566273259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_157
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 381
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ad5bc6cd663d4080800000000000000
+      internalID: -9201638618533503583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_159
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 379
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07bfc4c1316cc9cb0800000000000000
+      internalID: -4855788512830751888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_160
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 379
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d8c3970325f39a0800000000000000
+      internalID: -6251187389621039722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_161
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 379
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 647c7dc961e765530800000000000000
+      internalID: 3843397967593064262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_Laboratory 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 672
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d91a45b0a189b2a0800000000000000
+      internalID: -6721198441637471787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
