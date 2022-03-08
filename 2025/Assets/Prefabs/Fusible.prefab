@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 4112636280730775382}
   - component: {fileID: 5112839278148438028}
   - component: {fileID: 2785116102410849803}
+  - component: {fileID: 7463111417638184091}
+  - component: {fileID: -7705199542985785659}
   m_Layer: 0
   m_Name: Fusible
   m_TagString: Untagged
@@ -109,3 +111,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2012196, y: 1.3736165}
   m_EdgeRadius: 0
+--- !u!114 &7463111417638184091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7480301058880717516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 034e3f3c906ea234e81ad2ef90ecd53e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-7705199542985785659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7480301058880717516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07d7c2728c3f2274f829f1c21b80c2c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

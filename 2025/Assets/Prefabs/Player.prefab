@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 707199513790786223}
   - component: {fileID: 707199513790786219}
   - component: {fileID: 707199513790786225}
+  - component: {fileID: 8646861863707179862}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -100,8 +101,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dca2cdb75fa27f74783e3319ba389eda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dir: 0
   InDetectionZone: 0
   _isDead: 0
+  _pistolActivated: 0
 --- !u!114 &707199513790786222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,3 +202,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8646861863707179862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707199513790786217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39e2c1d6888a4f4f8a801cb68b550ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cargadorbalag: 0
+  cargadorbalasg: 0
+  recargag: 0
+  recargasg: 0
+  totalbalasg: 0
+  totalbalassg: 0
+  pbala: {fileID: 0}
+  gbala: {fileID: 0}
+  sgbala: {fileID: 0}
