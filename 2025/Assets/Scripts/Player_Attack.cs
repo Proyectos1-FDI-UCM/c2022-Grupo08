@@ -18,6 +18,12 @@ public class Player_Attack : MonoBehaviour
     private float recargasg;
     private float tiempocarga;
     private bool recargando;
+    [SerializeField]
+    private int totalbalasg;
+    [SerializeField]
+    private int totalbalassg;
+    private bool tengoammog=true;
+    private bool tengoammosg=true;
     #endregion
     #region properties
     [SerializeField]
@@ -61,22 +67,28 @@ public class Player_Attack : MonoBehaviour
 
         else if (tipobala == 2)
         {
-            if (!recargando)
+            if (tengoammog||(faltabalag>0))
             {
-                GameObject.Instantiate(gbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector));
-                faltabalag -= 1;
-                UI_Manager.Instance.balagUI(faltabalag, cargadorbalag);
+                if (!recargando)
+                {
+                    GameObject.Instantiate(gbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector));
+                    faltabalag -= 1;
+                    UI_Manager.Instance.balagUI(faltabalag, totalbalasg);
+                }
             }
         }
         else if (tipobala == 3)
         {
-            if (!recargando)
+            if (tengoammosg||(faltabalasg>0))
             {
-                GameObject.Instantiate(sgbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector));
-                GameObject.Instantiate(sgbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector + new Vector3(0, 0, 15)));
-                GameObject.Instantiate(sgbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector + new Vector3(0, 0, -15)));
-                faltabalasg -= 1;
-                UI_Manager.Instance.balasgUI(faltabalasg, cargadorbalasg);
+                if (!recargando)
+                {
+                    GameObject.Instantiate(sgbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector));
+                    GameObject.Instantiate(sgbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector + new Vector3(0, 0, 15)));
+                    GameObject.Instantiate(sgbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector + new Vector3(0, 0, -15)));
+                    faltabalasg -= 1;
+                    UI_Manager.Instance.balasgUI(faltabalasg, totalbalassg);
+                }
             }
         }
     }
@@ -134,6 +146,15 @@ public class Player_Attack : MonoBehaviour
     {
         holdingInteract = !holdingInteract;
     }
+
+    public void sumabalag(int d)
+    {
+        totalbalasg += d * cargadorbalag;
+    }
+    public void sumabalasg(int d)
+    {
+        totalbalassg += d * cargadorbalasg;
+    }
     #endregion
 
     // Start is called before the first frame update
@@ -148,7 +169,7 @@ public class Player_Attack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (faltabalag == 0)
+        if ((faltabalag == 0) && tengoammog)
         {
             recargando = true;
             tiempocarga += Time.deltaTime;
@@ -157,11 +178,12 @@ public class Player_Attack : MonoBehaviour
                 faltabalag = cargadorbalag;
                 tiempocarga = 0;
                 recargando = false;
-                UI_Manager.Instance.balagUI(faltabalag, cargadorbalag);
+                totalbalasg -= cargadorbalag;
+                UI_Manager.Instance.balagUI(faltabalag, totalbalasg);
             }
         }
 
-        if (faltabalasg == 0)
+        if ((faltabalasg == 0)&&tengoammosg)
         {
             recargando = true;
             tiempocarga += Time.deltaTime;
@@ -170,8 +192,17 @@ public class Player_Attack : MonoBehaviour
                 faltabalasg = cargadorbalasg;
                 tiempocarga = 0;
                 recargando = false;
-                UI_Manager.Instance.balasgUI(faltabalasg, cargadorbalasg);
+                totalbalassg -= cargadorbalasg;
+                UI_Manager.Instance.balasgUI(faltabalasg, totalbalassg);
             }
+        }
+        if (totalbalasg==0)
+        {
+            tengoammog = false;
+        }
+        if (totalbalassg == 0)
+        {
+            tengoammosg = false;
         }
     }
 }
