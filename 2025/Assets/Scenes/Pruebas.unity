@@ -182,7 +182,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_FontSize: 30
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
@@ -193,14 +193,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "14 de abril de 2024\n\nEspero que leas este mensaje...\n\nEl mundo ha
-    cambiado mientras dorm\xEDas, ya que un virus ha empezado a propagarse entre
-    las personas. Me dijeron que huyera y dejara a mi paciente aqu\xED. Eso har\xE9
-    ya que no me queda otra...Pero, no sin antes haber asegurado que mi paciente
-    tenga una oportunidad de vivir. \n\nLa puerta est\xE1 sellada, te dejar\xE9 una
-    palanca para que puedas abrirla, pero ten cuidado, ni yo s\xE9 lo que te encontrar\xE1s
-    una vez despiertes. Estar\xE9 rezando por ti all\xE1 donde me encuentre.\n\nFdo.
-    Tu enfermera."
+  m_Text: "15/03/22\n\nNota Experimental\n\nEncontrar\xE1s m\xE1s adelante objetos
+    que te ser\xE1n de ayuda.\n\nUno de ellos estar\xE1 en una esquina.\n\nEl otro, 
+    junto a la salida.\n\nMucha suerte."
 --- !u!222 &82633475
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -938,6 +933,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72355cb01e676b94196498b1fd817595, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _player: {fileID: 0}
+  _sumabala: 20
 --- !u!1 &862364293
 GameObject:
   m_ObjectHideFlags: 0
@@ -1427,18 +1424,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.05887294, y: -0.053104162}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 5.12, y: 5.12}
+    newSize: {x: 5.12, y: 5.12}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 3.590376, y: 4.4199033}
   m_EdgeRadius: 0
 --- !u!212 &1296044171
 SpriteRenderer:
@@ -1480,12 +1477,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2b7ee086317ac87438e6f1a4f96b7bed, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 5.12, y: 5.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1499,8 +1496,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1296044167}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.91, y: -4.52, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -6.277, y: -5.444, z: 0}
+  m_LocalScale: {x: 0.14447744, y: 0.12616502, z: 0.95739555}
   m_Children: []
   m_Father: {fileID: 210160048}
   m_RootOrder: 2
