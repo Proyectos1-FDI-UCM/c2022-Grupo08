@@ -11,25 +11,26 @@ public class Municion : MonoBehaviour
     #endregion
     #region parameters
     [SerializeField]
-    private int _sumabala = 20;
+    private int tipobala;
+    [SerializeField]
+    private int cargador;
     #endregion 
     //establece que la cantidad de ammo que da la dicta el unity
     //en un solo script te vale todo
     //el attack ya tiene el suma bala específicado pero no hace falta la separación
     //que reciba 2 ints, el primero para el número de cargadores y el segundo la cantidad de balas en el cargador
     #region methods
-    public void AplicaCura() //Elimina el botiquin
+    public void DaAmmo() 
     {
-        //if (_myPlayerLifeComponent._currentLife > 0 && _myPlayerLifeComponent._currentLife < 100)
-        {
-            //_myPlayerLifeComponent.Cura(_curacion);
-        }
+        cargador = Random.Range(1,3);
+        _myPlayerAttack.SumaBala(tipobala, cargador);
+        Debug.Log("" + cargador);
     }
     #endregion
     // Start is called before the first frame update
     void Start()
     {
-        //_myPlayerLifeComponent = _player.GetComponent<Player_Life_Component>();
+        _myPlayerAttack = _player.GetComponent<Player_Attack>();
     }
     // Start is called before the first frame update
     

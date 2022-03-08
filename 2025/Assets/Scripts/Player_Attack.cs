@@ -147,14 +147,14 @@ public class Player_Attack : MonoBehaviour
         holdingInteract = !holdingInteract;
     }
 
-    public void sumabalag(int d)
+    public void SumaBala(int tipobala, int cargadores)
     {
-        totalbalasg += d * cargadorbalag;
+        if (tipobala==0)
+        { totalbalasg += cargadores * cargadorbalag; }
+        else if (tipobala == 0)
+        { totalbalassg += cargadores * cargadorbalasg; }
     }
-    public void sumabalasg(int d)
-    {
-        totalbalassg += d * cargadorbalasg;
-    }
+
     #endregion
 
     // Start is called before the first frame update
