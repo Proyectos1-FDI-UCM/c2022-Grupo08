@@ -13,6 +13,7 @@ public class Input_Manager : MonoBehaviour
     public bool _isDead = false;
     public bool _palancaActivated = false;
     public bool _pistolaActivada = false;
+    public bool _escopetaActivada = false;
     #endregion
 
     #region references
@@ -85,11 +86,15 @@ public class Input_Manager : MonoBehaviour
                     _myPlayerAttack.ShootBala(2, dir);
                 }
             }
-            
-            if (Input.GetKeyDown(KeyCode.Alpha3))
+
+            if (_escopetaActivada)
             {
-                _myPlayerAttack.ShootBala(3,dir);
+                if (Input.GetKeyDown(KeyCode.Alpha3))
+                {
+                    _myPlayerAttack.ShootBala(3, dir);
+                }
             }
+           
         }
     }
         

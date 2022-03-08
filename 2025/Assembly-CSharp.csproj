@@ -68,9 +68,10 @@
     <Compile Include="Assets\Scripts\Life_Component.cs" />
     <Compile Include="Assets\Scripts\CameraMovementController.cs" />
     <Compile Include="Assets\Scripts\ActivaNota.cs" />
+    <Compile Include="Assets\Scripts\Cadaver2.cs" />
     <Compile Include="Assets\Scripts\Municion.cs" />
     <Compile Include="Assets\Scripts\Fusibles.cs" />
-    <Compile Include="Assets\Scripts\Cadaver2.cs" />
+    <Compile Include="Assets\Scripts\Cadaver3.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Diseño\Horror City - Hospital Tiles - RPG Maker VX Ace - Vexed.rar\Hospital Tiles - VX Ace\ReadMe.txt" />

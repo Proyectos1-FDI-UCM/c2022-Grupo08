@@ -13,6 +13,7 @@ public class InteractDetection : MonoBehaviour
     private Fusibles _myFusibles;
     private Cadaver _myCadaver;
     private Cadaver2 _myCadaver2;
+    private Cadaver3 _myCadaver3;
     #endregion
 
     #region methods
@@ -38,9 +39,13 @@ public class InteractDetection : MonoBehaviour
         {
             _myCadaver.PalancaActivada(); // LLama al metodo del script Cadaver               
         }
-        else if (indice == 6) // Cadaver
+        else if (indice == 6) // Cadaver2
         {
             _myCadaver2.PistolaActivada(); // LLama al metodo del script Cadaver2               
+        }
+        else if (indice == 7) // Cadaver3
+        {
+            _myCadaver3.EscopetaActivada(); // LLama al metodo del script Cadaver3              
         }
         GameManager.Instance.InteractableObjectDone(this); // Llamo al GameManager para eliminar de escena el objeto con el que ya he interactuado
     }
@@ -55,6 +60,7 @@ public class InteractDetection : MonoBehaviour
         _myMunicion = GetComponent<Municion>();
         _myCadaver = GetComponent<Cadaver>();
         _myCadaver2 = GetComponent<Cadaver2>();
+        _myCadaver3 = GetComponent<Cadaver3>();
     }
 
     // Update is called once per frame
