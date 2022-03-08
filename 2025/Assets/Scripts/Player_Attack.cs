@@ -12,6 +12,7 @@ public class Player_Attack : MonoBehaviour
     [SerializeField]
     private GameObject sgbala;
     private bool holdingInteract = false; // Booleano que detecta si se ha presionado la E para interactuar mientras se está en la zona de interacción
+    private Vector3 rotationVector;
     #endregion
 
     #region references
@@ -20,19 +21,36 @@ public class Player_Attack : MonoBehaviour
     #endregion
 
     #region methods
-    public void ShootBala(int tipobala)
+    public void ShootBala(int tipobala, int dir)
     {
+        if(dir==1)
+        {
+            rotationVector = new Vector3(0, 0, 90);
+        }
+        else if (dir == 2)
+        {
+            rotationVector = new Vector3(0, 0, -90);
+        }
+        else if (dir == 3)
+        {
+            rotationVector = new Vector3(0, 0, 180);
+        }
+        else if (dir == 4)
+        {
+            rotationVector = new Vector3(0, 0, 0);
+        }
+
         if (tipobala==1)
         {
-            GameObject.Instantiate(pbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.identity);
+            GameObject.Instantiate(pbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector));
         }
         else if (tipobala == 2)
         {
-            GameObject.Instantiate(gbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.identity);
+            GameObject.Instantiate(gbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector));
         }
         else if (tipobala == 3)
         {
-            GameObject.Instantiate(sgbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.identity);
+            GameObject.Instantiate(sgbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector));
         }
     }
     private void OnTriggerStay2D(Collider2D collision) // Si el player está en la zona de interacción se puede pulsar la E
@@ -90,6 +108,7 @@ public class Player_Attack : MonoBehaviour
         holdingInteract = !holdingInteract;
     }
     #endregion
+
     // Start is called before the first frame update
     void Start()
     {

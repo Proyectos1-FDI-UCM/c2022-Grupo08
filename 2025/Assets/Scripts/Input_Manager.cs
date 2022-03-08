@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Input_Manager : MonoBehaviour
 {
+    #region parameters
+    public int dir;
+    #endregion
     #region properties
     [HideInInspector]
     public bool InDetectionZone = false; // Booleano que detecta si se está dentro de la zona de interacción con algun objeto interactuable
@@ -34,21 +37,25 @@ public class Input_Manager : MonoBehaviour
             {
                 // Arriba
                 movementDirection.y = 1.0f;
+                dir = 1;
             }
             else if (Input.GetKey(KeyCode.S))
             {
                 // Abajo
                 movementDirection.y = -1.0f;
+                dir = 2;
             }
             if (Input.GetKey(KeyCode.A))
             {
                 // Izquierda
                 movementDirection.x = -1.0f;
+                dir = 3;
             }
             else if (Input.GetKey(KeyCode.D))
             {
                 // Derecha
                 movementDirection.x = 1.0f;
+                dir = 4;
             }
 
             _myPlayerMovementController.SetDirection(movementDirection);
@@ -67,16 +74,16 @@ public class Input_Manager : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.Alpha1))
                 {
-                    _myPlayerAttack.ShootBala(1);
+                    _myPlayerAttack.ShootBala(1,dir);
                 }
             }
             if (Input.GetKeyDown(KeyCode.Alpha2))
             {
-                _myPlayerAttack.ShootBala(2);
+                _myPlayerAttack.ShootBala(2,dir);
             }
             if (Input.GetKeyDown(KeyCode.Alpha3))
             {
-                _myPlayerAttack.ShootBala(3);
+                _myPlayerAttack.ShootBala(3,dir);
             }
         }
     }
