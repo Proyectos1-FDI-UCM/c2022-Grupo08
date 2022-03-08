@@ -1,7 +1,25 @@
 fileFormatVersion: 2
 guid: 556eb874664ded44caaf6e5abeece044
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 5987565395255432767
+    second: TileB_PHC_Interior-Hospital_0
+  - first:
+      213: 3355460661845428875
+    second: TileB_PHC_Interior-Hospital_1
+  - first:
+      213: -3455734521316360260
+    second: TileB_PHC_Interior-Hospital_2
+  - first:
+      213: 1075230300107495370
+    second: TileB_PHC_Interior-Hospital_3
+  - first:
+      213: 9098822050107367666
+    second: TileB_PHC_Interior-Hospital_4
+  - first:
+      213: -3175147710891963870
+    second: TileB_PHC_Interior-Hospital_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -89,7 +107,138 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-Hospital_0
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 14}
+        - {x: -16, y: -13}
+        - {x: 16, y: -13}
+        - {x: 13.139862, y: 9.014572}
+        - {x: -1.9250641, y: 9.027725}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f361f95e00b181350800000000000000
+      internalID: 5987565395255432767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-Hospital_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 89
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8a0817a1bdf09e20800000000000000
+      internalID: 3355460661845428875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-Hospital_2
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 153
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbf32ea13c3ca00d0800000000000000
+      internalID: -3455734521316360260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-Hospital_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 63
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac7d4a9d24cfbee00800000000000000
+      internalID: 1075230300107495370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-Hospital_4
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f0242b6272854e70800000000000000
+      internalID: 9098822050107367666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-Hospital_5
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 25
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ac3e6cafb9fe3d0800000000000000
+      internalID: -3175147710891963870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
