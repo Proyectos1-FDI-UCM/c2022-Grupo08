@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
     private int _currentFusibles = 0;
 
     [SerializeField]
+    private GameObject _puerta;
+    [SerializeField]
     private GameObject _nota;
     [SerializeField]
     private GameObject _botiquin;
@@ -48,6 +50,8 @@ public class GameManager : MonoBehaviour
         if(_currentFusibles >= _maxFusibles)
         {
             _electricidadActiva = true;
+
+            Destroy(_puerta);
         }
     }
     public void ActivateNote() // Activa la nota
