@@ -13,6 +13,15 @@ public class CameraMovementController : MonoBehaviour
 
     #region references
     [SerializeField]
+    private Transform _leftLimit;
+    [SerializeField]
+    private Transform _rightLimit;
+    [SerializeField]
+    private Transform _topLimit;
+    [SerializeField]
+    private Transform _downLimit;
+
+    [SerializeField]
     private GameObject _targetObject; // Objeto al que siga la camara (será el jugador)
     private Transform _targetObjectTransform;
     private Transform _myTransform;
@@ -29,6 +38,6 @@ public class CameraMovementController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _myTransform.position = Vector3.Lerp(_myTransform.position, new Vector3(Mathf.Clamp(_targetObjectTransform.position.x, -20, 48f), Mathf.Clamp(_targetObjectTransform.position.y, -10.48f, 8), _myTransform.position.z), Time.deltaTime * _factorDeDelay); // Interpolación linel
+        _myTransform.position = Vector3.Lerp(_myTransform.position, new Vector3(Mathf.Clamp(_targetObjectTransform.position.x, _leftLimit.position.x, _rightLimit.position.x), Mathf.Clamp(_targetObjectTransform.position.y, _downLimit.position.y, _topLimit.position.y), _myTransform.position.z), Time.deltaTime * _factorDeDelay); // Interpolación linel
     }
 }

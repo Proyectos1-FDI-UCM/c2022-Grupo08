@@ -109,42 +109,36 @@ public class Player_Attack : MonoBehaviour
         }
         if (holdingInteract) // Interactua con el objeto que está en la zona de interacción
         {
+            
             if (hitMunicion)
             {
                 hitInteractableObject.Interact(1);
-                ToCallInteraction();
             }
             else if (hitFusible)
             {
                 hitInteractableObject.Interact(2);
-                ToCallInteraction();
             }
             else if (hitBotiquin)
             {
                 hitInteractableObject.Interact(3);
-                ToCallInteraction();
             }
             else if (hitNota)
             {
                 hitInteractableObject.Interact(4);
-                ToCallInteraction();
             }
             else if (hitCadaver)
             {
                 hitInteractableObject.Interact(5);
-                ToCallInteraction();
             }
             else if (hitCadaver2)
             {
                 hitInteractableObject.Interact(6);
-                ToCallInteraction();
             }
             else if (hitCadaver3)
             {
                 hitInteractableObject.Interact(7);
-                ToCallInteraction();
             }
-
+            ToCallInteraction();
         }
     }
     private void OnTriggerExit2D(Collider2D collision) // Si el player se ha salido de la zona de interacción no se puede pulsar la E
@@ -159,6 +153,7 @@ public class Player_Attack : MonoBehaviour
     public void ToCallInteraction() // Revierte el valor del booleano
     {
         holdingInteract = !holdingInteract;
+        Debug.Log("Espeto calvo");
     }
 
     public void SumaBala(int tipobala, int cargadores)
