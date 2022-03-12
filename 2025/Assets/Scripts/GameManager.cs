@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    #region parameters
+    [SerializeField]
+    private bool state = true;
+    #endregion
     #region properties
 
     bool _electricidadActiva = false;
@@ -12,6 +16,8 @@ public class GameManager : MonoBehaviour
     private int _maxFusibles = 3;
     private int _currentFusibles = 0;
 
+    [SerializeField]
+    private GameObject _luces;
     [SerializeField]
     private GameObject _puerta;
     [SerializeField]
@@ -66,11 +72,24 @@ public class GameManager : MonoBehaviour
     {
         _botiquin.SetActive(false);
     }
+
+    public void ActivaLuces()
+    {
+
+        state = !state;
+        
+        _luces.SetActive(state);
+
+        Debug.Log("Holi");
+        
+    }
+
+    
     #endregion
     // Start is called before the first frame update
     void Start()
     {
-        
+        InvokeRepeating("ActivaLuces", 2f, 1f);
     }
 
     // Update is called once per frame
