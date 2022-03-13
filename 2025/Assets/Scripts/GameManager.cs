@@ -75,13 +75,11 @@ public class GameManager : MonoBehaviour
 
     public void ActivaLuces()
     {
-
         state = !state;
         
         _luces.SetActive(state);
 
-        Debug.Log("Holi");
-        
+        Debug.Log("Holi");     
     }
 
     
