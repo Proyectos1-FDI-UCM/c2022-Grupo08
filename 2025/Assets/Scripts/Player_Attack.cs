@@ -149,11 +149,9 @@ public class Player_Attack : MonoBehaviour
             _myInputManager.InDetectionZone = false;
         }
     }
-
     public void ToCallInteraction() // Revierte el valor del booleano
     {
         holdingInteract = !holdingInteract;
-        Debug.Log("Espeto calvo");
     }
 
     public void SumaBala(int tipobala, int cargadores)
