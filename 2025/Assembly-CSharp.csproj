@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\NewRoom.cs" />
     <Compile Include="Assets\Scripts\Cadaver2.cs" />
     <Compile Include="Assets\Scripts\Cadaver3.cs" />
+    <Compile Include="Assets\Scripts\Light_Behaviour.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Diseño\Horror City - Hospital Tiles - RPG Maker VX Ace - Vexed.rar\Hospital Tiles - VX Ace\ReadMe.txt" />

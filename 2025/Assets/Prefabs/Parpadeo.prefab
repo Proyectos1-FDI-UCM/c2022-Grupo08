@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3061680066087481047}
   - component: {fileID: 3061680066087481046}
+  - component: {fileID: 793681631900475238}
   m_Layer: 0
   m_Name: Parpadeo
   m_TagString: Untagged
@@ -72,3 +73,17 @@ MonoBehaviour:
   - {x: 2.7173972, y: -1.7009251, z: 0}
   - {x: 2.9102526, y: -1.3357974, z: 0}
   - {x: -1.7230767, y: 0.28263995, z: 0}
+--- !u!114 &793681631900475238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3061680066087481044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dc7683b73dfef24fb36ac352a8c1fba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _puerta: {fileID: 0}
+  state: 1
