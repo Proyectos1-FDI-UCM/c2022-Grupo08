@@ -5,19 +5,19 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     #region parameters
-    [SerializeField]
-    private bool state = true;
+    //[SerializeField]
+    //private bool state = true;
     #endregion
     #region properties
 
-    bool _electricidadActiva = false;
+    public bool _electricidadActiva = false;
 
     [SerializeField]
     private int _maxFusibles = 3;
     private int _currentFusibles = 0;
 
-    [SerializeField]
-    private GameObject _luces;
+    //[SerializeField]
+    //private GameObject _luces;
     [SerializeField]
     private GameObject _puerta;
     [SerializeField]
@@ -75,26 +75,26 @@ public class GameManager : MonoBehaviour
         Destroy(triggerToDestroy);
     }
 
-    public void CambioEstadoLuces()
-    {
-        state = !state;
+    //public void CambioEstadoLuces()
+    //{
+    //    state = !state;
         
-        _luces.SetActive(state);
+    //    _luces.SetActive(state);
 
-        //Debug.Log("Holi");
+    //    //Debug.Log("Holi");
 
-        if (_electricidadActiva)
-        {
-            CancelInvoke("CambioEstadoLuces");
-        }
-    }
+    //    if (_electricidadActiva)
+    //    {
+    //        CancelInvoke("CambioEstadoLuces");
+    //    }
+    //}
 
     
     #endregion
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("CambioEstadoLuces", 0.75f, 0.75f);
+        //InvokeRepeating("CambioEstadoLuces", 0.75f, 0.75f);
     }
 
     // Update is called once per frame
