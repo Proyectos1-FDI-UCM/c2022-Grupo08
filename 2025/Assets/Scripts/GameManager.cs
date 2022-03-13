@@ -68,9 +68,11 @@ public class GameManager : MonoBehaviour
     {
         _nota.SetActive(false);
     }
-    public void EliminaBotiquin()
+
+    public void ActivarHabitacion(GameObject Room, NewRoom triggerToDestroy)
     {
-        _botiquin.SetActive(false);
+        Room.SetActive(true);
+        Destroy(triggerToDestroy);
     }
 
     public void CambioEstadoLuces()
