@@ -73,13 +73,18 @@ public class GameManager : MonoBehaviour
         _botiquin.SetActive(false);
     }
 
-    public void ActivaLuces()
+    public void CambioEstadoLuces()
     {
         state = !state;
         
         _luces.SetActive(state);
 
-        Debug.Log("Holi");     
+        //Debug.Log("Holi");
+
+        if (_electricidadActiva)
+        {
+            CancelInvoke("CambioEstadoLuces");
+        }
     }
 
     
@@ -87,12 +92,12 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("ActivaLuces", 2f, 1f);
+        InvokeRepeating("CambioEstadoLuces", 0.75f, 0.75f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
 }
