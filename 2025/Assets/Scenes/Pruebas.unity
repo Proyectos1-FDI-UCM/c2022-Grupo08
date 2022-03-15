@@ -5434,7 +5434,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: d75e3db6610862643ab8e6f448a7feb1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11671,6 +11671,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8275751884626642917}
   - component: {fileID: 8275751884626642914}
+  - component: {fileID: 8275751884626642918}
   m_Layer: 0
   m_Name: Wall_Side_2
   m_TagString: Untagged
@@ -11692,6 +11693,18 @@ Transform:
   m_Father: {fileID: 8275751884802117188}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8275751884626642918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8275751884626642916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de196be23a78d994bbd04b9cee2243ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!483693784 &8275751884755225496
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -15369,6 +15382,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8275751884789786202}
   - component: {fileID: 8275751884789786203}
+  - component: {fileID: 8275751884789786206}
   m_Layer: 0
   m_Name: Wall_Electricidad
   m_TagString: Untagged
@@ -15376,6 +15390,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8275751884789786206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8275751884789786205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de196be23a78d994bbd04b9cee2243ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8275751884802117188
 Transform:
   m_ObjectHideFlags: 0
@@ -15464,6 +15490,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8275751884828033723}
   - component: {fileID: 8275751884828033720}
+  - component: {fileID: 8275751884828033724}
   m_Layer: 0
   m_Name: Wall_Side_1_1
   m_TagString: Untagged
@@ -15485,6 +15512,18 @@ Transform:
   m_Father: {fileID: 8275751884802117188}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8275751884828033724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8275751884828033722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de196be23a78d994bbd04b9cee2243ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8275751884929069526
 Transform:
   m_ObjectHideFlags: 0
@@ -15535,6 +15574,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8275751884929069526}
   - component: {fileID: 8275751884929069527}
+  - component: {fileID: 8275751884929069530}
   m_Layer: 0
   m_Name: Wall_Center_North
   m_TagString: Untagged
@@ -15542,6 +15582,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!114 &8275751884929069530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8275751884929069529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de196be23a78d994bbd04b9cee2243ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!61 &8275751884984305322
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15578,6 +15630,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8275751884984305325}
   - component: {fileID: 8275751884984305322}
+  - component: {fileID: 8275751884984305326}
   m_Layer: 0
   m_Name: Wall_Side_4_2
   m_TagString: Untagged
@@ -15599,6 +15652,18 @@ Transform:
   m_Father: {fileID: 8275751884802117188}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8275751884984305326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8275751884984305324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de196be23a78d994bbd04b9cee2243ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1839735485 &8275751884992829488
 Tilemap:
   m_ObjectHideFlags: 0
@@ -41491,6 +41556,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8275751885020664773}
   - component: {fileID: 8275751885020664770}
+  - component: {fileID: 8275751885020664774}
   m_Layer: 0
   m_Name: Wall_North
   m_TagString: Untagged
@@ -41512,6 +41578,18 @@ Transform:
   m_Father: {fileID: 8275751884802117188}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8275751885020664774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8275751885020664772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de196be23a78d994bbd04b9cee2243ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!61 &8275751885066347880
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41548,6 +41626,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8275751885066347883}
   - component: {fileID: 8275751885066347880}
+  - component: {fileID: 8275751885066347884}
   m_Layer: 0
   m_Name: Wall_Side_4_3
   m_TagString: Untagged
@@ -41569,6 +41648,18 @@ Transform:
   m_Father: {fileID: 8275751884802117188}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8275751885066347884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8275751885066347882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de196be23a78d994bbd04b9cee2243ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1839735485 &8275751885210692932
 Tilemap:
   m_ObjectHideFlags: 0
@@ -52044,6 +52135,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8275751885226567532}
   - component: {fileID: 8275751885226567533}
+  - component: {fileID: 8275751885226567536}
   m_Layer: 0
   m_Name: Wall_Side_6
   m_TagString: Untagged
@@ -52051,6 +52143,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8275751885226567536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8275751885226567535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de196be23a78d994bbd04b9cee2243ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8275751885370086468
 Transform:
   m_ObjectHideFlags: 0
@@ -52101,6 +52205,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8275751885370086468}
   - component: {fileID: 8275751885370086469}
+  - component: {fileID: 8275751885370086472}
   m_Layer: 0
   m_Name: Wall_Side_3
   m_TagString: Untagged
@@ -52108,6 +52213,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8275751885370086472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8275751885370086471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de196be23a78d994bbd04b9cee2243ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8275751885416293114
 Transform:
   m_ObjectHideFlags: 0
@@ -52158,6 +52275,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8275751885416293114}
   - component: {fileID: 8275751885416293115}
+  - component: {fileID: 8275751885416293118}
   m_Layer: 0
   m_Name: Wall_Center
   m_TagString: Untagged
@@ -52165,6 +52283,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8275751885416293118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8275751885416293117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de196be23a78d994bbd04b9cee2243ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!483693784 &8275751885642421654
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -82664,6 +82794,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8275751885977685929}
   - component: {fileID: 8275751885977685926}
+  - component: {fileID: 8275751885977685930}
   m_Layer: 0
   m_Name: Wall_South
   m_TagString: Untagged
@@ -82685,6 +82816,18 @@ Transform:
   m_Father: {fileID: 8275751884802117188}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8275751885977685930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8275751885977685928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de196be23a78d994bbd04b9cee2243ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8275751885979793728
 GameObject:
   m_ObjectHideFlags: 0
@@ -90518,6 +90661,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8275751886068295525}
   - component: {fileID: 8275751886068295522}
+  - component: {fileID: 8275751886068295526}
   m_Layer: 0
   m_Name: Wall_Side_7
   m_TagString: Untagged
@@ -90539,6 +90683,18 @@ Transform:
   m_Father: {fileID: 8275751884802117188}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8275751886068295526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8275751886068295524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de196be23a78d994bbd04b9cee2243ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!61 &8275751886137923464
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -90575,6 +90731,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8275751886137923467}
   - component: {fileID: 8275751886137923464}
+  - component: {fileID: 8275751886137923468}
   m_Layer: 0
   m_Name: Wall_Center_South
   m_TagString: Untagged
@@ -90596,6 +90753,18 @@ Transform:
   m_Father: {fileID: 8275751884802117188}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8275751886137923468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8275751886137923466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de196be23a78d994bbd04b9cee2243ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8275751886159082772
 Transform:
   m_ObjectHideFlags: 0
@@ -90646,6 +90815,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8275751886159082772}
   - component: {fileID: 8275751886159082773}
+  - component: {fileID: 8275751886159082776}
   m_Layer: 0
   m_Name: Wall_East
   m_TagString: Untagged
@@ -90653,6 +90823,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8275751886159082776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8275751886159082775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de196be23a78d994bbd04b9cee2243ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!61 &8275751886203954492
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -90689,6 +90871,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8275751886203954495}
   - component: {fileID: 8275751886203954492}
+  - component: {fileID: 8275751886203954496}
   m_Layer: 0
   m_Name: Wall_Side_8
   m_TagString: Untagged
@@ -90710,6 +90893,18 @@ Transform:
   m_Father: {fileID: 8275751884802117188}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8275751886203954496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8275751886203954494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de196be23a78d994bbd04b9cee2243ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!61 &8275751886262192172
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -90746,6 +90941,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8275751886262192175}
   - component: {fileID: 8275751886262192172}
+  - component: {fileID: 8275751886262192176}
   m_Layer: 0
   m_Name: Wall_Side_1_2
   m_TagString: Untagged
@@ -90767,6 +90963,18 @@ Transform:
   m_Father: {fileID: 8275751884802117188}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8275751886262192176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8275751886262192174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de196be23a78d994bbd04b9cee2243ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8275751886345640804
 Transform:
   m_ObjectHideFlags: 0
@@ -90817,6 +91025,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8275751886345640804}
   - component: {fileID: 8275751886345640805}
+  - component: {fileID: 8275751886345640808}
   m_Layer: 0
   m_Name: Wall_Side_4_4
   m_TagString: Untagged
@@ -90824,6 +91033,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8275751886345640808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8275751886345640807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de196be23a78d994bbd04b9cee2243ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1839735485 &8275751886347408308
 Tilemap:
   m_ObjectHideFlags: 0
@@ -109576,6 +109797,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8275751886395624530}
   - component: {fileID: 8275751886395624531}
+  - component: {fileID: 8275751886395624534}
   m_Layer: 0
   m_Name: Wall_Hab_3
   m_TagString: Untagged
@@ -109583,6 +109805,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8275751886395624534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8275751886395624533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de196be23a78d994bbd04b9cee2243ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!483693784 &8275751886437751308
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -122491,6 +122725,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8275751886456143094}
   - component: {fileID: 8275751886456143095}
+  - component: {fileID: 8275751886456143098}
   m_Layer: 0
   m_Name: Wall_Side_5
   m_TagString: Untagged
@@ -122498,6 +122733,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8275751886456143098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8275751886456143097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de196be23a78d994bbd04b9cee2243ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8275751886478084656
 Transform:
   m_ObjectHideFlags: 0
@@ -122548,6 +122795,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8275751886478084656}
   - component: {fileID: 8275751886478084657}
+  - component: {fileID: 8275751886478084660}
   m_Layer: 0
   m_Name: Wall_Fusible_1
   m_TagString: Untagged
@@ -122555,6 +122803,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!114 &8275751886478084660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8275751886478084659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de196be23a78d994bbd04b9cee2243ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!156049354 &8275751886480741380
 Grid:
   m_ObjectHideFlags: 0
@@ -141801,6 +142061,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8275751886598195650}
   - component: {fileID: 8275751886598195651}
+  - component: {fileID: 8275751886598195654}
   m_Layer: 0
   m_Name: Wall_West
   m_TagString: Untagged
@@ -141808,6 +142069,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8275751886598195654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8275751886598195653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de196be23a78d994bbd04b9cee2243ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8275751886673115304
 Transform:
   m_ObjectHideFlags: 0
@@ -141858,6 +142131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8275751886673115304}
   - component: {fileID: 8275751886673115305}
+  - component: {fileID: 8275751886673115308}
   m_Layer: 0
   m_Name: Wall_Side_4_1
   m_TagString: Untagged
@@ -141865,3 +142139,15 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8275751886673115308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8275751886673115307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de196be23a78d994bbd04b9cee2243ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

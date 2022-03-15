@@ -22,10 +22,15 @@ public class Bullet_Attack : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision) //Cuando colisione el misil
     {
         Life_Component hitZombie = collision.GetComponent<Life_Component>();
-
+        ColisionParedes hitParedes = collision.GetComponent<ColisionParedes>();
         if (hitZombie)
         {
             hitZombie.Damage(daño);
+            Destroy(gameObject);
+        }
+
+        if (hitParedes)
+        {
             Destroy(gameObject);
         }
     }
