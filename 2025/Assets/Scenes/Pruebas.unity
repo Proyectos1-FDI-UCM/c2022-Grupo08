@@ -1021,6 +1021,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 707199513790786218, guid: f1f7bd51ad420f048ad30821d946adc0, type: 3}
+      propertyPath: _myAnimator
+      value: 
+      objectReference: {fileID: 812821187}
     - target: {fileID: 707199513790786221, guid: f1f7bd51ad420f048ad30821d946adc0, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -1069,6 +1073,10 @@ PrefabInstance:
       propertyPath: _myAnimator
       value: 
       objectReference: {fileID: 812821187}
+    - target: {fileID: 707199513790786225, guid: f1f7bd51ad420f048ad30821d946adc0, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: dee096230fd21094ca238a19592d68e5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1f7bd51ad420f048ad30821d946adc0, type: 3}
 --- !u!1 &210160047

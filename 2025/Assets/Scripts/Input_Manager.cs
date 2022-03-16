@@ -15,10 +15,11 @@ public class Input_Manager : MonoBehaviour
     public bool _pistolaActivada = false;
     public bool _escopetaActivada = false;
     #endregion
-
     #region references
     private Player_MovementController _myPlayerMovementController;
     private Player_Attack _myPlayerAttack;
+    [SerializeField]
+    private Animator _myAnimator;
     #endregion
     // Start is called before the first frame update
     void Start()
@@ -59,7 +60,6 @@ public class Input_Manager : MonoBehaviour
                 movementDirection.x = 1.0f;
                 dir = 4;
             }
-
             _myPlayerMovementController.SetDirection(movementDirection);
 
             // Interacción con objetos
@@ -94,8 +94,10 @@ public class Input_Manager : MonoBehaviour
                     _myPlayerAttack.ShootBala(3, dir);
                 }
             }
-           
         }
+
+        // Animación
+        _myAnimator.SetInteger("dir", dir);
     }
         
 }

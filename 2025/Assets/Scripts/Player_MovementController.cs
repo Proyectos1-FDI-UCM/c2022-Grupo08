@@ -13,12 +13,6 @@ public class Player_MovementController : MonoBehaviour
 
     #region references
     private Transform _myTransform;
-    [SerializeField]
-    private Animator _myAnimator;
-
-
-
-    
     #endregion
 
     #region properties
@@ -45,11 +39,5 @@ public class Player_MovementController : MonoBehaviour
     void Update()
     {
         _myTransform.Translate(_movementSpeed * _movementDirection * Time.deltaTime);
-        // Animación
-        _horizontalMove = Input.GetAxisRaw("Horizontal") * _movementSpeed;
-        _verticalMove = Input.GetAxisRaw("Vertical") * _movementSpeed;
-
-        _myAnimator.SetFloat("Speedx", (_horizontalMove));
-        _myAnimator.SetFloat("Speedy", (_verticalMove));
     }
 }

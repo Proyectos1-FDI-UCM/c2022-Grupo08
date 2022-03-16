@@ -38,7 +38,7 @@ public class LightManager : MonoBehaviour
     void Update()
     {
         //Debug.Log(Time.deltaTime);
-        Debug.Log(Time.time);
+        //Debug.Log(Time.time);
         //clockTick += Time.deltaTime;
     }
 }
