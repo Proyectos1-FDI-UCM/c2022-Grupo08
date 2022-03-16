@@ -3400,6 +3400,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _targetToActivate: {fileID: 8275751886347408313}
   isPlayerInNextRoom: 0
+  _LightObject: {fileID: 66965595}
 --- !u!61 &1041085889
 BoxCollider2D:
   m_ObjectHideFlags: 0

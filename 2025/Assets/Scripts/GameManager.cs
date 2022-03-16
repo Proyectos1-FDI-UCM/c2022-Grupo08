@@ -69,7 +69,14 @@ public class GameManager : MonoBehaviour
         _nota.SetActive(false);
     }
 
-    
+    /*public void ActivarHabitacion(GameObject Room, NewRoom triggerToDestroy)
+    {
+        //if (Time.deltaTime % 5 == 0)
+        //{
+        Room.SetActive(true);
+        Destroy(triggerToDestroy);
+        //}
+    }*/
     #endregion
     // Start is called before the first frame update
     void Start()
