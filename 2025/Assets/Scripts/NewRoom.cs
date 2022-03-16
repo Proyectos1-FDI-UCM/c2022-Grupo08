@@ -6,7 +6,9 @@ public class NewRoom : MonoBehaviour
 {
     #region references
     [SerializeField]
-    private GameObject _targetToActivate;
+    private GameObject _roomToActivate;
+    [SerializeField]
+    private GameObject _lightsToActivate;
     [HideInInspector]
     public bool isPlayerInNextRoom = false;
     #endregion
@@ -23,7 +25,7 @@ public class NewRoom : MonoBehaviour
     }
     private void NuevaHab()
     {
-        LightManager.Instance.ActivarHabitacion(_targetToActivate, this);
+        GameManager.Instance.ActivarHabitacion(_roomToActivate, _lightsToActivate, this);
     }
     #endregion
     

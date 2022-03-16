@@ -9,6 +9,11 @@ public class LightManager : MonoBehaviour
     #endregion
 
     #region references
+    [SerializeField]
+    private List<GameObject> _lightList;
+    #endregion
+
+    #region references
     static private LightManager _instance; // Unique LightManager instance (Singleton Pattern).
     static public LightManager Instance // Public accesor for LightManager instance.
     {
@@ -17,16 +22,10 @@ public class LightManager : MonoBehaviour
             return _instance; // Para poder instanciar el LightManager y llamarlo desde cualquier script
         }
     }
-    public void ActivarHabitacion(GameObject Room, NewRoom triggerToDestroy)
+    
+    public void LightsActivated(GameObject lightsToActive)
     {
-        bool aplicado = false;
-        int temporazidor = 0;
-        while (Time.time % 5 < 1 && !aplicado)
-        {
-            Room.SetActive(true);
-            Destroy(triggerToDestroy);
-            aplicado = true;
-        }
+        lightsToActive.SetActive(true);
     }
     #endregion
     // Start is called before the first frame update

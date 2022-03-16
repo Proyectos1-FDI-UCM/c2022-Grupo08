@@ -68,15 +68,20 @@ public class GameManager : MonoBehaviour
     {
         _nota.SetActive(false);
     }
-
-    /*public void ActivarHabitacion(GameObject Room, NewRoom triggerToDestroy)
+    public void ActivarHabitacion(GameObject room, GameObject lights, NewRoom triggerToDestroy)
     {
-        //if (Time.deltaTime % 5 == 0)
-        //{
-        Room.SetActive(true);
+        /*bool aplicado = false;
+        int temporazidor = 0;
+        while (Time.time % 5 < 1 && !aplicado)
+        {
+            Room.SetActive(true);
+            Destroy(triggerToDestroy);
+            aplicado = true;
+        }*/
+        room.SetActive(true);
         Destroy(triggerToDestroy);
-        //}
-    }*/
+        LightManager.Instance.LightsActivated(lights);
+    }
     #endregion
     // Start is called before the first frame update
     void Start()

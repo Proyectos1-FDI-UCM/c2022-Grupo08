@@ -24,8 +24,6 @@ public class Light_Behaviour : MonoBehaviour
 
         this.gameObject.SetActive(state);
 
-        //Debug.Log("Holi");
-
         if (GameManager.Instance._electricidadActiva)
         {
             CancelInvoke("CambioEstadoLuces");
