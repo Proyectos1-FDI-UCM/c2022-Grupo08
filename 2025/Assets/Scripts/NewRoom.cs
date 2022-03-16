@@ -9,9 +9,6 @@ public class NewRoom : MonoBehaviour
     private GameObject _targetToActivate;
     [HideInInspector]
     public bool isPlayerInNextRoom = false;
-    [SerializeField]
-    private GameObject _LightObject;
-    private LightManager _myLightManager;
     #endregion
 
     #region methods
@@ -26,14 +23,14 @@ public class NewRoom : MonoBehaviour
     }
     private void NuevaHab()
     {
-        _myLightManager.ActivarHabitacion(_targetToActivate, this);
+        LightManager.Instance.ActivarHabitacion(_targetToActivate, this);
     }
     #endregion
     
     // Start is called before the first frame update
     void Start()
     {
-        _myLightManager = _LightObject.GetComponent<LightManager>();
+        
     }
 
     // Update is called once per frame

@@ -20,6 +20,7 @@ public class LightManager : MonoBehaviour
     public void ActivarHabitacion(GameObject Room, NewRoom triggerToDestroy)
     {
         bool aplicado = false;
+        int temporazidor = 0;
         while (Time.time % 5 < 1 && !aplicado)
         {
             Room.SetActive(true);
@@ -31,7 +32,7 @@ public class LightManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        _instance = this;
     }
 
     // Update is called once per frame
