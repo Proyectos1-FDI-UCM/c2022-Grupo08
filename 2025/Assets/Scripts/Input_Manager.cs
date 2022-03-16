@@ -18,8 +18,6 @@ public class Input_Manager : MonoBehaviour
     #region references
     private Player_MovementController _myPlayerMovementController;
     private Player_Attack _myPlayerAttack;
-    [SerializeField]
-    private Animator _myAnimator;
     #endregion
     // Start is called before the first frame update
     void Start()
@@ -95,9 +93,5 @@ public class Input_Manager : MonoBehaviour
                 }
             }
         }
-
-        // Animación
-        _myAnimator.SetInteger("dir", dir);
     }
-        
 }
