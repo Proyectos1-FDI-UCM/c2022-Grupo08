@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class NewRoom : MonoBehaviour
 {
+    #region references
+    [SerializeField]
+    private GameObject _targetToActivate;
+    [HideInInspector]
+    public bool isPlayerInNextRoom = false;
+    #endregion
+
     #region methods
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -11,17 +18,15 @@ public class NewRoom : MonoBehaviour
         if (hitPlayer)
         {
             NuevaHab();
+            isPlayerInNextRoom = true;
         }
     }
     private void NuevaHab()
     {
-        GameManager.Instance.ActivarHabitacion(_targetToActivate, this);
+        LightManager.Instance.ActivarHabitacion(_targetToActivate, this);
     }
     #endregion
-    #region references
-    [SerializeField]
-    private GameObject _targetToActivate;
-    #endregion
+    
     // Start is called before the first frame update
     void Start()
     {

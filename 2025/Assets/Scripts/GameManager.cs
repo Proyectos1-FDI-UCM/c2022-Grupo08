@@ -69,32 +69,12 @@ public class GameManager : MonoBehaviour
         _nota.SetActive(false);
     }
 
-    public void ActivarHabitacion(GameObject Room, NewRoom triggerToDestroy)
-    {
-        Room.SetActive(true);
-        Destroy(triggerToDestroy);
-    }
-
-    //public void CambioEstadoLuces()
-    //{
-    //    state = !state;
-        
-    //    _luces.SetActive(state);
-
-    //    //Debug.Log("Holi");
-
-    //    if (_electricidadActiva)
-    //    {
-    //        CancelInvoke("CambioEstadoLuces");
-    //    }
-    //}
-
     
     #endregion
     // Start is called before the first frame update
     void Start()
     {
-        //InvokeRepeating("CambioEstadoLuces", 0.75f, 0.75f);
+        
     }
 
     // Update is called once per frame

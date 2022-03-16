@@ -36,7 +36,6 @@ public class Light_Behaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
         InvokeRepeating("CambioEstadoLuces", 0.75f, 0.75f);
     }
 
