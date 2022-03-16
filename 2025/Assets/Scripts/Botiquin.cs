@@ -11,14 +11,14 @@ public class Botiquin : MonoBehaviour
     #endregion
     #region parameters
     [SerializeField]
-    private int _curacion = 20;
+    private int _heal = 20;
     #endregion 
     #region methods
     public void AplicaCura() //Elimina el botiquin
     {
         if (_myPlayerLifeComponent._currentLife > 0 && _myPlayerLifeComponent._currentLife < 100)
         {
-            _myPlayerLifeComponent.Cura(_curacion);
+            _myPlayerLifeComponent.Cura(_heal);
         }
     }
     #endregion

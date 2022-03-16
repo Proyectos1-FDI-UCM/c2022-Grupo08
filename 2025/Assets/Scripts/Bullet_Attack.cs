@@ -6,12 +6,12 @@ public class Bullet_Attack : MonoBehaviour
 {
     #region parameters
     [SerializeField]
-    private float velocidad = 1.0f;
+    private float _velocity = 1.0f;
     [SerializeField]
-    private int daño = 1;
+    private int _damage = 1;
     [SerializeField]
-    private float vida = 1.0f;
-    private float timer;
+    private float _life = 1.0f;
+    private float _timer;
     #endregion
 
     #region references
@@ -22,14 +22,14 @@ public class Bullet_Attack : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision) //Cuando colisione el misil
     {
         Life_Component hitZombie = collision.GetComponent<Life_Component>();
-        ColisionParedes hitParedes = collision.GetComponent<ColisionParedes>();
+        ColisionParedes hitWalls = collision.GetComponent<ColisionParedes>();
         if (hitZombie)
         {
-            hitZombie.Damage(daño);
+            hitZombie.Damage(_damage);
             Destroy(gameObject);
         }
 
-        if (hitParedes)
+        if (hitWalls)
         {
             Destroy(gameObject);
         }
@@ -45,9 +45,10 @@ public class Bullet_Attack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(velocidad * Vector3.right * Time.deltaTime);
-        timer += Time.deltaTime;
-        if (timer>=vida)
+        transform.Translate(_velocity * Vector3.right * Time.deltaTime);
+        _timer += Time.deltaTime;
+
+        if (_timer >= _life)
         {
             Destroy(gameObject);
         }

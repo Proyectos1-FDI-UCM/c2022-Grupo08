@@ -11,9 +11,9 @@ public class Cadaver : MonoBehaviour
     #endregion
 
     #region methods
-    public void PalancaActivada()
+    public void LeverActivated() //Palanca activada
     {
-        _myInputManager._palancaActivated = true;
+        _myInputManager._leverActivated = true;
     }
     #endregion
     // Start is called before the first frame update

@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: andar dcha
+  m_Name: Izquierda
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,13 +20,11 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: 0c2bc70f8ef94cc4d9f410f55cb77c13, type: 3}
-    - time: 0.28333333
-      value: {fileID: 21300000, guid: f87b657f24b63b144a744873762d9499, type: 3}
-    - time: 0.55
-      value: {fileID: 21300000, guid: e78260f86b494d3428ae2dc28a6ad043, type: 3}
+      value: {fileID: 21300000, guid: 15bec64d4f0a1f94dad688a9f1c9a2ef, type: 3}
+    - time: 0.41666666
+      value: {fileID: 21300000, guid: 52347d7a8b76e3a46870cfe56df45e41, type: 3}
     - time: 0.8333333
-      value: {fileID: 21300000, guid: e78260f86b494d3428ae2dc28a6ad043, type: 3}
+      value: {fileID: 21300000, guid: c586f73745aa4cb4ea8cf77f981990ef, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,10 +44,9 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 0c2bc70f8ef94cc4d9f410f55cb77c13, type: 3}
-    - {fileID: 21300000, guid: f87b657f24b63b144a744873762d9499, type: 3}
-    - {fileID: 21300000, guid: e78260f86b494d3428ae2dc28a6ad043, type: 3}
-    - {fileID: 21300000, guid: e78260f86b494d3428ae2dc28a6ad043, type: 3}
+    - {fileID: 21300000, guid: 15bec64d4f0a1f94dad688a9f1c9a2ef, type: 3}
+    - {fileID: 21300000, guid: 52347d7a8b76e3a46870cfe56df45e41, type: 3}
+    - {fileID: 21300000, guid: c586f73745aa4cb4ea8cf77f981990ef, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
