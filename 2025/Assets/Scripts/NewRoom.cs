@@ -21,6 +21,7 @@ public class NewRoom : MonoBehaviour
     private void NuevaHab()
     {
         GameManager.Instance.ActivarHabitacion(_roomToActivate, this);
+        UI_Manager.Instance.Mision("Nueva misión:");
     }
     #endregion
     

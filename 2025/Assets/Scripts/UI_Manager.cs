@@ -20,6 +20,7 @@ public class UI_Manager : MonoBehaviour
     public Text balasg;
     public Text balassg;
     public Text palancaaviso;
+    public Text _mision;
     private float temporizadorpalanca;
     private bool gogo=false;
 
@@ -46,6 +47,11 @@ public class UI_Manager : MonoBehaviour
         currentlife = Mathf.Clamp(currentlife, 0, maxlife);
         lifeBar.fillAmount = currentlife / maxlife;
     }
+
+    public void Mision(string write)
+    {
+        _mision.text = write;
+    }
     #endregion
     // Start is called before the first frame update
     void Start()
@@ -54,6 +60,7 @@ public class UI_Manager : MonoBehaviour
         balasg.text = "";
         balassg.text = "";
         palancaaviso.text = "";
+        _mision.text = "";
     }
 
     // Update is called once per frame
