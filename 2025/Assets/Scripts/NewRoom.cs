@@ -7,10 +7,6 @@ public class NewRoom : MonoBehaviour
     #region references
     [SerializeField]
     private GameObject _roomToActivate;
-    [SerializeField]
-    private GameObject _lightsToActivate;
-    [HideInInspector]
-    public bool isPlayerInNextRoom = false;
     #endregion
 
     #region methods
@@ -20,12 +16,11 @@ public class NewRoom : MonoBehaviour
         if (hitPlayer)
         {
             NuevaHab();
-            isPlayerInNextRoom = true;
         }
     }
     private void NuevaHab()
     {
-        GameManager.Instance.ActivarHabitacion(_roomToActivate, _lightsToActivate, this);
+        GameManager.Instance.ActivarHabitacion(_roomToActivate, this);
     }
     #endregion
     

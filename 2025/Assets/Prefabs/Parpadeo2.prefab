@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4112097844130211578}
   - component: {fileID: 4112097844130211579}
-  - component: {fileID: -2002111321903421739}
+  - component: {fileID: 4069028990029076734}
   m_Layer: 0
   m_Name: Parpadeo2
   m_TagString: Untagged
@@ -73,7 +73,7 @@ MonoBehaviour:
   - {x: 2.7173972, y: -1.7009251, z: 0}
   - {x: 2.9102526, y: -1.3357974, z: 0}
   - {x: -1.9473324, y: 0.25551367, z: 0}
---- !u!114 &-2002111321903421739
+--- !u!114 &4069028990029076734
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

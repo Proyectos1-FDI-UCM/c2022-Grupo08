@@ -73,6 +73,6 @@ public class Player_Life_Component : Life_Component
                 _cont = 1.7f;
             }
         }
-        _myAnimator.SetInteger("VidaPlayer", _currentLife);
+        //_myAnimator.SetInteger("VidaPlayer", _currentLife);
     }
 }

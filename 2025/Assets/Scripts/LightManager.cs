@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class LightManager : MonoBehaviour
 {
+    #region parameters
+    [SerializeField]
+    private float _lightDelay = 0.75f;
+    #endregion
+
     #region properties
-    private float clockTick;
+    private bool state = true;
     #endregion
 
     #region references
     [SerializeField]
-    private List<GameObject> _lightList;
+    private List<Light_Behaviour> _lightList;
     #endregion
 
     #region references
@@ -23,22 +28,40 @@ public class LightManager : MonoBehaviour
         }
     }
     
-    public void LightsActivated(GameObject lightsToActive)
+    public void LightsActivated(Light_Behaviour lightsToActive)
     {
-        lightsToActive.SetActive(true);
+        _lightList.Add(lightsToActive);
+    }
+    private void CambioEstadoLuces()
+    {
+        state = !state;
+
+        //this.gameObject.SetActive(state);
+        foreach(Light_Behaviour _myLight in _lightList)
+        {
+            _myLight.gameObject.SetActive(state);
+        }
+
+        if (GameManager.Instance._electricidadActiva)
+        {
+            CancelInvoke("CambioEstadoLuces");
+        }
+    }
+
+    private void Awake()
+    {
+        _instance = this;
     }
     #endregion
     // Start is called before the first frame update
     void Start()
     {
-        _instance = this;
+        InvokeRepeating("CambioEstadoLuces", _lightDelay, _lightDelay);
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(Time.deltaTime);
-        //Debug.Log(Time.time);
-        //clockTick += Time.deltaTime;
+        
     }
 }
