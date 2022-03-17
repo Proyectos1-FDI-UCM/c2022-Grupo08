@@ -16,11 +16,15 @@ public class UI_Manager : MonoBehaviour
     }
     #endregion
     #region parameters
+    public Image lifeBar;
     public Text balasg;
     public Text balassg;
     public Text palancaaviso;
     private float temporizadorpalanca;
     private bool gogo=false;
+
+    public float maxlife;
+    public float currentlife;
     #endregion
     #region methods
     public void palanca()
@@ -35,6 +39,12 @@ public class UI_Manager : MonoBehaviour
     public void balasgUI(int bala,int cargador)
     {
         balassg.text= "" + bala + "/" + cargador;
+    }
+
+    public void BarraVida(float maxlife, float currentlife, bool getlife, bool loselife)
+    {
+        currentlife = Mathf.Clamp(currentlife, 0, maxlife);
+        lifeBar.fillAmount = currentlife / maxlife;
     }
     #endregion
     // Start is called before the first frame update
