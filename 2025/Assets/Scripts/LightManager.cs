@@ -51,6 +51,7 @@ public class LightManager : MonoBehaviour
     private void Awake()
     {
         _instance = this;
+        _lightList = new List<Light_Behaviour>();
     }
     #endregion
     // Start is called before the first frame update

@@ -250,8 +250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _lightDelay: 0.75
-  _lightList:
-  - {fileID: 1817565093}
+  _lightList: []
 --- !u!4 &66965597
 Transform:
   m_ObjectHideFlags: 0
@@ -6324,17 +6323,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5f5d7bd11a16814bacae0fb9ce8d333, type: 3}
---- !u!114 &1817565093 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: -3796176203246505364, guid: c6f58f4930057b9468654a3dbc6c3699, type: 3}
-  m_PrefabInstance: {fileID: 3061680064339321337}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dc7683b73dfef24fb36ac352a8c1fba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1865445539
 PrefabInstance:
   m_ObjectHideFlags: 0
