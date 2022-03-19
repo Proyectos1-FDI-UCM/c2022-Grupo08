@@ -53,30 +53,30 @@
     <UnityVersion>2020.3.13f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\LightManager.cs" />
-    <Compile Include="Assets\Scripts\Player_MovementController.cs" />
-    <Compile Include="Assets\Scripts\Botiquin.cs" />
-    <Compile Include="Assets\Scripts\UI_Manager.cs" />
-    <Compile Include="Assets\Scripts\Player_Life_Component.cs" />
-    <Compile Include="Assets\Scripts\Input_Manager.cs" />
+    <Compile Include="Assets\Scripts\Lights\LightManager.cs" />
+    <Compile Include="Assets\Scripts\Player\Player_MovementController.cs" />
+    <Compile Include="Assets\Scripts\Interactable\Botiquin.cs" />
+    <Compile Include="Assets\Scripts\Managers\UI_Manager.cs" />
+    <Compile Include="Assets\Scripts\Player\Player_Life_Component.cs" />
+    <Compile Include="Assets\Scripts\Player\Input_Manager.cs" />
     <Compile Include="Assets\Scripts\Barricada.cs" />
-    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\CameraMovementController.cs" />
-    <Compile Include="Assets\Scripts\ActivaNota.cs" />
-    <Compile Include="Assets\Scripts\Municion.cs" />
-    <Compile Include="Assets\Scripts\Fusibles.cs" />
+    <Compile Include="Assets\Scripts\Interactable\ActivaNota.cs" />
+    <Compile Include="Assets\Scripts\Interactable\Municion.cs" />
+    <Compile Include="Assets\Scripts\Interactable\Fusibles.cs" />
     <Compile Include="Assets\Scripts\ColisionParedes.cs" />
-    <Compile Include="Assets\Scripts\Cadaver.cs" />
-    <Compile Include="Assets\Scripts\Light_Behaviour.cs" />
+    <Compile Include="Assets\Scripts\Interactable\Cadaver.cs" />
+    <Compile Include="Assets\Scripts\Lights\Light_Behaviour.cs" />
     <Compile Include="Assets\Scripts\Bullet_Attack.cs" />
-    <Compile Include="Assets\Scripts\InteractDetection.cs" />
-    <Compile Include="Assets\Scripts\Player_Attack.cs" />
+    <Compile Include="Assets\Scripts\Interactable\InteractDetection.cs" />
+    <Compile Include="Assets\Scripts\Player\Player_Attack.cs" />
     <Compile Include="Assets\Scripts\Enemy_Behaviour.cs" />
     <Compile Include="Assets\Scripts\Life_Component.cs" />
-    <Compile Include="Assets\Scripts\Puerta.cs" />
+    <Compile Include="Assets\Scripts\Interactable\Puerta.cs" />
     <Compile Include="Assets\Scripts\NewRoom.cs" />
-    <Compile Include="Assets\Scripts\Cadaver2.cs" />
-    <Compile Include="Assets\Scripts\Cadaver3.cs" />
+    <Compile Include="Assets\Scripts\Interactable\Cadaver2.cs" />
+    <Compile Include="Assets\Scripts\Interactable\Cadaver3.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Diseño\Horror City - Hospital Tiles - RPG Maker VX Ace - Vexed.rar\Hospital Tiles - VX Ace\ReadMe.txt" />
