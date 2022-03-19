@@ -7443,7 +7443,7 @@ GameObject:
   - component: {fileID: 6426416932049479789}
   - component: {fileID: 2260879727980387758}
   m_Layer: 0
-  m_Name: Hab_1
+  m_Name: Room_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17165,7 +17165,7 @@ GameObject:
   - component: {fileID: 8275751884755225497}
   - component: {fileID: 8275751884755225496}
   m_Layer: 0
-  m_Name: Fusible_1
+  m_Name: Fuse_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17239,7 +17239,7 @@ GameObject:
   - component: {fileID: 8275751884789786203}
   - component: {fileID: 8275751884789786206}
   m_Layer: 0
-  m_Name: Wall_Electricidad
+  m_Name: Wall_Electricity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43377,7 +43377,7 @@ GameObject:
   - component: {fileID: 8275751884992829488}
   - component: {fileID: 8275751884992829491}
   m_Layer: 0
-  m_Name: Pasillo_Interior
+  m_Name: Indoor_Corridor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53943,7 +53943,7 @@ GameObject:
   - component: {fileID: 8275751885210692932}
   - component: {fileID: 8275751885210692935}
   m_Layer: 0
-  m_Name: Hab_5
+  m_Name: Room_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62337,7 +62337,7 @@ GameObject:
   - component: {fileID: 8275751885642421655}
   - component: {fileID: 8275751885642421654}
   m_Layer: 0
-  m_Name: Electricidad
+  m_Name: Electricity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70662,7 +70662,7 @@ GameObject:
   - component: {fileID: 8275751885692567059}
   - component: {fileID: 8275751885692567058}
   m_Layer: 0
-  m_Name: Fusible_2
+  m_Name: Fuse_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84599,7 +84599,7 @@ GameObject:
   - component: {fileID: 8275751885867987589}
   - component: {fileID: 8275751885867987588}
   m_Layer: 0
-  m_Name: Hab_2
+  m_Name: Room_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84708,7 +84708,7 @@ GameObject:
   - component: {fileID: 8275751885979793759}
   - component: {fileID: 8275751885979793758}
   m_Layer: 0
-  m_Name: Fusible_3
+  m_Name: Fuse_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -111615,7 +111615,7 @@ GameObject:
   - component: {fileID: 8275751886347408308}
   - component: {fileID: 8275751886347408311}
   m_Layer: 0
-  m_Name: Pasillo_1
+  m_Name: Corridor_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -111673,7 +111673,7 @@ GameObject:
   - component: {fileID: 8275751886395624531}
   - component: {fileID: 8275751886395624534}
   m_Layer: 0
-  m_Name: Wall_Hab_3
+  m_Name: Wall_Room_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -124525,7 +124525,7 @@ GameObject:
   - component: {fileID: 8275751886437751309}
   - component: {fileID: 8275751886437751308}
   m_Layer: 0
-  m_Name: Capilla
+  m_Name: Chapel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -124673,7 +124673,7 @@ GameObject:
   - component: {fileID: 8275751886478084657}
   - component: {fileID: 8275751886478084660}
   m_Layer: 0
-  m_Name: Wall_Fusible_1
+  m_Name: Wall_Fuse_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -124742,7 +124742,7 @@ GameObject:
   - component: {fileID: 8275751886480741381}
   - component: {fileID: 8275751886480741380}
   m_Layer: 0
-  m_Name: ===NIVEL_1===
+  m_Name: ===LVL_1===
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -135536,7 +135536,7 @@ GameObject:
   - component: {fileID: 8275751886481142080}
   - component: {fileID: 8275751886481142083}
   m_Layer: 0
-  m_Name: Hab_3
+  m_Name: Room_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -143884,7 +143884,7 @@ GameObject:
   - component: {fileID: 8275751886593954548}
   - component: {fileID: 8275751886593954551}
   m_Layer: 0
-  m_Name: Hab_4
+  m_Name: Room_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
