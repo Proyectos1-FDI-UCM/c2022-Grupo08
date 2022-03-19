@@ -66,6 +66,10 @@ public class UI_Manager : MonoBehaviour
     {
         _controlsMenu.SetActive(enabled);
     }
+    public void MuteButton()
+    {
+        SoundManager.Instance.MuteVolume();
+    }
     public void Quit()
     {
         GameManager.Instance.QuitGame();
