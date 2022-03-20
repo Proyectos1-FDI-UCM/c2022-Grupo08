@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UI_Manager : MonoBehaviour
 {
@@ -27,9 +28,11 @@ public class UI_Manager : MonoBehaviour
     public float maxlife;
     public float currentlife;
     [SerializeField]
-    private GameObject _mainMenu;
+    private GameObject _customizationMenu;
     [SerializeField]
     private GameObject _controlsMenu;
+    [SerializeField]
+    private GameObject _mainMenu;
     #endregion
     #region methods
     public void palanca()
@@ -57,11 +60,16 @@ public class UI_Manager : MonoBehaviour
         _mision.text = write;
     }
 
-    public void MainMenu(bool enabled)
+    public void CustomizationMenu(bool enabled)
     {
-        _mainMenu.SetActive(enabled);
+        _customizationMenu.SetActive(enabled);
+        _mainMenu.SetActive(!enabled);
     }
 
+    public void StartGame()
+    {
+        SceneManager.LoadScene(1);
+    }
     public void ControlsMenu(bool enabled)
     {
         _controlsMenu.SetActive(enabled);
