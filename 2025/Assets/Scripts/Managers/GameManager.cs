@@ -95,32 +95,36 @@ public class GameManager : MonoBehaviour
 
         SceneManager.LoadScene(1);
 
-        Player_Life_Component.Instance.BeBoy();
+        boy = true;
+        ActivateCharacter();
+       // Player_Life_Component.Instance.BeBoy();
     }
 
     public void StartGameGirl()
     {
         SceneManager.LoadScene(1);
 
-        Player_Life_Component.Instance.BeGirl();
-       
+        girl = true;
+        ActivateCharacter();
+        // Player_Life_Component.Instance.BeGirl();
+
     }
 
-    //public void ActivateCharacter()
-    //{
-    //    Debug.Log("activao");
-    //    if (boy)
-    //    {
-    //        _boy.SetActive(true);
-    //        Debug.Log("bien");
+    public void ActivateCharacter()
+    {
+        Debug.Log("activao");
+        if (boy)
+        {
+            _boy.SetActive(true);
+            Debug.Log("bien");
 
-    //    }
+        }
 
-    //    if (girl)
-    //    {
-    //        _girl.SetActive(true);
-    //    }
-    //}
+        if (girl)
+        {
+            _girl.SetActive(true);
+        }
+    }
 
 
     #endregion

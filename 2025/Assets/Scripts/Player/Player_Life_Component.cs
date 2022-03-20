@@ -16,16 +16,16 @@ public class Player_Life_Component : Life_Component
     [SerializeField]
     private GameObject _girl;
 
-    static private Player_Life_Component _instance; // Unique GameManager instance (Singleton Pattern).
+    //static private Player_Life_Component _instance; // Unique GameManager instance (Singleton Pattern).
 
 
-    static public Player_Life_Component Instance // Public accesor for GameManager instance.
-    {
-        get
-        {
-            return _instance; // Para poder instanciar el GameManager y llamarlo desde cualquier script
-        }
-    }
+    //static public Player_Life_Component Instance // Public accesor for GameManager instance.
+    //{
+    //    get
+    //    {
+    //        return _instance; // Para poder instanciar el GameManager y llamarlo desde cualquier script
+    //    }
+    //}
     #endregion
 
     #region properties
@@ -84,7 +84,7 @@ public class Player_Life_Component : Life_Component
         _myTransform = GetComponent<Transform>();
         _myInputManager = GetComponent<Input_Manager>();
         _myPlayerMovementController = GetComponent<Player_MovementController>();
-        _instance = this;
+       // _instance = this;
     }
 
     // Update is called once per frame
