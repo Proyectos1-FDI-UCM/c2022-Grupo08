@@ -72,14 +72,14 @@ public class Input_Manager : MonoBehaviour
             // Selección de armas
             if (_leverActivated)
             {
-                if (Input.GetKeyDown(KeyCode.Alpha1))
+                if (Input.GetKeyDown(KeyCode.Space))
                 {
                     _myPlayerAttack.ShootBala(1,dir);
                 }
             }
             if (_pistolaActivada)
             {
-                if (Input.GetKeyDown(KeyCode.Alpha2))
+                if (Input.GetKeyDown(KeyCode.Mouse0))
                 {
                     _myPlayerAttack.ShootBala(2, dir);
                 }
@@ -87,7 +87,7 @@ public class Input_Manager : MonoBehaviour
 
             if (_escopetaActivada)
             {
-                if (Input.GetKeyDown(KeyCode.Alpha3))
+                if (Input.GetKeyDown(KeyCode.Mouse1))
                 {
                     _myPlayerAttack.ShootBala(3, dir);
                 }

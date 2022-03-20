@@ -34,7 +34,7 @@ public class UI_Manager : MonoBehaviour
     #region methods
     public void palanca()
     {
-        palancaaviso.text = "Pulse 1 para golpear con la palanca";
+        palancaaviso.text = "Pulse Espacio para golpear con la palanca";
         gogo = true;
     }
     public void balagUI(int bala,int cargador)
