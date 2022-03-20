@@ -740,6 +740,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 707199513790786221, guid: f1f7bd51ad420f048ad30821d946adc0, type: 3}
   m_PrefabInstance: {fileID: 624613628}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &711035475 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 707199513790786217, guid: f1f7bd51ad420f048ad30821d946adc0, type: 3}
+  m_PrefabInstance: {fileID: 624613628}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &760989614 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8599268728664269997, guid: b328f87a04948464297f58f658f0e387, type: 3}
@@ -1249,22 +1254,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1649512479}
-        m_TargetAssemblyTypeName: UI_Manager, Assembly-CSharp
-        m_MethodName: StartGame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1277393840}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: SelectCharacterGirl
-        m_Mode: 6
+        m_MethodName: StartGameGirl
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1623,15 +1616,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eef9ee88cd059da409268b08b7552484, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boy: 0
-  girl: 0
   _electricidadActiva: 0
   _maxFusibles: 3
   _puerta: {fileID: 0}
   _nota: {fileID: 0}
   _botiquin: {fileID: 0}
-  _boy: {fileID: 0}
-  _girl: {fileID: 0}
+  _boy: {fileID: 711035475}
+  _girl: {fileID: 1335625455}
   _listInteractableObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -1737,10 +1728,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1649512479}
-        m_TargetAssemblyTypeName: UI_Manager, Assembly-CSharp
-        m_MethodName: SelectBoy
-        m_Mode: 6
+      - m_Target: {fileID: 1277393840}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: StartGameBoy
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1787,6 +1778,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1289330879}
   m_CullTransparentMesh: 1
+--- !u!1 &1335625455 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7888599800557731787, guid: b328f87a04948464297f58f658f0e387, type: 3}
+  m_PrefabInstance: {fileID: 615315122}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1405747132
 GameObject:
   m_ObjectHideFlags: 0

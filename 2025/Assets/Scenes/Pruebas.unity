@@ -5736,6 +5736,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 707199513790786224, guid: f1f7bd51ad420f048ad30821d946adc0, type: 3}
+      propertyPath: _boy
+      value: 
+      objectReference: {fileID: 1384401193}
+    - target: {fileID: 707199513790786224, guid: f1f7bd51ad420f048ad30821d946adc0, type: 3}
+      propertyPath: _girl
+      value: 
+      objectReference: {fileID: 1637470449}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1f7bd51ad420f048ad30821d946adc0, type: 3}
 --- !u!4 &1423058938 stripped
@@ -6619,6 +6627,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3833361912761251871, guid: b328f87a04948464297f58f658f0e387, type: 3}
+      propertyPath: _boy
+      value: 
+      objectReference: {fileID: 1384401193}
+    - target: {fileID: -3833361912761251871, guid: b328f87a04948464297f58f658f0e387, type: 3}
+      propertyPath: _girl
+      value: 
+      objectReference: {fileID: 1637470449}
     - target: {fileID: 7888599800557731787, guid: b328f87a04948464297f58f658f0e387, type: 3}
       propertyPath: m_Name
       value: Chica
@@ -7710,15 +7726,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eef9ee88cd059da409268b08b7552484, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boy: 0
-  girl: 0
   _electricidadActiva: 0
   _maxFusibles: 3
   _puerta: {fileID: 0}
   _nota: {fileID: 1145692099}
   _botiquin: {fileID: 0}
-  _boy: {fileID: 1384401193}
-  _girl: {fileID: 1637470449}
+  _boy: {fileID: 707199513790786217, guid: f1f7bd51ad420f048ad30821d946adc0, type: 3}
+  _girl: {fileID: 7888599800557731787, guid: b328f87a04948464297f58f658f0e387, type: 3}
   _listInteractableObjects:
   - {fileID: 0}
   - {fileID: 0}

@@ -9,8 +9,25 @@ public class Player_Life_Component : Life_Component
     private Input_Manager _myInputManager;
     private Player_MovementController _myPlayerMovementController;
     private Transform _myTransform;
+
+    [SerializeField]
+    private GameObject _boy;
+
+    [SerializeField]
+    private GameObject _girl;
+
+    static private Player_Life_Component _instance; // Unique GameManager instance (Singleton Pattern).
+
+
+    static public Player_Life_Component Instance // Public accesor for GameManager instance.
+    {
+        get
+        {
+            return _instance; // Para poder instanciar el GameManager y llamarlo desde cualquier script
+        }
+    }
     #endregion
-    
+
     #region properties
     private float empuje = 5f; //Fuerza con la que se va a ipulsar hacia atrás al jugador al ser golpeado por un objeto hostil
     #endregion
@@ -45,6 +62,17 @@ public class Player_Life_Component : Life_Component
         _currentLife += curacion;
         _currentLife = Mathf.Clamp(_currentLife, 0, 100);
     }
+
+    public void BeBoy()
+    {
+        _boy.SetActive(true);
+    }
+
+    public void BeGirl()
+    {
+        _girl.SetActive(true);
+    }
+
     #endregion
 
     // Start is called before the first frame update
@@ -56,6 +84,7 @@ public class Player_Life_Component : Life_Component
         _myTransform = GetComponent<Transform>();
         _myInputManager = GetComponent<Input_Manager>();
         _myPlayerMovementController = GetComponent<Player_MovementController>();
+        _instance = this;
     }
 
     // Update is called once per frame

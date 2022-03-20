@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,8 +9,8 @@ public class GameManager : MonoBehaviour
     //[SerializeField]
     //private bool state = true;
 
-    public bool boy = false;
-    public bool girl = false;
+     bool boy = false;
+     bool girl = false;
     #endregion
     #region properties
 
@@ -34,6 +35,8 @@ public class GameManager : MonoBehaviour
     #endregion
     #region references
     static private GameManager _instance; // Unique GameManager instance (Singleton Pattern).
+
+    
     static public GameManager Instance // Public accesor for GameManager instance.
     {
         get
@@ -86,7 +89,40 @@ public class GameManager : MonoBehaviour
         //Application.Quit();
     }
 
-    
+    public void StartGameBoy()
+    {
+        Debug.Log("chico1");
+
+        SceneManager.LoadScene(1);
+
+        Player_Life_Component.Instance.BeBoy();
+    }
+
+    public void StartGameGirl()
+    {
+        SceneManager.LoadScene(1);
+
+        Player_Life_Component.Instance.BeGirl();
+       
+    }
+
+    //public void ActivateCharacter()
+    //{
+    //    Debug.Log("activao");
+    //    if (boy)
+    //    {
+    //        _boy.SetActive(true);
+    //        Debug.Log("bien");
+
+    //    }
+
+    //    if (girl)
+    //    {
+    //        _girl.SetActive(true);
+    //    }
+    //}
+
+
     #endregion
     // Start is called before the first frame update
     void Start()
@@ -97,13 +133,6 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (boy)
-        {
-            _boy.SetActive(true);
-        }
-        else if (girl)
-        {
-            _girl.SetActive(true);
-        }
+       
     }
 }
