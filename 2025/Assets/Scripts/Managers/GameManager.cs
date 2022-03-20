@@ -7,6 +7,9 @@ public class GameManager : MonoBehaviour
     #region parameters
     //[SerializeField]
     //private bool state = true;
+
+    public bool boy = false;
+    public bool girl = false;
     #endregion
     #region properties
 
@@ -24,6 +27,10 @@ public class GameManager : MonoBehaviour
     private GameObject _nota;
     [SerializeField]
     private GameObject _botiquin;
+    [SerializeField]
+    private GameObject _boy;
+    [SerializeField]
+    private GameObject _girl;
     #endregion
     #region references
     static private GameManager _instance; // Unique GameManager instance (Singleton Pattern).
@@ -78,6 +85,8 @@ public class GameManager : MonoBehaviour
         UnityEditor.EditorApplication.isPlaying = false;
         //Application.Quit();
     }
+
+    
     #endregion
     // Start is called before the first frame update
     void Start()
@@ -88,6 +97,13 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        if (boy)
+        {
+            _boy.SetActive(true);
+        }
+        else if (girl)
+        {
+            _girl.SetActive(true);
+        }
     }
 }

@@ -66,10 +66,12 @@ public class UI_Manager : MonoBehaviour
         _mainMenu.SetActive(!enabled);
     }
 
-    public void StartGame()
+    public void SelectBoy(bool enabled)
     {
+        GameManager.Instance.boy = true;
         SceneManager.LoadScene(1);
     }
+    
     public void ControlsMenu(bool enabled)
     {
         _controlsMenu.SetActive(enabled);
