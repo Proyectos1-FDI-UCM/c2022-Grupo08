@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1611685993041086367}
   - component: {fileID: 1611685993041086364}
   - component: {fileID: 8729017651038953215}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Lento
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,6 +123,7 @@ MonoBehaviour:
   _currentLife: 20
   _damage: 10
   _cont: 1.7
+  empuje: 5
   _myAnimator: {fileID: 1611685993041086364}
 --- !u!61 &1611685993041086367
 BoxCollider2D:

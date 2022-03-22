@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5862815375226740596}
   - component: {fileID: 5862815375226740601}
   - component: {fileID: 69686713696721321}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rapido
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,6 +123,7 @@ MonoBehaviour:
   _currentLife: 0
   _damage: 10
   _cont: 1.7
+  empuje: 5
   _myAnimator: {fileID: 5862815375226740601}
 --- !u!61 &5862815375226740596
 BoxCollider2D:

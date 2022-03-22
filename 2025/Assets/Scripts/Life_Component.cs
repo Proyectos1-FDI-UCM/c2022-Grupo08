@@ -12,6 +12,14 @@ public class Life_Component : MonoBehaviour
     private int _damage = 10;
     [SerializeField]
     protected float _cont = 1.7f;
+    [SerializeField]
+    private float empuje = 5.0f;
+    #endregion
+    #region references
+    [SerializeField]
+    protected Animator _myAnimator;
+    private Rigidbody2D _myRigidBody;
+    private Transform _myTransform;
     #endregion
     #region methods
     private void OnCollisionEnter2D(Collision2D collision)
@@ -26,6 +34,7 @@ public class Life_Component : MonoBehaviour
     public virtual void Damage(int damagePoint)
     {
         _currentLife -= damagePoint;
+        _myRigidBody.AddForce(_myTransform.position * -empuje, ForceMode2D.Impulse);
     }
 
     protected void Die()
@@ -33,15 +42,13 @@ public class Life_Component : MonoBehaviour
         gameObject.SetActive(false);
     }
     #endregion
-    #region references
-    [SerializeField]
-    protected Animator _myAnimator;
-    #endregion 
 
     // Start is called before the first frame update
     public virtual void Start()
     {
         _currentLife = _maxLife;
+        _myTransform = transform;
+        _myRigidBody = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame

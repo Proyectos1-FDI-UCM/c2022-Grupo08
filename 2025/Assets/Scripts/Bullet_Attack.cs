@@ -13,27 +13,19 @@ public class Bullet_Attack : MonoBehaviour
     private float _life = 1.0f;
     private float _timer;
     #endregion
-
-    #region properties
-    private float empuje = 5f; //Fuerza con la que se va a ipulsar hacia atrás al zombie
-    #endregion
     #region references
     private Transform _mytransform;
-    private Rigidbody2D _myRigidBody;
     #endregion
 
     #region methods
     private void OnTriggerEnter2D(Collider2D collision) //Cuando colisione el misil
     {
-        Enemy_Behaviour hitZombie = collision.GetComponent<Enemy_Behaviour>();
+        Life_Component hitZombie = collision.GetComponent<Life_Component>();
         ColisionParedes hitWalls = collision.GetComponent<ColisionParedes>();
-        Life_Component Life = collision.GetComponent<Life_Component>();
+
         if (hitZombie)
         {
-            Debug.Log("CCC");
-            var heading = hitZombie.transform.position - _mytransform.position; //Direccion de empuje    
-            _myRigidBody.AddForce(heading * -empuje, ForceMode2D.Impulse);
-            Life.Damage(_damage);
+            hitZombie.Damage(_damage);
             Destroy(gameObject);
         }
 
@@ -48,7 +40,6 @@ public class Bullet_Attack : MonoBehaviour
     void Start()
     {
         _mytransform = transform;
-        _myRigidBody = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame

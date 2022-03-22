@@ -54,7 +54,7 @@ public class Player_Life_Component : Life_Component
         {
             var heading = barricada.transform.position - _myTransform.position; //Direccion de empuje
             //Necesitamos la direccion del jugador o del zombie
-            _myRigidBody.AddForce(heading * -empuje/4, ForceMode2D.Impulse);
+            _myRigidBody.AddForce(heading * -empuje / 4, ForceMode2D.Impulse);
         }
     }
     public void Cura(int curacion)
@@ -84,7 +84,7 @@ public class Player_Life_Component : Life_Component
         _myTransform = GetComponent<Transform>();
         _myInputManager = GetComponent<Input_Manager>();
         _myPlayerMovementController = GetComponent<Player_MovementController>();
-       // _instance = this;
+        // _instance = this;
     }
 
     // Update is called once per frame
@@ -93,7 +93,7 @@ public class Player_Life_Component : Life_Component
         if (_currentLife <= 0)
         {
             // Para no poder mooverse durante la animación de muerte
-            _myInputManager._isDead = true; 
+            _myInputManager._isDead = true;
             _myPlayerMovementController._movementSpeed = 0;
             _cont -= Time.deltaTime;
             if (_cont <= 0)

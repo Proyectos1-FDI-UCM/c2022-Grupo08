@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5807533944131582089}
   - component: {fileID: 5807533944131582092}
   - component: {fileID: 5968860862878444114}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Fuerte
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,6 +123,7 @@ MonoBehaviour:
   _currentLife: 0
   _damage: 10
   _cont: 1.7
+  empuje: 5
   _myAnimator: {fileID: 5807533944131582092}
 --- !u!61 &5807533944131582089
 BoxCollider2D:

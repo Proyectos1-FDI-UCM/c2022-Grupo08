@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -3833361912761251871}
   - component: {fileID: 4177218788220391577}
   - component: {fileID: -2134424655629893753}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Chica
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -192,7 +192,10 @@ MonoBehaviour:
   _currentLife: 0
   _damage: 10
   _cont: 1.7
+  empuje: 5
   _myAnimator: {fileID: 0}
+  _boy: {fileID: 0}
+  _girl: {fileID: 0}
 --- !u!114 &4177218788220391577
 MonoBehaviour:
   m_ObjectHideFlags: 0
