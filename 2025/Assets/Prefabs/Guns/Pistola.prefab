@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8155841962187461509}
   - component: {fileID: 7234809788067209248}
   m_Layer: 0
-  m_Name: pistola-removebg-preview
+  m_Name: Pistola
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

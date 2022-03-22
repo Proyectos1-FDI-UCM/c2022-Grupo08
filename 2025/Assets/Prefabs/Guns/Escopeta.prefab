@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5407656532583612187}
   - component: {fileID: 5499848129535066458}
   m_Layer: 0
-  m_Name: escopeta-removebg-preview
+  m_Name: Escopeta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

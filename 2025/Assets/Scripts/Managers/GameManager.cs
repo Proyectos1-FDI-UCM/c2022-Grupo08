@@ -47,7 +47,6 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private List<InteractDetection> _listInteractableObjects; 
     #endregion
-
     #region methods
     private void Awake()
     {
@@ -58,7 +57,6 @@ public class GameManager : MonoBehaviour
         _listInteractableObjects.Remove(_myInteractDetection); // Elimino al objecto con el que interactuado de la lista
         Destroy(_myInteractDetection.gameObject); // Destruye al objeto interactuado de escena
     }
-
     public void CheckFusibles() // Actualiza el numero de fusibles activos y los compara con el numero maximo posible para activar el panel electrico en su momento
     {
         _currentFusibles++;
@@ -88,7 +86,6 @@ public class GameManager : MonoBehaviour
         UnityEditor.EditorApplication.isPlaying = false;
         //Application.Quit();
     }
-
     public void StartGameBoy()
     {
         Debug.Log("chico1");
@@ -99,7 +96,6 @@ public class GameManager : MonoBehaviour
         ActivateCharacter();
        // Player_Life_Component.Instance.BeBoy();
     }
-
     public void StartGameGirl()
     {
         SceneManager.LoadScene(1);
@@ -109,7 +105,6 @@ public class GameManager : MonoBehaviour
         // Player_Life_Component.Instance.BeGirl();
 
     }
-
     public void ActivateCharacter()
     {
         Debug.Log("activao");
@@ -125,8 +120,6 @@ public class GameManager : MonoBehaviour
             _girl.SetActive(true);
         }
     }
-
-
     #endregion
     // Start is called before the first frame update
     void Start()

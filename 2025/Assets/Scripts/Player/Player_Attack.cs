@@ -153,7 +153,6 @@ public class Player_Attack : MonoBehaviour
     {
         holdingInteract = !holdingInteract;
     }
-
     public void SumaBala(int tipobala, int cargadores)
     {
         if (tipobala == 0)
