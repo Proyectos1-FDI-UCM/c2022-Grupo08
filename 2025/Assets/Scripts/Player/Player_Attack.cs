@@ -111,6 +111,8 @@ public class Player_Attack : MonoBehaviour
         Cadaver hitCadaver = collision.GetComponent<Cadaver>();
         Cadaver2 hitCadaver2 = collision.GetComponent<Cadaver2>();
         Cadaver3 hitCadaver3 = collision.GetComponent<Cadaver3>();
+        Key hitKey = collision.GetComponent<Key>();
+
         if (hitInteractableObject)
         {
             _myInputManager.InDetectionZone = true;
@@ -145,6 +147,10 @@ public class Player_Attack : MonoBehaviour
             else if (hitCadaver3)
             {
                 hitInteractableObject.Interact(7);
+            }
+            else if (hitKey)
+            {
+                hitInteractableObject.Interact(8);
             }
             ToCallInteraction();
         }

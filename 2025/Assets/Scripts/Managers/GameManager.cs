@@ -31,6 +31,10 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject _botiquin;
     [SerializeField]
+    private GameObject _key;
+    [SerializeField]
+    private GameObject _parkingDoor;
+    [SerializeField]
     private GameObject _boy;
     [SerializeField]
     private GameObject _girl;
@@ -89,6 +93,12 @@ public class GameManager : MonoBehaviour
     {
         room.SetActive(true);
         Destroy(triggerToDestroy);
+    }
+
+    public void GetKey()
+    {
+        _key.SetActive(false);
+        _parkingDoor.SetActive(true);
     }
     public void SetUIManager(UI_Manager uimanager) //Setea el UiManager
     {
