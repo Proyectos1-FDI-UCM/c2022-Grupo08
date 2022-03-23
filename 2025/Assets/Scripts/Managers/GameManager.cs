@@ -102,9 +102,10 @@ public class GameManager : MonoBehaviour
         _UIManager.BarraVida(_currentLife, _maxLife);   
     }
 
-    public void GetHealth(int curacion)
+    public void GetHealth(int _currentlife)
     {
-
+        SetUIManager(_UIManager);
+        _UIManager.BarraVida(_maxLife, _currentlife);
     }
     public void QuitGame()
     {
