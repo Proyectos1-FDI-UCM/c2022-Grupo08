@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\Barricada.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Interactable\Elevator.cs" />
+    <Compile Include="Assets\Scripts\Interactable\Key.cs" />
     <Compile Include="Assets\Scripts\CameraMovementController.cs" />
     <Compile Include="Assets\Scripts\Interactable\ActivaNota.cs" />
     <Compile Include="Assets\Scripts\Interactable\Municion.cs" />
