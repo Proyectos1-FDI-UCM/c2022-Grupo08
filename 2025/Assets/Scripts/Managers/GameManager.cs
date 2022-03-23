@@ -9,8 +9,8 @@ public class GameManager : MonoBehaviour
     //[SerializeField]
     //private bool state = true;
 
-     bool boy = false;
-     bool girl = false;
+     bool boy;
+     bool girl;
     #endregion
     #region properties
 
@@ -32,6 +32,9 @@ public class GameManager : MonoBehaviour
     private GameObject _boy;
     [SerializeField]
     private GameObject _girl;
+    [SerializeField]
+    private Transform _spawn;
+    private GameObject saved;
     #endregion
     #region references
     static private GameManager _instance; // Unique GameManager instance (Singleton Pattern).
@@ -51,6 +54,8 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         _instance = this;
+        DontDestroyOnLoad(_boy);
+        DontDestroyOnLoad(_girl);
     }
     public void InteractableObjectDone(InteractDetection _myInteractDetection) // Gestiona la interaccion con objetos interactuables
     {
@@ -88,43 +93,18 @@ public class GameManager : MonoBehaviour
     }
     public void StartGameBoy()
     {
-        Debug.Log("chico1");
-
         SceneManager.LoadScene(1);
-
-        boy = true;
-        ActivateCharacter();
-       // Player_Life_Component.Instance.BeBoy();
     }
     public void StartGameGirl()
     {
         SceneManager.LoadScene(1);
-
-        girl = true;
-        ActivateCharacter();
-        // Player_Life_Component.Instance.BeGirl();
-
     }
-    public void ActivateCharacter()
-    {
-        Debug.Log("activao");
-        if (boy)
-        {
-            _boy.SetActive(true);
-            Debug.Log("bien");
-
-        }
-
-        if (girl)
-        {
-            _girl.SetActive(true);
-        }
-    }
+    
     #endregion
     // Start is called before the first frame update
     void Start()
     {
-        
+        _boy.transform.position=_spawn.position;
     }
 
     // Update is called once per frame

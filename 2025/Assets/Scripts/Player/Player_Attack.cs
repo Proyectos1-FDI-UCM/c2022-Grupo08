@@ -17,12 +17,18 @@ public class Player_Attack : MonoBehaviour
     [SerializeField]
     private float recargasg;
     private float tiempocarga;
+    [SerializeField]
+
     private bool recargando;
     [SerializeField]
     private int totalbalasg;
     [SerializeField]
     private int totalbalassg;
+    [SerializeField]
+
     private bool tengoammog = true;
+    [SerializeField]
+
     private bool tengoammosg = true;
     #endregion
 
@@ -85,8 +91,10 @@ public class Player_Attack : MonoBehaviour
                 if (!recargando)
                 {
                     GameObject.Instantiate(sgbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector));
-                    GameObject.Instantiate(sgbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector + new Vector3(0, 0, 15)));
-                    GameObject.Instantiate(sgbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector + new Vector3(0, 0, -15)));
+                    GameObject.Instantiate(sgbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector + new Vector3(0, 0, 10)));
+                    GameObject.Instantiate(sgbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector + new Vector3(0, 0, 20)));
+                    GameObject.Instantiate(sgbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector + new Vector3(0, 0, -10)));
+                    GameObject.Instantiate(sgbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector + new Vector3(0, 0, -20)));
                     faltabalasg -= 1;
                     UI_Manager.Instance.balasgUI(faltabalasg, totalbalassg);
                 }
@@ -189,9 +197,9 @@ public class Player_Attack : MonoBehaviour
             tiempocarga += Time.deltaTime;
             if (tiempocarga >= recargag)
             {
+                recargando = false;
                 faltabalag = cargadorbalag;
                 tiempocarga = 0;
-                recargando = false;
                 totalbalasg -= cargadorbalag;
                 UI_Manager.Instance.balagUI(faltabalag, totalbalasg);
             }
