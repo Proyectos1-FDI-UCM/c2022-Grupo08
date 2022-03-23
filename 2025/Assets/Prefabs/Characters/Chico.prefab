@@ -139,8 +139,8 @@ MonoBehaviour:
   _cont: 1.7
   empuje: 5
   _myAnimator: {fileID: 0}
-  _boy: {fileID: 0}
-  _girl: {fileID: 0}
+  _boy: {fileID: 707199513790786217}
+  _girl: {fileID: 7888599800557731787, guid: b328f87a04948464297f58f658f0e387, type: 3}
 --- !u!114 &8646861863707179862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,8 +157,11 @@ MonoBehaviour:
   cargadorbalasg: 0
   recargag: 0
   recargasg: 0
+  recargando: 0
   totalbalasg: 0
   totalbalassg: 0
+  tengoammog: 1
+  tengoammosg: 1
   pbala: {fileID: 2169876480051521058, guid: 61fe43c2e31fc4c4eaa77792d46879e9, type: 3}
   gbala: {fileID: 5504288310560798774, guid: f36c3dffc985dbb4296afe2978698f54, type: 3}
   sgbala: {fileID: 725538675894934391, guid: 066667dfa65792c4cbac2a10915dd1a3, type: 3}
@@ -219,7 +222,7 @@ Animator:
   m_GameObject: {fileID: 707199513790786217}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dee096230fd21094ca238a19592d68e5, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

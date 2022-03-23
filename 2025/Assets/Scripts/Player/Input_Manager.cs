@@ -46,7 +46,7 @@ public class Input_Manager : MonoBehaviour
                 movementDirection.y = -1.0f;
                 dir = 2;
             }
-            if (Input.GetKey(KeyCode.A))
+            else if (Input.GetKey(KeyCode.A))
             {
                 // Izquierda
                 movementDirection.x = -1.0f;
