@@ -35,6 +35,10 @@ public class Life_Component : MonoBehaviour
     {
         _currentLife -= damagePoint;
         _myRigidBody.AddForce(_myTransform.position * -empuje, ForceMode2D.Impulse);
+        if (gameObject.GetComponent<Player_Life_Component>())
+        {
+            GameManager.Instance.GetDamage();
+        }
     }
 
     protected void Die()

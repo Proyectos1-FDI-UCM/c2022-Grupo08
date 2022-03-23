@@ -61,6 +61,7 @@ public class Player_Life_Component : Life_Component
     {
         _currentLife += curacion;
         _currentLife = Mathf.Clamp(_currentLife, 0, 100);
+        GameManager.Instance.GetHealth( curacion);
     }
 
     public void BeBoy()

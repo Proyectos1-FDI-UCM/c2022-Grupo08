@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private int _maxFusibles = 3;
     private int _currentFusibles = 0;
+    float _maxLife = 100;
+    public float _currentLife = 100;
 
     //[SerializeField]
     //private GameObject _luces;
@@ -48,7 +50,9 @@ public class GameManager : MonoBehaviour
         }
     }
     [SerializeField]
-    private List<InteractDetection> _listInteractableObjects; 
+    private List<InteractDetection> _listInteractableObjects;
+
+    private UI_Manager _UIManager;
     #endregion
     #region methods
     private void Awake()
@@ -85,6 +89,22 @@ public class GameManager : MonoBehaviour
     {
         room.SetActive(true);
         Destroy(triggerToDestroy);
+    }
+    public void SetUIManager(UI_Manager uimanager) //Setea el UiManager
+    {
+        _UIManager = uimanager;
+        uimanager.BarraVida(_currentLife, _maxLife);
+
+    }
+
+    public void GetDamage()
+    {
+        _UIManager.BarraVida(_currentLife, _maxLife);   
+    }
+
+    public void GetHealth(int curacion)
+    {
+
     }
     public void QuitGame()
     {

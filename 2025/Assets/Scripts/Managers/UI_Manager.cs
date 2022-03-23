@@ -24,7 +24,7 @@ public class UI_Manager : MonoBehaviour
     public Text _mision;
     private float temporizadorpalanca;
     private bool gogo=false;
-
+    
     public float maxlife;
     public float currentlife;
     [SerializeField]
@@ -49,7 +49,7 @@ public class UI_Manager : MonoBehaviour
         balassg.text= "" + bala + "/" + cargador;
     }
 
-    public void BarraVida(float maxlife, float currentlife, bool getlife, bool loselife)
+    public void BarraVida(float maxlife, float currentlife)
     {
         currentlife = Mathf.Clamp(currentlife, 0, maxlife);
         lifeBar.fillAmount = currentlife / maxlife;
