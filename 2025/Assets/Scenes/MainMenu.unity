@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 149266741}
   - component: {fileID: 149266740}
   m_Layer: 5
-  m_Name: QuitButton
+  m_Name: ExitButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1533,9 +1533,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _electricidadActiva: 0
   _maxFusibles: 3
+  _currentLife: 100
   _puerta: {fileID: 0}
   _nota: {fileID: 0}
   _botiquin: {fileID: 0}
+  _key: {fileID: 0}
+  _parkingDoor: {fileID: 0}
   _boy: {fileID: 707199513790786217, guid: f1f7bd51ad420f048ad30821d946adc0, type: 3}
   _girl: {fileID: 1335625455}
   _spawn: {fileID: 0}

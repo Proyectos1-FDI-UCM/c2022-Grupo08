@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\Barricada.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Interactable\Elevator.cs" />
+    <Compile Include="Assets\Scripts\Interactable\Key.cs" />
     <Compile Include="Assets\Scripts\CameraMovementController.cs" />
     <Compile Include="Assets\Scripts\Interactable\ActivaNota.cs" />
     <Compile Include="Assets\Scripts\Interactable\Municion.cs" />
@@ -80,7 +81,6 @@
     <Compile Include="Assets\Scripts\NewRoom.cs" />
     <Compile Include="Assets\Scripts\Interactable\Cadaver2.cs" />
     <Compile Include="Assets\Scripts\Interactable\Cadaver3.cs" />
-    <Compile Include="Assets\Scripts\Interactable\Key.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Diseño\Horror City - Hospital Tiles - RPG Maker VX Ace - Vexed.rar\Hospital Tiles - VX Ace\ReadMe.txt" />

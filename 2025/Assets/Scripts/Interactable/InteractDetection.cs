@@ -45,6 +45,7 @@ public class InteractDetection : MonoBehaviour
         _myCadaver = GetComponent<Cadaver>();
         _myCadaver2 = GetComponent<Cadaver2>();
         _myCadaver3 = GetComponent<Cadaver3>();
+        _myKey = GetComponent<Key>();
     }
 
     // Update is called once per frame

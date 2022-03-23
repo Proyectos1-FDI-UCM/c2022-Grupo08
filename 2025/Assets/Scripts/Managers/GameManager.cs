@@ -96,8 +96,7 @@ public class GameManager : MonoBehaviour
     }
 
     public void GetKey()
-    {
-        _key.SetActive(false);
+    {       
         _parkingDoor.SetActive(true);
     }
     public void SetUIManager(UI_Manager uimanager) //Setea el UiManager
