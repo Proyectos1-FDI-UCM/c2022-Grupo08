@@ -5,8 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class ChangeLevel : MonoBehaviour
 {
+    #region references
     [SerializeField]
     GameObject _elevator;
+    [SerializeField]
+    GameObject _parkingDoor;
+    #endregion
     #region methods
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -15,9 +19,9 @@ public class ChangeLevel : MonoBehaviour
         {
             SceneManager.LoadScene(2, LoadSceneMode.Single);
         }
-        if (hitPlayer/* && _keyActivated*/)
-        {
-            SceneManager.LoadScene(3, LoadSceneMode.Single);           
+        if (hitPlayer)
+        {     
+            SceneManager.LoadScene(3, LoadSceneMode.Single);
         }
 
     }

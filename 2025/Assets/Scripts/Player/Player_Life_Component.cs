@@ -101,6 +101,7 @@ public class Player_Life_Component : Life_Component
             {
                 Die(); //GameManager.Instance.OnPlayerDies();
                 _cont = 1.7f;
+                UI_Manager.Instance.LoseMenu();
             }
         }
         //_myAnimator.SetInteger("VidaPlayer", _currentLife);

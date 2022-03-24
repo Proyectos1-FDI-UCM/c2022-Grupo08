@@ -75,12 +75,13 @@ public class UI_Manager : MonoBehaviour
     }
 
     public void WinMenu()
-    {
+    {       
         _winMenu.SetActive(true);
     }
 
     public void LoseMenu()
     {
+        GameManager.Instance.LoadLoseMenu();
         _loseMenu.SetActive(true);
     }
     public void MuteButton()

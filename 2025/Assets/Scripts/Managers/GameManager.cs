@@ -136,10 +136,19 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
-
-    public void Replay()
+   
+    public void Replay() 
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(0, LoadSceneMode.Single);
+    }
+
+    public void LoadWinMenu()
+    {
+        UI_Manager.Instance.WinMenu();
+    }
+    public void LoadLoseMenu()
+    {
+        SceneManager.LoadScene(3, LoadSceneMode.Single);
     }
 
     /*public void OnLevelWasLoaded(int level)
@@ -151,7 +160,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _boy.transform.position=_spawn.position;
+        _boy.transform.position=_spawn.position;       
     }
 
     // Update is called once per frame
