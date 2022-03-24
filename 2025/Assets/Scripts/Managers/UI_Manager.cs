@@ -33,6 +33,10 @@ public class UI_Manager : MonoBehaviour
     private GameObject _controlsMenu;
     [SerializeField]
     private GameObject _mainMenu;
+    [SerializeField]
+    private GameObject _winMenu;
+    [SerializeField]
+    private GameObject _loseMenu;
     #endregion
     #region methods
     public void palanca()
@@ -69,9 +73,24 @@ public class UI_Manager : MonoBehaviour
     {
         _controlsMenu.SetActive(enabled);
     }
+
+    public void WinMenu()
+    {
+        _winMenu.SetActive(true);
+    }
+
+    public void LoseMenu()
+    {
+        _loseMenu.SetActive(true);
+    }
     public void MuteButton()
     {
         SoundManager.Instance.MuteVolume();
+    }
+
+    public void ReplayButton()
+    {
+        GameManager.Instance.Replay();
     }
     public void Quit()
     {

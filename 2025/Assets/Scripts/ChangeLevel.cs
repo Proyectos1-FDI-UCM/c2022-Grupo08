@@ -11,9 +11,13 @@ public class ChangeLevel : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Player_Life_Component hitPlayer = collision.GetComponent<Player_Life_Component>();
-        if (hitPlayer)
+        if (hitPlayer/* && _electrictyActivated*/)
         {
-            SceneManager.LoadScene(1, LoadSceneMode.Single);
+            SceneManager.LoadScene(2, LoadSceneMode.Single);
+        }
+        if (hitPlayer/* && _keyActivated*/)
+        {
+            SceneManager.LoadScene(3, LoadSceneMode.Single);           
         }
 
     }

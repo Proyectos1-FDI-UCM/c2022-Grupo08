@@ -61,9 +61,17 @@ public class GameManager : MonoBehaviour
     #region methods
     private void Awake()
     {
-        _instance = this;
+        if(_instance == null)
+        {
+            _instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+        
         DontDestroyOnLoad(_boy);
-        DontDestroyOnLoad(_girl);
+        DontDestroyOnLoad(_girl);      
     }
     public void InteractableObjectDone(InteractDetection _myInteractDetection) // Gestiona la interaccion con objetos interactuables
     {
@@ -103,7 +111,6 @@ public class GameManager : MonoBehaviour
     {
         _UIManager = uimanager;
         uimanager.BarraVida(_currentLife, _maxLife);
-
     }
 
     public void GetDamage()
@@ -129,7 +136,17 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
-    
+
+    public void Replay()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    /*public void OnLevelWasLoaded(int level)
+    {
+        
+    }*/
+
     #endregion
     // Start is called before the first frame update
     void Start()
