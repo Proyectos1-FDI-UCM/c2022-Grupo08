@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 6193133068421814168}
   - component: {fileID: -844797642800487037}
   - component: {fileID: -2266999205691527545}
+  - component: {fileID: -1224571995698119670}
   m_Layer: 6
   m_Name: pbala
   m_TagString: Untagged
@@ -175,6 +176,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6b9b55672f7d04b97aa12b7a8fac8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 15
-  "da\xF1o": 2
-  vida: 0.07
+  _velocity: 1
+  _damage: 1
+  _life: 1
+--- !u!114 &-1224571995698119670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2169876480051521058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 211ec3f9ed9cf3644a867ae88792bdd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _clip: {fileID: 8300000, guid: 1215eb122bbff544ea48a414e5d7404a, type: 3}

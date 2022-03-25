@@ -95,6 +95,7 @@ public class GameManager : MonoBehaviour
     {
         IsGamePaused = true;
         UI_Manager.Instance.PauseMenu(true);
+     
     }
     public void QuitGame()
     {

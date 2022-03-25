@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class Fusibles : MonoBehaviour
 {
+    #region references
+    [SerializeField] private AudioClip _clip;
+    #endregion 
     #region methods
     public void SumaFusible()
     {
         LightManager.Instance.CheckFusibles();
+        SoundManager.Instance.PlaySound(_clip);
     }
     #endregion
     // Start is called before the first frame update
@@ -15,7 +19,6 @@ public class Fusibles : MonoBehaviour
     {
 
     }
-
     // Update is called once per frame
     void Update()
     {

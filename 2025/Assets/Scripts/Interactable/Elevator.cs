@@ -9,6 +9,7 @@ public class Elevator : MonoBehaviour
     #region references
     [SerializeField] private GameObject _changeLevel;
     [SerializeField] private Animator _myAnimator;
+    [SerializeField] private AudioClip _clip;
     //[SerializeField] private GameObject _elevator;
     #endregion
     #region methods
@@ -24,6 +25,7 @@ public class Elevator : MonoBehaviour
         _myAnimator.SetBool("Elevator", elevator);
         _changeLevel.SetActive(true);
         this.gameObject.SetActive(false);
+        SoundManager.Instance.PlaySound(_clip);
     }
     #endregion
     // Start is called before the first frame update

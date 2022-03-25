@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: -8316877881835463002}
   - component: {fileID: -5398779608648516354}
   - component: {fileID: 5193659068448252170}
+  - component: {fileID: 9220588729634176778}
   m_Layer: 6
   m_Name: sgbala
   m_TagString: Untagged
@@ -96,6 +97,19 @@ MonoBehaviour:
   _velocity: 20
   _damage: 10
   _life: 0.5
+--- !u!114 &9220588729634176778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725538675894934391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 211ec3f9ed9cf3644a867ae88792bdd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _clip: {fileID: 8300000, guid: 4b54924736fe56f419ed664ea11ef28b, type: 3}
 --- !u!1 &8411414168682301606
 GameObject:
   m_ObjectHideFlags: 0

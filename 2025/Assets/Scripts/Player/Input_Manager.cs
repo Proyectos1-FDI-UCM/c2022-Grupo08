@@ -81,7 +81,7 @@ public class Input_Manager : MonoBehaviour
             }
             if (_pistolaActivada)
             {
-                if (Input.GetKeyDown(KeyCode.Alpha2))
+                if (Input.GetKeyDown(KeyCode.Mouse0))
                 {
                     _myPlayerAttack.ShootBala(2, dir);
                 }

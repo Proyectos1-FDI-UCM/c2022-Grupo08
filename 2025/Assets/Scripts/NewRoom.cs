@@ -13,8 +13,8 @@ public class NewRoom : MonoBehaviour
 
     [SerializeField] private float _cont = 1.7f;
     bool opening = false;
-    
 
+    [SerializeField] private AudioClip _clip;
     
     #endregion
 
@@ -25,12 +25,13 @@ public class NewRoom : MonoBehaviour
         if (hitPlayer)
         {
             NuevaHab();
-
+            //SoundManager
+            SoundManager.Instance.PlaySound(_clip);
 
             //Animacion abrir puerta
             opening = true;
             _myAnimator.SetBool("abriendo", opening);
-
+            
 
         }
     }

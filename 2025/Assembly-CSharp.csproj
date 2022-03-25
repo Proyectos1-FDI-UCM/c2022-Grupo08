@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -53,6 +53,9 @@
     <UnityVersion>2020.3.13f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets\Scripts\ChangeLvl_2.cs" />
     <Compile Include="Assets\Scripts\Lights\LightManager.cs" />
     <Compile Include="Assets\Scripts\ChangeLvl_1.cs" />
@@ -60,7 +63,7 @@
     <Compile Include="Assets\Scripts\Interactable\Botiquin.cs" />
     <Compile Include="Assets\Scripts\Managers\UI_Manager.cs" />
     <Compile Include="Assets\Scripts\Player\Player_Life_Component.cs" />
-    <Compile Include="Assets\Scripts\Managers\SoundManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\SoundManager\SoundManager.cs" />
     <Compile Include="Assets\Scripts\Player\Input_Manager.cs" />
     <Compile Include="Assets\Scripts\Barricada.cs" />
     <Compile Include="Assets\Scripts\Player\Player_Interact.cs" />
@@ -84,6 +87,7 @@
     <Compile Include="Assets\Scripts\NewRoom.cs" />
     <Compile Include="Assets\Scripts\Interactable\Cadaver2.cs" />
     <Compile Include="Assets\Scripts\Interactable\Cadaver3.cs" />
+    <Compile Include="Assets\Scripts\Managers\SoundManager\PlaySoundOnStart.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Diseño\Horror City - Hospital Tiles - RPG Maker VX Ace - Vexed.rar\Hospital Tiles - VX Ace\ReadMe.txt" />

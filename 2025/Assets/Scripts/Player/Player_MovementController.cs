@@ -37,10 +37,14 @@ public class Player_MovementController : MonoBehaviour
         _myTransform.Translate(_movementSpeed * _movementDirection * Time.deltaTime);
 
         //Animación
-        _velocityX = Input.GetAxisRaw("Horizontal") * _movementSpeed;
-        _velocityZ = Input.GetAxisRaw("Vertical") * _movementSpeed;
+        if (!GameManager.Instance.IsGamePaused)
+        {
+            _velocityX = Input.GetAxisRaw("Horizontal") * _movementSpeed;
+            _velocityZ = Input.GetAxisRaw("Vertical") * _movementSpeed;
 
-        _myAnimator.SetFloat("VelocityX", _velocityX);
-        _myAnimator.SetFloat("VelocityZ", _velocityZ);
+            _myAnimator.SetFloat("VelocityX", _velocityX);
+            _myAnimator.SetFloat("VelocityZ", _velocityZ);
+        }
+        
     }
 }
