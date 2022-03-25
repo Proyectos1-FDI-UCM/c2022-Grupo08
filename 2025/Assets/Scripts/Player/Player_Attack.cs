@@ -112,6 +112,7 @@ public class Player_Attack : MonoBehaviour
         Cadaver2 hitCadaver2 = collision.GetComponent<Cadaver2>();
         Cadaver3 hitCadaver3 = collision.GetComponent<Cadaver3>();
         Key hitKey = collision.GetComponent<Key>();
+        Elevator hitElevator = collision.GetComponent<Elevator>();
 
         if (hitInteractableObject)
         {
@@ -151,6 +152,10 @@ public class Player_Attack : MonoBehaviour
             else if (hitKey)
             {
                 hitInteractableObject.Interact(8);
+            }
+            else if (hitElevator)
+            {
+                hitInteractableObject.Interact(9);
             }
             ToCallInteraction();
         }

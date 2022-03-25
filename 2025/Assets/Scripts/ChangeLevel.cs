@@ -15,15 +15,20 @@ public class ChangeLevel : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Player_Life_Component hitPlayer = collision.GetComponent<Player_Life_Component>();
-        if (hitPlayer/* && _electrictyActivated*/)
-        {
-            SceneManager.LoadScene(2, LoadSceneMode.Single);
-        }
+       
         if (hitPlayer)
         {     
             SceneManager.LoadScene(3, LoadSceneMode.Single);
         }
+    }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        Player_Life_Component hitPlayer = collision.GetComponent<Player_Life_Component>();
 
+        if (hitPlayer)
+        {
+            SceneManager.LoadScene(2, LoadSceneMode.Single);
+        }
     }
     #endregion
     // Start is called before the first frame update

@@ -31,6 +31,8 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject _botiquin;
     [SerializeField]
+    private GameObject _elevator;
+    [SerializeField]
     private GameObject _key;
     [SerializeField]
     private GameObject _parkingDoor;
@@ -89,6 +91,14 @@ public class GameManager : MonoBehaviour
             Destroy(_puerta);
         }
     }
+
+    public void ElectrictyActivated()
+    {
+        if(_electricidadActiva == true)
+        {
+            _elevator.GetComponent<BoxCollider2D>().isTrigger = true;
+        }
+    }
     public void ActivateNote() // Activa la nota
     {
         _nota.SetActive(true);
@@ -107,6 +117,7 @@ public class GameManager : MonoBehaviour
     {       
         _parkingDoor.SetActive(true);
     }
+
     public void SetUIManager(UI_Manager uimanager) //Setea el UiManager
     {
         _UIManager = uimanager;
@@ -123,6 +134,14 @@ public class GameManager : MonoBehaviour
         SetUIManager(_UIManager);
         _UIManager.BarraVida(_maxLife, _currentlife);
     }
+
+    /*public void OnPlayerDies()
+    {
+        //_boy.SetActive(false);
+        //_girl.SetActive(false);
+        SceneManager.LoadScene(3, LoadSceneMode.Single);
+        
+    }*/
     public void QuitGame()
     {
         UnityEditor.EditorApplication.isPlaying = false;
@@ -142,25 +161,27 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(0, LoadSceneMode.Single);
     }
 
-    public void LoadWinMenu()
-    {
-        UI_Manager.Instance.WinMenu();
-    }
     public void LoadLoseMenu()
     {
         SceneManager.LoadScene(3, LoadSceneMode.Single);
     }
 
-    /*public void OnLevelWasLoaded(int level)
+    public void OnLevelWasLoaded(int level)
     {
-        
-    }*/
+        SceneManager.GetActiveScene(); 
+
+        if(level == 3)
+        {
+            UI_Manager.Instance.WinMenu(); // Llamada para que salga el menú de victoria
+        }
+    }
 
     #endregion
     // Start is called before the first frame update
     void Start()
     {
-        _boy.transform.position=_spawn.position;       
+        _boy.transform.position=_spawn.position;
+        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame

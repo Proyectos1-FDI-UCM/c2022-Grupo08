@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class Elevator : MonoBehaviour
 {
+    #region methods
+    public void OpenElevator()
+    {
+        GameManager.Instance.ElectrictyActivated();
+    }
+    #endregion
     // Start is called before the first frame update
     void Start()
     {

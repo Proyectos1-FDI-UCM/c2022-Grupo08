@@ -39,6 +39,17 @@ public class UI_Manager : MonoBehaviour
     private GameObject _loseMenu;
     #endregion
     #region methods
+    public void Awake()
+    {
+        if(_instance == null)
+        {
+            _instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     public void palanca()
     {
         palancaaviso.text = "Pulse Espacio para golpear con la palanca";
@@ -76,7 +87,7 @@ public class UI_Manager : MonoBehaviour
 
     public void WinMenu()
     {       
-        _winMenu.SetActive(true);
+        _winMenu.SetActive(true); // Activa el menú de victoria
     }
 
     public void LoseMenu()
