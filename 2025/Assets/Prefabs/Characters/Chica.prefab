@@ -171,8 +171,11 @@ MonoBehaviour:
   cargadorbalasg: 0
   recargag: 0
   recargasg: 0
+  recargando: 0
   totalbalasg: 0
   totalbalassg: 0
+  tengoammog: 1
+  tengoammosg: 1
   pbala: {fileID: 2169876480051521058, guid: 61fe43c2e31fc4c4eaa77792d46879e9, type: 3}
   gbala: {fileID: 5504288310560798774, guid: f36c3dffc985dbb4296afe2978698f54, type: 3}
   sgbala: {fileID: 725538675894934391, guid: 066667dfa65792c4cbac2a10915dd1a3, type: 3}
@@ -192,10 +195,13 @@ MonoBehaviour:
   _currentLife: 0
   _damage: 10
   _cont: 1.7
-  empuje: 5
+  empujeZombie: 5
   _myAnimator: {fileID: 0}
+  _clip: {fileID: 8300000, guid: f633b9314c7ddc546ab05cb692672694, type: 3}
   _boy: {fileID: 0}
   _girl: {fileID: 0}
+  _lifeBar: {fileID: 0}
+  empuje: 5
 --- !u!114 &4177218788220391577
 MonoBehaviour:
   m_ObjectHideFlags: 0

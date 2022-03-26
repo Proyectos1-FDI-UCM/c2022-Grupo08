@@ -126,6 +126,7 @@ MonoBehaviour:
   _cont: 1.7
   empujeZombie: 5
   _myAnimator: {fileID: 5862815375226740601}
+  _clip: {fileID: 8300000, guid: 2ec8341e31910284d8a80e23f10a09cc, type: 3}
 --- !u!61 &5862815375226740596
 BoxCollider2D:
   m_ObjectHideFlags: 0
