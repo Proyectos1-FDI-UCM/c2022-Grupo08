@@ -288,7 +288,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1514200162}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UI_Manager, Assembly-CSharp
         m_MethodName: Quit
         m_Mode: 1
@@ -353,7 +353,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1309029517
 RectTransform:
   m_ObjectHideFlags: 0
@@ -517,6 +517,61 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1449626597
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1449626599}
+  - component: {fileID: 1449626598}
+  m_Layer: 0
+  m_Name: UI_Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1449626598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449626597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6175743b755614a4295f60167d95ca4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeBar: {fileID: 0}
+  balasg: {fileID: 0}
+  balassg: {fileID: 0}
+  palancaaviso: {fileID: 0}
+  _mision: {fileID: 0}
+  maxlife: 0
+  currentlife: 0
+  _customizationMenu: {fileID: 0}
+  _controlsMenu: {fileID: 0}
+  _mainMenu: {fileID: 0}
+  _winMenu: {fileID: 1309029516}
+  _loseMenu: {fileID: 1963608420}
+--- !u!4 &1449626599
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449626597}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 933.5428, y: 710.5351, z: -147.9847}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1514200157
 GameObject:
   m_ObjectHideFlags: 0
@@ -529,7 +584,6 @@ GameObject:
   - component: {fileID: 1514200160}
   - component: {fileID: 1514200159}
   - component: {fileID: 1514200158}
-  - component: {fileID: 1514200162}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -619,30 +673,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1514200162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1514200157}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6175743b755614a4295f60167d95ca4f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lifeBar: {fileID: 0}
-  balasg: {fileID: 0}
-  balassg: {fileID: 0}
-  palancaaviso: {fileID: 0}
-  _mision: {fileID: 0}
-  maxlife: 0
-  currentlife: 0
-  _customizationMenu: {fileID: 0}
-  _controlsMenu: {fileID: 0}
-  _mainMenu: {fileID: 0}
-  _winMenu: {fileID: 1309029516}
-  _loseMenu: {fileID: 1963608420}
 --- !u!1 &1759292213
 GameObject:
   m_ObjectHideFlags: 0
@@ -725,7 +755,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1514200162}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UI_Manager, Assembly-CSharp
         m_MethodName: Quit
         m_Mode: 1
@@ -857,7 +887,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1514200162}
+      - m_Target: {fileID: 1449626598}
         m_TargetAssemblyTypeName: UI_Manager, Assembly-CSharp
         m_MethodName: ReplayButton
         m_Mode: 1
@@ -989,7 +1019,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1514200162}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UI_Manager, Assembly-CSharp
         m_MethodName: ReplayButton
         m_Mode: 1

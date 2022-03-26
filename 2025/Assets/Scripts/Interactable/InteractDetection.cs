@@ -16,6 +16,7 @@ public class InteractDetection : MonoBehaviour
     private Cadaver3 _myCadaver3;
     private Key _myKey;
     private Elevator _myElevator;
+    private ParkingDoor _myParkingDoor;
     #endregion
 
     #region methods
@@ -30,8 +31,10 @@ public class InteractDetection : MonoBehaviour
             case 5: _myCadaver.LeverActivated(); UI_Manager.Instance.palanca(); break; // Cadaver
             case 6: _myCadaver2.PistolaActivada(); break; // Cadaver2
             case 7: _myCadaver3.EscopetaActivada(); break; // Cadaver3
-            case 8: _myKey.OpenParkingDoor(); break; // Llave
+            case 8: _myKey.ToActivateParkingDoor(); break; // Llave
             case 9: _myElevator.OpenElevator(); break; // Ascensor
+            case 10: _myParkingDoor.ToExitHospital(); break; // Puerta del Parking
+
         }
         GameManager.Instance.InteractableObjectDone(this); // Llamo al GameManager para eliminar de escena el objeto con el que ya he interactuado
     }
@@ -49,6 +52,7 @@ public class InteractDetection : MonoBehaviour
         _myCadaver3 = GetComponent<Cadaver3>();
         _myKey = GetComponent<Key>();
         _myElevator = GetComponent<Elevator>();
+        _myParkingDoor = GetComponent<ParkingDoor>();
     }
 
     // Update is called once per frame

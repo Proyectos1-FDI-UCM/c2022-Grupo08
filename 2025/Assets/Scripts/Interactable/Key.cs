@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Key : MonoBehaviour
-{  
+{
     #region methods
-    public void OpenParkingDoor()
+    public void ToActivateParkingDoor()
     {
-        GameManager.Instance.GetKey();       
+        GameManager.Instance.GetKey();
     }
     #endregion
     // Start is called before the first frame update

@@ -31,11 +31,15 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject _botiquin;
     [SerializeField]
-    private GameObject _elevator;
+    private GameObject _elevatorClosed;
+    [SerializeField]
+    private GameObject _elevatorOpened;
     [SerializeField]
     private GameObject _key;
     [SerializeField]
     private GameObject _parkingDoor;
+    [SerializeField]
+    private GameObject _exitHospital;
     [SerializeField]
     private GameObject _boy;
     [SerializeField]
@@ -96,8 +100,13 @@ public class GameManager : MonoBehaviour
     {
         if(_electricidadActiva == true)
         {
-            _elevator.GetComponent<BoxCollider2D>().isTrigger = true;
-        }
+            _elevatorClosed.GetComponent<BoxCollider2D>().isTrigger = true;           
+        }      
+    }
+
+    public void OpenElevatorDoor()
+    {
+        _elevatorOpened.GetComponent<BoxCollider2D>().isTrigger = true;
     }
     public void ActivateNote() // Activa la nota
     {
@@ -116,6 +125,11 @@ public class GameManager : MonoBehaviour
     public void GetKey()
     {       
         _parkingDoor.SetActive(true);
+    }
+
+    public void OpenParkingDoor()
+    {
+        _exitHospital.GetComponent<BoxCollider2D>().isTrigger = true;
     }
 
     public void SetUIManager(UI_Manager uimanager) //Setea el UiManager
@@ -187,6 +201,6 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        
     }
 }

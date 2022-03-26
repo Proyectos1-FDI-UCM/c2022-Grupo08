@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class ParkingDoor : MonoBehaviour
 {
+    public void ToExitHospital()
+    {
+        GameManager.Instance.OpenParkingDoor();
+    }
     // Start is called before the first frame update
     void Start()
     {
