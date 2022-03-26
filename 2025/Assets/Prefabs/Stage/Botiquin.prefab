@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: -3895380787253178414}
   - component: {fileID: 5160112330865713203}
   - component: {fileID: 5893008666648842684}
+  - component: {fileID: 1553577607137362397}
   m_Layer: 0
   m_Name: Botiquin
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 6509755165884120546}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -97,7 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 707199513790786217, guid: f1f7bd51ad420f048ad30821d946adc0, type: 3}
-  _curacion: 20
+  _heal: 20
 --- !u!114 &5893008666648842684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,3 +111,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 034e3f3c906ea234e81ad2ef90ecd53e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &1553577607137362397
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6509755165884120546}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.004625872, y: 0.0014042929}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.13, y: 0.15}
+    newSize: {x: 5.12, y: 5.12}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.19139788, y: 0.20774819}
+  m_EdgeRadius: 0

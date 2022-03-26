@@ -22,30 +22,20 @@ public class GameManager : MonoBehaviour
     float _maxLife = 100;
     public float _currentLife = 100;
 
-    //[SerializeField]
-    //private GameObject _luces;
-    [SerializeField]
-    private GameObject _puerta;
-    [SerializeField]
-    private GameObject _nota;
-    [SerializeField]
-    private GameObject _botiquin;
-    [SerializeField]
-    private GameObject _elevatorClosed;
-    [SerializeField]
-    private GameObject _elevatorOpened;
-    [SerializeField]
-    private GameObject _key;
-    [SerializeField]
-    private GameObject _parkingDoor;
-    [SerializeField]
-    private GameObject _exitHospital;
-    [SerializeField]
-    private GameObject _boy;
-    [SerializeField]
-    private GameObject _girl;
-    [SerializeField]
-    private Transform _spawn;
+    [SerializeField] private GameObject _electricityOn;
+    [SerializeField] private GameObject _electricityOff;
+    [SerializeField] private GameObject _globalLightOn;
+    [SerializeField] private GameObject _globalLightOff;
+    [SerializeField] private GameObject _nota;
+    [SerializeField] private GameObject _botiquin;
+    [SerializeField] private GameObject _elevatorClosed;
+    [SerializeField] private GameObject _elevatorOpened;
+    [SerializeField] private GameObject _key;
+    [SerializeField] private GameObject _parkingDoor;
+    [SerializeField] private GameObject _exitHospital;
+    [SerializeField] private GameObject _boy;
+    [SerializeField] private GameObject _girl;
+    [SerializeField] private Transform _spawn;
     private GameObject saved;
     #endregion
     #region references
@@ -92,13 +82,16 @@ public class GameManager : MonoBehaviour
         {
             _electricidadActiva = true;
 
-            Destroy(_puerta);
+            Destroy(_electricityOn);
+            _electricityOff.SetActive(true);
+            _globalLightOff.SetActive(false);
+            _globalLightOn.SetActive(true);
         }
     }
 
     public void ElectrictyActivated()
     {
-        if(_electricidadActiva == true)
+        if(_electricidadActiva)
         {
             _elevatorClosed.GetComponent<BoxCollider2D>().isTrigger = true;           
         }      
