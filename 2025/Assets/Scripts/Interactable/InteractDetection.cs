@@ -17,6 +17,7 @@ public class InteractDetection : MonoBehaviour
     private Key _myKey;
     private Elevator _myElevator;
     private ParkingDoor _myParkingDoor;
+    private ElectricityActivated _myElecricityActivated;
     #endregion
 
     #region methods
@@ -34,6 +35,7 @@ public class InteractDetection : MonoBehaviour
             case 8: _myKey.ToActivateParkingDoor(); break; // Llave
             case 9: _myElevator.OpenElevator(); break; // Ascensor
             case 10: _myParkingDoor.ToExitHospital(); break; // Puerta del Parking
+            case 11: _myElecricityActivated.InterruptorActivated(); break; // Puerta del Parking
 
         }
         GameManager.Instance.InteractableObjectDone(this); // Llamo al GameManager para eliminar de escena el objeto con el que ya he interactuado
@@ -53,6 +55,7 @@ public class InteractDetection : MonoBehaviour
         _myKey = GetComponent<Key>();
         _myElevator = GetComponent<Elevator>();
         _myParkingDoor = GetComponent<ParkingDoor>();
+        _myElecricityActivated = GetComponent<ElectricityActivated>();
     }
 
     // Update is called once per frame

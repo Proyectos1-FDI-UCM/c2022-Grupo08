@@ -14,18 +14,18 @@ public class GameManager : MonoBehaviour
     #endregion
     #region properties
 
-    public bool _electricidadActiva = false;
+    //public bool _electricidadActiva = false;
 
-    [SerializeField]
+    /*[SerializeField]
     private int _maxFusibles = 3;
-    private int _currentFusibles = 0;
-    float _maxLife = 100;
+    private int _currentFusibles = 0;*/
     public float _currentLife = 100;
-
+    float _maxLife = 100;
+    /*public bool ElectricityButton = false;
     [SerializeField] private GameObject _electricityOn;
     [SerializeField] private GameObject _electricityOff;
     [SerializeField] private GameObject _globalLightOn;
-    [SerializeField] private GameObject _globalLightOff;
+    [SerializeField] private GameObject _globalLightOff;*/
     [SerializeField] private GameObject _nota;
     [SerializeField] private GameObject _botiquin;
     [SerializeField] private GameObject _elevatorClosed;
@@ -74,22 +74,9 @@ public class GameManager : MonoBehaviour
         _listInteractableObjects.Remove(_myInteractDetection); // Elimino al objecto con el que interactuado de la lista
         Destroy(_myInteractDetection.gameObject); // Destruye al objeto interactuado de escena
     }
-    public void CheckFusibles() // Actualiza el numero de fusibles activos y los compara con el numero maximo posible para activar el panel electrico en su momento
-    {
-        _currentFusibles++;
+    
 
-        if(_currentFusibles >= _maxFusibles)
-        {
-            _electricidadActiva = true;
-
-            Destroy(_electricityOn);
-            _electricityOff.SetActive(true);
-            _globalLightOff.SetActive(false);
-            _globalLightOn.SetActive(true);
-        }
-    }
-
-    public void ElectrictyActivated()
+    /*public void ElectrictyActivated()
     {
         if(_electricidadActiva)
         {
@@ -100,7 +87,7 @@ public class GameManager : MonoBehaviour
     public void OpenElevatorDoor()
     {
         _elevatorOpened.GetComponent<BoxCollider2D>().isTrigger = true;
-    }
+    }*/
     public void ActivateNote() // Activa la nota
     {
         _nota.SetActive(true);

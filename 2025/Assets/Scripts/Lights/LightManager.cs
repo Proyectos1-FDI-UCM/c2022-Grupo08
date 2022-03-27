@@ -7,6 +7,16 @@ public class LightManager : MonoBehaviour
     #region parameters
     [SerializeField]
     private float _lightDelay = 0.75f;
+    public bool _electricidadActiva = false;
+    [SerializeField]
+    private int _maxFusibles = 3;
+    private int _currentFusibles = 0;
+    public float _currentLife = 100;
+    public bool ElectricityButton = false;
+    [SerializeField] private GameObject _electricityOn;
+    [SerializeField] private GameObject _electricityOff;
+    [SerializeField] private GameObject _globalLightOn;
+    [SerializeField] private GameObject _globalLightOff;
     #endregion
 
     #region properties
@@ -16,9 +26,6 @@ public class LightManager : MonoBehaviour
     #region references
     [SerializeField]
     private List<Light_Behaviour> _lightList;
-    #endregion
-
-    #region references
     static private LightManager _instance; // Unique LightManager instance (Singleton Pattern).
     static public LightManager Instance // Public accesor for LightManager instance.
     {
@@ -27,10 +34,29 @@ public class LightManager : MonoBehaviour
             return _instance; // Para poder instanciar el LightManager y llamarlo desde cualquier script
         }
     }
-    
+    #endregion
+    #region methods
     public void LightsActivated(Light_Behaviour lightsToActive)
     {
         _lightList.Add(lightsToActive);
+    }
+    public void LightsGlobalActivated()
+    {
+        _electricidadActiva = true;
+
+        Destroy(_electricityOn);
+        _electricityOff.SetActive(true);
+        _globalLightOff.SetActive(false);
+        _globalLightOn.SetActive(true);
+    }
+    public void CheckFusibles() // Actualiza el numero de fusibles activos y los compara con el numero maximo posible para activar el panel electrico en su momento
+    {
+        _currentFusibles++;
+
+        if (_currentFusibles >= _maxFusibles && ElectricityButton)
+        {
+            _electricityOn.SetActive(true);
+        }
     }
     private void CambioEstadoLuces()
     {
@@ -42,11 +68,12 @@ public class LightManager : MonoBehaviour
             _myLight.gameObject.SetActive(state);
         }
 
-        if (GameManager.Instance._electricidadActiva)
+        if (_electricidadActiva)
         {
             CancelInvoke("CambioEstadoLuces");
         }
     }
+
 
     private void Awake()
     {

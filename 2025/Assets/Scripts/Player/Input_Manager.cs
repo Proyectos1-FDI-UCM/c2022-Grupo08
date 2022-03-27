@@ -18,12 +18,14 @@ public class Input_Manager : MonoBehaviour
     #region references
     private Player_MovementController _myPlayerMovementController;
     private Player_Attack _myPlayerAttack;
+    private Player_Interact _myPlayerInteract;
     #endregion
     // Start is called before the first frame update
     void Start()
     {
         _myPlayerMovementController = GetComponent<Player_MovementController>();
         _myPlayerAttack = GetComponent<Player_Attack>();
+        _myPlayerInteract = GetComponent<Player_Interact>();
     }
 
     // Update is called once per frame
@@ -65,7 +67,7 @@ public class Input_Manager : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    _myPlayerAttack.ToCallInteraction(); // Cambia booleano del script attack
+                    _myPlayerInteract.ToCallInteraction(); // Cambia booleano del script attack
                 }
             }
 

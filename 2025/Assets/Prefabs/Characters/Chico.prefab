@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 707199513790786222}
   - component: {fileID: 707199513790786224}
   - component: {fileID: 8646861863707179862}
+  - component: {fileID: 4844031038519331876}
   - component: {fileID: 707199513790786223}
   - component: {fileID: 707199513790786219}
   - component: {fileID: 707199513790786225}
@@ -119,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49c3624ad22d8b44d9a50cfdb7a669a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _movementSpeed: 3
+  _movementSpeed: 5
   _myAnimator: {fileID: 707199513790786225}
 --- !u!114 &707199513790786224
 MonoBehaviour:
@@ -165,6 +166,18 @@ MonoBehaviour:
   pbala: {fileID: 2169876480051521058, guid: 61fe43c2e31fc4c4eaa77792d46879e9, type: 3}
   gbala: {fileID: 5504288310560798774, guid: f36c3dffc985dbb4296afe2978698f54, type: 3}
   sgbala: {fileID: 725538675894934391, guid: 066667dfa65792c4cbac2a10915dd1a3, type: 3}
+--- !u!114 &4844031038519331876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707199513790786217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 427e6bf87b9274642a2abc79b0527b0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!61 &707199513790786223
 BoxCollider2D:
   m_ObjectHideFlags: 0

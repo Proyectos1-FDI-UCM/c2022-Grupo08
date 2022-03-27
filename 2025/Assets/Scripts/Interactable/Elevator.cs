@@ -7,12 +7,12 @@ public class Elevator : MonoBehaviour
     #region methods
     public void IsOpenElevator()
     {
-        GameManager.Instance.ElectrictyActivated();
+        //GameManager.Instance.ElectrictyActivated();
     }
 
     public void OpenElevator()
     {
-        GameManager.Instance.OpenElevatorDoor();
+        //GameManager.Instance.OpenElevatorDoor();
     }
     #endregion
     // Start is called before the first frame update

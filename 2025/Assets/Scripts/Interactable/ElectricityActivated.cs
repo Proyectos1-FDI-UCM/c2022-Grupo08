@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class ElectricityActivated : MonoBehaviour
 {
-
+    #region methods
+    public void InterruptorActivated()
+    {
+        LightManager.Instance.LightsGlobalActivated();
+    }
+    #endregion
     // Start is called before the first frame update
     void Start()
     {

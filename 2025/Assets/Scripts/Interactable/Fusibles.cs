@@ -7,7 +7,7 @@ public class Fusibles : MonoBehaviour
     #region methods
     public void SumaFusible()
     {
-        GameManager.Instance.CheckFusibles();
+        LightManager.Instance.CheckFusibles();
     }
     #endregion
     // Start is called before the first frame update
