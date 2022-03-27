@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Elevator : MonoBehaviour
 {
+    [SerializeField] private GameObject _changeLevel;
     #region methods
     public void IsOpenElevator()
     {
@@ -13,6 +14,8 @@ public class Elevator : MonoBehaviour
     public void OpenElevator()
     {
         //GameManager.Instance.OpenElevatorDoor();
+        //Hacer animacion
+        _changeLevel.SetActive(true);
     }
     #endregion
     // Start is called before the first frame update

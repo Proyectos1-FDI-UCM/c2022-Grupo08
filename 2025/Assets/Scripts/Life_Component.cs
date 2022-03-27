@@ -5,21 +5,16 @@ using UnityEngine;
 public class Life_Component : MonoBehaviour
 {
     #region parameters
-    [SerializeField]
-    private int _maxLife = 100;
+    [SerializeField] private int _maxLife = 100;
     public int _currentLife;
-    [SerializeField]
-    private int _damage = 10;
-    [SerializeField]
-    protected float _cont = 1.7f;
-    [SerializeField]
-    private float empuje = 5.0f;
+    [SerializeField] private int _damage = 10;
+    [SerializeField] protected float _cont = 1.7f;
+    [SerializeField] private float empujeZombie = 5.0f;
     #endregion
     #region references
-    [SerializeField]
-    protected Animator _myAnimator;
-    private Rigidbody2D _myRigidBody;
-    private Transform _myTransform;
+    [SerializeField] protected Animator _myAnimator;
+    private Rigidbody2D _myRigidBodyZombie;
+    private Transform _myTransformZombie;
     #endregion
     #region methods
     private void OnCollisionEnter2D(Collision2D collision)
@@ -34,7 +29,7 @@ public class Life_Component : MonoBehaviour
     public virtual void Damage(int damagePoint)
     {
         _currentLife -= damagePoint;
-        _myRigidBody.AddForce(_myTransform.position * -empuje, ForceMode2D.Impulse);
+        _myRigidBodyZombie.AddForce(_myTransformZombie.position * -empujeZombie, ForceMode2D.Impulse);
         if (gameObject.GetComponent<Player_Life_Component>())
         {
             GameManager.Instance.GetDamage();
@@ -51,8 +46,8 @@ public class Life_Component : MonoBehaviour
     public virtual void Start()
     {
         _currentLife = _maxLife;
-        _myTransform = transform;
-        _myRigidBody = GetComponent<Rigidbody2D>();
+        _myTransformZombie = transform;
+        _myRigidBodyZombie = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame

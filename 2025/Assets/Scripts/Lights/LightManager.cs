@@ -5,11 +5,9 @@ using UnityEngine;
 public class LightManager : MonoBehaviour
 {
     #region parameters
-    [SerializeField]
-    private float _lightDelay = 0.75f;
+    [SerializeField] private float _lightDelay = 0.75f;
     public bool _electricidadActiva = false;
-    [SerializeField]
-    private int _maxFusibles = 3;
+    [SerializeField] private int _maxFusibles = 3;
     private int _currentFusibles = 0;
     public float _currentLife = 100;
     public bool ElectricityButton = false;
@@ -17,6 +15,8 @@ public class LightManager : MonoBehaviour
     [SerializeField] private GameObject _electricityOff;
     [SerializeField] private GameObject _globalLightOn;
     [SerializeField] private GameObject _globalLightOff;
+    [SerializeField] private GameObject _elevatorOn;
+    [SerializeField] private GameObject _elevatorOff;
     #endregion
 
     #region properties
@@ -43,11 +43,12 @@ public class LightManager : MonoBehaviour
     public void LightsGlobalActivated()
     {
         _electricidadActiva = true;
-
         Destroy(_electricityOn);
         _electricityOff.SetActive(true);
         _globalLightOff.SetActive(false);
         _globalLightOn.SetActive(true);
+        _elevatorOff.SetActive(false);
+        _elevatorOn.SetActive(true);
     }
     public void CheckFusibles() // Actualiza el numero de fusibles activos y los compara con el numero maximo posible para activar el panel electrico en su momento
     {
@@ -62,7 +63,6 @@ public class LightManager : MonoBehaviour
     {
         state = !state;
 
-        //this.gameObject.SetActive(state);
         foreach(Light_Behaviour _myLight in _lightList)
         {
             _myLight.gameObject.SetActive(state);
