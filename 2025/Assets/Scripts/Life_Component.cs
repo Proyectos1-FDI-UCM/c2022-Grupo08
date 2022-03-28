@@ -5,9 +5,9 @@ using UnityEngine;
 public class Life_Component : MonoBehaviour
 {
     #region parameters
-    public int _maxLife = 100;
-    public int _currentLife;
-    [SerializeField] private int _damage = 10;
+    public float _maxLife = 100.0f;
+    public float _currentLife;
+    [SerializeField] private  int _damage = 10;
     [SerializeField] protected float _cont = 1.7f;
     [SerializeField] private float empujeZombie = 5.0f;
     #endregion
@@ -63,6 +63,6 @@ public class Life_Component : MonoBehaviour
         }
 
         //Animación
-        _myAnimator.SetInteger("Vida", _currentLife);
+        _myAnimator.SetFloat("Vida", _currentLife);
     }
 }
