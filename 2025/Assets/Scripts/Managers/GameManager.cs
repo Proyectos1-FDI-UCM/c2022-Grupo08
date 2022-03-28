@@ -6,8 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     #region parameters
-    bool boy;
-    bool girl;
+    public bool boy;
     #endregion
 
     #region properties
@@ -51,9 +50,8 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        
-        DontDestroyOnLoad(_boy);
-        DontDestroyOnLoad(_girl);      
+        //DontDestroyOnLoad(_boy);
+        //DontDestroyOnLoad(_girl);      
     }
     public void InteractableObjectDone(InteractDetection _myInteractDetection) // Gestiona la interaccion con objetos interactuables
     {
@@ -120,11 +118,19 @@ public class GameManager : MonoBehaviour
     }
     public void StartGameBoy()
     {
+        boy = true;
         SceneManager.LoadScene(1);
+        _boy.transform.position = _spawn.position;
+        Destroy(_girl);
+        _boy.SetActive(true);
     }
     public void StartGameGirl()
     {
+        boy = false;
         SceneManager.LoadScene(1);
+        _girl.transform.position = _spawn.position;
+        Destroy(_boy);
+        _girl.SetActive(true);
     }
    
     public void Replay() 
@@ -151,7 +157,18 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _boy.transform.position=_spawn.position;
+        /*if (boy)
+        {
+            _boy.transform.position = _spawn.position;
+            Destroy(_girl);
+            _boy.SetActive(true);
+        }
+        else
+        {
+            _girl.transform.position = _spawn.position;
+            Destroy(_boy);
+            _girl.SetActive(true);
+        }*/
         DontDestroyOnLoad(gameObject);
     }
 
