@@ -56,20 +56,7 @@ public class NewRoom : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(opening);
-        //if ()
-        //{
-        //    _cont -= Time.deltaTime;
-        //    Debug.Log(_cont);
-        //    //Contador
-        //    if (_cont <= 0) //GameManager.Instance.OnEnemyDies();
-        //    {
-                
-        //        open = true;
-        //        _myAnimator.SetBool("abierto", open);
-                
-        //    }
-        //}
+       
 
         
         
