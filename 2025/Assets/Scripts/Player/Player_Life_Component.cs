@@ -117,7 +117,7 @@ public class Player_Life_Component : Life_Component
 
         _lifeBar.fillAmount = _currentLife / _maxLife;
 
-        Debug.Log(_currentLife);
+        //Debug.Log(_currentLife);
         
     }
 }
