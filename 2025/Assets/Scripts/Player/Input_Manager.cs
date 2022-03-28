@@ -34,7 +34,7 @@ public class Input_Manager : MonoBehaviour
         Vector3 movementDirection = Vector3.zero;
 
         // Detección de movimiento WASD
-        if (!_isDead)
+        if (!_isDead && !GameManager.Instance.IsGamePaused)
         {
             if (Input.GetKey(KeyCode.W))
             {
@@ -93,6 +93,12 @@ public class Input_Manager : MonoBehaviour
                 {
                     _myPlayerAttack.ShootBala(3, dir);
                 }
+            }
+
+            // Menu pausa
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                GameManager.Instance.PauseGame();
             }
         }
     }

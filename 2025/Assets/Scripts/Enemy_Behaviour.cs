@@ -36,7 +36,6 @@ public class Enemy_Behaviour : MonoBehaviour
     private void DeteccionPlayer()
     {
         _myTransform.position = Vector2.MoveTowards(_myTransform.position, _player.transform.position, velocity * Time.deltaTime);
-        
     }
     #endregion
     // Start is called before the first frame update
@@ -47,26 +46,29 @@ public class Enemy_Behaviour : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {      
-        if (Vector2.Distance(_myTransform.position, _player.transform.position) <= 5) // si la distancia entre player y enemy es menor que 5, sigue al player
-        { 
-            DeteccionPlayer();
-            deteccion = true;
-        } 
-        else
+    {
+        if (!GameManager.Instance.IsGamePaused)
         {
-            _myTransform.position = Vector3.MoveTowards(_myTransform.position, wayPoints[nextPosition].transform.position, velocity * Time.deltaTime);
-            if (Vector3.Distance(_myTransform.position, wayPoints[nextPosition].transform.position) <= changeDistance) // si la distancia es menor a la distancia de cambio, se pasa al siguiente waypoint
+            if (Vector2.Distance(_myTransform.position, _player.transform.position) <= 5) // si la distancia entre player y enemy es menor que 5, sigue al player
             {
-                currentPosition = nextPosition;
-                nextPosition++;
-
-                if (nextPosition >= wayPoints.Count)
-                {
-                    nextPosition = 0;
-                }
+                DeteccionPlayer();
+                deteccion = true;
             }
-            deteccion = false;
+            else
+            {
+                _myTransform.position = Vector3.MoveTowards(_myTransform.position, wayPoints[nextPosition].transform.position, velocity * Time.deltaTime);
+                if (Vector3.Distance(_myTransform.position, wayPoints[nextPosition].transform.position) <= changeDistance) // si la distancia es menor a la distancia de cambio, se pasa al siguiente waypoint
+                {
+                    currentPosition = nextPosition;
+                    nextPosition++;
+
+                    if (nextPosition >= wayPoints.Count)
+                    {
+                        nextPosition = 0;
+                    }
+                }
+                deteccion = false;
+            }
         }
         //Animación
         _myAnimator.SetFloat("posJ", _player.position.x - _enemy.position.x);

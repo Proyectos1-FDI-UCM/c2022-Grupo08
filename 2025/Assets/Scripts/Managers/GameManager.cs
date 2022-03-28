@@ -6,37 +6,14 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     #region parameters
-    //[SerializeField]
-    //private bool state = true;
-
-     bool boy;
-     bool girl;
+    bool boy;
+    bool girl;
     #endregion
+
     #region properties
-
-    //public bool _electricidadActiva = false;
-
-    /*[SerializeField]
-    private int _maxFusibles = 3;
-    private int _currentFusibles = 0;*/
+    public bool IsGamePaused = false;
     public float _currentLife = 100;
     float _maxLife = 100;
-    /*public bool ElectricityButton = false;
-    [SerializeField] private GameObject _electricityOn;
-    [SerializeField] private GameObject _electricityOff;
-    [SerializeField] private GameObject _globalLightOn;
-    [SerializeField] private GameObject _globalLightOff;*/
-    [SerializeField] private GameObject _nota;
-    [SerializeField] private GameObject _botiquin;
-    [SerializeField] private GameObject _elevatorClosed;
-    [SerializeField] private GameObject _elevatorOpened;
-    [SerializeField] private GameObject _key;
-    [SerializeField] private GameObject _parkingDoor;
-    [SerializeField] private GameObject _exitHospital;
-    [SerializeField] private GameObject _boy;
-    [SerializeField] private GameObject _girl;
-    [SerializeField] private Transform _spawn;
-    private GameObject saved;
     #endregion
     #region references
     static private GameManager _instance; // Unique GameManager instance (Singleton Pattern).
@@ -49,9 +26,18 @@ public class GameManager : MonoBehaviour
             return _instance; // Para poder instanciar el GameManager y llamarlo desde cualquier script
         }
     }
-    [SerializeField]
-    private List<InteractDetection> _listInteractableObjects;
-
+    [SerializeField] private GameObject _nota;
+    [SerializeField] private GameObject _botiquin;
+    [SerializeField] private GameObject _elevatorClosed;
+    [SerializeField] private GameObject _elevatorOpened;
+    [SerializeField] private GameObject _key;
+    [SerializeField] private GameObject _parkingDoor;
+    [SerializeField] private GameObject _exitHospital;
+    [SerializeField] private GameObject _boy;
+    [SerializeField] private GameObject _girl;
+    [SerializeField] private Transform _spawn;
+    private GameObject saved;
+    [SerializeField] private List<InteractDetection> _listInteractableObjects;
     private UI_Manager _UIManager;
     #endregion
     #region methods
@@ -74,20 +60,6 @@ public class GameManager : MonoBehaviour
         _listInteractableObjects.Remove(_myInteractDetection); // Elimino al objecto con el que interactuado de la lista
         Destroy(_myInteractDetection.gameObject); // Destruye al objeto interactuado de escena
     }
-    
-
-    /*public void ElectrictyActivated()
-    {
-        if(_electricidadActiva)
-        {
-            _elevatorClosed.GetComponent<BoxCollider2D>().isTrigger = true;           
-        }      
-    }
-
-    public void OpenElevatorDoor()
-    {
-        _elevatorOpened.GetComponent<BoxCollider2D>().isTrigger = true;
-    }*/
     public void ActivateNote() // Activa la nota
     {
         _nota.SetActive(true);
@@ -136,6 +108,11 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(3, LoadSceneMode.Single);
         
     }*/
+    public void PauseGame()
+    {
+        IsGamePaused = true;
+        UI_Manager.Instance.PauseMenu(true);
+    }
     public void QuitGame()
     {
         UnityEditor.EditorApplication.isPlaying = false;

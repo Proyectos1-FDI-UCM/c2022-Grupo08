@@ -27,16 +27,12 @@ public class UI_Manager : MonoBehaviour
     
     public float maxlife;
     public float currentlife;
-    [SerializeField]
-    private GameObject _customizationMenu;
-    [SerializeField]
-    private GameObject _controlsMenu;
-    [SerializeField]
-    private GameObject _mainMenu;
-    [SerializeField]
-    private GameObject _winMenu;
-    [SerializeField]
-    private GameObject _loseMenu;
+    [SerializeField] private GameObject _customizationMenu;
+    [SerializeField] private GameObject _controlsMenu;
+    [SerializeField] private GameObject _mainMenu;
+    [SerializeField] private GameObject _winMenu;
+    [SerializeField] private GameObject _loseMenu;
+    [SerializeField] private GameObject _pauseMenu;
     #endregion
     #region methods
     public void Awake()
@@ -84,7 +80,14 @@ public class UI_Manager : MonoBehaviour
     {
         _controlsMenu.SetActive(enabled);
     }
-
+    public void PauseMenu(bool enabled)
+    {
+        _pauseMenu.SetActive(enabled);
+        if (!enabled)
+        {
+            GameManager.Instance.IsGamePaused = false;
+        }
+    }
     public void WinMenu()
     {       
         _winMenu.SetActive(true); // Activa el menú de victoria
