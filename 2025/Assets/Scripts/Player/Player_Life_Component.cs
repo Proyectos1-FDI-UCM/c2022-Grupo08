@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player_Life_Component : Life_Component
 {
@@ -16,6 +17,8 @@ public class Player_Life_Component : Life_Component
     [SerializeField]
     private GameObject _girl;
 
+
+    public Image _lifeBar;
     //static private Player_Life_Component _instance; // Unique GameManager instance (Singleton Pattern).
 
 
@@ -61,7 +64,7 @@ public class Player_Life_Component : Life_Component
     {
         _currentLife += curacion;
         _currentLife = Mathf.Clamp(_currentLife, 0, 100);
-        GameManager.Instance.GetHealth( _currentLife);
+        
     }
 
     public void BeBoy()
@@ -73,6 +76,8 @@ public class Player_Life_Component : Life_Component
     {
         _girl.SetActive(true);
     }
+
+
 
     #endregion
 
@@ -91,6 +96,9 @@ public class Player_Life_Component : Life_Component
     // Update is called once per frame
     override public void Update()
     {
+
+        
+
         if (_currentLife <= 0)
         {
             // Para no poder mooverse durante la animación de muerte
@@ -105,5 +113,11 @@ public class Player_Life_Component : Life_Component
             }
         }
         //_myAnimator.SetInteger("VidaPlayer", _currentLife);
+
+
+        _lifeBar.fillAmount = _currentLife / _maxLife;
+
+        Debug.Log(_currentLife);
+        
     }
 }

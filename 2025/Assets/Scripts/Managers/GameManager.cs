@@ -82,22 +82,7 @@ public class GameManager : MonoBehaviour
         _exitHospital.GetComponent<BoxCollider2D>().isTrigger = true;
     }
 
-    public void SetUIManager(UI_Manager uimanager) //Setea el UiManager
-    {
-        _UIManager = uimanager;
-        uimanager.BarraVida(_currentLife, _maxLife);
-    }
-
-    public void GetDamage()
-    {
-        _UIManager.BarraVida(_currentLife, _maxLife);   
-    }
-
-    public void GetHealth(int _currentlife)
-    {
-        SetUIManager(_UIManager);
-        _UIManager.BarraVida(_maxLife, _currentlife);
-    }
+   
 
     /*public void OnPlayerDies()
     {

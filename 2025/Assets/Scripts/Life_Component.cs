@@ -5,7 +5,7 @@ using UnityEngine;
 public class Life_Component : MonoBehaviour
 {
     #region parameters
-    [SerializeField] private int _maxLife = 100;
+    public int _maxLife = 100;
     public int _currentLife;
     [SerializeField] private int _damage = 10;
     [SerializeField] protected float _cont = 1.7f;
@@ -30,10 +30,7 @@ public class Life_Component : MonoBehaviour
     {
         _currentLife -= damagePoint;
         _myRigidBodyZombie.AddForce(_myTransformZombie.position * -empujeZombie, ForceMode2D.Impulse);
-        if (gameObject.GetComponent<Player_Life_Component>())
-        {
-            GameManager.Instance.GetDamage();
-        }
+        
     }
 
     protected void Die()

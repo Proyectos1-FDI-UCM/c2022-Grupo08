@@ -60,11 +60,7 @@ public class UI_Manager : MonoBehaviour
         balassg.text= "" + bala + "/" + cargador;
     }
 
-    public void BarraVida(float maxlife, float currentlife)
-    {
-        currentlife = Mathf.Clamp(currentlife, 0, maxlife);
-        lifeBar.fillAmount = currentlife / maxlife;
-    }
+   
 
     public void Mision(string write)
     {
