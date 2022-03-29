@@ -15,6 +15,7 @@ public class Life_Component : MonoBehaviour
     [SerializeField] protected Animator _myAnimator;
     private Rigidbody2D _myRigidBodyZombie;
     private Transform _myTransformZombie;
+    [SerializeField] private AudioClip _clip;
     #endregion
     #region methods
     private void OnCollisionEnter2D(Collision2D collision)
@@ -29,7 +30,8 @@ public class Life_Component : MonoBehaviour
     public virtual void Damage(int damagePoint)
     {
         _currentLife -= damagePoint;
-       //_myRigidBodyZombie.AddForce(_myTransformZombie.position * -empujeZombie, ForceMode2D.Impulse);
+        //_myRigidBodyZombie.AddForce(_myTransformZombie.position * -empujeZombie, ForceMode2D.Impulse);
+        SoundManager.Instance.PlaySound(_clip);
         
     }
 
