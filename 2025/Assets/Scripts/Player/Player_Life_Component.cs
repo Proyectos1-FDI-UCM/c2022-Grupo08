@@ -116,7 +116,7 @@ public class Player_Life_Component : Life_Component
         //_myAnimator.SetInteger("VidaPlayer", _currentLife);
 
 
-       // _lifeBar.fillAmount = _currentLife / _maxLife;
+        _lifeBar.fillAmount = _currentLife / _maxLife;
 
         //Debug.Log(_currentLife);
         
