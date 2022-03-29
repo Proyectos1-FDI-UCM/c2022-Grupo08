@@ -94,8 +94,7 @@ public class GameManager : MonoBehaviour
     public void PauseGame()
     {
         IsGamePaused = true;
-        UI_Manager.Instance.PauseMenu(true);
-     
+        UI_Manager.Instance.PauseMenu(true);   
     }
     public void QuitGame()
     {
@@ -124,9 +123,9 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(0, LoadSceneMode.Single);
     }
 
-    public void LoadLoseMenu()
+    public void LoadGameOverMenu()
     {
-        SceneManager.LoadScene(3, LoadSceneMode.Single);
+        SceneManager.LoadScene(4, LoadSceneMode.Single);
     }
 
     public void OnLevelWasLoaded(int level)
@@ -136,6 +135,10 @@ public class GameManager : MonoBehaviour
         if(level == 3)
         {
             UI_Manager.Instance.WinMenu(); // Llamada para que salga el menú de victoria
+        }
+        if (level == 4)
+        {
+            UI_Manager.Instance.GameOverMenu();
         }
     }
 

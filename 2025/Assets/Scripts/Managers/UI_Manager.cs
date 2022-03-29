@@ -89,9 +89,8 @@ public class UI_Manager : MonoBehaviour
         _winMenu.SetActive(true); // Activa el menú de victoria
     }
 
-    public void LoseMenu()
+    public void GameOverMenu()
     {
-        GameManager.Instance.LoadLoseMenu();
         _loseMenu.SetActive(true);
     }
     public void MuteButton()

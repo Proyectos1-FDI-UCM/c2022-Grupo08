@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Level_2.unity
     guid: 402489aeedd9b3c4ca815916e1a3356d
   - enabled: 1
-    path: Assets/Scenes/Win_Lose_Menu.unity
+    path: Assets/Scenes/WinMenu.unity
     guid: fd861301ef5257b489748739939b94fd
+  - enabled: 1
+    path: Assets/Scenes/GameOverMenu.unity
+    guid: 232c1caf298aa6f44858bfaeb9431a12
   m_configObjects: {}
