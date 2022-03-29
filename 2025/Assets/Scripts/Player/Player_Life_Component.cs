@@ -32,13 +32,17 @@ public class Player_Life_Component : Life_Component
     #endregion
 
     #region properties
-    private float empuje = 5f; //Fuerza con la que se va a ipulsar hacia atrás al jugador al ser golpeado por un objeto hostil
+    [SerializeField]
+    private float empuje = 2f; //Fuerza con la que se va a ipulsar hacia atrás al jugador al ser golpeado por un objeto hostil
     #endregion
 
     #region methods
     public override void Damage(int DamagePoints)
     {
-        base.Damage(DamagePoints);
+        //_currentLife -= DamagePoints;
+        //_myRigidBody.AddForce(_myTransform.position * -empuje, ForceMode2D.Impulse);
+
+         base.Damage(DamagePoints);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {

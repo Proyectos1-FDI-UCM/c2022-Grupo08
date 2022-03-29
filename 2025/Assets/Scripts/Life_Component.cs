@@ -29,7 +29,7 @@ public class Life_Component : MonoBehaviour
     public virtual void Damage(int damagePoint)
     {
         _currentLife -= damagePoint;
-        _myRigidBodyZombie.AddForce(_myTransformZombie.position * -empujeZombie, ForceMode2D.Impulse);
+       //_myRigidBodyZombie.AddForce(_myTransformZombie.position * -empujeZombie, ForceMode2D.Impulse);
         
     }
 
