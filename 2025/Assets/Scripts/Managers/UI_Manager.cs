@@ -67,11 +67,18 @@ public class UI_Manager : MonoBehaviour
         _mision.text = write;
     }
 
-    public void CustomizationMenu(bool enabled)
+    //public void CustomizationMenu(bool enabled)
+    //{
+    //    _customizationMenu.SetActive(enabled);
+    //    _mainMenu.SetActive(!enabled);
+    //}
+
+    public void StartGame()
     {
-        _customizationMenu.SetActive(enabled);
-        _mainMenu.SetActive(!enabled);
+        GameManager.Instance.StartGame();
     }
+
+
     public void ControlsMenu(bool enabled)
     {
         _controlsMenu.SetActive(enabled);

@@ -101,23 +101,27 @@ public class GameManager : MonoBehaviour
         UnityEditor.EditorApplication.isPlaying = false;
         //Application.Quit();
     }
-    public void StartGameBoy()
-    {
-        boy = true;
-        SceneManager.LoadScene(1);
-        _boy.transform.position = _spawn.position;
-        Destroy(_girl);
-        _boy.SetActive(true);
-    }
-    public void StartGameGirl()
-    {
-        boy = false;
-        SceneManager.LoadScene(1);
-        _girl.transform.position = _spawn.position;
-        Destroy(_boy);
-        _girl.SetActive(true);
-    }
+    //public void StartGameBoy()
+    //{
+    //    boy = true;
+    //    SceneManager.LoadScene(1);
+    //    _boy.transform.position = _spawn.position;
+    //    Destroy(_girl);
+    //    _boy.SetActive(true);
+    //}
+    //public void StartGameGirl()
+    //{
+    //    boy = false;
+    //    SceneManager.LoadScene(1);
+    //    _girl.transform.position = _spawn.position;
+    //    Destroy(_boy);
+    //    _girl.SetActive(true);
+    //}
    
+    public void StartGame()
+    {
+        SceneManager.LoadScene(1);
+    }
     public void Replay() 
     {
         SceneManager.LoadScene(0, LoadSceneMode.Single);
