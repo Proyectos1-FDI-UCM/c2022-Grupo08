@@ -49,9 +49,7 @@ public class GameManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
-        }
-        //DontDestroyOnLoad(_boy);
-        //DontDestroyOnLoad(_girl);      
+        }        
     }
     public void InteractableObjectDone(InteractDetection _myInteractDetection) // Gestiona la interaccion con objetos interactuables
     {

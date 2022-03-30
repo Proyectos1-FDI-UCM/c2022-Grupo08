@@ -17,6 +17,9 @@ public class Enemy_Behaviour : MonoBehaviour
     [SerializeField]
     private Transform _enemy;
 
+    [SerializeField]
+    private int _distanceToDetection;
+
     private float changeDistance = 0.1f; // distancia minima a la que el jugador cambiará su objetivo al siguiente punto
  
     private int nextPosition = 0; // posicion
@@ -28,6 +31,7 @@ public class Enemy_Behaviour : MonoBehaviour
 
     #region references
     private Transform _myTransform;
+    
     [SerializeField]
     private Animator _myAnimator;
     #endregion
@@ -49,7 +53,7 @@ public class Enemy_Behaviour : MonoBehaviour
     {
         if (!GameManager.Instance.IsGamePaused)
         {
-            if (Vector2.Distance(_myTransform.position, _player.transform.position) <= 5) // si la distancia entre player y enemy es menor que 5, sigue al player
+            if (Vector2.Distance(_myTransform.position, _player.transform.position) <= _distanceToDetection) // si la distancia entre player y enemy es menor que 5, sigue al player
             {
                 DeteccionPlayer();
                 deteccion = true;
