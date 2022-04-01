@@ -52,11 +52,6 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }        
     }
-
-    public void Reference()
-    {
-
-    }
     public void InteractableObjectDone(InteractDetection _myInteractDetection) // Gestiona la interaccion con objetos interactuables
     {
         _listInteractableObjects.Remove(_myInteractDetection); // Elimino al objecto con el que interactuado de la lista
@@ -147,11 +142,11 @@ public class GameManager : MonoBehaviour
         SceneManager.GetActiveScene(); 
         if (level == 1)
         {
-            GameObject.Instantiate(_player, _spawn.position, Quaternion.identity);
+            //GameObject.Instantiate(_player, _spawn.position, Quaternion.identity);
         }
         if(level == 2)
         {
-            GameObject.Instantiate(_player, _spawn.position, Quaternion.identity);
+            //GameObject.Instantiate(_player, _spawn.position, Quaternion.identity);
         }
         if(level == 3)
         {
@@ -179,7 +174,7 @@ public class GameManager : MonoBehaviour
             Destroy(_boy);
             _girl.SetActive(true);
         }*/
-        DontDestroyOnLoad(gameObject);
+        // DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame

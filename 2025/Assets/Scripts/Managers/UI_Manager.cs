@@ -119,10 +119,10 @@ public class UI_Manager : MonoBehaviour
     {
         // DontDestroyOnLoad(gameObject);
         _instance = this;
-        balasg.text = "";
-        balassg.text = "";
-        palancaaviso.text = "";
-        _mision.text = "";
+        //balasg.text = "";
+        //balassg.text = "";
+        //palancaaviso.text = "";
+        //_mision.text = "";
     }
 
     // Update is called once per frame

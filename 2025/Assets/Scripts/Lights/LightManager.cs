@@ -45,8 +45,7 @@ public class LightManager : MonoBehaviour
         Destroy(_electricityOn);
         _electricityOff.SetActive(true);
         _globalLightOff.SetActive(false);
-        _globalLightOn.SetActive(true);
-        
+        _globalLightOn.SetActive(true);       
         SoundManager.Instance.PlaySound(_clip);
     }
     public void CheckFusibles() // Actualiza el numero de fusibles activos y los compara con el numero maximo posible para activar el panel electrico en su momento
