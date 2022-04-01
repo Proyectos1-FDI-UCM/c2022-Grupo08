@@ -34,6 +34,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Transform _spawn;
     [SerializeField] private GameObject _elevatorOn;
     [SerializeField] private GameObject _elevatorOff;
+    [SerializeField] private GameObject _elevatorAnimation;
     [SerializeField] private GameObject _shortcut;
 
     private GameObject saved;
@@ -76,6 +77,7 @@ public class GameManager : MonoBehaviour
         _elevatorOff.SetActive(false);
         _elevatorOn.SetActive(true);
         _shortcut.SetActive(false);
+        _elevatorAnimation.SetActive(true);
     }
     public void GetKey()
     {       
