@@ -28,10 +28,16 @@ public class SoundManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    public void MuteVolume(bool sound)
+    public void MuteVolume(AudioSource sound)
     {
-        Debug.Log("Hola");
-        //Poner Volumen a 0
+        if (sound.mute)
+        {
+            sound.mute = false;
+        }
+        else
+        {
+            sound.mute = true;
+        }
     }
 
     public void PlaySound(AudioClip clip)

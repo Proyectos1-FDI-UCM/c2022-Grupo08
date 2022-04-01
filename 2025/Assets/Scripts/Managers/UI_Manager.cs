@@ -102,7 +102,7 @@ public class UI_Manager : MonoBehaviour
     {
         _loseMenu.SetActive(true);
     }
-    public void MuteButton(bool sound)
+    public void MuteButton(AudioSource sound)
     {
         SoundManager.Instance.MuteVolume(sound);
     }

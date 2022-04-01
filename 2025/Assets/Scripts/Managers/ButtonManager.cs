@@ -5,7 +5,7 @@ using UnityEngine;
 public class ButtonManager : MonoBehaviour
 {
     #region methods
-    public void MuteButton(bool sound)
+    public void MuteButton(AudioSource sound)
     {
         UI_Manager.Instance.MuteButton(sound);
     }
