@@ -31,6 +31,9 @@ public class UI_Manager : MonoBehaviour
     [SerializeField] private GameObject _customizationMenu;
     [SerializeField] private GameObject _controlsMenu;
     [SerializeField] private GameObject _mainMenu;
+    [SerializeField] private GameObject _control1;
+    [SerializeField] private GameObject _control2;
+    [SerializeField] private GameObject _control3;
     [SerializeField] private GameObject _winMenu;
     [SerializeField] private GameObject _loseMenu;
     [SerializeField] private GameObject _pauseMenu;
@@ -48,10 +51,19 @@ public class UI_Manager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    public void palanca()
+    public void ShotgunActivate()
+    {
+        _control1.SetActive(true);
+    }
+    public void GunActivate()
+    {
+        _control2.SetActive(true);
+    }
+    public void LeverActivate()
     {
         //palancaaviso.text = "Pulse Espacio para golpear con la palanca";
         //gogo = true;
+        _control3.SetActive(true);
     }
     public void balagUI(int bala,int cargador)
     {
@@ -124,6 +136,21 @@ public class UI_Manager : MonoBehaviour
     {
         _controlsMenu = GameObject.Find("ControlsMenu");
         _controlsMenu.SetActive(false);
+    }
+    public void Control1Reference()
+    {
+        _control1 = GameObject.Find("ControlEscopeta");
+        _control1.SetActive(false);
+    }
+    public void Control2Reference()
+    {
+        _control2 = GameObject.Find("ControlPistola");
+        _control2.SetActive(false);
+    }
+    public void Control3Reference()
+    {
+        _control3 = GameObject.Find("ControlPalanca");
+        _control3.SetActive(false);
     }
     #endregion
     // Start is called before the first frame update

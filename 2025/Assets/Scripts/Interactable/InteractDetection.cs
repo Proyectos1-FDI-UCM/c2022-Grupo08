@@ -29,9 +29,9 @@ public class InteractDetection : MonoBehaviour
             case 2: _myFusibles.SumaFusible(); break; // Fusibles
             case 3: _myBotiquin.AplicaCura(); break; // Botiquin
             case 4: _myActivaNota.ToShowNote(); break; // ActivaNota
-            case 5: _myCadaver.LeverActivated(); UI_Manager.Instance.palanca(); break; // Cadaver
-            case 6: _myCadaver2.PistolaActivada(); break; // Cadaver2
-            case 7: _myCadaver3.EscopetaActivada(); break; // Cadaver3
+            case 5: _myCadaver.LeverActivated(); UI_Manager.Instance.LeverActivate(); break; // Cadaver
+            case 6: _myCadaver2.PistolaActivada(); UI_Manager.Instance.GunActivate(); break; // Cadaver2
+            case 7: _myCadaver3.EscopetaActivada(); UI_Manager.Instance.ShotgunActivate(); break; // Cadaver3
             case 8: _myKey.ToActivateParkingDoor(); break; // Llave
             case 9: _myElevator.OpenElevator(); break; // Ascensor
             case 10: _myParkingDoor.ToExitHospital(); break; // Puerta del Parking

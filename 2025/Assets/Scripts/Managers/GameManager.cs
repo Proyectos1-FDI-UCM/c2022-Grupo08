@@ -138,6 +138,10 @@ public class GameManager : MonoBehaviour
             _nota.SetActive(false);
             UI_Manager.Instance.PauseReference();
             UI_Manager.Instance.ControlsReference();
+            
+            UI_Manager.Instance.Control1Reference();
+            UI_Manager.Instance.Control2Reference();
+            UI_Manager.Instance.Control3Reference();
             _player = GameObject.Find("Chico");
             _elevatorOn = GameObject.Find("Elevator_ClosedReady");
             _elevatorAnimation = GameObject.Find("ElevatorAnimation");
