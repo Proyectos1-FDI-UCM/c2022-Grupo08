@@ -25,16 +25,17 @@ public class GameManager : MonoBehaviour
             return _instance; // Para poder instanciar el GameManager y llamarlo desde cualquier script
         }
     }
+    [SerializeField] private GameObject _player;
     [SerializeField] private GameObject _nota;
-    [SerializeField] private GameObject _botiquin;
-    [SerializeField] private GameObject _elevatorClosed;
-    [SerializeField] private GameObject _elevatorOpened;
+    [SerializeField] private GameObject _botiquin; 
     [SerializeField] private GameObject _key;
     [SerializeField] private GameObject _parkingDoor;
     [SerializeField] private GameObject _exitHospital;
-    [SerializeField] private GameObject _boy;
-    [SerializeField] private GameObject _girl;
     [SerializeField] private Transform _spawn;
+    [SerializeField] private GameObject _elevatorOn;
+    [SerializeField] private GameObject _elevatorOff;
+    [SerializeField] private GameObject _shortcut;
+
     private GameObject saved;
     [SerializeField] private List<InteractDetection> _listInteractableObjects;
     private UI_Manager _UIManager;
@@ -50,6 +51,11 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }        
+    }
+
+    public void Reference()
+    {
+
     }
     public void InteractableObjectDone(InteractDetection _myInteractDetection) // Gestiona la interaccion con objetos interactuables
     {
@@ -70,6 +76,12 @@ public class GameManager : MonoBehaviour
         Destroy(triggerToDestroy);
     }
 
+    public void UnlockExit()
+    {
+        _elevatorOff.SetActive(false);
+        _elevatorOn.SetActive(true);
+        _shortcut.SetActive(false);
+    }
     public void GetKey()
     {       
         _parkingDoor.SetActive(true);
@@ -133,7 +145,14 @@ public class GameManager : MonoBehaviour
     public void OnLevelWasLoaded(int level)
     {
         SceneManager.GetActiveScene(); 
-
+        if (level == 1)
+        {
+            GameObject.Instantiate(_player, _spawn.position, Quaternion.identity);
+        }
+        if(level == 2)
+        {
+            GameObject.Instantiate(_player, _spawn.position, Quaternion.identity);
+        }
         if(level == 3)
         {
             UI_Manager.Instance.WinMenu(); // Llamada para que salga el menú de victoria

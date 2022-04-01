@@ -6,7 +6,6 @@ public class Botiquin : MonoBehaviour
 {
     #region references
     private Player_Life_Component _myPlayerLifeComponent;
-    [SerializeField]
     private GameObject _player;
     #endregion
     #region parameters
@@ -26,6 +25,7 @@ public class Botiquin : MonoBehaviour
     void Start()
     {
         _myPlayerLifeComponent = _player.GetComponent<Player_Life_Component>();
+        _player = GameObject.Find("Chico");
     }
 
     // Update is called once per frame

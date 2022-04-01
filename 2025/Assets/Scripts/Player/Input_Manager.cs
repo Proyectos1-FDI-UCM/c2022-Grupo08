@@ -25,7 +25,7 @@ public class Input_Manager : MonoBehaviour
     {
         _myPlayerMovementController = GetComponent<Player_MovementController>();
         _myPlayerAttack = GetComponent<Player_Attack>();
-        _myPlayerInteract = GetComponent<Player_Interact>();
+        _myPlayerInteract = GetComponent<Player_Interact>();        
     }
 
     // Update is called once per frame

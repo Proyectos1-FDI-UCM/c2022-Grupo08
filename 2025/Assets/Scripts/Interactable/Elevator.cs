@@ -12,12 +12,7 @@ public class Elevator : MonoBehaviour
     [SerializeField] private AudioClip _clip;
     //[SerializeField] private GameObject _elevator;
     #endregion
-    #region methods
-    public void IsOpenElevator()
-    {
-        //GameManager.Instance.ElectrictyActivated();
-    }
-
+    #region methods   
     public void OpenElevator()
     {
         //GameManager.Instance.OpenElevatorDoor();
@@ -37,6 +32,6 @@ public class Elevator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         IsOpenElevator();
+         
     }
 }
