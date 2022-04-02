@@ -35,6 +35,7 @@ public class Enemy_Behaviour : MonoBehaviour
     [SerializeField]
     private Animator _myAnimator;
     private Life_Component _myLifeComponent;
+    private AudioSource _Zombie;
     #endregion
 
     #region methods
@@ -49,6 +50,15 @@ public class Enemy_Behaviour : MonoBehaviour
         _myTransform = transform;
         _myLifeComponent = GetComponent<Life_Component>();
         _playerTransform = GameManager.Instance._player.transform;
+        _Zombie = GetComponent<AudioSource>();
+        if (SoundManager.Instance.zombieMuted)
+        {
+            _Zombie.mute = false;
+        }
+        else
+        {
+            _Zombie.mute = true;
+        }
     }
 
     // Update is called once per frame

@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
+    #region parameters
+    public bool zombieMuted = false;
+    #endregion
     #region references
     [SerializeField] private AudioSource _effectSource, _musicSource;
     static private SoundManager _instance;
@@ -45,10 +48,18 @@ public class SoundManager : MonoBehaviour
         if (effects.mute)
         {
             effects.mute = false;
+            zombieMuted = true;
+            //_slowZombie = false;
+            //_fastZombie.mute = false;
+            //_strongZombie.mute = false;
         }
         else
         {
+            zombieMuted = false;
             effects.mute = true;
+            //_slowZombie.mute = true;
+            //_fastZombie.mute = true;
+            //_strongZombie.mute = true;
         }
     }
 
