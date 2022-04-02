@@ -14,6 +14,10 @@ public class ActivaNota : MonoBehaviour
     {
         GameManager.Instance.ActivateNote();
         SoundManager.Instance.PlaySound(_clip);
+        if (LightManager.Instance._currentFusibles < 1)
+        {
+            GameManager.Instance.NewMision("Parece que tienes que usar el ascensor... Recoge fusibles 0/3");
+        }
     }
 
     public void ToHideNote() // Método que llama al GameManager para esconder la nota

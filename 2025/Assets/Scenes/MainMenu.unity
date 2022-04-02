@@ -913,7 +913,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1838,16 +1838,17 @@ MonoBehaviour:
   boy: 0
   IsGamePaused: 0
   _currentLife: 100
+  _player: {fileID: 0}
   _nota: {fileID: 0}
   _botiquin: {fileID: 0}
-  _elevatorClosed: {fileID: 0}
-  _elevatorOpened: {fileID: 0}
   _key: {fileID: 0}
   _parkingDoor: {fileID: 0}
   _exitHospital: {fileID: 0}
-  _boy: {fileID: 707199513790786217, guid: f1f7bd51ad420f048ad30821d946adc0, type: 3}
-  _girl: {fileID: 0}
   _spawn: {fileID: 0}
+  _elevatorOn: {fileID: 0}
+  _elevatorOff: {fileID: 0}
+  _elevatorAnimation: {fileID: 0}
+  _shortcut: {fileID: 0}
   _listInteractableObjects:
   - {fileID: 0}
   - {fileID: 0}

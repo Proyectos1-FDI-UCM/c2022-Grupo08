@@ -71,6 +71,10 @@ public class GameManager : MonoBehaviour
         room.SetActive(true);
         Destroy(triggerToDestroy);
     }
+    public void NewMision(string write)
+    {
+        UI_Manager.Instance.Mision(write);
+    }
 
     public void UnlockExit()
     {

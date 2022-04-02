@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -7192018674973502873}
   - component: {fileID: 6116990761757967574}
   m_Layer: 0
-  m_Name: Electricity
+  m_Name: ElectricityButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

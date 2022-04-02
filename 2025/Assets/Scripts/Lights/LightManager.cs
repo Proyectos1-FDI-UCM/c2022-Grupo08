@@ -8,9 +8,8 @@ public class LightManager : MonoBehaviour
     [SerializeField] private float _lightDelay = 0.75f;
     public bool _electricidadActiva = false;
     [SerializeField] private int _maxFusibles = 3;
-    private int _currentFusibles = 0;
+    public int _currentFusibles = 0;
     public float _currentLife = 100;
-    public bool ElectricityButton = false;
     [SerializeField] private GameObject _electricityOn;
     [SerializeField] private GameObject _electricityOff;
     [SerializeField] private GameObject _globalLightOn;
@@ -51,9 +50,10 @@ public class LightManager : MonoBehaviour
     public void CheckFusibles() // Actualiza el numero de fusibles activos y los compara con el numero maximo posible para activar el panel electrico en su momento
     {
         _currentFusibles++;
-
-        if (_currentFusibles >= _maxFusibles && ElectricityButton)
+        GameManager.Instance.NewMision("Parece que tienes que usar el ascensor... Recoge fusibles " + _currentFusibles + "/3");
+        if (_currentFusibles >= _maxFusibles)
         {
+            GameManager.Instance.NewMision("Todos los fusibles recogidos. Colocalos en el lugar adecuado");
             _electricityOn.SetActive(true);
         }
     }
@@ -66,7 +66,7 @@ public class LightManager : MonoBehaviour
             _myLight.gameObject.SetActive(state);
         }
 
-        if (_electricidadActiva)
+        if (_electricidadActiva && !state)
         {
             CancelInvoke("CambioEstadoLuces");
         }

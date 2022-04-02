@@ -32,7 +32,6 @@ public class Player_Interact : MonoBehaviour
         }
         if (holdingInteract) // Interactua con el objeto que está en la zona de interacción
         {
-
             if (hitMunicion)
             {
                 hitInteractableObject.Interact(1);
