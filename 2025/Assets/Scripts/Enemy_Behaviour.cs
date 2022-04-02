@@ -51,7 +51,7 @@ public class Enemy_Behaviour : MonoBehaviour
         _myLifeComponent = GetComponent<Life_Component>();
         _playerTransform = GameManager.Instance._player.transform;
         _Zombie = GetComponent<AudioSource>();
-        if (SoundManager.Instance.zombieMuted)
+        if (!SoundManager.Instance.zombieMuted)
         {
             _Zombie.mute = false;
         }

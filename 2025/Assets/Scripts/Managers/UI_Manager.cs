@@ -37,10 +37,7 @@ public class UI_Manager : MonoBehaviour
     [SerializeField] private GameObject _winMenu;
     [SerializeField] private GameObject _loseMenu;
     [SerializeField] private GameObject _pauseMenu;
-    [SerializeField] private GameObject _muteMusicButton;
-    [SerializeField] private GameObject _unmuteMusicButton;
-    [SerializeField] private GameObject _muteSFXButton;
-    [SerializeField] private GameObject _unmuteSFXButton;
+    
     #endregion
 
     #region methods
@@ -121,33 +118,12 @@ public class UI_Manager : MonoBehaviour
     public void MuteMusicButton(bool music)
     {
         SoundManager.Instance.MuteMusic(music);
-        if (music)
-        {
-            _unmuteMusicButton.SetActive(false);
-            _muteMusicButton.SetActive(true);
-        }
-        else
-        {
-            _unmuteMusicButton.SetActive(true);
-            _muteMusicButton.SetActive(false);
-        }
     }
 
     public void MuteSFXButton(bool effects)
     {
         SoundManager.Instance.MuteSFX(effects);
-        if (effects)
-        {
-            _unmuteSFXButton.SetActive(false);
-            _muteSFXButton.SetActive(true);
-        }
-        else
-        {
-            _unmuteSFXButton.SetActive(true);
-            _muteSFXButton.SetActive(false);
-        }
     }
-
     public void ReplayButton()
     {
         GameManager.Instance.Replay();
@@ -160,24 +136,6 @@ public class UI_Manager : MonoBehaviour
     {
         _pauseMenu = GameObject.Find("PauseMenu");
         _pauseMenu.SetActive(false);
-    }
-    public void UnmuteButtonReference()
-    {
-        _unmuteMusicButton = GameObject.Find("UnMuteButton");
-        _unmuteMusicButton.SetActive(false);
-    }
-    public void MuteButtonReference()
-    {
-        _muteMusicButton = GameObject.Find("MuteButton");
-    }
-    public void UnmuteSFXReference()
-    {
-        _unmuteSFXButton = GameObject.Find("SFXUnmute");
-        _unmuteSFXButton.SetActive(false);
-    }
-    public void MuteSFXReference()
-    {
-        _muteSFXButton = GameObject.Find("SFXMute");
     }
     public void ControlsReference()
     {

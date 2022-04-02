@@ -42,27 +42,19 @@ public class SoundManager : MonoBehaviour
             _musicSource.mute = true;
         }
     }
-
     public void MuteSFX(bool effects)
     {
         if (effects)
         {
             _effectSource.mute = false;
-            zombieMuted = true;
-            //_slowZombie = false;
-            //_fastZombie.mute = false;
-            //_strongZombie.mute = false;
+            zombieMuted = false;
         }
         else
         {
-            zombieMuted = false;
+            zombieMuted = true;
             _effectSource.mute = true;
-            //_slowZombie.mute = true;
-            //_fastZombie.mute = true;
-            //_strongZombie.mute = true;
         }
     }
-
     public void PlaySound(AudioClip clip)
     {
         _effectSource.PlayOneShot(clip);
