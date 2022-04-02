@@ -7,9 +7,12 @@ public class ButtonManager : MonoBehaviour
     #region methods
     public void MuteButton(AudioSource sound)
     {
-        UI_Manager.Instance.MuteButton(sound);
+        UI_Manager.Instance.MuteMusicButton(sound);
     }
-
+    public void MuteSFXButton(AudioSource effect)
+    {
+        UI_Manager.Instance.MuteSFXButton(effect);
+    }
     public void Quit()
     {
         UI_Manager.Instance.Quit();

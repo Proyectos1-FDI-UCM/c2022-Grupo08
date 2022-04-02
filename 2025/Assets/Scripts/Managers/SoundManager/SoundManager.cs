@@ -28,15 +28,27 @@ public class SoundManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    public void MuteVolume(AudioSource sound)
+    public void MuteMusic(AudioSource music)
     {
-        if (sound.mute)
+        if (music.mute)
         {
-            sound.mute = false;
+            music.mute = false;
         }
         else
         {
-            sound.mute = true;
+            music.mute = true;
+        }
+    }
+
+    public void MuteSFX(AudioSource effects)
+    {
+        if (effects.mute)
+        {
+            effects.mute = false;
+        }
+        else
+        {
+            effects.mute = true;
         }
     }
 
