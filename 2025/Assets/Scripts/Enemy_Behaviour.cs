@@ -75,9 +75,10 @@ public class Enemy_Behaviour : MonoBehaviour
             }
         }
         //Animación
-        _myAnimator.SetFloat("posJ", _player.position.x - _enemy.position.x);
-        _myAnimator.SetInteger("Posicion", currentPosition);
-        _myAnimator.SetInteger("Siguiente", nextPosition);
+        _myAnimator.SetFloat("Punto1", currentPosition);
+        _myAnimator.SetFloat("Punto2", nextPosition);
+        _myAnimator.SetFloat("Puntox", _player.position.x - _enemy.position.x);
+        _myAnimator.SetFloat("Puntoy", _player.position.y - _enemy.position.y);
         _myAnimator.SetBool("Jugador", deteccion);
     }
 }
