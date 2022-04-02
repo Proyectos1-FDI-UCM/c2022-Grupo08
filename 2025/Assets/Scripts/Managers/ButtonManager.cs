@@ -5,11 +5,11 @@ using UnityEngine;
 public class ButtonManager : MonoBehaviour
 {
     #region methods
-    public void MuteButton(AudioSource sound)
+    public void MuteButton(bool music)
     {
-        UI_Manager.Instance.MuteMusicButton(sound);
+        UI_Manager.Instance.MuteMusicButton(music);
     }
-    public void MuteSFXButton(AudioSource effect)
+    public void MuteSFXButton(bool effect)
     {
         UI_Manager.Instance.MuteSFXButton(effect);
     }

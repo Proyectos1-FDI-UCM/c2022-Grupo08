@@ -31,23 +31,23 @@ public class SoundManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    public void MuteMusic(AudioSource music)
+    public void MuteMusic(bool music)
     {
-        if (music.mute)
+        if (music)
         {
-            music.mute = false;
+            _musicSource.mute = false;
         }
         else
         {
-            music.mute = true;
+            _musicSource.mute = true;
         }
     }
 
-    public void MuteSFX(AudioSource effects)
+    public void MuteSFX(bool effects)
     {
-        if (effects.mute)
+        if (effects)
         {
-            effects.mute = false;
+            _effectSource.mute = false;
             zombieMuted = true;
             //_slowZombie = false;
             //_fastZombie.mute = false;
@@ -56,7 +56,7 @@ public class SoundManager : MonoBehaviour
         else
         {
             zombieMuted = false;
-            effects.mute = true;
+            _effectSource.mute = true;
             //_slowZombie.mute = true;
             //_fastZombie.mute = true;
             //_strongZombie.mute = true;

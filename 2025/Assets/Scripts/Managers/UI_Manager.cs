@@ -118,33 +118,33 @@ public class UI_Manager : MonoBehaviour
     {
         _loseMenu.SetActive(true);
     }
-    public void MuteMusicButton(AudioSource music)
+    public void MuteMusicButton(bool music)
     {
         SoundManager.Instance.MuteMusic(music);
-        if (music.mute)
-        {
-            _unmuteMusicButton.SetActive(true);
-            _muteMusicButton.SetActive(false);
-        }
-        else
+        if (music)
         {
             _unmuteMusicButton.SetActive(false);
             _muteMusicButton.SetActive(true);
         }
+        else
+        {
+            _unmuteMusicButton.SetActive(true);
+            _muteMusicButton.SetActive(false);
+        }
     }
 
-    public void MuteSFXButton(AudioSource effects)
+    public void MuteSFXButton(bool effects)
     {
         SoundManager.Instance.MuteSFX(effects);
-        if (effects.mute)
-        {
-            _unmuteSFXButton.SetActive(true);
-            _muteSFXButton.SetActive(false);
-        }
-        else
+        if (effects)
         {
             _unmuteSFXButton.SetActive(false);
             _muteSFXButton.SetActive(true);
+        }
+        else
+        {
+            _unmuteSFXButton.SetActive(true);
+            _muteSFXButton.SetActive(false);
         }
     }
 
