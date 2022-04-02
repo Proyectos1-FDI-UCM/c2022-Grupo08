@@ -16,7 +16,6 @@ public class UI_Manager : MonoBehaviour
         }
     }
     #endregion
-
     #region parameters
     public Image lifeBar;
     public Text pistolBullets;
@@ -25,7 +24,6 @@ public class UI_Manager : MonoBehaviour
     public Text _mision;
     private float temporizadorpalanca;
     private bool gogo=false;
-    
     public float maxlife;
     public float currentlife;
     [SerializeField] private GameObject _customizationMenu;
@@ -37,9 +35,7 @@ public class UI_Manager : MonoBehaviour
     [SerializeField] private GameObject _winMenu;
     [SerializeField] private GameObject _loseMenu;
     [SerializeField] private GameObject _pauseMenu;
-    
     #endregion
-
     #region methods
     public void Awake()
     {
@@ -74,9 +70,6 @@ public class UI_Manager : MonoBehaviour
     {
         //shotgunBullets.text= "" + bala + "/" + cargador;
     }
-
-   
-
     public void Mision(string write)
     {
         //_mision.text = write;
@@ -92,8 +85,6 @@ public class UI_Manager : MonoBehaviour
     {
         GameManager.Instance.StartGame();
     }
-
-
     public void ControlsMenu(bool enabled)
     {
         _controlsMenu.SetActive(enabled);
@@ -110,7 +101,6 @@ public class UI_Manager : MonoBehaviour
     {       
         _winMenu.SetActive(true); // Activa el menú de victoria
     }
-
     public void GameOverMenu()
     {
         _loseMenu.SetActive(true);
@@ -119,7 +109,6 @@ public class UI_Manager : MonoBehaviour
     {
         SoundManager.Instance.MuteMusic(music);
     }
-
     public void MuteSFXButton(bool effects)
     {
         SoundManager.Instance.MuteSFX(effects);
@@ -161,12 +150,10 @@ public class UI_Manager : MonoBehaviour
     {
         GameManager.Instance.DeactivateNoteRoom();
     }
-
     public void BackButtonNoteElevatorCall()
     {
         GameManager.Instance.DeactivateNoteElevator();
     }
-
     public void BackButtonNoteKeyCall()
     {
         GameManager.Instance.DeactivateNoteKey();
@@ -183,7 +170,6 @@ public class UI_Manager : MonoBehaviour
         palancaaviso.text = "";
         _mision.text = "";
     }
-
     // Update is called once per frame
     void Update()
     {
