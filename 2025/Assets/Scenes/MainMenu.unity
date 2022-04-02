@@ -1053,7 +1053,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -698, y: -542}
+  m_AnchoredPosition: {x: -845, y: -542}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &890954642
@@ -1103,10 +1103,10 @@ MonoBehaviour:
       - m_Target: {fileID: 268791985}
         m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
         m_MethodName: MuteButton
-        m_Mode: 6
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1899889790}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1883,7 +1883,9 @@ MonoBehaviour:
   IsGamePaused: 0
   _currentLife: 100
   _player: {fileID: 0}
-  _nota: {fileID: 0}
+  _notaRoom: {fileID: 0}
+  _notaElevator: {fileID: 0}
+  _notaKey: {fileID: 0}
   _roomKey: {fileID: 0}
   _key: {fileID: 0}
   _parkingDoor: {fileID: 0}
@@ -2161,9 +2163,14 @@ MonoBehaviour:
   _customizationMenu: {fileID: 0}
   _controlsMenu: {fileID: 931359020}
   _mainMenu: {fileID: 346589624}
+  _control1: {fileID: 0}
+  _control2: {fileID: 0}
+  _control3: {fileID: 0}
   _winMenu: {fileID: 0}
   _loseMenu: {fileID: 0}
   _pauseMenu: {fileID: 0}
+  _muteButton: {fileID: 0}
+  _unmuteButton: {fileID: 0}
 --- !u!4 &1649512480
 Transform:
   m_ObjectHideFlags: 0
@@ -2588,10 +2595,10 @@ MonoBehaviour:
       - m_Target: {fileID: 268791985}
         m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
         m_MethodName: MuteButton
-        m_Mode: 6
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1899889790}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

@@ -37,6 +37,8 @@ public class UI_Manager : MonoBehaviour
     [SerializeField] private GameObject _winMenu;
     [SerializeField] private GameObject _loseMenu;
     [SerializeField] private GameObject _pauseMenu;
+    [SerializeField] private GameObject _muteButton;
+    [SerializeField] private GameObject _unmuteButton;
     #endregion
 
     #region methods
@@ -117,6 +119,16 @@ public class UI_Manager : MonoBehaviour
     public void MuteButton(AudioSource sound)
     {
         SoundManager.Instance.MuteVolume(sound);
+        if (sound.mute)
+        {
+            _unmuteButton.SetActive(true);
+            _muteButton.SetActive(false);
+        }
+        else
+        {
+            _unmuteButton.SetActive(false);
+            _muteButton.SetActive(true);
+        }
     }
 
     public void ReplayButton()
@@ -131,6 +143,15 @@ public class UI_Manager : MonoBehaviour
     {
         _pauseMenu = GameObject.Find("PauseMenu");
         _pauseMenu.SetActive(false);
+    }
+    public void UnmuteButtonReference()
+    {
+        _unmuteButton = GameObject.Find("UnMuteButton");
+        _unmuteButton.SetActive(false);
+    }
+    public void MuteButtonReference()
+    {
+        _muteButton = GameObject.Find("MuteButton");
     }
     public void ControlsReference()
     {
