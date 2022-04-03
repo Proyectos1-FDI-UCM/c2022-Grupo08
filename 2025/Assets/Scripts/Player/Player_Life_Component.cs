@@ -10,29 +10,19 @@ public class Player_Life_Component : Life_Component
     private Input_Manager _myInputManager;
     private Player_MovementController _myPlayerMovementController;
     private Transform _myTransform;
-
-    [SerializeField]
-    private GameObject _boy;
-
-    [SerializeField]
-    private GameObject _girl;
-
-
+    [SerializeField] private GameObject _boy;
+    [SerializeField] private GameObject _girl;
     public Image _lifeBar;
     #endregion
 
     #region properties
-    [SerializeField]
-    private float empuje = 2f; //Fuerza con la que se va a ipulsar hacia atrás al jugador al ser golpeado por un objeto hostil
-    [SerializeField] private float empujeZombie = 0.5f;
+    [SerializeField] private float empuje = 2f; //Fuerza con la que se va a ipulsar hacia atrás al jugador al ser golpeado por un objeto hostil
+    [SerializeField] private float empujeZombie = 0.5f; // Fuerza con la que se va a impulsar el zombie cuando nos ataque
     #endregion
 
     #region methods
     public override void Damage(int DamagePoints)
     {
-        //_currentLife -= DamagePoints;
-        //_myRigidBody.AddForce(_myTransform.position * -empuje, ForceMode2D.Impulse);
-
          base.Damage(DamagePoints);
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -61,23 +51,16 @@ public class Player_Life_Component : Life_Component
     {
         _currentLife += curacion;
         _currentLife = Mathf.Clamp(_currentLife, 0, 100);
-        
     }
-
     public void BeBoy()
     {
         _boy.SetActive(true);
     }
-
     public void BeGirl()
     {
         _girl.SetActive(true);
     }
-
-
-
     #endregion
-
     // Start is called before the first frame update
     override public void Start()
     {
@@ -87,18 +70,14 @@ public class Player_Life_Component : Life_Component
         _myTransform = GetComponent<Transform>();
         _myInputManager = GetComponent<Input_Manager>();
         _myPlayerMovementController = GetComponent<Player_MovementController>();
-        // _instance = this;
     }
 
     // Update is called once per frame
     override public void Update()
     {
-
-        
-
         if (_currentLife <= 0)
         {
-            // Para no poder mooverse durante la animación de muerte
+            // Para no poder moverse durante la animación de muerte
             _myInputManager._isDead = true;
             _myPlayerMovementController._movementSpeed = 0;
             _cont -= Time.deltaTime;
@@ -107,15 +86,12 @@ public class Player_Life_Component : Life_Component
                 Die(); //GameManager.Instance.OnPlayerDies();
                 GameManager.Instance.LoadGameOverMenu();
                 _cont = 1.7f;
-                
             }
         }
         //_myAnimator.SetInteger("VidaPlayer", _currentLife);
 
-
         _lifeBar.fillAmount = _currentLife / _maxLife;
 
         //Debug.Log(_currentLife);
-        
     }
 }

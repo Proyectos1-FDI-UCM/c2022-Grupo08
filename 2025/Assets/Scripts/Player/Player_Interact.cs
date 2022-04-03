@@ -7,9 +7,11 @@ public class Player_Interact : MonoBehaviour
     #region properties
     private bool holdingInteract = false; // Booleano que detecta si se ha presionado la E para interactuar mientras se está en la zona de interacción
     #endregion
+
     #region references
     private Input_Manager _myInputManager;
     #endregion
+
     #region methods
     private void OnTriggerStay2D(Collider2D collision) // Si el player está en la zona de interacción se puede pulsar la E
     {
@@ -91,16 +93,10 @@ public class Player_Interact : MonoBehaviour
     {
         holdingInteract = !holdingInteract;
     }
-#endregion
+    #endregion
     // Start is called before the first frame update
     void Start()
     {
         _myInputManager = GetComponent<Input_Manager>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

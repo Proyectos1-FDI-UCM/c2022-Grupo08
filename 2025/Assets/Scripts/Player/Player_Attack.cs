@@ -28,12 +28,9 @@ public class Player_Attack : MonoBehaviour
     #endregion
 
     #region properties
-    [SerializeField]
-    private GameObject pbala;
-    [SerializeField]
-    private GameObject gbala;
-    [SerializeField]
-    private GameObject sgbala;
+    [SerializeField] private GameObject pbala;
+    [SerializeField] private GameObject gbala;
+    [SerializeField] private GameObject sgbala;
     #endregion
 
     #region references

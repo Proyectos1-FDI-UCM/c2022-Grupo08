@@ -8,8 +8,7 @@ public class Input_Manager : MonoBehaviour
     public int dir;
     #endregion
     #region properties
-    [HideInInspector]
-    public bool InDetectionZone = false; // Booleano que detecta si se está dentro de la zona de interacción con algun objeto interactuable
+    [HideInInspector] public bool InDetectionZone = false; // Booleano que detecta si se está dentro de la zona de interacción con algun objeto interactuable
     public bool _isDead = false;
     public bool _leverActivated = false; //Palanca
     public bool _pistolaActivada = false;
