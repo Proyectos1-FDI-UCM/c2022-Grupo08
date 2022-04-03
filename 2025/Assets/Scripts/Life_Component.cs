@@ -9,13 +9,11 @@ public class Life_Component : MonoBehaviour
     public float _currentLife;
     [SerializeField] private  int _damage = 10;
     [SerializeField] protected float _cont = 1.7f;
-    [SerializeField] private float empujeZombie = 5.0f;
+    
     public bool _isDead = false;
     #endregion
     #region references
     [SerializeField] protected Animator _myAnimator;
-    private Rigidbody2D _myRigidBodyZombie;
-    private Transform _myTransformZombie;
     [SerializeField] private AudioClip _clip;
     #endregion
     #region methods
@@ -31,7 +29,6 @@ public class Life_Component : MonoBehaviour
     public virtual void Damage(int damagePoint)
     {
         _currentLife -= damagePoint;
-        //_myRigidBodyZombie.AddForce(_myTransformZombie.position * -empujeZombie, ForceMode2D.Impulse);
         SoundManager.Instance.PlaySound(_clip);
         
     }
@@ -47,8 +44,6 @@ public class Life_Component : MonoBehaviour
     public virtual void Start()
     {
         _currentLife = _maxLife;
-        _myTransformZombie = transform;
-        _myRigidBodyZombie = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame

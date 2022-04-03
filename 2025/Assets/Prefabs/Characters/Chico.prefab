@@ -138,13 +138,14 @@ MonoBehaviour:
   _currentLife: 100
   _damage: 10
   _cont: 1.7
-  empujeZombie: 5
+  _isDead: 0
   _myAnimator: {fileID: 0}
   _clip: {fileID: 8300000, guid: f633b9314c7ddc546ab05cb692672694, type: 3}
   _boy: {fileID: 707199513790786217}
   _girl: {fileID: 7888599800557731787, guid: b328f87a04948464297f58f658f0e387, type: 3}
   _lifeBar: {fileID: 0}
   empuje: 5
+  empujeZombie: 2
 --- !u!114 &8646861863707179862
 MonoBehaviour:
   m_ObjectHideFlags: 0

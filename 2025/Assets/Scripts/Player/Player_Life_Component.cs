@@ -24,6 +24,7 @@ public class Player_Life_Component : Life_Component
     #region properties
     [SerializeField]
     private float empuje = 2f; //Fuerza con la que se va a ipulsar hacia atrás al jugador al ser golpeado por un objeto hostil
+    [SerializeField] private float empujeZombie = 0.5f;
     #endregion
 
     #region methods
@@ -45,6 +46,8 @@ public class Player_Life_Component : Life_Component
             var heading = enemigo.transform.position - _myTransform.position; //Direccion de empuje    
             //Necesitamos la direccion del jugador o del zombie
             _myRigidBody.AddForce(heading * -empuje, ForceMode2D.Impulse);
+            var direction = _myTransform.position - enemigo.transform.position;
+            collision.rigidbody.AddForce(direction * -empujeZombie, ForceMode2D.Impulse);
         }
 
         else if (barricada) //Si el objeto con el que colisiona es la barricada se usa su posicion para calcular la direccion de empuje
