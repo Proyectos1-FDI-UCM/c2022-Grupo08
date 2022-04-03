@@ -157,10 +157,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39e2c1d6888a4f4f8a801cb68b550ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cargadorbalag: 0
-  cargadorbalasg: 0
-  recargag: 0
-  recargasg: 0
+  cargadorbalag: 10
+  cargadorbalasg: 2
+  recargag: 1
+  recargasg: 2
   recargando: 0
   totalbalasg: 0
   totalbalassg: 0

@@ -6,8 +6,7 @@ public class Municion : MonoBehaviour
 {
     #region references
     private Player_Attack _myPlayerAttack;
-    [SerializeField]
-    private GameObject _player;
+    //[SerializeField] private GameObject _player;
     #endregion
     #region parameters
     [SerializeField]
@@ -27,7 +26,7 @@ public class Municion : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _myPlayerAttack = _player.GetComponent<Player_Attack>();
+        _myPlayerAttack = GameManager.Instance._player.GetComponent<Player_Attack>();
     }
     // Start is called before the first frame update
     

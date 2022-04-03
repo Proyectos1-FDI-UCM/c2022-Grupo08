@@ -6,19 +6,14 @@ public class Player_Attack : MonoBehaviour
 {
     #region parameters
     private Vector3 rotationVector;
-    [SerializeField]
-    private int cargadorbalag;
-    [SerializeField]
-    private int cargadorbalasg;
+    [SerializeField] private int cargadorbalag = 10;
+    [SerializeField] private int cargadorbalasg = 2;
     private int faltabalag;
     private int faltabalasg;
-    [SerializeField]
-    private float recargag;
-    [SerializeField]
-    private float recargasg;
+    [SerializeField] private float recargag = 1;
+    [SerializeField] private float recargasg = 2;
     private float tiempocarga;
     [SerializeField]
-
     private bool recargando;
     [SerializeField]
     private int totalbalasg;

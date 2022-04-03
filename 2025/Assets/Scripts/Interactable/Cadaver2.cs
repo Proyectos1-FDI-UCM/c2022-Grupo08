@@ -5,8 +5,7 @@ using UnityEngine;
 public class Cadaver2 : MonoBehaviour
 {
     private Input_Manager _myInputManager;
-    [SerializeField]
-    private GameObject _player;
+    //[SerializeField] private GameObject _player;
     #region methods
 
     public void PistolaActivada()
@@ -17,7 +16,7 @@ public class Cadaver2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _myInputManager = _player.GetComponent<Input_Manager>();
+        _myInputManager = GameManager.Instance._player.GetComponent<Input_Manager>();
     }
    
 }

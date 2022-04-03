@@ -12,7 +12,7 @@ public class CameraMovementController : MonoBehaviour
     [SerializeField] private Transform _leftDownLimit;
     [SerializeField] private Transform _rightTopLimit;
 
-    [SerializeField] private GameObject _targetObject; // Objeto al que siga la camara (será el jugador)
+    //[SerializeField] private GameObject _targetObject; // Objeto al que siga la camara (será el jugador)
     private Transform _targetObjectTransform;
     private Transform _myTransform;
     #endregion
@@ -21,7 +21,7 @@ public class CameraMovementController : MonoBehaviour
     void Start()
     {
         _myTransform = transform;
-        _targetObjectTransform = _targetObject.transform;
+        _targetObjectTransform = GameManager.Instance._player.transform;
     }                                                                                               
 
     // Update is called once per frame

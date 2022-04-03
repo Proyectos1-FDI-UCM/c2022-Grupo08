@@ -8,9 +8,6 @@ public class PlaySoundOnStart : MonoBehaviour
     [SerializeField] private AudioClip _clip;
     #endregion
 
-    
-
-
     // Start is called before the first frame update
     void Start()
     {

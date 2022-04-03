@@ -14,6 +14,7 @@ public class LightManager : MonoBehaviour
     [SerializeField] private GameObject _electricityOff;
     [SerializeField] private GameObject _globalLightOn;
     [SerializeField] private GameObject _globalLightOff;
+    [SerializeField] private GameObject _elevatorOff;
     [SerializeField] private AudioClip _clip;  
     #endregion
 
@@ -44,7 +45,8 @@ public class LightManager : MonoBehaviour
         Destroy(_electricityOn);
         _electricityOff.SetActive(true);
         _globalLightOff.SetActive(false);
-        _globalLightOn.SetActive(true);       
+        _globalLightOn.SetActive(true);
+        _elevatorOff.SetActive(false);
         SoundManager.Instance.PlaySound(_clip);
     }
     public void CheckFusibles() // Actualiza el numero de fusibles activos y los compara con el numero maximo posible para activar el panel electrico en su momento

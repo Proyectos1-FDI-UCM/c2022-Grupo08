@@ -25,13 +25,13 @@ public class GameManager : MonoBehaviour
             return _instance; // Para poder instanciar el GameManager y llamarlo desde cualquier script
         }
     }
-    [SerializeField] private GameObject _player;
+    public GameObject _player;
     [SerializeField] private GameObject _nota;
     [SerializeField] private GameObject _botiquin; 
     [SerializeField] private GameObject _key;
     [SerializeField] private GameObject _parkingDoor;
     [SerializeField] private GameObject _exitHospital;
-    [SerializeField] private Transform _spawn;
+    [SerializeField] private GameObject _spawn;
     [SerializeField] private GameObject _elevatorOn;
     [SerializeField] private GameObject _elevatorOff;
     [SerializeField] private GameObject _elevatorAnimation;
@@ -51,7 +51,8 @@ public class GameManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
-        }        
+        }
+        
     }
     public void InteractableObjectDone(InteractDetection _myInteractDetection) // Gestiona la interaccion con objetos interactuables
     {
@@ -78,10 +79,9 @@ public class GameManager : MonoBehaviour
 
     public void UnlockExit()
     {
-        _elevatorOff.SetActive(false);
-        _elevatorOn.SetActive(true);
+        _elevatorOn.transform.position = new Vector3(9.42f, -2.99f, 0);
+        _elevatorAnimation.transform.position = new Vector3(-59.51f, 71.02f, 0);
         _shortcut.SetActive(false);
-        _elevatorAnimation.SetActive(true);
     }
     public void GetKey()
     {       
@@ -112,22 +112,6 @@ public class GameManager : MonoBehaviour
         UnityEditor.EditorApplication.isPlaying = false;
         //Application.Quit();
     }
-    //public void StartGameBoy()
-    //{
-    //    boy = true;
-    //    SceneManager.LoadScene(1);
-    //    _boy.transform.position = _spawn.position;
-    //    Destroy(_girl);
-    //    _boy.SetActive(true);
-    //}
-    //public void StartGameGirl()
-    //{
-    //    boy = false;
-    //    SceneManager.LoadScene(1);
-    //    _girl.transform.position = _spawn.position;
-    //    Destroy(_boy);
-    //    _girl.SetActive(true);
-    //}
    
     public void StartGame()
     {
@@ -148,11 +132,16 @@ public class GameManager : MonoBehaviour
         SceneManager.GetActiveScene(); 
         if (level == 1)
         {
-            //GameObject.Instantiate(_player, _spawn.position, Quaternion.identity);
+            _player = GameObject.Find("Chico");
+            _elevatorOn = GameObject.Find("Elevator_ClosedReady");
+            _elevatorAnimation = GameObject.Find("ElevatorAnimation");
+            _shortcut = GameObject.Find("Shortcut");
+            DontDestroyOnLoad(_player);
         }
         if(level == 2)
         {
-            //GameObject.Instantiate(_player, _spawn.position, Quaternion.identity);
+            _spawn = GameObject.Find("Spawn");
+            _player.transform.position = _spawn.transform.position;
         }
         if(level == 3)
         {
@@ -168,19 +157,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        /*if (boy)
-        {
-            _boy.transform.position = _spawn.position;
-            Destroy(_girl);
-            _boy.SetActive(true);
-        }
-        else
-        {
-            _girl.transform.position = _spawn.position;
-            Destroy(_boy);
-            _girl.SetActive(true);
-        }*/
-        // DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame

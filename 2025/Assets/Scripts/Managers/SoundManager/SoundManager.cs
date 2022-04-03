@@ -5,8 +5,7 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
     #region references
-    [SerializeField]
-    private AudioSource _effectSource, _musicSource;
+    [SerializeField] private AudioSource _effectSource, _musicSource;
     static private SoundManager _instance;
     static public SoundManager Instance
     {
@@ -17,6 +16,17 @@ public class SoundManager : MonoBehaviour
     }
     #endregion
     #region methods
+    private void Awake()
+    {
+        if (_instance == null)
+        {
+            _instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     public void MuteVolume()
     {
         Debug.Log("Hola");

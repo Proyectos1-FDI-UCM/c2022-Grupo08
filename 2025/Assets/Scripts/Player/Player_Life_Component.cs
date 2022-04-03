@@ -19,16 +19,6 @@ public class Player_Life_Component : Life_Component
 
 
     public Image _lifeBar;
-    //static private Player_Life_Component _instance; // Unique GameManager instance (Singleton Pattern).
-
-
-    //static public Player_Life_Component Instance // Public accesor for GameManager instance.
-    //{
-    //    get
-    //    {
-    //        return _instance; // Para poder instanciar el GameManager y llamarlo desde cualquier script
-    //    }
-    //}
     #endregion
 
     #region properties
@@ -120,7 +110,7 @@ public class Player_Life_Component : Life_Component
         //_myAnimator.SetInteger("VidaPlayer", _currentLife);
 
 
-        //_lifeBar.fillAmount = _currentLife / _maxLife;
+        _lifeBar.fillAmount = _currentLife / _maxLife;
 
         //Debug.Log(_currentLife);
         

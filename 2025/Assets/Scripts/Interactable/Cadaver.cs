@@ -6,8 +6,7 @@ public class Cadaver : MonoBehaviour
 {
     #region references
     private Input_Manager _myInputManager;
-    [SerializeField]
-    private GameObject _player;
+    //[SerializeField] private GameObject _player;
     #endregion
 
     #region methods
@@ -19,6 +18,6 @@ public class Cadaver : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _myInputManager = _player.GetComponent<Input_Manager>();
+        _myInputManager = GameManager.Instance._player.GetComponent<Input_Manager>();
     }
 }

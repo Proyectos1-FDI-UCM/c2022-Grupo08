@@ -12,7 +12,7 @@ public class Enemy_Behaviour : MonoBehaviour
     private float velocity = 2.0f;
 
     [SerializeField]
-    private Transform _player;
+    private Transform _playerTransform;
 
     [SerializeField]
     private Transform _enemy;
@@ -39,13 +39,14 @@ public class Enemy_Behaviour : MonoBehaviour
     #region methods
     private void DeteccionPlayer()
     {
-        _myTransform.position = Vector2.MoveTowards(_myTransform.position, _player.transform.position, velocity * Time.deltaTime);
+        _myTransform.position = Vector2.MoveTowards(_myTransform.position, _playerTransform.position, velocity * Time.deltaTime);
     }
     #endregion
     // Start is called before the first frame update
     void Start()
     {
-        _myTransform = transform;       
+        _myTransform = transform;
+        _playerTransform = GameManager.Instance._player.transform;
     }
 
     // Update is called once per frame
@@ -53,7 +54,7 @@ public class Enemy_Behaviour : MonoBehaviour
     {
         if (!GameManager.Instance.IsGamePaused)
         {
-            if (Vector2.Distance(_myTransform.position, _player.transform.position) <= _distanceToDetection) // si la distancia entre player y enemy es menor que 5, sigue al player
+            if (Vector2.Distance(_myTransform.position, _playerTransform.position) <= _distanceToDetection) // si la distancia entre player y enemy es menor que 5, sigue al player
             {
                 DeteccionPlayer();
                 deteccion = true;
@@ -77,8 +78,8 @@ public class Enemy_Behaviour : MonoBehaviour
         //Animación
         _myAnimator.SetFloat("Punto1", currentPosition);
         _myAnimator.SetFloat("Punto2", nextPosition);
-        _myAnimator.SetFloat("Puntox", _player.position.x - _enemy.position.x);
-        _myAnimator.SetFloat("Puntoy", _player.position.y - _enemy.position.y);
+        _myAnimator.SetFloat("Puntox", _playerTransform.position.x - _enemy.position.x);
+        _myAnimator.SetFloat("Puntoy", _playerTransform.position.y - _enemy.position.y);
         _myAnimator.SetBool("Jugador", deteccion);
     }
 }

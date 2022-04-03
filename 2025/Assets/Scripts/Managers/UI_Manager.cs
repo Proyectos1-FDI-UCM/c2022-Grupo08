@@ -18,8 +18,8 @@ public class UI_Manager : MonoBehaviour
     #endregion
     #region parameters
     public Image lifeBar;
-    public Text balasg;
-    public Text balassg;
+    public Text pistolBullets;
+    public Text shotgunBullets;
     public Text palancaaviso;
     public Text _mision;
     private float temporizadorpalanca;
@@ -48,23 +48,23 @@ public class UI_Manager : MonoBehaviour
     }
     public void palanca()
     {
-        palancaaviso.text = "Pulse Espacio para golpear con la palanca";
-        gogo = true;
+        //palancaaviso.text = "Pulse Espacio para golpear con la palanca";
+        //gogo = true;
     }
     public void balagUI(int bala,int cargador)
     {
-        balasg.text = "" + bala + "/" + cargador;
+        //pistolBullets.text = "" + bala + "/" + cargador;
     }
     public void balasgUI(int bala,int cargador)
     {
-        balassg.text= "" + bala + "/" + cargador;
+        //shotgunBullets.text= "" + bala + "/" + cargador;
     }
 
    
 
     public void Mision(string write)
     {
-        _mision.text = write;
+        //_mision.text = write;
     }
 
     //public void CustomizationMenu(bool enabled)
@@ -117,12 +117,13 @@ public class UI_Manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // DontDestroyOnLoad(gameObject);
-        _instance = this;
-        //balasg.text = "";
-        //balassg.text = "";
-        //palancaaviso.text = "";
-        //_mision.text = "";
+        DontDestroyOnLoad(gameObject);
+        pistolBullets = GameObject.Find("PistolBullets").GetComponent<UnityEngine.UI.Text>();
+        shotgunBullets = GameObject.Find("ShotgunBullets").GetComponent<UnityEngine.UI.Text>();
+        pistolBullets.text = "dsf";
+        shotgunBullets.text = "sdf";
+        palancaaviso.text = "";
+        _mision.text = "";
     }
 
     // Update is called once per frame
