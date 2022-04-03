@@ -27,13 +27,13 @@ public class GameManager : MonoBehaviour
     }
     public GameObject _player;
     [SerializeField] private GameObject _nota;
-    [SerializeField] private GameObject _botiquin; 
+    [SerializeField] private GameObject _roomKey;
     [SerializeField] private GameObject _key;
     [SerializeField] private GameObject _parkingDoor;
     [SerializeField] private GameObject _exitHospital;
     [SerializeField] private GameObject _spawn;
     [SerializeField] private GameObject _elevatorOn;
-    [SerializeField] private GameObject _elevatorOff;
+    //[SerializeField] private GameObject _elevatorOff;
     [SerializeField] private GameObject _elevatorAnimation;
     [SerializeField] private GameObject _shortcut;
 
@@ -132,23 +132,34 @@ public class GameManager : MonoBehaviour
         SceneManager.GetActiveScene(); 
         if (level == 1)
         {
+            _nota = GameObject.Find("HojaBlanca");
+            _nota.SetActive(false);
+            UI_Manager.Instance.PauseReference();
             _player = GameObject.Find("Chico");
             _elevatorOn = GameObject.Find("Elevator_ClosedReady");
             _elevatorAnimation = GameObject.Find("ElevatorAnimation");
             _shortcut = GameObject.Find("Shortcut");
+
             DontDestroyOnLoad(_player);
         }
         if(level == 2)
         {
             _spawn = GameObject.Find("Spawn");
+            _parkingDoor = GameObject.Find("Parking");
+            _exitHospital = GameObject.Find("Parking_Opened");
+            _key = GameObject.Find("Key");
+            _roomKey = GameObject.Find("Room_Key");
+            _roomKey.SetActive(false);
             _player.transform.position = _spawn.transform.position;
         }
         if(level == 3)
         {
+            Destroy(_player);
             UI_Manager.Instance.WinMenu(); // Llamada para que salga el menú de victoria
         }
         if (level == 4)
         {
+            Destroy(_player);
             UI_Manager.Instance.GameOverMenu();
         }
     }

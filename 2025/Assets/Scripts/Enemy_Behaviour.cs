@@ -34,6 +34,7 @@ public class Enemy_Behaviour : MonoBehaviour
     
     [SerializeField]
     private Animator _myAnimator;
+    private Life_Component _myLifeComponent;
     #endregion
 
     #region methods
@@ -46,13 +47,14 @@ public class Enemy_Behaviour : MonoBehaviour
     void Start()
     {
         _myTransform = transform;
+        _myLifeComponent = GetComponent<Life_Component>();
         _playerTransform = GameManager.Instance._player.transform;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!GameManager.Instance.IsGamePaused)
+        if (!GameManager.Instance.IsGamePaused && !_myLifeComponent._isDead)
         {
             if (Vector2.Distance(_myTransform.position, _playerTransform.position) <= _distanceToDetection) // si la distancia entre player y enemy es menor que 5, sigue al player
             {

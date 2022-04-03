@@ -113,6 +113,11 @@ public class UI_Manager : MonoBehaviour
     {
         GameManager.Instance.QuitGame();
     }
+    public void PauseReference()
+    {
+        _pauseMenu = GameObject.Find("PauseMenu");
+        _pauseMenu.SetActive(false);
+    }
     #endregion
     // Start is called before the first frame update
     void Start()

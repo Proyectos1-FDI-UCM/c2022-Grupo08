@@ -105,7 +105,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   velocity: 2
-  _player: {fileID: 0}
+  _playerTransform: {fileID: 0}
   _enemy: {fileID: 1611685993041086353}
   _distanceToDetection: 8
   _myAnimator: {fileID: 1611685993041086364}
@@ -186,7 +186,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 3
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
