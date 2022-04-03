@@ -147,6 +147,8 @@ public class GameManager : MonoBehaviour
         }
         if(level == 2)
         {
+            UI_Manager.Instance.PauseReference();
+            UI_Manager.Instance.ControlsReference();
             _spawn = GameObject.Find("Spawn");
             _parkingDoor = GameObject.Find("Parking");
             _exitHospital = GameObject.Find("Parking_Opened");

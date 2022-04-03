@@ -24,6 +24,14 @@ public class ButtonManager : MonoBehaviour
     {
         UI_Manager.Instance.ControlsMenu(enabled);
     }
+    public void ReplayButton()
+    {
+        UI_Manager.Instance.ReplayButton();
+    }
+    public void StartGame()
+    {
+        UI_Manager.Instance.StartGame();
+    }
     #endregion
     // Start is called before the first frame update
     void Start()

@@ -14,10 +14,12 @@ public class Player_MovementController : MonoBehaviour
     private Transform _myTransform;
     [SerializeField] private Animator _myAnimator;
     private Rigidbody2D playerBody;
+    private Player_Life_Component _myPlayerLifeComponent;
     #endregion
 
     #region properties
     private Vector3 _movementDirection;
+    private float _count;
     #endregion
 
     #region methods
@@ -32,13 +34,30 @@ public class Player_MovementController : MonoBehaviour
     {
         _myTransform = transform;
         playerBody = GetComponent<Rigidbody2D>();
+        _myPlayerLifeComponent = GetComponent<Player_Life_Component>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 directionVector = (_movementSpeed * _movementDirection );
-        playerBody.velocity = directionVector;
+        if (!_myPlayerLifeComponent.pushing)
+        {
+            Vector3 directionVector = (_movementSpeed * _movementDirection);
+            playerBody.velocity = directionVector;
+        }
+        else
+        {
+            _count += Time.deltaTime;
+            if (_count >= 0.9)
+            {
+                _count = 0;
+                _myPlayerLifeComponent.pushing = false;
+            }
+        }
+        
+        
+
+        //_myTransform.Translate(_movementSpeed * _movementDirection * Time.deltaTime);
         
 
         //Animación

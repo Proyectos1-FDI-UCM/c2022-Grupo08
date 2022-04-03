@@ -13,6 +13,7 @@ public class Player_Life_Component : Life_Component
     [SerializeField] private GameObject _boy;
     [SerializeField] private GameObject _girl;
     public Image _lifeBar;
+    public bool pushing = false;
     #endregion
 
     #region properties
@@ -38,6 +39,7 @@ public class Player_Life_Component : Life_Component
             _myRigidBody.AddForce(heading * -empuje, ForceMode2D.Impulse);
             var direction = _myTransform.position - enemigo.transform.position;
             collision.rigidbody.AddForce(direction * -empujeZombie, ForceMode2D.Impulse);
+            pushing = true;
         }
 
         else if (barricada) //Si el objeto con el que colisiona es la barricada se usa su posicion para calcular la direccion de empuje
