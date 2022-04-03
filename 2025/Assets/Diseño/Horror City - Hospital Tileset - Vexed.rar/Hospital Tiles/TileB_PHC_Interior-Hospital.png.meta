@@ -158,6 +158,12 @@ TextureImporter:
   - first:
       213: -6516769408295813387
     second: TileB_PHC_Interior-Hospital_51
+  - first:
+      213: -6794876608013075372
+    second: TileB_PHC_Interior-Hospital_52
+  - first:
+      213: -2997523523889113027
+    second: TileB_PHC_Interior-Hospital_53
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1331,7 +1337,7 @@ TextureImporter:
         width: 15
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1339,6 +1345,48 @@ TextureImporter:
       bones: []
       spriteID: 5fe356f10c8cf85a0800000000000000
       internalID: -6516769408295813387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-Hospital_52
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 102
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45cf4cec9bfb3b1a0800000000000000
+      internalID: -6794876608013075372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-Hospital_53
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 103
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3856b09c38a666d0800000000000000
+      internalID: -2997523523889113027
       vertices: []
       indices: 
       edges: []
