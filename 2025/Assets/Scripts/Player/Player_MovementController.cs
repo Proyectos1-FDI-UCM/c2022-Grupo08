@@ -13,6 +13,7 @@ public class Player_MovementController : MonoBehaviour
     #region references
     private Transform _myTransform;
     [SerializeField] private Animator _myAnimator;
+    private Rigidbody2D playerBody;
     #endregion
 
     #region properties
@@ -30,12 +31,15 @@ public class Player_MovementController : MonoBehaviour
     void Start()
     {
         _myTransform = transform;
+        playerBody = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        _myTransform.Translate(_movementSpeed * _movementDirection * Time.deltaTime);
+        Vector3 directionVector = (_movementSpeed * _movementDirection );
+        playerBody.velocity = directionVector;
+        
 
         //Animación
         if (!GameManager.Instance.IsGamePaused)
