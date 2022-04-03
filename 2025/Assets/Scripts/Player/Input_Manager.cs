@@ -7,6 +7,7 @@ public class Input_Manager : MonoBehaviour
     #region parameters
     public int dir;
     #endregion
+
     #region properties
     [HideInInspector] public bool InDetectionZone = false; // Booleano que detecta si se está dentro de la zona de interacción con algun objeto interactuable
     public bool _isDead = false;
@@ -14,6 +15,7 @@ public class Input_Manager : MonoBehaviour
     public bool _pistolaActivada = false;
     public bool _escopetaActivada = false;
     #endregion
+
     #region references
     private Player_MovementController _myPlayerMovementController;
     private Player_Attack _myPlayerAttack;
@@ -95,10 +97,10 @@ public class Input_Manager : MonoBehaviour
             }
 
             // Menu pausa
-            /*if (Input.GetKeyDown(KeyCode.Q))
+            if (Input.GetKeyDown(KeyCode.Q))
             {
                 GameManager.Instance.PauseGame();
-            }*/
+            }
         }
     }
 }

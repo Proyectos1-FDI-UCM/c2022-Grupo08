@@ -15,6 +15,7 @@ public class SoundManager : MonoBehaviour
         }
     }
     #endregion
+
     #region methods
     private void Awake()
     {
@@ -27,7 +28,7 @@ public class SoundManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    public void MuteVolume()
+    public void MuteVolume(bool sound)
     {
         Debug.Log("Hola");
         //Poner Volumen a 0

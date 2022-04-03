@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public float _currentLife = 100;
     float _maxLife = 100;
     #endregion
+
     #region references
     static private GameManager _instance; // Unique GameManager instance (Singleton Pattern).
 
@@ -41,6 +42,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private List<InteractDetection> _listInteractableObjects;
     private UI_Manager _UIManager;
     #endregion
+
     #region methods
     private void Awake()
     {
@@ -135,6 +137,7 @@ public class GameManager : MonoBehaviour
             _nota = GameObject.Find("HojaBlanca");
             _nota.SetActive(false);
             UI_Manager.Instance.PauseReference();
+            UI_Manager.Instance.ControlsReference();
             _player = GameObject.Find("Chico");
             _elevatorOn = GameObject.Find("Elevator_ClosedReady");
             _elevatorAnimation = GameObject.Find("ElevatorAnimation");

@@ -16,6 +16,7 @@ public class UI_Manager : MonoBehaviour
         }
     }
     #endregion
+
     #region parameters
     public Image lifeBar;
     public Text pistolBullets;
@@ -34,6 +35,7 @@ public class UI_Manager : MonoBehaviour
     [SerializeField] private GameObject _loseMenu;
     [SerializeField] private GameObject _pauseMenu;
     #endregion
+
     #region methods
     public void Awake()
     {
@@ -53,11 +55,11 @@ public class UI_Manager : MonoBehaviour
     }
     public void balagUI(int bala,int cargador)
     {
-        //pistolBullets.text = "" + bala + "/" + cargador;
+        pistolBullets.text = "" + bala + "/" + cargador;
     }
     public void balasgUI(int bala,int cargador)
     {
-        //shotgunBullets.text= "" + bala + "/" + cargador;
+        shotgunBullets.text= "" + bala + "/" + cargador;
     }
 
    
@@ -100,9 +102,9 @@ public class UI_Manager : MonoBehaviour
     {
         _loseMenu.SetActive(true);
     }
-    public void MuteButton()
+    public void MuteButton(bool sound)
     {
-        SoundManager.Instance.MuteVolume();
+        SoundManager.Instance.MuteVolume(sound);
     }
 
     public void ReplayButton()
@@ -118,15 +120,20 @@ public class UI_Manager : MonoBehaviour
         _pauseMenu = GameObject.Find("PauseMenu");
         _pauseMenu.SetActive(false);
     }
+    public void ControlsReference()
+    {
+        _controlsMenu = GameObject.Find("ControlsMenu");
+        _controlsMenu.SetActive(false);
+    }
     #endregion
     // Start is called before the first frame update
     void Start()
     {
         DontDestroyOnLoad(gameObject);
-        pistolBullets = GameObject.Find("PistolBullets").GetComponent<UnityEngine.UI.Text>();
-        shotgunBullets = GameObject.Find("ShotgunBullets").GetComponent<UnityEngine.UI.Text>();
-        pistolBullets.text = "dsf";
-        shotgunBullets.text = "sdf";
+        pistolBullets = GameObject.Find("PistolBullets").GetComponent<Text>();
+        shotgunBullets = GameObject.Find("ShotgunBullets").GetComponent<Text>();
+        pistolBullets.text = "";
+        shotgunBullets.text = "";
         palancaaviso.text = "";
         _mision.text = "";
     }
