@@ -206,6 +206,9 @@ TextureImporter:
   - first:
       213: 2638205518825088906
     second: TileC_PHC_Interior-Hospital-Alt_67
+  - first:
+      213: 6744425287100317589
+    second: TileC_PHC_Interior-Hospital-Alt_68
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1710,7 +1713,7 @@ TextureImporter:
         width: 33
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1718,6 +1721,27 @@ TextureImporter:
       bones: []
       spriteID: a876b0a01f9cc9420800000000000000
       internalID: 2638205518825088906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileC_PHC_Interior-Hospital-Alt_68
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 101
+        width: 63
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59fb6cba013099d50800000000000000
+      internalID: 6744425287100317589
       vertices: []
       indices: 
       edges: []
