@@ -137,8 +137,7 @@ public class GameManager : MonoBehaviour
             _nota = GameObject.Find("HojaBlanca");
             _nota.SetActive(false);
             UI_Manager.Instance.PauseReference();
-            UI_Manager.Instance.ControlsReference();
-            
+            UI_Manager.Instance.ControlsReference();            
             UI_Manager.Instance.Control1Reference();
             UI_Manager.Instance.Control2Reference();
             UI_Manager.Instance.Control3Reference();
