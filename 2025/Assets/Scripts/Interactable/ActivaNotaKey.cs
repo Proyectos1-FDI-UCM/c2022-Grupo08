@@ -35,9 +35,6 @@ public class ActivaNotaKey : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Escape)) // Input especial para esconder la nota
-        {
-            ToHideNote();
-        }
+       
     }
 }

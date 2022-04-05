@@ -199,6 +199,20 @@ public class UI_Manager : MonoBehaviour
         _control3 = GameObject.Find("ControlPalanca");
         _control3.SetActive(false);
     }
+    public void BackButtonNoteRoomCall()
+    {
+        GameManager.Instance.DeactivateNoteRoom();
+    }
+
+    public void BackButtonNoteElevatorCall()
+    {
+        GameManager.Instance.DeactivateNoteElevator();
+    }
+
+    public void BackButtonNoteKeyCall()
+    {
+        GameManager.Instance.DeactivateNoteKey();
+    }
     #endregion
     // Start is called before the first frame update
     void Start()
