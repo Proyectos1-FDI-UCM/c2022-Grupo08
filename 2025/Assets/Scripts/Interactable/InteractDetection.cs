@@ -11,6 +11,8 @@ public class InteractDetection : MonoBehaviour
     private Fusibles _myFusibles;
     private Botiquin _myBotiquin;
     private ActivaNota _myActivaNota;
+    private ActivaNotaElevator _myActivaNotaElevator;
+    private ActivaNotaKey _myActivaNotaKey;
     private Cadaver _myCadaver;
     private Cadaver2 _myCadaver2;
     private Cadaver3 _myCadaver3;
@@ -28,7 +30,7 @@ public class InteractDetection : MonoBehaviour
             case 1: _myMunicion.DaAmmo(); break; // Municion
             case 2: _myFusibles.SumaFusible(); break; // Fusibles
             case 3: _myBotiquin.AplicaCura(); break; // Botiquin
-            case 4: _myActivaNota.ToShowNote(); break; // ActivaNota
+            case 4: _myActivaNota.ToShowNote(); break; // ActivaNotaRoom
             case 5: _myCadaver.LeverActivated(); UI_Manager.Instance.LeverActivate(); break; // Cadaver
             case 6: _myCadaver2.PistolaActivada(); UI_Manager.Instance.GunActivate(); break; // Cadaver2
             case 7: _myCadaver3.EscopetaActivada(); UI_Manager.Instance.ShotgunActivate(); break; // Cadaver3
@@ -36,7 +38,8 @@ public class InteractDetection : MonoBehaviour
             case 9: _myElevator.OpenElevator(); break; // Ascensor
             case 10: _myParkingDoor.ToExitHospital(); break; // Puerta del Parking
             case 11: _myElecricityActivated.InterruptorActivated(); break; // Puerta del Parking
-
+            case 12: _myActivaNotaElevator.ToShowNote(); break; // ActivaNota Elevator
+            case 13: _myActivaNotaKey.ToShowNote(); break; // ActivaNota Key
         }
         GameManager.Instance.InteractableObjectDone(this); // Llamo al GameManager para eliminar de escena el objeto con el que ya he interactuado
     }
@@ -56,6 +59,8 @@ public class InteractDetection : MonoBehaviour
         _myElevator = GetComponent<Elevator>();
         _myParkingDoor = GetComponent<ParkingDoor>();
         _myElecricityActivated = GetComponent<ElectricityActivated>();
+        _myActivaNotaElevator = GetComponent<ActivaNotaElevator>();
+        _myActivaNotaKey = GetComponent<ActivaNotaKey>();
     }
 
     // Update is called once per frame

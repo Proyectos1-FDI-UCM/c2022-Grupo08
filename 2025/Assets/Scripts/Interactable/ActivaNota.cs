@@ -12,17 +12,13 @@ public class ActivaNota : MonoBehaviour
     #region methods
     public void ToShowNote() // Método que llama al GameManager para mostrar la nota 
     {
-        GameManager.Instance.ActivateNote();
-        SoundManager.Instance.PlaySound(_clip);
-        if (LightManager.Instance._currentFusibles < 1)
-        {
-            GameManager.Instance.NewMision("Parece que tienes que usar el ascensor... Recoge fusibles 0/3");
-        }
+        GameManager.Instance.ActivateNoteRoom();
+        SoundManager.Instance.PlaySound(_clip);      
     }
 
     public void ToHideNote() // Método que llama al GameManager para esconder la nota
     {         
-        GameManager.Instance.DeactivateNote();
+        GameManager.Instance.DeactivateNoteRoom();
         SoundManager.Instance.PlaySound(_clip);
     }
 

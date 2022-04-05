@@ -27,6 +27,8 @@ public class Player_Interact : MonoBehaviour
         Elevator hitElevator = collision.GetComponent<Elevator>();
         ParkingDoor hitParkingDoor = collision.GetComponent<ParkingDoor>();
         ElectricityActivated hitElectricityActivated = collision.GetComponent<ElectricityActivated>();
+        ActivaNotaElevator hitNotaElevator = collision.GetComponent<ActivaNotaElevator>();
+        ActivaNotaKey hitNotaKey = collision.GetComponent<ActivaNotaKey>();
 
         if (hitInteractableObject)
         {
@@ -77,6 +79,14 @@ public class Player_Interact : MonoBehaviour
             else if (hitElectricityActivated)
             {
                 hitInteractableObject.Interact(11);
+            }
+            else if (hitNotaElevator)
+            {
+                hitInteractableObject.Interact(12);
+            }
+            else if (hitNotaKey)
+            {
+                hitInteractableObject.Interact(13);
             }
             ToCallInteraction();
         }

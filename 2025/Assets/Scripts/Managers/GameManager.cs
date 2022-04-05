@@ -27,7 +27,9 @@ public class GameManager : MonoBehaviour
         }
     }
     public GameObject _player;
-    [SerializeField] private GameObject _nota;
+    [SerializeField] private GameObject _notaRoom;
+    [SerializeField] private GameObject _notaElevator;
+    [SerializeField] private GameObject _notaKey;
     [SerializeField] private GameObject _roomKey;
     [SerializeField] private GameObject _key;
     [SerializeField] private GameObject _parkingDoor;
@@ -61,13 +63,30 @@ public class GameManager : MonoBehaviour
         _listInteractableObjects.Remove(_myInteractDetection); // Elimino al objecto con el que interactuado de la lista
         Destroy(_myInteractDetection.gameObject); // Destruye al objeto interactuado de escena
     }
-    public void ActivateNote() // Activa la nota
+    public void ActivateNoteRoom() // Activa la nota
     {
-        _nota.SetActive(true);
+        _notaRoom.SetActive(true);
     }
-    public void DeactivateNote() // Desactiva la nota 
+    public void DeactivateNoteRoom() // Desactiva la nota 
     {
-        _nota.SetActive(false);
+        _notaRoom.SetActive(false);
+    }
+    public void ActivateNoteElevator() // Activa la nota
+    {
+        _notaElevator.SetActive(true);
+    }
+    public void DeactivateNoteElevator() // Desactiva la nota 
+    {
+        _notaElevator.SetActive(false);
+    }
+
+    public void ActivateNoteKey() // Activa la nota
+    {
+        _notaKey.SetActive(true);
+    }
+    public void DeactivateNoteKey() // Desactiva la nota 
+    {
+        _notaKey.SetActive(false);
     }
     public void ActivarHabitacion(GameObject room, NewRoom triggerToDestroy)
     {
@@ -134,8 +153,10 @@ public class GameManager : MonoBehaviour
         SceneManager.GetActiveScene(); 
         if (level == 1)
         {
-            _nota = GameObject.Find("HojaBlanca");
-            _nota.SetActive(false);
+            _notaRoom = GameObject.Find("HojaBlancaRoom_1");
+            _notaRoom.SetActive(false);
+            _notaElevator = GameObject.Find("HojaBlancaElevator");
+            _notaElevator.SetActive(false);           
             UI_Manager.Instance.PauseReference();
             UI_Manager.Instance.ControlsReference();            
             UI_Manager.Instance.Control1Reference();
@@ -150,6 +171,8 @@ public class GameManager : MonoBehaviour
         }
         if(level == 2)
         {
+            _notaKey = GameObject.Find("HojaBlancaKey");
+            _notaKey.SetActive(false);
             UI_Manager.Instance.PauseReference();
             UI_Manager.Instance.ControlsReference();
             _spawn = GameObject.Find("Spawn");
