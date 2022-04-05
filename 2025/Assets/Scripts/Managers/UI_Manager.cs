@@ -67,11 +67,11 @@ public class UI_Manager : MonoBehaviour
     }
     public void balagUI(int bala,int cargador)
     {
-        pistolBullets.text = "" + bala + "/" + cargador;
+        //pistolBullets.text = "" + bala + "/" + cargador;
     }
     public void balasgUI(int bala,int cargador)
     {
-        shotgunBullets.text= "" + bala + "/" + cargador;
+        //shotgunBullets.text= "" + bala + "/" + cargador;
     }
 
    
