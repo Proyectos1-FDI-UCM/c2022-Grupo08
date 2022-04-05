@@ -25,7 +25,8 @@ public class Enemy_Behaviour : MonoBehaviour
     private int nextPosition = 0; // posicion
 
     private int currentPosition = 0;
-
+    private float positionx;
+    private float positiony;
     private bool deteccion = false; //Bool para la animación
     #endregion
 
@@ -51,16 +52,17 @@ public class Enemy_Behaviour : MonoBehaviour
         _myLifeComponent = GetComponent<Life_Component>();
         _playerTransform = GameManager.Instance._player.transform;
         _Zombie = GetComponent<AudioSource>();
-        if (SoundManager.Instance.zombieMuted)
+        if (!SoundManager.Instance.zombieMuted)
         {
             _Zombie.mute = false;
+            Debug.Log(!SoundManager.Instance.zombieMuted + "mute false");
         }
         else
         {
             _Zombie.mute = true;
+            Debug.Log(!SoundManager.Instance.zombieMuted + "mute true");
         }
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -88,8 +90,12 @@ public class Enemy_Behaviour : MonoBehaviour
             }
         }
         //Animación
-        _myAnimator.SetFloat("Punto1", currentPosition);
-        _myAnimator.SetFloat("Punto2", nextPosition);
+        positionx = wayPoints[nextPosition].position.x - transform.position.x;
+        positiony = wayPoints[nextPosition].position.y - transform.position.y;
+        //_myAnimator.SetFloat("Punto1", currentPosition);
+        //_myAnimator.SetFloat("Punto2", nextPosition);
+        _myAnimator.SetFloat("Posx", positionx);
+        _myAnimator.SetFloat("Posy", positiony);
         _myAnimator.SetFloat("Puntox", _playerTransform.position.x - _enemy.position.x);
         _myAnimator.SetFloat("Puntoy", _playerTransform.position.y - _enemy.position.y);
         _myAnimator.SetBool("Jugador", deteccion);

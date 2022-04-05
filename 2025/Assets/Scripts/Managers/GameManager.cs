@@ -200,10 +200,6 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(gameObject);
-        UI_Manager.Instance.UnmuteButtonReference();
-        UI_Manager.Instance.MuteButtonReference();
-        UI_Manager.Instance.UnmuteSFXReference();
-        UI_Manager.Instance.MuteSFXReference();
     }
 
     // Update is called once per frame

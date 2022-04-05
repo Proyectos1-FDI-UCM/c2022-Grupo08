@@ -16,7 +16,6 @@ public class UI_Manager : MonoBehaviour
         }
     }
     #endregion
-
     #region parameters
     public Image lifeBar;
     public Text pistolBullets;
@@ -25,7 +24,6 @@ public class UI_Manager : MonoBehaviour
     public Text _mision;
     private float temporizadorpalanca;
     private bool gogo=false;
-    
     public float maxlife;
     public float currentlife;
     [SerializeField] private GameObject _customizationMenu;
@@ -37,12 +35,7 @@ public class UI_Manager : MonoBehaviour
     [SerializeField] private GameObject _winMenu;
     [SerializeField] private GameObject _loseMenu;
     [SerializeField] private GameObject _pauseMenu;
-    [SerializeField] private GameObject _muteMusicButton;
-    [SerializeField] private GameObject _unmuteMusicButton;
-    [SerializeField] private GameObject _muteSFXButton;
-    [SerializeField] private GameObject _unmuteSFXButton;
     #endregion
-
     #region methods
     public void Awake()
     {
@@ -77,9 +70,6 @@ public class UI_Manager : MonoBehaviour
     {
         //shotgunBullets.text= "" + bala + "/" + cargador;
     }
-
-   
-
     public void Mision(string write)
     {
         //_mision.text = write;
@@ -95,8 +85,6 @@ public class UI_Manager : MonoBehaviour
     {
         GameManager.Instance.StartGame();
     }
-
-
     public void ControlsMenu(bool enabled)
     {
         _controlsMenu.SetActive(enabled);
@@ -113,7 +101,6 @@ public class UI_Manager : MonoBehaviour
     {       
         _winMenu.SetActive(true); // Activa el menú de victoria
     }
-
     public void GameOverMenu()
     {
         _loseMenu.SetActive(true);
@@ -121,33 +108,11 @@ public class UI_Manager : MonoBehaviour
     public void MuteMusicButton(bool music)
     {
         SoundManager.Instance.MuteMusic(music);
-        if (music)
-        {
-            _unmuteMusicButton.SetActive(false);
-            _muteMusicButton.SetActive(true);
-        }
-        else
-        {
-            _unmuteMusicButton.SetActive(true);
-            _muteMusicButton.SetActive(false);
-        }
     }
-
     public void MuteSFXButton(bool effects)
     {
         SoundManager.Instance.MuteSFX(effects);
-        if (effects)
-        {
-            _unmuteSFXButton.SetActive(false);
-            _muteSFXButton.SetActive(true);
-        }
-        else
-        {
-            _unmuteSFXButton.SetActive(true);
-            _muteSFXButton.SetActive(false);
-        }
     }
-
     public void ReplayButton()
     {
         GameManager.Instance.Replay();
@@ -160,24 +125,6 @@ public class UI_Manager : MonoBehaviour
     {
         _pauseMenu = GameObject.Find("PauseMenu");
         _pauseMenu.SetActive(false);
-    }
-    public void UnmuteButtonReference()
-    {
-        _unmuteMusicButton = GameObject.Find("UnMuteButton");
-        _unmuteMusicButton.SetActive(false);
-    }
-    public void MuteButtonReference()
-    {
-        _muteMusicButton = GameObject.Find("MuteButton");
-    }
-    public void UnmuteSFXReference()
-    {
-        _unmuteSFXButton = GameObject.Find("SFXUnmute");
-        _unmuteSFXButton.SetActive(false);
-    }
-    public void MuteSFXReference()
-    {
-        _muteSFXButton = GameObject.Find("SFXMute");
     }
     public void ControlsReference()
     {
@@ -203,12 +150,10 @@ public class UI_Manager : MonoBehaviour
     {
         GameManager.Instance.DeactivateNoteRoom();
     }
-
     public void BackButtonNoteElevatorCall()
     {
         GameManager.Instance.DeactivateNoteElevator();
     }
-
     public void BackButtonNoteKeyCall()
     {
         GameManager.Instance.DeactivateNoteKey();
@@ -225,7 +170,6 @@ public class UI_Manager : MonoBehaviour
         palancaaviso.text = "";
         _mision.text = "";
     }
-
     // Update is called once per frame
     void Update()
     {

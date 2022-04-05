@@ -511,6 +511,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ce295c3ccfb0954ab92c568d73bed78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _muteMusicButton: {fileID: 890954640}
+  _unmuteMusicButton: {fileID: 1985131669}
+  _muteSFXButton: {fileID: 2066982202}
+  _unmuteSFXButton: {fileID: 2042003165}
 --- !u!4 &268791986
 Transform:
   m_ObjectHideFlags: 0
@@ -2172,10 +2176,6 @@ MonoBehaviour:
   _winMenu: {fileID: 0}
   _loseMenu: {fileID: 0}
   _pauseMenu: {fileID: 0}
-  _muteMusicButton: {fileID: 0}
-  _unmuteMusicButton: {fileID: 0}
-  _muteSFXButton: {fileID: 0}
-  _unmuteSFXButton: {fileID: 0}
 --- !u!4 &1649512480
 Transform:
   m_ObjectHideFlags: 0
