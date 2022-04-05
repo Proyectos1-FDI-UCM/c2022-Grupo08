@@ -19,6 +19,7 @@ public class Player_Life_Component : Life_Component
     #region properties
     [SerializeField] private float empuje = 2f; //Fuerza con la que se va a ipulsar hacia atrás al jugador al ser golpeado por un objeto hostil
     [SerializeField] private float empujeZombie = 0.5f; // Fuerza con la que se va a impulsar el zombie cuando nos ataque
+    private bool _isdead = false;
     #endregion
 
     #region methods
@@ -90,7 +91,7 @@ public class Player_Life_Component : Life_Component
                 _cont = 1.7f;
             }
         }
-        //_myAnimator.SetInteger("VidaPlayer", _currentLife);
+        _myAnimator.SetBool("isDead", _myInputManager._isDead);
 
         _lifeBar.fillAmount = _currentLife / _maxLife;
 
