@@ -34,16 +34,4 @@ public class NewRoom : MonoBehaviour
         GameManager.Instance.ActivarHabitacion(_roomToActivate, this);
     }
     #endregion
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-      
-    }
 }
