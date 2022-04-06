@@ -51,6 +51,7 @@ public class Life_Component : MonoBehaviour
     {
         if (_currentLife <= 0)
         {
+            gameObject.GetComponent<BoxCollider2D>().enabled = false;
             _isDead = true;
             _cont -= Time.deltaTime;
             //Contador

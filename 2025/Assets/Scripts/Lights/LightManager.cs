@@ -10,6 +10,7 @@ public class LightManager : MonoBehaviour
     [SerializeField] private int _maxFusibles = 3;
     public int _currentFusibles = 0;
     public float _currentLife = 100;
+    [SerializeField] private GameObject _electricityStatic;
     [SerializeField] private GameObject _electricityOn;
     [SerializeField] private GameObject _electricityOff;
     [SerializeField] private GameObject _globalLightOn;
@@ -43,6 +44,7 @@ public class LightManager : MonoBehaviour
     {
         _electricidadActiva = true;
         Destroy(_electricityOn);
+        Destroy(_electricityStatic);
         _electricityOff.SetActive(true);
         _globalLightOff.SetActive(false);
         _globalLightOn.SetActive(true);

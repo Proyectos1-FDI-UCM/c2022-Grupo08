@@ -61,6 +61,7 @@ public class InteractDetection : MonoBehaviour
         _myElecricityActivated = GetComponent<ElectricityActivated>();
         _myActivaNotaElevator = GetComponent<ActivaNotaElevator>();
         _myActivaNotaKey = GetComponent<ActivaNotaKey>();
+        GameManager.Instance._listInteractableObjects.Add(this);
     }
 
     // Update is called once per frame

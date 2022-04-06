@@ -50,7 +50,7 @@ public class UI_Manager : MonoBehaviour
     }
     public void ShotgunActivate()
     {
-        _control1.SetActive(true);
+        //_control1.SetActive(true);
     }
     public void GunActivate()
     {
@@ -146,7 +146,7 @@ public class UI_Manager : MonoBehaviour
         _control3 = GameObject.Find("ControlPalanca");
         _control3.SetActive(false);
     }
-    /*public void BackButtonNoteRoomCall()
+    public void BackButtonNoteRoomCall()
     {
         GameManager.Instance.DeactivateNoteRoom();
     }
@@ -157,7 +157,7 @@ public class UI_Manager : MonoBehaviour
     public void BackButtonNoteKeyCall()
     {
         GameManager.Instance.DeactivateNoteKey();
-    }*/
+    }
     #endregion
     // Start is called before the first frame update
     void Start()

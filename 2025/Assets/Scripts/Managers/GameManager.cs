@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject _shortcut;
 
     private GameObject saved;
-    [SerializeField] private List<InteractDetection> _listInteractableObjects;
+    public List<InteractDetection> _listInteractableObjects;
     private UI_Manager _UIManager;
     #endregion
 
@@ -200,6 +200,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(gameObject);
+        _listInteractableObjects = new List<InteractDetection>();
     }
 
     // Update is called once per frame

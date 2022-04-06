@@ -13,9 +13,7 @@ public class Input_Manager : MonoBehaviour
     public bool _isDead = false;
     public bool _leverActivated = false; //Palanca
     public bool _pistolaActivada = false;
-    public bool _escopetaActivada = false;
-    public bool _isNoteActivated = false;
-    
+    public bool _escopetaActivada = false;    
     #endregion
 
     #region references
@@ -105,13 +103,6 @@ public class Input_Manager : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Q))
             {
                 GameManager.Instance.PauseGame();
-            }
-
-            // Desactivar notas
-            if (Input.GetKey(KeyCode.Escape) && _isNoteActivated)
-            {
-                _myActivaNota.ToHideNote();
-                _isNoteActivated = false;
             }
         }
     }

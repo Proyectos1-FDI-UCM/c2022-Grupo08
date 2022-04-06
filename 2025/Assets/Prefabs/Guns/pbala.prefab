@@ -178,7 +178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _velocity: 20
   _damage: 2
-  _life: 0.5
+  _life: 0.1
   empuje: 2
 --- !u!114 &-1224571995698119670
 MonoBehaviour:
