@@ -14,19 +14,24 @@ public class Input_Manager : MonoBehaviour
     public bool _leverActivated = false; //Palanca
     public bool _pistolaActivada = false;
     public bool _escopetaActivada = false;
+    public bool _isNoteActivated = false;
+    
     #endregion
 
     #region references
     private Player_MovementController _myPlayerMovementController;
     private Player_Attack _myPlayerAttack;
     private Player_Interact _myPlayerInteract;
+    [SerializeField] private GameObject _nota;
+    private ActivaNota _myActivaNota;
     #endregion
     // Start is called before the first frame update
     void Start()
     {
         _myPlayerMovementController = GetComponent<Player_MovementController>();
         _myPlayerAttack = GetComponent<Player_Attack>();
-        _myPlayerInteract = GetComponent<Player_Interact>();        
+        _myPlayerInteract = GetComponent<Player_Interact>();
+        _myActivaNota = _nota.GetComponent<ActivaNota>();
     }
 
     // Update is called once per frame
@@ -100,6 +105,13 @@ public class Input_Manager : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Q))
             {
                 GameManager.Instance.PauseGame();
+            }
+
+            // Desactivar notas
+            if (Input.GetKey(KeyCode.Escape) && _isNoteActivated)
+            {
+                _myActivaNota.ToHideNote();
+                _isNoteActivated = false;
             }
         }
     }
