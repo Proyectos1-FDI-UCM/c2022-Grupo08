@@ -164,6 +164,15 @@ TextureImporter:
   - first:
       213: -2997523523889113027
     second: TileB_PHC_Interior-Hospital_53
+  - first:
+      213: -5918748464055850142
+    second: TileB_PHC_Interior-Hospital_54
+  - first:
+      213: -195064285471550207
+    second: TileB_PHC_Interior-Hospital_55
+  - first:
+      213: -7592200273672591402
+    second: TileB_PHC_Interior-Hospital_56
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1379,7 +1388,7 @@ TextureImporter:
         width: 15
         height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1387,6 +1396,69 @@ TextureImporter:
       bones: []
       spriteID: d3856b09c38a666d0800000000000000
       internalID: -2997523523889113027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-Hospital_54
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 16
+        width: 16
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26bef0d71a16cdda0800000000000000
+      internalID: -5918748464055850142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-Hospital_55
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 16
+        width: 16
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1055a1cd01efa4df0800000000000000
+      internalID: -195064285471550207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-Hospital_56
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 16
+        width: 15
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d72f18831613a690800000000000000
+      internalID: -7592200273672591402
       vertices: []
       indices: 
       edges: []
