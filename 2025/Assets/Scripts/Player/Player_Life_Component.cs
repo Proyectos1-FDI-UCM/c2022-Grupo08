@@ -93,7 +93,7 @@ public class Player_Life_Component : Life_Component
         }
         _myAnimator.SetBool("isDead", _myInputManager._isDead);
 
-        _lifeBar.fillAmount = _currentLife / _maxLife;
+        //_lifeBar.fillAmount = _currentLife / _maxLife;
 
         //Debug.Log(_currentLife);
     }
