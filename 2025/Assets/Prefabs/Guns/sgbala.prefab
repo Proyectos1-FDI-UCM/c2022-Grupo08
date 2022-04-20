@@ -97,7 +97,7 @@ MonoBehaviour:
   _velocity: 20
   _damage: 5
   _life: 0.5
-  empuje: 2
+  empuje: 0.5
 --- !u!114 &9220588729634176778
 MonoBehaviour:
   m_ObjectHideFlags: 0
