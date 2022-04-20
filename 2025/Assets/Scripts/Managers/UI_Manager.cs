@@ -121,27 +121,27 @@ public class UI_Manager : MonoBehaviour
     {
         GameManager.Instance.QuitGame();
     }
-    public void PauseReference()
+    public void PauseReference() // Se usa en el OnLevelWasLoaded del GameManager
     {
         _pauseMenu = GameObject.Find("PauseMenu");
         _pauseMenu.SetActive(false);
     }
-    public void ControlsReference()
+    public void ControlsReference() // Se usa en el OnLevelWasLoaded del GameManager
     {
         _controlsMenu = GameObject.Find("ControlsMenu");
         _controlsMenu.SetActive(false);
     }
-    public void Control1Reference()
+    public void Control1Reference() // Se usa en el OnLevelWasLoaded del GameManager
     {
         _control1 = GameObject.Find("ControlEscopeta");
         _control1.SetActive(false);
     }
-    public void Control2Reference()
+    public void Control2Reference() // Se usa en el OnLevelWasLoaded del GameManager
     {
         _control2 = GameObject.Find("ControlPistola");
         _control2.SetActive(false);
     }
-    public void Control3Reference()
+    public void Control3Reference() // Se usa en el OnLevelWasLoaded del GameManager
     {
         _control3 = GameObject.Find("ControlPalanca");
         _control3.SetActive(false);
