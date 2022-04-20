@@ -7,19 +7,18 @@ public class Player_Life_Component : Life_Component
 {
     #region references
     private Rigidbody2D _myRigidBody;
-    private Input_Manager _myInputManager;
     private Player_MovementController _myPlayerMovementController;
     private Transform _myTransform;
     [SerializeField] private GameObject _boy;
     [SerializeField] private GameObject _girl;
     public Image _lifeBar;
     public bool pushing = false;
+    public bool _isPlayerDead = false;
     #endregion
 
     #region properties
     [SerializeField] private float empuje = 2f; //Fuerza con la que se va a ipulsar hacia atrás al jugador al ser golpeado por un objeto hostil
     [SerializeField] private float empujeZombie = 0.5f; // Fuerza con la que se va a impulsar el zombie cuando nos ataque
-    private bool _isdead = false;
     #endregion
 
     #region methods
@@ -71,7 +70,6 @@ public class Player_Life_Component : Life_Component
 
         _myRigidBody = GetComponent<Rigidbody2D>();
         _myTransform = GetComponent<Transform>();
-        _myInputManager = GetComponent<Input_Manager>();
         _myPlayerMovementController = GetComponent<Player_MovementController>();
     }
 
@@ -81,7 +79,7 @@ public class Player_Life_Component : Life_Component
         if (_currentLife <= 0)
         {
             // Para no poder moverse durante la animación de muerte
-            _myInputManager._isDead = true;
+            AnimatorManager.Instance.PlayerisDead(_myAnimator);
             _myPlayerMovementController._movementSpeed = 0;
             _cont -= Time.deltaTime;
             if (_cont <= 0)
@@ -91,8 +89,6 @@ public class Player_Life_Component : Life_Component
                 _cont = 1.7f;
             }
         }
-        _myAnimator.SetBool("isDead", _myInputManager._isDead);
-
         _lifeBar.fillAmount = _currentLife / _maxLife;
 
         //Debug.Log(_currentLife);

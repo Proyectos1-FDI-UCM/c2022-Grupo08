@@ -27,7 +27,7 @@ public class Enemy_Behaviour : MonoBehaviour
     private int currentPosition = 0;
     private float positionx;
     private float positiony;
-    private bool deteccion = false; //Bool para la animación
+    private bool detection = false; //Bool para la animación
     #endregion
 
     #region references
@@ -66,12 +66,12 @@ public class Enemy_Behaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!GameManager.Instance.IsGamePaused && !_myLifeComponent._isDead)
+        if (!GameManager.Instance.IsGamePaused && !_myLifeComponent._isZombieDead)
         {
             if (Vector2.Distance(_myTransform.position, _playerTransform.position) <= _distanceToDetection) // si la distancia entre player y enemy es menor que 5, sigue al player
             {
                 DeteccionPlayer();
-                deteccion = true;
+                detection = true;
             }
             else
             {
@@ -86,18 +86,12 @@ public class Enemy_Behaviour : MonoBehaviour
                         nextPosition = 0;
                     }
                 }
-                deteccion = false;
+                detection = false;
             }
         }
         //Animación
         positionx = wayPoints[nextPosition].position.x - transform.position.x;
         positiony = wayPoints[nextPosition].position.y - transform.position.y;
-        //_myAnimator.SetFloat("Punto1", currentPosition);
-        //_myAnimator.SetFloat("Punto2", nextPosition);
-        _myAnimator.SetFloat("Posx", positionx);
-        _myAnimator.SetFloat("Posy", positiony);
-        _myAnimator.SetFloat("Puntox", _playerTransform.position.x - _enemy.position.x);
-        _myAnimator.SetFloat("Puntoy", _playerTransform.position.y - _enemy.position.y);
-        _myAnimator.SetBool("Jugador", deteccion);
+        AnimatorManager.Instance.EnemyMovement(_myAnimator, positionx, positiony, _playerTransform, _enemy.transform, detection);
     }
 }

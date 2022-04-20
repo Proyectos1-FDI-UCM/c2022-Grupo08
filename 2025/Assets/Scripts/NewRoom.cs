@@ -8,8 +8,6 @@ public class NewRoom : MonoBehaviour
     [SerializeField] private GameObject _roomToActivate;
     [SerializeField] private Animator _myAnimator;
     [SerializeField] private float _cont = 1.7f;
-    bool opening = false;
-
     [SerializeField] private AudioClip _clip;
     
     #endregion
@@ -25,8 +23,8 @@ public class NewRoom : MonoBehaviour
             SoundManager.Instance.PlaySound(_clip);
 
             //Animacion abrir puerta
-            opening = true;
-            _myAnimator.SetBool("abriendo", opening);
+            AnimatorManager.Instance.OpenDoor(_myAnimator);
+           
         }
     }
     private void NuevaHab()

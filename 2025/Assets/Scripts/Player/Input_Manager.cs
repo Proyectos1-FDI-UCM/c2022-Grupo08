@@ -10,7 +10,6 @@ public class Input_Manager : MonoBehaviour
 
     #region properties
     [HideInInspector] public bool InDetectionZone = false; // Booleano que detecta si se está dentro de la zona de interacción con algun objeto interactuable
-    public bool _isDead = false;
     public bool _leverActivated = false; //Palanca
     public bool _pistolaActivada = false;
     public bool _escopetaActivada = false;    
@@ -20,6 +19,7 @@ public class Input_Manager : MonoBehaviour
     private Player_MovementController _myPlayerMovementController;
     private Player_Attack _myPlayerAttack;
     private Player_Interact _myPlayerInteract;
+    private Player_Life_Component _myPlayerLifeComponent;
     [SerializeField] private GameObject _nota;
     private ActivaNota _myActivaNota;
     #endregion
@@ -27,6 +27,7 @@ public class Input_Manager : MonoBehaviour
     void Start()
     {
         _myPlayerMovementController = GetComponent<Player_MovementController>();
+        _myPlayerLifeComponent = GetComponent<Player_Life_Component>();
         _myPlayerAttack = GetComponent<Player_Attack>();
         _myPlayerInteract = GetComponent<Player_Interact>();
         _myActivaNota = _nota.GetComponent<ActivaNota>();
@@ -38,7 +39,7 @@ public class Input_Manager : MonoBehaviour
         Vector3 movementDirection = Vector3.zero;
 
         // Detección de movimiento WASD
-        if (!_isDead && !GameManager.Instance.IsGamePaused)
+        if (!_myPlayerLifeComponent._isPlayerDead && !GameManager.Instance.IsGamePaused)
         {
             if (Input.GetKey(KeyCode.W))
             {

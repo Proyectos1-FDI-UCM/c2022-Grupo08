@@ -9,8 +9,9 @@ public class Life_Component : MonoBehaviour
     public float _currentLife;
     [SerializeField] private  int _damage = 10;
     [SerializeField] protected float _cont = 1.7f;
-    
-    public bool _isDead = false;
+    #endregion
+    #region properties
+    public bool _isZombieDead = false;
     #endregion
     #region references
     [SerializeField] protected Animator _myAnimator;
@@ -52,7 +53,7 @@ public class Life_Component : MonoBehaviour
         if (_currentLife <= 0)
         {
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
-            _isDead = true;
+            AnimatorManager.Instance.ZombieisDead(_myAnimator);
             _cont -= Time.deltaTime;
             //Contador
             if (_cont <= 0) //GameManager.Instance.OnEnemyDies();
@@ -61,8 +62,5 @@ public class Life_Component : MonoBehaviour
                 _cont = 1.7f;
             }
         }
-
-        //Animación
-        _myAnimator.SetBool("ZombieMuerto", _isDead);
     }
 }

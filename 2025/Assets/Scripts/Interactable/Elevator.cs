@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Elevator : MonoBehaviour
 {
-    bool elevator = false;
-
     #region references
     [SerializeField] private GameObject _changeLevel;
     [SerializeField] private Animator _myAnimator;
@@ -16,8 +14,7 @@ public class Elevator : MonoBehaviour
     public void OpenElevator()
     {
         //GameManager.Instance.OpenElevatorDoor();
-        elevator = true;
-        _myAnimator.SetBool("Elevator", elevator);
+        AnimatorManager.Instance.OpenElevator(_myAnimator);
         _changeLevel.SetActive(true);
         this.gameObject.SetActive(false);
         SoundManager.Instance.PlaySound(_clip);
