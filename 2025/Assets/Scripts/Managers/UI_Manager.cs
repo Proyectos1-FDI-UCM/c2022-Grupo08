@@ -24,6 +24,8 @@ public class UI_Manager : MonoBehaviour
     public Text _mision;
     private float temporizadorpalanca;
     private bool gogo=false;
+    public bool _crowbarPicked = false;
+    public bool _pistolPicked = false;
     public float maxlife;
     public float currentlife;
     [SerializeField] private GameObject _customizationMenu;
@@ -50,17 +52,19 @@ public class UI_Manager : MonoBehaviour
     }
     public void ShotgunActivate()
     {
-        //_control1.SetActive(true);
+        _control1.SetActive(true);
     }
-    public void GunActivate()
+    public void PistolActivate()
     {
         _control2.SetActive(true);
+        _pistolPicked = true;
     }
-    public void LeverActivate()
+    public void CrowbarActivate()
     {
         //palancaaviso.text = "Pulse Espacio para golpear con la palanca";
         //gogo = true;
         _control3.SetActive(true);
+        _crowbarPicked = true;
     }
     public void balagUI(int bala,int cargador)
     {
@@ -139,12 +143,37 @@ public class UI_Manager : MonoBehaviour
     public void Control2Reference() // Se usa en el OnLevelWasLoaded del GameManager
     {
         _control2 = GameObject.Find("ControlPistola");
-        _control2.SetActive(false);
+        IsPistolPicked();
     }
     public void Control3Reference() // Se usa en el OnLevelWasLoaded del GameManager
     {
         _control3 = GameObject.Find("ControlPalanca");
-        _control3.SetActive(false);
+        IsCrowbarPicked();
+    }
+
+    public void IsCrowbarPicked()
+    {
+        if (_crowbarPicked == false)
+        {
+            _control3.SetActive(false);
+        }
+        else if (_crowbarPicked == true)
+        {
+            _control3.SetActive(true);
+        }
+
+    }
+    public void IsPistolPicked()
+    {
+        if (_pistolPicked == false)
+        {
+            _control2.SetActive(false);
+        }
+        else if (_pistolPicked == true) 
+        {
+            _control2.SetActive(true);
+        }
+            
     }
     public void BackButtonNoteRoomCall()
     {

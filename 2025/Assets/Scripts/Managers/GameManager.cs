@@ -175,6 +175,9 @@ public class GameManager : MonoBehaviour
             _notaKey.SetActive(false);
             UI_Manager.Instance.PauseReference();
             UI_Manager.Instance.ControlsReference();
+            UI_Manager.Instance.Control1Reference();
+            UI_Manager.Instance.Control2Reference();
+            UI_Manager.Instance.Control3Reference();
             _spawn = GameObject.Find("Spawn");
             _parkingDoor = GameObject.Find("Parking");
             _exitHospital = GameObject.Find("Parking_Opened");
