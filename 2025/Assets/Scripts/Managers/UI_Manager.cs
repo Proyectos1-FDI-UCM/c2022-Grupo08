@@ -57,22 +57,23 @@ public class UI_Manager : MonoBehaviour
     public void PistolActivate()
     {
         _control2.SetActive(true);
+        //pistolBullets.text = "" + bala + "/" + cargador;
         _pistolPicked = true;
     }
     public void CrowbarActivate()
     {
-        //palancaaviso.text = "Pulse Espacio para golpear con la palanca";
-        //gogo = true;
+        palancaaviso.text = "Pulse Espacio para golpear con la palanca";
+        gogo = true;
         _control3.SetActive(true);
         _crowbarPicked = true;
     }
     public void balagUI(int bala,int cargador)
     {
-        //pistolBullets.text = "" + bala + "/" + cargador;
+        pistolBullets.text = "" + bala + "/" + cargador;
     }
     public void balasgUI(int bala,int cargador)
     {
-        //shotgunBullets.text= "" + bala + "/" + cargador;
+        shotgunBullets.text= "" + bala + "/" + cargador;
     }
     public void Mision(string write)
     {
@@ -138,16 +139,22 @@ public class UI_Manager : MonoBehaviour
     public void Control1Reference() // Se usa en el OnLevelWasLoaded del GameManager
     {
         _control1 = GameObject.Find("ControlEscopeta");
+        shotgunBullets = _control1.transform.Find("ShotgunBullets").GetComponent<Text>();
+        shotgunBullets.text = "";
         _control1.SetActive(false);
     }
     public void Control2Reference() // Se usa en el OnLevelWasLoaded del GameManager
     {
         _control2 = GameObject.Find("ControlPistola");
+        pistolBullets = _control2.transform.Find("PistolBullets").GetComponent<Text>();
+        pistolBullets.text = "";
         IsPistolPicked();
     }
     public void Control3Reference() // Se usa en el OnLevelWasLoaded del GameManager
     {
         _control3 = GameObject.Find("ControlPalanca");
+        palancaaviso = _control3.transform.Find("palancatexto").GetComponent<Text>();
+        palancaaviso.text = "";
         IsCrowbarPicked();
     }
 
@@ -172,6 +179,7 @@ public class UI_Manager : MonoBehaviour
         else if (_pistolPicked == true) 
         {
             _control2.SetActive(true);
+            //pistolBullets.text = "" + bala + "/" + cargador;
         }
             
     }
@@ -221,12 +229,6 @@ public class UI_Manager : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(gameObject);
-        pistolBullets = GameObject.Find("PistolBullets").GetComponent<Text>();
-        shotgunBullets = GameObject.Find("ShotgunBullets").GetComponent<Text>();
-        pistolBullets.text = "";
-        shotgunBullets.text = "";
-        palancaaviso.text = "";
-        _mision.text = "";
     }
     // Update is called once per frame
     void Update()

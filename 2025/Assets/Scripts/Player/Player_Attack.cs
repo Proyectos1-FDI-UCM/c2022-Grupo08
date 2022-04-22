@@ -8,8 +8,8 @@ public class Player_Attack : MonoBehaviour
     private Vector3 rotationVector;
     [SerializeField] private int cargadorbalag = 10;
     [SerializeField] private int cargadorbalasg = 2;
-    private int faltabalag;
-    private int faltabalasg;
+    [SerializeField] private int faltabalag;
+    [SerializeField] private int faltabalasg;
     [SerializeField] private float recargag = 1;
     [SerializeField] private float recargasg = 2;
     private float tiempocarga;
@@ -21,10 +21,9 @@ public class Player_Attack : MonoBehaviour
     private int totalbalassg;
     [SerializeField]
 
-    private bool tengoammog = true;
+    private bool tengoammog = false;
     [SerializeField]
-
-    private bool tengoammosg = true;
+    private bool tengoammosg = false;
     #endregion
 
     #region properties
@@ -114,8 +113,8 @@ public class Player_Attack : MonoBehaviour
     void Start()
     {
         _mytransform = transform;
-        faltabalag = cargadorbalag;
-        faltabalasg = cargadorbalasg;
+        faltabalag = 9; //lore interno
+        faltabalasg = 0;
     }
 
     // Update is called once per frame
