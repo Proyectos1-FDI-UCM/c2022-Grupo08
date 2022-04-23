@@ -2,25 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
 public class ChangeLvl_1 : MonoBehaviour
 {
-    
+    #region references
+    private Transition _myTransition;
+    #endregion
+
     #region methods
+    void Awake()
+    {
+        _myTransition = FindObjectOfType<Transition>();
+    }
     private void OnTriggerStay2D(Collider2D collision)
     {
         Player_Life_Component hitPlayer = collision.GetComponent<Player_Life_Component>();
 
         if (hitPlayer)
         {
-            SceneManager.LoadScene(2, LoadSceneMode.Single);
+            _myTransition.FadeOut();
         }
     }
     #endregion
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        //_myTransition = GetComponent<Transition>();
     }
 
     // Update is called once per frame
