@@ -77,7 +77,7 @@ public class UI_Manager : MonoBehaviour
     }
     public void Mision(string write)
     {
-        //_mision.text = write;
+        _mision.text = write;
     }
 
     //public void CustomizationMenu(bool enabled)
@@ -158,6 +158,13 @@ public class UI_Manager : MonoBehaviour
         IsCrowbarPicked();
     }
 
+    public void MisionReference()
+    {
+        _mision = GameObject.Find("MisionPanel").transform.Find("Mision").GetComponent<Text>();
+        _mision.text = "";
+
+    }
+
     public void IsCrowbarPicked()
     {
         if (_crowbarPicked == false)
@@ -195,35 +202,7 @@ public class UI_Manager : MonoBehaviour
     {
         GameManager.Instance.DeactivateNoteKey();
     }
-    /*public void OnLevelWasLoaded(int level)
-    {
-        SceneManager.GetActiveScene();
-        if (level == 1)
-        {
-            _pauseMenu = GameObject.Find("PauseMenu");
-            _pauseMenu.SetActive(false);
-            _controlsMenu = GameObject.Find("ControlsMenu");
-            _controlsMenu.SetActive(false);
-            _control1 = GameObject.Find("ControlEscopeta");
-            _control1.SetActive(false);
-            _control2 = GameObject.Find("ControlPistola");
-            _control2.SetActive(false);
-            _control3 = GameObject.Find("ControlPalanca");
-            _control3.SetActive(false);
-        }
-        if (level == 2)
-        {
-
-        }
-        if (level == 3)
-        {
-
-        }
-        if (level == 4)
-        {
-
-        }
-    }*/
+   
     #endregion
     // Start is called before the first frame update
     void Start()

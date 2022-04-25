@@ -162,6 +162,7 @@ public class GameManager : MonoBehaviour
             UI_Manager.Instance.Control1Reference();
             UI_Manager.Instance.Control2Reference();
             UI_Manager.Instance.Control3Reference();
+            UI_Manager.Instance.MisionReference();
             _player = GameObject.Find("Chico");
             _elevatorOn = GameObject.Find("Elevator_ClosedReady");
             _elevatorAnimation = GameObject.Find("ElevatorAnimation");
@@ -178,6 +179,7 @@ public class GameManager : MonoBehaviour
             UI_Manager.Instance.Control1Reference();
             UI_Manager.Instance.Control2Reference();
             UI_Manager.Instance.Control3Reference();
+            UI_Manager.Instance.MisionReference();
             _spawn = GameObject.Find("Spawn");
             _parkingDoor = GameObject.Find("Parking");
             _exitHospital = GameObject.Find("Parking_Opened");
