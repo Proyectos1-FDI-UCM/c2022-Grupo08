@@ -68,7 +68,7 @@ public class Enemy_Behaviour : MonoBehaviour
     {
         if (!GameManager.Instance.IsGamePaused && !_myLifeComponent._isZombieDead)
         {
-            if (Vector2.Distance(_myTransform.position, _playerTransform.position) <= _distanceToDetection) // si la distancia entre player y enemy es menor que 5, sigue al player
+            if (Vector2.Distance(_myTransform.position, _playerTransform.position) <= _distanceToDetection) // si la distancia entre player y enemy es menor que 5, sigue al playerzzºz
             {
                 DeteccionPlayer();
                 detection = true;
