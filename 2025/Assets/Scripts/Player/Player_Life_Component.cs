@@ -36,7 +36,7 @@ public class Player_Life_Component : Life_Component
         {
             var heading = enemigo.transform.position - _myTransform.position; //Direccion de empuje    
             //Necesitamos la direccion del jugador o del zombie
-            _myRigidBody.AddForce(heading * -empuje, ForceMode2D.Impulse);
+            _myRigidBody.AddForce(heading.normalized * -empuje, ForceMode2D.Impulse);
             var direction = _myTransform.position - enemigo.transform.position;
             collision.rigidbody.AddForce(direction * -empujeZombie, ForceMode2D.Impulse);
             pushing = true;
@@ -46,7 +46,8 @@ public class Player_Life_Component : Life_Component
         {
             var heading = barricada.transform.position - _myTransform.position; //Direccion de empuje
             //Necesitamos la direccion del jugador o del zombie
-            _myRigidBody.AddForce(heading * -empuje / 4, ForceMode2D.Impulse);
+            _myRigidBody.AddForce(heading.normalized * -empuje / 4, ForceMode2D.Impulse);
+            pushing = true;
         }
     }
     public void Cura(int curacion)
