@@ -101,7 +101,7 @@ public class Input_Manager : MonoBehaviour
             }
 
             // Menu pausa
-            if (Input.GetKeyDown(KeyCode.Q))
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
                 GameManager.Instance.PauseGame();
             }

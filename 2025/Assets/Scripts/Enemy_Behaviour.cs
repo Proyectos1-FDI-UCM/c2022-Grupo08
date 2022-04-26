@@ -52,16 +52,7 @@ public class Enemy_Behaviour : MonoBehaviour
         _myLifeComponent = GetComponent<Life_Component>();
         _playerTransform = GameManager.Instance._player.transform;
         _Zombie = GetComponent<AudioSource>();
-        if (!SoundManager.Instance.zombieMuted)
-        {
-            _Zombie.mute = false;
-            Debug.Log(!SoundManager.Instance.zombieMuted + "mute false");
-        }
-        else
-        {
-            _Zombie.mute = true;
-            Debug.Log(!SoundManager.Instance.zombieMuted + "mute true");
-        }
+        
     }
     // Update is called once per frame
     void Update()
@@ -89,6 +80,16 @@ public class Enemy_Behaviour : MonoBehaviour
                 detection = false;
             }
         }
+
+        if (!SoundManager.Instance.zombieMuted)
+        {
+            _Zombie.mute = false;
+        }
+        else
+        {
+            _Zombie.mute = true;
+        }
+
         //Animación
         positionx = wayPoints[nextPosition].position.x - transform.position.x;
         positiony = wayPoints[nextPosition].position.y - transform.position.y;
