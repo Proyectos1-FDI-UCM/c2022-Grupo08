@@ -64,6 +64,7 @@ public class ButtonManager : MonoBehaviour
         UI_Manager.Instance.StartGame();
     }
 
+
     public void BackButtonNoteRoom()
     {
         UI_Manager.Instance.BackButtonNoteRoomCall();
@@ -79,6 +80,16 @@ public class ButtonManager : MonoBehaviour
     public void BackButtonNoteShotgun()
     {
         UI_Manager.Instance.BackButtonNoteShotgunCall();
+    }
+
+    public void CollidersButton()
+    {
+        UI_Manager.Instance.CollidersButton();
+    }
+
+    public void AttackSoundButton()
+    {
+        UI_Manager.Instance.AttackSoundButton();
     }
     #endregion
     // Start is called before the first frame update

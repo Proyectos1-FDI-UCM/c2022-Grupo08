@@ -162,6 +162,16 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(4, LoadSceneMode.Single);
     }
 
+    public void LoadCollidersScene()
+    {
+        SceneManager.LoadScene(5, LoadSceneMode.Single);
+    }
+
+    public void LoadAttackSoundScene()
+    {
+        SceneManager.LoadScene(6, LoadSceneMode.Single);
+    }
+
     public void OnLevelWasLoaded(int level)
     {
         SceneManager.GetActiveScene(); 
@@ -218,6 +228,22 @@ public class GameManager : MonoBehaviour
         {
             Destroy(_player);
             UI_Manager.Instance.GameOverMenu();
+        }
+
+        if (level == 5)
+        {
+            
+            UI_Manager.Instance.PauseReference();
+            UI_Manager.Instance.ControlsReference();    
+            _player = GameObject.Find("Chico");
+            _elevatorOn = GameObject.Find("Elevator_ClosedReady");
+            _elevatorAnimation = GameObject.Find("ElevatorAnimation");
+            _shortcut = GameObject.Find("Shortcut");
+        }
+
+        if (level == 6)
+        {
+
         }
     }
 

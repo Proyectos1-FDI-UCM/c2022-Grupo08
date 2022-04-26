@@ -126,6 +126,16 @@ public class UI_Manager : MonoBehaviour
     {
         GameManager.Instance.QuitGame();
     }
+
+    public void CollidersButton()
+    {
+        GameManager.Instance.LoadCollidersScene();
+    }
+
+    public void AttackSoundButton()
+    {
+        GameManager.Instance.LoadAttackSoundScene();
+    }
     public void PauseReference() // Se usa en el OnLevelWasLoaded del GameManager
     {
         _pauseMenu = GameObject.Find("PauseMenu");
