@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject _notaRoom;
     [SerializeField] private GameObject _notaElevator;
     [SerializeField] private GameObject _notaKey;
+    [SerializeField] private GameObject _notaShotgun;
     [SerializeField] private GameObject _roomKey;
     [SerializeField] private GameObject _key;
     [SerializeField] private GameObject _parkingDoor;
@@ -88,6 +89,14 @@ public class GameManager : MonoBehaviour
     {
         _notaKey.SetActive(false);
     }
+    public void ActivateNoteShotgun() // Activa la nota
+    {
+        _notaShotgun.SetActive(true);
+    }
+    public void DeactivateNoteShotgun() // Desactiva la nota 
+    {
+        _notaShotgun.SetActive(false);
+    }
     public void ActivarHabitacion(GameObject room, NewRoom triggerToDestroy)
     {
         room.SetActive(true);
@@ -103,10 +112,12 @@ public class GameManager : MonoBehaviour
         _elevatorOn.transform.position = new Vector3(9.42f, -2.99f, 0);
         _elevatorAnimation.transform.position = new Vector3(-59.51f, 71.02f, 0);
         _shortcut.SetActive(false);
+        NewMision("Generador activado, parece que el ascensor está listo");
     }
     public void GetKey()
     {       
         _parkingDoor.SetActive(true);
+        NewMision("Está llave podría ser la escapatoria de este infierno");
     }
 
     public void OpenParkingDoor()
@@ -174,6 +185,8 @@ public class GameManager : MonoBehaviour
         {
             _notaKey = GameObject.Find("HojaBlancaKey");
             _notaKey.SetActive(false);
+            _notaShotgun = GameObject.Find("HojaBlancaShotgun");
+            _notaShotgun.SetActive(false);
             UI_Manager.Instance.PauseReference();
             UI_Manager.Instance.ControlsReference();
             UI_Manager.Instance.Control1Reference();
@@ -187,6 +200,7 @@ public class GameManager : MonoBehaviour
             _roomKey = GameObject.Find("Room_Key");
             _roomKey.SetActive(false);
             _player.transform.position = _spawn.transform.position;
+            NewMision("Nueva planta, nueva exploración");
         }
         if(level == 3)
         {

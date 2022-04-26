@@ -12,10 +12,7 @@ public class ActivaNotaKey : MonoBehaviour
     {
         GameManager.Instance.ActivateNoteKey();
         SoundManager.Instance.PlaySound(_clip);
-        //if (LightManager.Instance._currentFusibles < 1)
-        //{
-        //    GameManager.Instance.NewMision("Parece que tienes que usar el ascensor... Recoge fusibles 0/3");
-        //}
+        GameManager.Instance.NewMision("Busca la llave que te llevará a la salida");
     }
 
     public void ToHideNote() // Método que llama al GameManager para esconder la nota

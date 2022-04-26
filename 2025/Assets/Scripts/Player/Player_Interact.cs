@@ -17,7 +17,6 @@ public class Player_Interact : MonoBehaviour
     {
         InteractDetection hitInteractableObject = collision.GetComponent<InteractDetection>();
         Fusibles hitFusible = collision.GetComponent<Fusibles>();
-        ActivaNota hitNota = collision.GetComponent<ActivaNota>();
         Botiquin hitBotiquin = collision.GetComponent<Botiquin>();
         Municion hitMunicion = collision.GetComponent<Municion>();
         Cadaver hitCadaver = collision.GetComponent<Cadaver>();
@@ -27,8 +26,10 @@ public class Player_Interact : MonoBehaviour
         Elevator hitElevator = collision.GetComponent<Elevator>();
         ParkingDoor hitParkingDoor = collision.GetComponent<ParkingDoor>();
         ElectricityActivated hitElectricityActivated = collision.GetComponent<ElectricityActivated>();
+        ActivaNota hitNota = collision.GetComponent<ActivaNota>();
         ActivaNotaElevator hitNotaElevator = collision.GetComponent<ActivaNotaElevator>();
         ActivaNotaKey hitNotaKey = collision.GetComponent<ActivaNotaKey>();
+        ActivaNotaShotgun hitNotaShotgun = collision.GetComponent<ActivaNotaShotgun>();
 
         if (hitInteractableObject)
         {
@@ -87,6 +88,10 @@ public class Player_Interact : MonoBehaviour
             else if (hitNotaKey)
             {
                 hitInteractableObject.Interact(13);
+            }
+            else if (hitNotaShotgun)
+            {
+                hitInteractableObject.Interact(14);
             }
             ToCallInteraction();
         }

@@ -202,7 +202,11 @@ public class UI_Manager : MonoBehaviour
     {
         GameManager.Instance.DeactivateNoteKey();
     }
-   
+    public void BackButtonNoteShotgunCall()
+    {
+        GameManager.Instance.DeactivateNoteShotgun();
+    }
+
     #endregion
     // Start is called before the first frame update
     void Start()

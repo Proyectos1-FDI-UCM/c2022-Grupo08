@@ -76,6 +76,10 @@ public class ButtonManager : MonoBehaviour
     {
         UI_Manager.Instance.BackButtonNoteKeyCall();
     }
+    public void BackButtonNoteShotgun()
+    {
+        UI_Manager.Instance.BackButtonNoteShotgunCall();
+    }
     #endregion
     // Start is called before the first frame update
     void Start()

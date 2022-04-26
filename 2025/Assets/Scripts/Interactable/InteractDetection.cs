@@ -13,6 +13,7 @@ public class InteractDetection : MonoBehaviour
     private ActivaNota _myActivaNota;
     private ActivaNotaElevator _myActivaNotaElevator;
     private ActivaNotaKey _myActivaNotaKey;
+    private ActivaNotaShotgun _myActivaNotaShotgun;
     private Cadaver _myCadaver;
     private Cadaver2 _myCadaver2;
     private Cadaver3 _myCadaver3;
@@ -40,6 +41,7 @@ public class InteractDetection : MonoBehaviour
             case 11: _myElecricityActivated.InterruptorActivated(); break; // Puerta del Parking
             case 12: _myActivaNotaElevator.ToShowNote(); break; // ActivaNota Elevator
             case 13: _myActivaNotaKey.ToShowNote(); break; // ActivaNota Key
+            case 14: _myActivaNotaShotgun.ToShowNote(); break; // ActivaNota Shotgun
         }
         GameManager.Instance.InteractableObjectDone(this); // Llamo al GameManager para eliminar de escena el objeto con el que ya he interactuado
     }
@@ -48,7 +50,6 @@ public class InteractDetection : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _myActivaNota = GetComponent<ActivaNota>();
         _myBotiquin = GetComponent<Botiquin>();
         _myFusibles = GetComponent<Fusibles>();
         _myMunicion = GetComponent<Municion>();
@@ -59,8 +60,10 @@ public class InteractDetection : MonoBehaviour
         _myElevator = GetComponent<Elevator>();
         _myParkingDoor = GetComponent<ParkingDoor>();
         _myElecricityActivated = GetComponent<ElectricityActivated>();
+        _myActivaNota = GetComponent<ActivaNota>();
         _myActivaNotaElevator = GetComponent<ActivaNotaElevator>();
         _myActivaNotaKey = GetComponent<ActivaNotaKey>();
+        _myActivaNotaShotgun = GetComponent<ActivaNotaShotgun>();
         GameManager.Instance._listInteractableObjects.Add(this);
     }
 
