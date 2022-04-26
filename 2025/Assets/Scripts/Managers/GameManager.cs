@@ -34,6 +34,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject _roomKey;
     [SerializeField] private GameObject _key;
     [SerializeField] private GameObject _parkingDoor;
+    [SerializeField] private GameObject _parkingDoorClosed;
     [SerializeField] private GameObject _exitHospital;
     [SerializeField] private GameObject _spawn;
     [SerializeField] private GameObject _elevatorOn;
@@ -116,7 +117,9 @@ public class GameManager : MonoBehaviour
     }
     public void GetKey()
     {       
-        _parkingDoor.SetActive(true);
+        _parkingDoor.SetActive(true); // Activa la luz del parking
+        _parkingDoorClosed.SetActive(true); // Activa el collider de la puerta cerrada
+        _exitHospital.SetActive(true); // Activa la salida
         NewMision("Está llave podría ser la escapatoria de este infierno");
     }
 
@@ -195,7 +198,11 @@ public class GameManager : MonoBehaviour
             UI_Manager.Instance.MisionReference();
             _spawn = GameObject.Find("Spawn");
             _parkingDoor = GameObject.Find("Parking");
+            _parkingDoor.SetActive(false);
+            _parkingDoorClosed = GameObject.Find("Parking_Closed");
+            _parkingDoorClosed.SetActive(false);
             _exitHospital = GameObject.Find("Parking_Opened");
+            _exitHospital.SetActive(false);
             _key = GameObject.Find("Key");
             _roomKey = GameObject.Find("Room_Key");
             _roomKey.SetActive(false);
