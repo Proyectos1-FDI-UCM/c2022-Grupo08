@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72355cb01e676b94196498b1fd817595, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _player: {fileID: 707199513790786217, guid: f1f7bd51ad420f048ad30821d946adc0, type: 3}
+  _clip: {fileID: 8300000, guid: 3dbe5f4a7f7250548b89dc236b8cc253, type: 3}
   tipobala: 1
   cargador: 0
 --- !u!61 &-5865605013541649604

@@ -6,6 +6,7 @@ public class Municion : MonoBehaviour
 {
     #region references
     private Player_Attack _myPlayerAttack;
+    [SerializeField] private AudioClip _clip;
     //[SerializeField] private GameObject _player;
     #endregion
     #region parameters
@@ -21,6 +22,8 @@ public class Municion : MonoBehaviour
         cargador = Random.Range(1,3);
         _myPlayerAttack.SumaBala(tipobala, cargador);
         Debug.Log("" + cargador);
+
+        SoundManager.Instance.PlaySound(_clip);
     }
     #endregion
     // Start is called before the first frame update

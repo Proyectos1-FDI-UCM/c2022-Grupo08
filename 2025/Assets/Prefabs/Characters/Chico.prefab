@@ -162,6 +162,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cargadorbalag: 10
   cargadorbalasg: 2
+  faltabalag: 0
+  faltabalasg: 0
   recargag: 1
   recargasg: 2
   recargando: 0
@@ -172,6 +174,8 @@ MonoBehaviour:
   pbala: {fileID: 2169876480051521058, guid: 61fe43c2e31fc4c4eaa77792d46879e9, type: 3}
   gbala: {fileID: 5504288310560798774, guid: f36c3dffc985dbb4296afe2978698f54, type: 3}
   sgbala: {fileID: 725538675894934391, guid: 066667dfa65792c4cbac2a10915dd1a3, type: 3}
+  _clipG: {fileID: 8300000, guid: 970515cebf9039e42943139b968d1ee0, type: 3}
+  _clipSg: {fileID: 8300000, guid: 3dbe5f4a7f7250548b89dc236b8cc253, type: 3}
 --- !u!114 &4844031038519331876
 MonoBehaviour:
   m_ObjectHideFlags: 0

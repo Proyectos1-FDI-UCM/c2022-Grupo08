@@ -34,6 +34,8 @@ public class Player_Attack : MonoBehaviour
 
     #region references
     private Transform _mytransform;
+    [SerializeField] private AudioClip _clipG;
+    [SerializeField] private AudioClip _clipSg;
     #endregion
 
     #region methods
@@ -124,6 +126,7 @@ public class Player_Attack : MonoBehaviour
         {
             recargando = true;
             tiempocarga += Time.deltaTime;
+            SoundManager.Instance.PlaySound(_clipG);
             if (tiempocarga >= recargag)
             {
                 recargando = false;
@@ -138,6 +141,7 @@ public class Player_Attack : MonoBehaviour
         {
             recargando = true;
             tiempocarga += Time.deltaTime;
+            SoundManager.Instance.PlaySound(_clipSg);
             if (tiempocarga >= recargasg)
             {
                 faltabalasg = cargadorbalasg;

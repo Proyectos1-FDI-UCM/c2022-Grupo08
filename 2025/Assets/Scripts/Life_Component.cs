@@ -15,7 +15,7 @@ public class Life_Component : MonoBehaviour
     #endregion
     #region references
     [SerializeField] protected Animator _myAnimator;
-    [SerializeField] private AudioClip _clip;
+    [SerializeField] protected AudioClip _clip;
     #endregion
     #region methods
     private void OnCollisionEnter2D(Collision2D collision)
@@ -31,7 +31,6 @@ public class Life_Component : MonoBehaviour
     {
         _currentLife -= damagePoint;
         SoundManager.Instance.PlaySound(_clip);
-        
     }
 
     protected void Die()

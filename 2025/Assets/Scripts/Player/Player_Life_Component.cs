@@ -24,7 +24,7 @@ public class Player_Life_Component : Life_Component
     #region methods
     public override void Damage(int DamagePoints)
     {
-         base.Damage(DamagePoints);
+        base.Damage(DamagePoints);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
