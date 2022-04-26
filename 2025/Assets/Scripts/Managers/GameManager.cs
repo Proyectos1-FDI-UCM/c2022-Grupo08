@@ -235,15 +235,21 @@ public class GameManager : MonoBehaviour
             
             UI_Manager.Instance.PauseReference();
             UI_Manager.Instance.ControlsReference();    
-            _player = GameObject.Find("Chico");
-            _elevatorOn = GameObject.Find("Elevator_ClosedReady");
-            _elevatorAnimation = GameObject.Find("ElevatorAnimation");
-            _shortcut = GameObject.Find("Shortcut");
+            _player = GameObject.Find("Chico");           
         }
 
         if (level == 6)
         {
-
+            _notaRoom = GameObject.Find("HojaBlancaRoom_1");
+            _notaRoom.SetActive(false);
+            
+            UI_Manager.Instance.PauseReference();
+            UI_Manager.Instance.ControlsReference();
+            UI_Manager.Instance.Control1Reference();
+            UI_Manager.Instance.Control2Reference();
+            UI_Manager.Instance.Control3Reference();
+            UI_Manager.Instance.MisionReference();
+            _player = GameObject.Find("Chico");          
         }
     }
 
