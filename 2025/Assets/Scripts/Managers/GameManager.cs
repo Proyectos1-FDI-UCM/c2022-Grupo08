@@ -174,7 +174,11 @@ public class GameManager : MonoBehaviour
 
     public void OnLevelWasLoaded(int level)
     {
-        SceneManager.GetActiveScene(); 
+        SceneManager.GetActiveScene();
+        if(level == 0)
+        {
+            Destroy(_player);
+        }
         if (level == 1)
         {
             _notaRoom = GameObject.Find("HojaBlancaRoom_1");
@@ -235,7 +239,7 @@ public class GameManager : MonoBehaviour
             
             UI_Manager.Instance.PauseReference();
             UI_Manager.Instance.ControlsReference();    
-            _player = GameObject.Find("Chico");           
+            _player = GameObject.Find("Chico");
         }
 
         if (level == 6)
