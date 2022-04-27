@@ -10,6 +10,7 @@ public class Player_Attack : MonoBehaviour
     [SerializeField] private int cargadorbalasg = 2;
     [SerializeField] private int faltabalag;
     [SerializeField] private int faltabalasg;
+    [SerializeField] private float crowbarRecharge = 1;
     [SerializeField] private float recargag = 1;
     [SerializeField] private float recargasg = 2;
     private float tiempocarga;
@@ -20,10 +21,12 @@ public class Player_Attack : MonoBehaviour
     [SerializeField]
     private int totalbalassg;
     [SerializeField]
-
     private bool tengoammog = false;
     [SerializeField]
     private bool tengoammosg = false;
+    [SerializeField]
+    private bool disparado = false;
+
     #endregion
 
     #region properties
@@ -60,8 +63,13 @@ public class Player_Attack : MonoBehaviour
 
         if (tipobala == 1)
         {
-            GameObject.Instantiate(pbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector));
+            if (!disparado)
+            {
+                GameObject.Instantiate(pbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector));
+                disparado = true;
+            }
         }
+            
 
         else if (tipobala == 2)
         {
@@ -122,6 +130,16 @@ public class Player_Attack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (disparado)
+        {
+            tiempocarga += Time.deltaTime;
+            if (tiempocarga >= crowbarRecharge)
+            {
+                disparado = false;
+                tiempocarga = 0;
+            }
+        }
+
         if ((faltabalag == 0) && tengoammog)
         {
             recargando = true;
@@ -137,7 +155,7 @@ public class Player_Attack : MonoBehaviour
             }
         }
 
-        if ((faltabalasg == 0)&&tengoammosg)
+        if ((faltabalasg == 0) && tengoammosg)
         {
             recargando = true;
             tiempocarga += Time.deltaTime;
