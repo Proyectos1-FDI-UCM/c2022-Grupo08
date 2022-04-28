@@ -12,10 +12,12 @@ public class Input_Manager : MonoBehaviour
     [HideInInspector] public bool InDetectionZone = false; // Booleano que detecta si se está dentro de la zona de interacción con algun objeto interactuable
     public bool _leverActivated = false; //Palanca
     public bool _pistolaActivada = false;
-    public bool _escopetaActivada = false;    
+    public bool _escopetaActivada = false;
+    public bool _isMoving = false;
     #endregion
 
     #region references
+    [SerializeField] private Animator _myAnimator;
     private Player_MovementController _myPlayerMovementController;
     private Player_Attack _myPlayerAttack;
     private Player_Interact _myPlayerInteract;
@@ -44,6 +46,7 @@ public class Input_Manager : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.W))
             {
+                _isMoving = true;
                 // Arriba
                 movementDirection.y = 1.0f;
                 dir = 1;
@@ -51,6 +54,7 @@ public class Input_Manager : MonoBehaviour
             }
             else if (Input.GetKey(KeyCode.S))
             {
+                _isMoving = true;
                 // Abajo
                 movementDirection.y = -1.0f;
                 dir = 2;
@@ -58,6 +62,7 @@ public class Input_Manager : MonoBehaviour
             }
             else if (Input.GetKey(KeyCode.A))
             {
+                _isMoving = true;
                 // Izquierda
                 movementDirection.x = -1.0f;
                 dir = 3;
@@ -65,11 +70,18 @@ public class Input_Manager : MonoBehaviour
             }
             else if (Input.GetKey(KeyCode.D))
             {
+                _isMoving = true;
                 // Derecha
                 movementDirection.x = 1.0f;
                 dir = 4;
                 _myPlayerMovementController._movementSpeed = 5.0f;
             }
+            else
+            {
+                _isMoving = false;
+            }
+
+            AnimatorManager.Instance.IsMoving(_myAnimator, _isMoving, dir);
             _myPlayerMovementController.SetDirection(movementDirection);
 
             // Interacción con objetos

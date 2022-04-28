@@ -42,6 +42,7 @@ public class Player_MovementController : MonoBehaviour
     {
         if (!_myPlayerLifeComponent.pushing)
         {
+            
             Vector3 directionVector = (_movementSpeed * _movementDirection);
             playerBody.velocity = directionVector;
         }
@@ -54,23 +55,8 @@ public class Player_MovementController : MonoBehaviour
                 _myPlayerLifeComponent.pushing = false;
             }
         }
-        
+
         //Animación
-        if (!GameManager.Instance.IsGamePaused)
-        {
-            _velocityX = Input.GetAxisRaw("Horizontal") * _movementSpeed;
-            _velocityZ = Input.GetAxisRaw("Vertical") * _movementSpeed;
-
-            _myAnimator.SetFloat("VelocityX", _velocityX);
-            _myAnimator.SetFloat("VelocityZ", _velocityZ);
-        }
-        else if (GameManager.Instance.IsGamePaused)
-        {           
-            _velocityX = Input.GetAxisRaw("Horizontal") * 0;
-            _velocityZ = Input.GetAxisRaw("Vertical") * 0;
-
-            _myAnimator.SetFloat("VelocityX", _velocityX);
-            _myAnimator.SetFloat("VelocityZ", _velocityZ);           
-        }
+        AnimatorManager.Instance.PlayerMovement(_myAnimator, _velocityX, _velocityZ, _movementSpeed);
     }
 }

@@ -50,6 +50,30 @@ public class AnimatorManager : MonoBehaviour
         animator.SetFloat("Puntoy", player.position.y - zombie.position.y);
         animator.SetBool("Jugador", detection);
     }
+    public void PlayerMovement(Animator animator, float _velocityX, float _velocityZ, float _movementSpeed)
+    {
+        if (!GameManager.Instance.IsGamePaused)
+        {
+            _velocityX = Input.GetAxisRaw("Horizontal") * _movementSpeed;
+            _velocityZ = Input.GetAxisRaw("Vertical") * _movementSpeed;
+
+            animator.SetFloat("VelocityX", _velocityX);
+            animator.SetFloat("VelocityZ", _velocityZ);
+        }
+        else if (GameManager.Instance.IsGamePaused)
+        {
+            _velocityX = Input.GetAxisRaw("Horizontal") * 0;
+            _velocityZ = Input.GetAxisRaw("Vertical") * 0;
+
+            animator.SetFloat("VelocityX", _velocityX);
+            animator.SetFloat("VelocityZ", _velocityZ);
+        }
+    }
+    public void IsMoving(Animator animator, bool _isMoving, int dir)
+    {
+        animator.SetBool("Movimiento", _isMoving);
+        animator.SetInteger("Dir", dir);
+    }
     public void ZombieisDead(Animator animator)
     {
         _isZombieDead = true;
