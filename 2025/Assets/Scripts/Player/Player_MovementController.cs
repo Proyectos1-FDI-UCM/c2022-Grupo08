@@ -55,11 +55,6 @@ public class Player_MovementController : MonoBehaviour
             }
         }
         
-        
-
-        //_myTransform.Translate(_movementSpeed * _movementDirection * Time.deltaTime);
-        
-
         //Animación
         if (!GameManager.Instance.IsGamePaused)
         {
@@ -68,6 +63,14 @@ public class Player_MovementController : MonoBehaviour
 
             _myAnimator.SetFloat("VelocityX", _velocityX);
             _myAnimator.SetFloat("VelocityZ", _velocityZ);
+        }
+        else if (GameManager.Instance.IsGamePaused)
+        {           
+            _velocityX = Input.GetAxisRaw("Horizontal") * 0;
+            _velocityZ = Input.GetAxisRaw("Vertical") * 0;
+
+            _myAnimator.SetFloat("VelocityX", _velocityX);
+            _myAnimator.SetFloat("VelocityZ", _velocityZ);           
         }
     }
 }

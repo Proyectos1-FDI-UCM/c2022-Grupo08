@@ -79,13 +79,6 @@ public class UI_Manager : MonoBehaviour
     {
         _mision.text = write;
     }
-
-    //public void CustomizationMenu(bool enabled)
-    //{
-    //    _customizationMenu.SetActive(enabled);
-    //    _mainMenu.SetActive(!enabled);
-    //}
-
     public void StartGame()
     {
         GameManager.Instance.StartGame();
@@ -100,7 +93,7 @@ public class UI_Manager : MonoBehaviour
         if (!enabled)
         {
             GameManager.Instance.IsGamePaused = false;
-        }
+        }     
     }
     public void WinMenu()
     {       
@@ -211,7 +204,7 @@ public class UI_Manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(gameObject);       
     }
     // Update is called once per frame
     void Update()

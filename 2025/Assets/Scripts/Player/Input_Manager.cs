@@ -23,6 +23,7 @@ public class Input_Manager : MonoBehaviour
     [SerializeField] private GameObject _nota;
     private ActivaNota _myActivaNota;
     #endregion
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,24 +47,28 @@ public class Input_Manager : MonoBehaviour
                 // Arriba
                 movementDirection.y = 1.0f;
                 dir = 1;
+                _myPlayerMovementController._movementSpeed = 5.0f;
             }
             else if (Input.GetKey(KeyCode.S))
             {
                 // Abajo
                 movementDirection.y = -1.0f;
                 dir = 2;
+                _myPlayerMovementController._movementSpeed = 5.0f;
             }
             else if (Input.GetKey(KeyCode.A))
             {
                 // Izquierda
                 movementDirection.x = -1.0f;
                 dir = 3;
+                _myPlayerMovementController._movementSpeed = 5.0f;
             }
             else if (Input.GetKey(KeyCode.D))
             {
                 // Derecha
                 movementDirection.x = 1.0f;
                 dir = 4;
+                _myPlayerMovementController._movementSpeed = 5.0f;
             }
             _myPlayerMovementController.SetDirection(movementDirection);
 
@@ -104,6 +109,7 @@ public class Input_Manager : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 GameManager.Instance.PauseGame();
+                _myPlayerMovementController._movementSpeed = 0;
             }
         }
     }

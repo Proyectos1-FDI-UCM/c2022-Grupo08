@@ -7,7 +7,7 @@ public class Transition : MonoBehaviour
 {
     #region references
     [SerializeField] private Animator _transition;
-    [SerializeField] int level;
+    [SerializeField] int level;   
     #endregion
 
     #region methods
@@ -17,18 +17,20 @@ public class Transition : MonoBehaviour
     }
     public void FadeOut()
     {
-        _transition.SetTrigger("Fadeout");
+        GameManager.Instance.IsGamePaused = true;       
+        _transition.SetTrigger("Fadeout");       
     }
     public void NextLevel()
     {
         SceneManager.LoadScene(level, LoadSceneMode.Single);
+        GameManager.Instance.IsGamePaused = false;
     }
     #endregion
 
     // Start is called before the first frame update
     void Start()
     {
-       
+        
     }
 
     // Update is called once per frame
