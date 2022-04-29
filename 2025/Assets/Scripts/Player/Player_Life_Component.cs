@@ -9,9 +9,7 @@ public class Player_Life_Component : Life_Component
     private Rigidbody2D _myRigidBody;
     private Player_MovementController _myPlayerMovementController;
     private Transform _myTransform;
-    [SerializeField] private GameObject _boy;
-    [SerializeField] private GameObject _girl;
-    public Image _lifeBar;
+    private Image _lifeBar;
     public bool pushing = false;
     public bool _isPlayerDead = false;
     #endregion
@@ -55,14 +53,11 @@ public class Player_Life_Component : Life_Component
         _currentLife += curacion;
         _currentLife = Mathf.Clamp(_currentLife, 0, 100);
     }
-    public void BeBoy()
+    public void LifeBarReference()
     {
-        _boy.SetActive(true);
+        _lifeBar = GameObject.Find("LifeBar").transform.Find("CurrentLife").GetComponent<Image>();
     }
-    public void BeGirl()
-    {
-        _girl.SetActive(true);
-    }
+
     #endregion
     // Start is called before the first frame update
     override public void Start()
@@ -91,7 +86,5 @@ public class Player_Life_Component : Life_Component
             }
         }
         _lifeBar.fillAmount = _currentLife / _maxLife;
-
-        //Debug.Log(_currentLife);
     }
 }
