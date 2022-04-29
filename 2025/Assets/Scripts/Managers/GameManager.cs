@@ -41,6 +41,7 @@ public class GameManager : MonoBehaviour
     //[SerializeField] private GameObject _elevatorOff;
     [SerializeField] private GameObject _elevatorAnimation;
     [SerializeField] private GameObject _shortcut;
+    private Player_Life_Component _myPlayerLifeComponent;
 
     private GameObject saved;
     public List<InteractDetection> _listInteractableObjects;
@@ -178,10 +179,11 @@ public class GameManager : MonoBehaviour
             UI_Manager.Instance.Control3Reference();
             UI_Manager.Instance.MisionReference();
             _player = GameObject.Find("Chico");
+            _myPlayerLifeComponent = _player.GetComponent<Player_Life_Component>();
             _elevatorOn = GameObject.Find("Elevator_ClosedReady");
             _elevatorAnimation = GameObject.Find("ElevatorAnimation");
             _shortcut = GameObject.Find("Shortcut");
-
+            _myPlayerLifeComponent.LifeBarReference();
             DontDestroyOnLoad(_player);
         }
         if(level == 2)
@@ -196,6 +198,7 @@ public class GameManager : MonoBehaviour
             UI_Manager.Instance.Control2Reference();
             UI_Manager.Instance.Control3Reference();
             UI_Manager.Instance.MisionReference();
+            _myPlayerLifeComponent.LifeBarReference();
             _spawn = GameObject.Find("Spawn");
             _parkingDoor = GameObject.Find("Parking");
             _parkingDoor.SetActive(false);
@@ -227,6 +230,7 @@ public class GameManager : MonoBehaviour
     {
         DontDestroyOnLoad(gameObject);
         _listInteractableObjects = new List<InteractDetection>();
+        
     }
 
     // Update is called once per frame
