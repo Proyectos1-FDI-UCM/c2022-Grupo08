@@ -155,6 +155,8 @@ public class GameManager : MonoBehaviour
     }
     public void Replay() 
     {
+        UI_Manager.Instance._crowbarPicked = false;
+        UI_Manager.Instance._pistolPicked = false;
         SceneManager.LoadScene(0, LoadSceneMode.Single);
     }
 

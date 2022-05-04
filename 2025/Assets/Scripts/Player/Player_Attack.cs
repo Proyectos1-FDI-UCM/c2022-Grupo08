@@ -159,9 +159,9 @@ public class Player_Attack : MonoBehaviour
         {
             recargando = true;
             tiempocarga += Time.deltaTime;
-            SoundManager.Instance.PlaySound(_clipSg);
             if (tiempocarga >= recargasg)
             {
+                SoundManager.Instance.PlaySound(_clipSg);
                 faltabalasg = cargadorbalasg;
                 tiempocarga = 0;
                 recargando = false;
