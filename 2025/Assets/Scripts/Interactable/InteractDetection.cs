@@ -66,10 +66,4 @@ public class InteractDetection : MonoBehaviour
         _myActivaNotaShotgun = GetComponent<ActivaNotaShotgun>();
         GameManager.Instance._listInteractableObjects.Add(this);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-      
-    }
 }

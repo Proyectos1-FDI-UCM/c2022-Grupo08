@@ -4,16 +4,9 @@ using UnityEngine;
 
 public class Light_Behaviour : MonoBehaviour
 {
-
     // Start is called before the first frame update
     void Start()
     {
         LightManager.Instance.LightsActivated(this);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

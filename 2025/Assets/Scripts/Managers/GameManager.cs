@@ -129,15 +129,6 @@ public class GameManager : MonoBehaviour
         _exitHospital.GetComponent<BoxCollider2D>().isTrigger = true;
     }
 
-   
-
-    /*public void OnPlayerDies()
-    {
-        //_boy.SetActive(false);
-        //_girl.SetActive(false);
-        SceneManager.LoadScene(3, LoadSceneMode.Single);
-        
-    }*/
     public void PauseGame()
     {
         IsGamePaused = true;
@@ -231,13 +222,6 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(gameObject);
-        _listInteractableObjects = new List<InteractDetection>();
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        _listInteractableObjects = new List<InteractDetection>();     
     }
 }

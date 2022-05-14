@@ -35,6 +35,7 @@ public class LightManager : MonoBehaviour
         }
     }
     #endregion
+
     #region methods
     public void LightsActivated(Light_Behaviour lightsToActive)
     {
@@ -87,11 +88,5 @@ public class LightManager : MonoBehaviour
     void Start()
     {
         InvokeRepeating("CambioEstadoLuces", _lightDelay, _lightDelay);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

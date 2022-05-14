@@ -9,6 +9,7 @@ public class Municion : MonoBehaviour
     [SerializeField] private AudioClip _clip;
     //[SerializeField] private GameObject _player;
     #endregion
+
     #region parameters
     [SerializeField]
     private int tipobala;
@@ -30,12 +31,5 @@ public class Municion : MonoBehaviour
     void Start()
     {
         _myPlayerAttack = GameManager.Instance._player.GetComponent<Player_Attack>();
-    }
-    // Start is called before the first frame update
-    
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

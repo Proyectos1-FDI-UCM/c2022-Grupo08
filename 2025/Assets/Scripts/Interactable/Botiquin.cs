@@ -27,10 +27,4 @@ public class Botiquin : MonoBehaviour
         _myPlayerLifeComponent = GameManager.Instance._player.GetComponent<Player_Life_Component>();
         //_player = GameObject.Find("Chico");
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }

@@ -16,6 +16,7 @@ public class UI_Manager : MonoBehaviour
         }
     }
     #endregion
+
     #region parameters
     public Image lifeBar;
     public Text pistolBullets;
@@ -38,6 +39,7 @@ public class UI_Manager : MonoBehaviour
     [SerializeField] private GameObject _loseMenu;
     [SerializeField] private GameObject _pauseMenu;
     #endregion
+
     #region methods
     public void Awake()
     {
@@ -201,6 +203,7 @@ public class UI_Manager : MonoBehaviour
     }
 
     #endregion
+
     // Start is called before the first frame update
     void Start()
     {

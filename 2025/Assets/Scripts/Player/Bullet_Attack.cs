@@ -15,6 +15,7 @@ public class Bullet_Attack : MonoBehaviour
     [SerializeField]
     private float empuje = 2f; //Fuerza con la que se va a ipulsar hacia atrás al zombie al ser golpeado por un ataque
     #endregion
+
     #region references
     private Transform _mytransform;
     #endregion

@@ -10,6 +10,7 @@ public class ButtonManager : MonoBehaviour
     [SerializeField] private GameObject _muteSFXButton;
     [SerializeField] private GameObject _unmuteSFXButton;
     #endregion
+
     #region methods
     public void MuteButton(bool music)
     {
@@ -86,11 +87,5 @@ public class ButtonManager : MonoBehaviour
     {
         _unmuteMusicButton.SetActive(false);
         _unmuteSFXButton.SetActive(false);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

@@ -23,16 +23,4 @@ public class ChangeLvl_1 : MonoBehaviour
         }
     }
     #endregion
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        //_myTransition = GetComponent<Transition>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

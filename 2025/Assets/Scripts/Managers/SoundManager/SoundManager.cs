@@ -7,6 +7,7 @@ public class SoundManager : MonoBehaviour
     #region parameters
     public bool zombieMuted = false;
     #endregion
+
     #region references
     [SerializeField] private AudioSource _effectSource, _musicSource;
     static private SoundManager _instance;
@@ -65,11 +66,5 @@ public class SoundManager : MonoBehaviour
     {
         _instance = this;
         DontDestroyOnLoad(gameObject);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

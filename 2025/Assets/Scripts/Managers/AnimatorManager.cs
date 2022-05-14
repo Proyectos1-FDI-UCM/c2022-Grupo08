@@ -10,6 +10,7 @@ public class AnimatorManager : MonoBehaviour
     bool _isZombieDead = false;
     bool _isPlayerDead = false;
     #endregion
+
     #region references
     static private AnimatorManager _instance;
     static public AnimatorManager Instance
@@ -20,6 +21,7 @@ public class AnimatorManager : MonoBehaviour
         }
     }
     #endregion
+
     #region methods
     private void Awake()
     {
