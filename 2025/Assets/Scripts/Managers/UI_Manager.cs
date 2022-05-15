@@ -55,11 +55,14 @@ public class UI_Manager : MonoBehaviour
     public void ShotgunActivate()
     {
         _control1.SetActive(true);
+        palancaaviso.text = "Pulse Click Derecho para disparar con la escopeta";
+        gogo = true;
     }
     public void PistolActivate()
     {
         _control2.SetActive(true);
-        //pistolBullets.text = "" + bala + "/" + cargador;
+        palancaaviso.text = "Pulse Click Izquierdo para disparar con la pistola";
+        gogo = true;
         _pistolPicked = true;
     }
     public void CrowbarActivate()

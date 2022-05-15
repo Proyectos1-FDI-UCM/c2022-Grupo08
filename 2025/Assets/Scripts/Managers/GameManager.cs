@@ -69,35 +69,43 @@ public class GameManager : MonoBehaviour
     public void ActivateNoteRoom() // Activa la nota
     {
         _notaRoom.SetActive(true);
+        IsGamePaused = true;
     }
     public void DeactivateNoteRoom() // Desactiva la nota 
     {
         _notaRoom.SetActive(false);
+        IsGamePaused = false;
     }
     public void ActivateNoteElevator() // Activa la nota
     {
         _notaElevator.SetActive(true);
+        IsGamePaused = true;
     }
     public void DeactivateNoteElevator() // Desactiva la nota 
     {
         _notaElevator.SetActive(false);
+        IsGamePaused = false;
     }
 
     public void ActivateNoteKey() // Activa la nota
     {
         _notaKey.SetActive(true);
+        IsGamePaused = true;
     }
     public void DeactivateNoteKey() // Desactiva la nota 
     {
         _notaKey.SetActive(false);
+        IsGamePaused = false;
     }
     public void ActivateNoteShotgun() // Activa la nota
     {
         _notaShotgun.SetActive(true);
+        IsGamePaused = true;
     }
     public void DeactivateNoteShotgun() // Desactiva la nota 
     {
         _notaShotgun.SetActive(false);
+        IsGamePaused = false;
     }
     public void ActivarHabitacion(GameObject room, NewRoom triggerToDestroy)
     {
@@ -218,7 +226,7 @@ public class GameManager : MonoBehaviour
     }
 
     #endregion
-    // Start is called before the first frame update
+
     void Start()
     {
         DontDestroyOnLoad(gameObject);

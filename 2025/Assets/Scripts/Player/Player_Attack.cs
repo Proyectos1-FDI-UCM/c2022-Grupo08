@@ -6,33 +6,26 @@ public class Player_Attack : MonoBehaviour
 {
     #region parameters
     private Vector3 rotationVector;
-    [SerializeField] private int cargadorbalag = 10;
-    [SerializeField] private int cargadorbalasg = 2;
-    [SerializeField] private int faltabalag;
-    [SerializeField] private int faltabalasg;
+    [SerializeField] private int BulletsChargerPistol = 10;
+    [SerializeField] private int BulletsChargerShotgun = 2;
+    [SerializeField] private int PistolBulletsLeft;
+    [SerializeField] private int ShotgunBulletsLeft;
     [SerializeField] private float crowbarRecharge = 1;
-    [SerializeField] private float recargag = 1;
-    [SerializeField] private float recargasg = 2;
-    private float tiempocarga;
-    [SerializeField]
-    private bool recargando;
-    [SerializeField]
-    private int totalbalasg;
-    [SerializeField]
-    private int totalbalassg;
-    [SerializeField]
-    private bool tengoammog = false;
-    [SerializeField]
-    private bool tengoammosg = false;
-    [SerializeField]
-    private bool disparado = false;
-
+    [SerializeField] private float RechargePistol = 1;
+    [SerializeField] private float RechargeShotgun = 2;
+    private float RechargingTime;
+    [SerializeField] private bool Recharging;
+    [SerializeField] private int TotalPistolAmmount;
+    [SerializeField] private int TotalShotgunAmmount;
+    [SerializeField] private bool GotPistolBullets = false;
+    [SerializeField] private bool GotShotgunBullets = false;
+    [SerializeField] private bool CrowbarSpam = false;
     #endregion
 
     #region properties
-    [SerializeField] private GameObject pbala;
-    [SerializeField] private GameObject gbala;
-    [SerializeField] private GameObject sgbala;
+    [SerializeField] private GameObject PalancaDash;
+    [SerializeField] private GameObject PistolBullet;
+    [SerializeField] private GameObject ShotgunBullet;
     #endregion
 
     #region references
@@ -63,39 +56,39 @@ public class Player_Attack : MonoBehaviour
 
         if (tipobala == 1)
         {
-            if (!disparado)
+            if (!CrowbarSpam)
             {
-                GameObject.Instantiate(pbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector));
-                disparado = true;
+                GameObject.Instantiate(PalancaDash, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector));
+                CrowbarSpam = true;
             }
         }
             
 
         else if (tipobala == 2)
         {
-            if (tengoammog || (faltabalag > 0))
+            if (GotPistolBullets || (PistolBulletsLeft > 0))
             {
-                if (!recargando)
+                if (!Recharging)
                 {
-                    GameObject.Instantiate(gbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector));
-                    faltabalag -= 1;
-                    UI_Manager.Instance.balagUI(faltabalag, totalbalasg);
+                    GameObject.Instantiate(PistolBullet, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector));
+                    PistolBulletsLeft -= 1;
+                    UI_Manager.Instance.balagUI(PistolBulletsLeft, TotalPistolAmmount);
                 }
             }
         }
         else if (tipobala == 3)
         {
-            if (tengoammosg || (faltabalasg > 0))
+            if (GotShotgunBullets || (ShotgunBulletsLeft > 0))
             {
-                if (!recargando)
+                if (!Recharging)
                 {
-                    GameObject.Instantiate(sgbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector));
-                    GameObject.Instantiate(sgbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector + new Vector3(0, 0, 10)));
-                    GameObject.Instantiate(sgbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector + new Vector3(0, 0, 20)));
-                    GameObject.Instantiate(sgbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector + new Vector3(0, 0, -10)));
-                    GameObject.Instantiate(sgbala, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector + new Vector3(0, 0, -20)));
-                    faltabalasg -= 1;
-                    UI_Manager.Instance.balasgUI(faltabalasg, totalbalassg);
+                    GameObject.Instantiate(ShotgunBullet, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector));
+                    GameObject.Instantiate(ShotgunBullet, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector + new Vector3(0, 0, 10)));
+                    GameObject.Instantiate(ShotgunBullet, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector + new Vector3(0, 0, 20)));
+                    GameObject.Instantiate(ShotgunBullet, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector + new Vector3(0, 0, -10)));
+                    GameObject.Instantiate(ShotgunBullet, _mytransform.position + new Vector3(0, 0, 0), Quaternion.Euler(rotationVector + new Vector3(0, 0, -20)));
+                    ShotgunBulletsLeft -= 1;
+                    UI_Manager.Instance.balasgUI(ShotgunBulletsLeft, TotalShotgunAmmount);
                 }
             }
         }
@@ -105,77 +98,75 @@ public class Player_Attack : MonoBehaviour
     {
         if (tipobala == 0)
         {
-            totalbalasg += cargadores * cargadorbalag;
-            tengoammog = true;
-            UI_Manager.Instance.balagUI(faltabalag, totalbalasg);
+            TotalPistolAmmount += cargadores * BulletsChargerPistol;
+            GotPistolBullets = true;
+            UI_Manager.Instance.balagUI(PistolBulletsLeft, TotalPistolAmmount);
         }
         else if (tipobala == 1)
         {
-            totalbalassg += cargadores * cargadorbalasg;
-            tengoammosg = true;
-            UI_Manager.Instance.balasgUI(faltabalasg, totalbalassg);
+            TotalShotgunAmmount += cargadores * BulletsChargerShotgun;
+            GotShotgunBullets = true;
+            UI_Manager.Instance.balasgUI(ShotgunBulletsLeft, TotalShotgunAmmount);
         }
     }
 
     #endregion
 
-    // Start is called before the first frame update
     void Start()
     {
         _mytransform = transform;
-        faltabalag = 9; //lore interno
-        faltabalasg = 0;
+        PistolBulletsLeft = 9; //lore interno
+        ShotgunBulletsLeft = 0;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (disparado)
+        if (CrowbarSpam)
         {
-            tiempocarga += Time.deltaTime;
-            if (tiempocarga >= crowbarRecharge)
+            RechargingTime += Time.deltaTime;
+            if (RechargingTime >= crowbarRecharge)
             {
-                disparado = false;
-                tiempocarga = 0;
+                CrowbarSpam = false;
+                RechargingTime = 0;
             }
         }
 
-        if ((faltabalag == 0) && tengoammog)
+        if ((PistolBulletsLeft == 0) && GotPistolBullets)
         {
-            recargando = true;
-            tiempocarga += Time.deltaTime;
-            if (tiempocarga >= recargag)
+            Recharging = true;
+            RechargingTime += Time.deltaTime;
+            if (RechargingTime >= RechargePistol)
             {
                 SoundManager.Instance.PlaySound(_clipG);
-                recargando = false;
-                faltabalag = cargadorbalag;
-                tiempocarga = 0;
-                totalbalasg -= cargadorbalag;
-                UI_Manager.Instance.balagUI(faltabalag, totalbalasg);
+                Recharging = false;
+                PistolBulletsLeft = BulletsChargerPistol;
+                RechargingTime = 0;
+                TotalPistolAmmount -= BulletsChargerPistol;
+                UI_Manager.Instance.balagUI(PistolBulletsLeft, TotalPistolAmmount);
             }
         }
 
-        if ((faltabalasg == 0) && tengoammosg)
+        if ((ShotgunBulletsLeft == 0) && GotShotgunBullets)
         {
-            recargando = true;
-            tiempocarga += Time.deltaTime;
-            if (tiempocarga >= recargasg)
+            Recharging = true;
+            RechargingTime += Time.deltaTime;
+            if (RechargingTime >= RechargeShotgun)
             {
                 SoundManager.Instance.PlaySound(_clipSg);
-                faltabalasg = cargadorbalasg;
-                tiempocarga = 0;
-                recargando = false;
-                totalbalassg -= cargadorbalasg;
-                UI_Manager.Instance.balasgUI(faltabalasg, totalbalassg);
+                ShotgunBulletsLeft = BulletsChargerShotgun;
+                RechargingTime = 0;
+                Recharging = false;
+                TotalShotgunAmmount -= BulletsChargerShotgun;
+                UI_Manager.Instance.balasgUI(ShotgunBulletsLeft, TotalShotgunAmmount);
             }
         }
-        if (totalbalasg==0)
+        if (TotalPistolAmmount==0)
         {
-            tengoammog = false;
+            GotPistolBullets = false;
         }
-        if (totalbalassg == 0)
+        if (TotalShotgunAmmount == 0)
         {
-            tengoammosg = false;
+            GotShotgunBullets = false;
         }
     }
 }

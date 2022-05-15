@@ -109,7 +109,7 @@ public class Player_Interact : MonoBehaviour
         holdingInteract = !holdingInteract;
     }
     #endregion
-    // Start is called before the first frame update
+
     void Start()
     {
         _myInputManager = GetComponent<Input_Manager>();

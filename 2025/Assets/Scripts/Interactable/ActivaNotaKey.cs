@@ -7,6 +7,7 @@ public class ActivaNotaKey : MonoBehaviour
     #region references
     [SerializeField] private AudioClip _clip;
     #endregion
+
     #region methods
     public void ToShowNote() // Método que llama al GameManager para mostrar la nota 
     {

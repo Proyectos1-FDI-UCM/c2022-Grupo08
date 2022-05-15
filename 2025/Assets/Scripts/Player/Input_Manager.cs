@@ -26,7 +26,6 @@ public class Input_Manager : MonoBehaviour
     private ActivaNota _myActivaNota;
     #endregion
 
-    // Start is called before the first frame update
     void Start()
     {
         _myPlayerMovementController = GetComponent<Player_MovementController>();
@@ -36,7 +35,6 @@ public class Input_Manager : MonoBehaviour
         _myActivaNota = _nota.GetComponent<ActivaNota>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         Vector3 movementDirection = Vector3.zero;

@@ -41,13 +41,12 @@ public class Bullet_Attack : MonoBehaviour
     }
 
     #endregion
-    // Start is called before the first frame update
+
     void Start()
     {
         _mytransform = transform;
     }
 
-    // Update is called once per frame
     void Update()
     {
         transform.Translate(_velocity * Vector3.right * Time.deltaTime);
