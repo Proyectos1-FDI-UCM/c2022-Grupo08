@@ -125,7 +125,7 @@ MonoBehaviour:
   _currentLife: 20
   _damage: 10
   _cont: 1.7
-  empujeZombie: 5
+  _isZombieDead: 0
   _myAnimator: {fileID: 1611685993041086364}
   _clip: {fileID: 8300000, guid: 2ec8341e31910284d8a80e23f10a09cc, type: 3}
 --- !u!61 &1611685993041086367
@@ -141,7 +141,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.020679265, y: 0.008014619}
+  m_Offset: {x: -0.008565083, y: 0.011263929}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -152,7 +152,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.48931128, y: 0.7996365}
+  m_Size: {x: 0.398329, y: 0.4097122}
   m_EdgeRadius: 0
 --- !u!95 &1611685993041086364
 Animator:
