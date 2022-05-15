@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5193659068448252170}
   - component: {fileID: 9220588729634176778}
   m_Layer: 6
-  m_Name: sgbala
+  m_Name: Shotgun_Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

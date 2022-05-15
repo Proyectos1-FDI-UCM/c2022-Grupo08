@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8751640918834178090}
   - component: {fileID: 1979006964908925180}
   - component: {fileID: 5719438190574901179}
+  - component: {fileID: 7074751116320686662}
   m_Layer: 0
   m_Name: MiniServer
   m_TagString: Untagged
@@ -109,3 +110,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.41330338, y: 0.112993866}
   m_EdgeRadius: 0
+--- !u!114 &7074751116320686662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474078395162680025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de196be23a78d994bbd04b9cee2243ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

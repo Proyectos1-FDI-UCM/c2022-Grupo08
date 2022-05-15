@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2403762662782240757}
   - component: {fileID: 8627872741876625075}
   - component: {fileID: 2664578845055976210}
+  - component: {fileID: -6135659162911588803}
   m_Layer: 0
   m_Name: wardrove
   m_TagString: Untagged
@@ -109,3 +110,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6084221, y: 0.0455878}
   m_EdgeRadius: 0
+--- !u!114 &-6135659162911588803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4077756660465584566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de196be23a78d994bbd04b9cee2243ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

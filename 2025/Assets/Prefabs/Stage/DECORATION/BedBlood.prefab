@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 5756574240015122019}
   - component: {fileID: 3422637817713287768}
   - component: {fileID: 4829952491185716950}
-  - component: {fileID: 2241232786927975556}
   m_Layer: 0
   m_Name: BedBlood
   m_TagString: Untagged
@@ -110,15 +109,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3651905, y: 0.33198404}
   m_EdgeRadius: 0
---- !u!114 &2241232786927975556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 978743110007767241}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de196be23a78d994bbd04b9cee2243ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
