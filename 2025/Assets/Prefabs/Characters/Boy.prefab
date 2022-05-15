@@ -107,6 +107,8 @@ MonoBehaviour:
   _leverActivated: 0
   _pistolaActivada: 0
   _escopetaActivada: 0
+  _isMoving: 0
+  _myAnimator: {fileID: 0}
   _nota: {fileID: 0}
 --- !u!114 &707199513790786222
 MonoBehaviour:
@@ -141,13 +143,10 @@ MonoBehaviour:
   _isZombieDead: 0
   _myAnimator: {fileID: 0}
   _clip: {fileID: 8300000, guid: f633b9314c7ddc546ab05cb692672694, type: 3}
-  _boy: {fileID: 707199513790786217}
-  _girl: {fileID: 7888599800557731787, guid: b328f87a04948464297f58f658f0e387, type: 3}
-  _lifeBar: {fileID: 0}
   pushing: 0
   _isPlayerDead: 0
-  empuje: 5
-  empujeZombie: 2
+  push: 2
+  pushZombie: 0.5
 --- !u!114 &8646861863707179862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,20 +159,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39e2c1d6888a4f4f8a801cb68b550ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cargadorbalag: 10
-  cargadorbalasg: 2
-  faltabalag: 0
-  faltabalasg: 0
-  recargag: 1
-  recargasg: 2
-  recargando: 0
-  totalbalasg: 0
-  totalbalassg: 0
-  tengoammog: 0
-  tengoammosg: 0
-  pbala: {fileID: 2169876480051521058, guid: 61fe43c2e31fc4c4eaa77792d46879e9, type: 3}
-  gbala: {fileID: 5504288310560798774, guid: f36c3dffc985dbb4296afe2978698f54, type: 3}
-  sgbala: {fileID: 725538675894934391, guid: 066667dfa65792c4cbac2a10915dd1a3, type: 3}
+  BulletsChargerPistol: 10
+  BulletsChargerShotgun: 2
+  PistolBulletsLeft: 0
+  ShotgunBulletsLeft: 0
+  crowbarRecharge: 1
+  RechargePistol: 1
+  RechargeShotgun: 2
+  Recharging: 0
+  TotalPistolAmmount: 0
+  TotalShotgunAmmount: 0
+  GotPistolBullets: 0
+  GotShotgunBullets: 0
+  CrowbarSpam: 0
+  PalancaDash: {fileID: 2169876480051521058, guid: 61fe43c2e31fc4c4eaa77792d46879e9, type: 3}
+  PistolBullet: {fileID: 5504288310560798774, guid: f36c3dffc985dbb4296afe2978698f54, type: 3}
+  ShotgunBullet: {fileID: 725538675894934391, guid: 066667dfa65792c4cbac2a10915dd1a3, type: 3}
   _clipG: {fileID: 8300000, guid: 970515cebf9039e42943139b968d1ee0, type: 3}
   _clipSg: {fileID: 8300000, guid: 3dbe5f4a7f7250548b89dc236b8cc253, type: 3}
 --- !u!114 &4844031038519331876
