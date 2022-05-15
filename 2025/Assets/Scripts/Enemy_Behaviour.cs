@@ -5,25 +5,13 @@ using UnityEngine;
 public class Enemy_Behaviour : MonoBehaviour
 {
     #region parameters
-    [SerializeField]
-    List<Transform> wayPoints;
-
-    [SerializeField]
-    private float velocity = 2.0f;
-
-    [SerializeField]
-    private Transform _playerTransform;
-
-    [SerializeField]
-    private Transform _enemy;
-
-    [SerializeField]
-    private int _distanceToDetection;
-
+    [SerializeField] List<Transform> wayPoints;
+    [SerializeField] private float velocity = 2.0f;
+    [SerializeField] private Transform _playerTransform;
+    [SerializeField] private Transform _enemy;
+    [SerializeField] private int _distanceToDetection;
     private float changeDistance = 0.1f; // distancia minima a la que el jugador cambiará su objetivo al siguiente punto
- 
     private int nextPosition = 0; // posicion
-
     private int currentPosition = 0;
     private float positionx;
     private float positiony;
@@ -32,9 +20,7 @@ public class Enemy_Behaviour : MonoBehaviour
 
     #region references
     private Transform _myTransform;
-    
-    [SerializeField]
-    private Animator _myAnimator;
+    [SerializeField] private Animator _myAnimator;
     private Life_Component _myLifeComponent;
     private AudioSource _Zombie;
     #endregion
@@ -45,7 +31,7 @@ public class Enemy_Behaviour : MonoBehaviour
         _myTransform.position = Vector2.MoveTowards(_myTransform.position, _playerTransform.position, velocity * Time.deltaTime);
     }
     #endregion
-    // Start is called before the first frame update
+
     void Start()
     {
         _myTransform = transform;
@@ -54,7 +40,7 @@ public class Enemy_Behaviour : MonoBehaviour
         _Zombie = GetComponent<AudioSource>();
         
     }
-    // Update is called once per frame
+
     void Update()
     {
         if (!GameManager.Instance.IsGamePaused && !_myLifeComponent._isZombieDead)

@@ -10,13 +10,16 @@ public class Life_Component : MonoBehaviour
     [SerializeField] private  int _damage = 10;
     [SerializeField] protected float _cont = 1.7f;
     #endregion
+
     #region properties
     public bool _isZombieDead = false;
     #endregion
+
     #region references
     [SerializeField] protected Animator _myAnimator;
     [SerializeField] protected AudioClip _clip;
     #endregion
+
     #region methods
     private void OnCollisionEnter2D(Collision2D collision)
     {
