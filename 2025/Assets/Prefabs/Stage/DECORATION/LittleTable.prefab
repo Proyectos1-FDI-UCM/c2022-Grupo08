@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8547108564750862868}
   - component: {fileID: 8547108564750862870}
   - component: {fileID: 6241825768908287070}
+  - component: {fileID: 5615912337270380227}
   m_Layer: 0
   m_Name: LittleTable
   m_TagString: Untagged
@@ -109,3 +110,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.3040676}
   m_EdgeRadius: 0
+--- !u!114 &5615912337270380227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8547108564750862859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de196be23a78d994bbd04b9cee2243ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

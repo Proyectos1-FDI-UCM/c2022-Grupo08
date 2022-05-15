@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2467080493944267530}
   - component: {fileID: 2467080493944267540}
   - component: {fileID: 2467080493944267541}
+  - component: {fileID: 1433897000942136459}
   m_Layer: 0
   m_Name: PortaSurum
   m_TagString: Untagged
@@ -109,3 +110,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.86080134, y: 0.5528623}
   m_EdgeRadius: 0
+--- !u!114 &1433897000942136459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2467080493944267531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de196be23a78d994bbd04b9cee2243ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

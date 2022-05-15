@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6866535440513490201}
   - component: {fileID: 6866535440513490207}
   - component: {fileID: 5818347851147677871}
+  - component: {fileID: 4573421683887987996}
   m_Layer: 0
   m_Name: Bulkhead
   m_TagString: Untagged
@@ -109,3 +110,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6812773, y: 0.023728251}
   m_EdgeRadius: 0
+--- !u!114 &4573421683887987996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6866535440513490202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de196be23a78d994bbd04b9cee2243ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
