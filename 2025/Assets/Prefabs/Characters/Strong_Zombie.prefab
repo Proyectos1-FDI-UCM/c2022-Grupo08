@@ -123,9 +123,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxLife: 40
   _currentLife: 0
-  _damage: 10
+  _damage: 20
   _cont: 1.7
-  _isDead: 0
+  _isZombieDead: 0
   _myAnimator: {fileID: 5807533944131582092}
   _clip: {fileID: 8300000, guid: 2ec8341e31910284d8a80e23f10a09cc, type: 3}
 --- !u!61 &5807533944131582089
