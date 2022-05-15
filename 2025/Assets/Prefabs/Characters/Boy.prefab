@@ -145,8 +145,8 @@ MonoBehaviour:
   _clip: {fileID: 8300000, guid: f633b9314c7ddc546ab05cb692672694, type: 3}
   pushing: 0
   _isPlayerDead: 0
-  push: 2
-  pushZombie: 0.5
+  push: 4
+  pushZombie: 1.5
 --- !u!114 &8646861863707179862
 MonoBehaviour:
   m_ObjectHideFlags: 0
